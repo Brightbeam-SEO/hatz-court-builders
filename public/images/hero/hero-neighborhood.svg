@@ -1,0 +1,13 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="g1" x1="0" y1="0" x2="1600" y2="900" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0F172A"/>
+      <stop offset="1" stop-color="#1E293B"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#g1)"/>
+  <circle cx="1280" cy="190" r="115" fill="#F4B400"/>
+  <path d="M0 650L250 560L420 640L580 545L720 620L890 530L1050 620L1230 550L1600 640V900H0V650Z" fill="#0EA5A4" fill-opacity="0.35"/>
+  <path d="M0 710L210 640L420 700L620 610L790 710L980 620L1190 700L1390 630L1600 710V900H0V710Z" fill="#F97316" fill-opacity="0.45"/>
+  <text x="80" y="835" fill="#FFFFFF" font-size="56" font-family="Arial">Sol Pressure Washing Boise</text>
+</svg>

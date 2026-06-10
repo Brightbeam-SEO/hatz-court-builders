@@ -1,0 +1,43 @@
+name: Mirror sync
+
+on:
+  push:
+  delete:
+  workflow_dispatch:
+
+jobs:
+  mirror:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Mirror to paired account
+        env:
+          MIRROR_TOKEN: ${{ secrets.MIRROR_SYNC_TOKEN }}
+          SOURCE_REPO: ${{ github.repository }}
+        run: |
+          set -euo pipefail
+
+          if [ -z "$MIRROR_TOKEN" ]; then
+            echo "MIRROR_SYNC_TOKEN secret is not set on this repository."
+            exit 1
+          fi
+
+          if [ "${{ github.repository_owner }}" = "Brightbeam-SEO-2" ]; then
+            DEST_REPO="Brightbeam-SEO/${{ github.event.repository.name }}"
+          else
+            DEST_REPO="Brightbeam-SEO-2/${{ github.event.repository.name }}"
+          fi
+
+          SOURCE_URL="https://x-access-token:${MIRROR_TOKEN}@github.com/${SOURCE_REPO}.git"
+          DEST_URL="https://x-access-token:${MIRROR_TOKEN}@github.com/${DEST_REPO}.git"
+
+          SOURCE_REFS="$(git ls-remote --refs "$SOURCE_URL" | sort)"
+          DEST_REFS="$(git ls-remote --refs "$DEST_URL" 2>/dev/null | sort || true)"
+
+          if [ "$SOURCE_REFS" = "$DEST_REFS" ]; then
+            echo "Already in sync with ${DEST_REPO}; skipping mirror push."
+            exit 0
+          fi
+
+          git clone --mirror "$SOURCE_URL" mirror.git
+          cd mirror.git
+          git push --mirror "$DEST_URL"

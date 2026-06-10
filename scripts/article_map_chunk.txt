@@ -1,0 +1,41 @@
+  return <>{withChristmasGalleries}</>;
+}
+
+function MarkdownChunkWithOptionalFleetGallery({
+  markdown,
+  wrapperClassName,
+  listBulletStyle = "sunset-check",
+  mapEmbedSrc,
+  mapIframeTitle,
+}: {
+  markdown: string;
+  wrapperClassName?: string;
+  listBulletStyle?: BlogMarkdownListBulletStyle;
+  mapEmbedSrc?: string;
+  mapIframeTitle?: string;
+}) {
+  const trimmed = markdown.trim();
+  if (!trimmed) return null;
+
+  const mapParts = trimmed.split(MAP_EMBED_MARKER);
+  if (mapParts.length > 1) {
+    const beforeMap = (mapParts[0] ?? "").trim();
+    const afterMap = mapParts.slice(1).join(MAP_EMBED_MARKER).trim();
+    return (
+      <div className={wrapperClassName}>
+        {beforeMap ? renderMarkdownChunkInner(beforeMap, listBulletStyle) : null}
+        <BoiseMapEmbed
+          className={beforeMap ? "mt-8" : undefined}
+          src={mapEmbedSrc ?? BUSINESS.mapEmbedSrc}
+          title={mapIframeTitle ?? `Zen Day Spa location map · ${BUSINESS.address}`}
+        />
+        {afterMap ? <div className="mt-8">{renderMarkdownChunkInner(afterMap, listBulletStyle)}</div> : null}
+      </div>
+    );
+  }
+
+  const inner = renderMarkdownChunkInner(trimmed, listBulletStyle);
+  return wrapperClassName ? <div className={wrapperClassName}>{inner}</div> : inner;
+}
+
+function renderMarkdownWithGetStartedCta(

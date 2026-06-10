@@ -1,0 +1,52 @@
+import type { Metadata, Viewport } from "next";
+import Script from "next/script";
+import { SiteChrome } from "@/components/layout/site-chrome";
+import { archivo, bigShoulders } from "@/lib/fonts";
+import "./globals.css";
+
+const recaptchaSiteKey = process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY;
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  themeColor: "#f7f5f1",
+};
+
+export const metadata: Metadata = {
+  title: "Best Court Builders in Boise & Scottsdale | Hatz Court Builders",
+  description:
+    "Custom tennis, basketball, pickleball, and multi-use courts in Idaho and Arizona. Acrylic, modular, hardwood, turf, resurfacing, and design-build. Call (208) 929-0002.",
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "48x48" },
+      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+      { url: "/favicon-96x96.png", sizes: "96x96", type: "image/png" },
+      { url: "/favicon.svg", type: "image/svg+xml" },
+    ],
+    apple: [{ url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" }],
+  },
+};
+
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
+  return (
+    <html
+      lang="en"
+      data-theme="light"
+      className={`min-h-full antialiased ${archivo.variable} ${bigShoulders.variable}`}
+    >
+      <body className={`${archivo.className} flex min-h-full min-w-0 flex-col overflow-x-clip`}>
+        {recaptchaSiteKey ? (
+          <Script
+            src={`https://www.google.com/recaptcha/api.js?render=${recaptchaSiteKey}`}
+            strategy="afterInteractive"
+          />
+        ) : null}
+        <SiteChrome>{children}</SiteChrome>
+      </body>
+    </html>
+  );
+}
