@@ -58,6 +58,7 @@ export function SiteHeader({ blendWithBackground = true }: SiteHeaderProps) {
                 sizes="(min-width: 1024px) 304px, (min-width: 768px) 280px, (min-width: 640px) 248px, 216px"
                 className="h-14 w-auto max-w-[min(100%,13.5rem)] bg-transparent object-contain object-left sm:h-16 sm:max-w-[15.5rem] md:h-[4.25rem] md:max-w-[17.5rem] lg:h-[4.75rem] lg:max-w-[19rem] [mix-blend-mode:normal]"
                 style={{ background: "transparent" }}
+                unoptimized
                 priority
               />
             </Link>

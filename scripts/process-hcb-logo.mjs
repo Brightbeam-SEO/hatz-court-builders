@@ -4,7 +4,7 @@ import sharp from "sharp";
 
 const SOURCE =
   process.argv[2] ??
-  path.join(process.env.USERPROFILE ?? "", "Downloads", "HCB-horizontal updated colors.png");
+  path.join(process.cwd(), "scripts", "logo-source", "HCB-horizontal-updated-colors.png");
 
 const OUT_DIR = path.join(process.cwd(), "public", "images", "logo");
 const OUT_PNG = path.join(OUT_DIR, "hatz-court-builders-logo.png");

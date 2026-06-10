@@ -26,7 +26,8 @@
     "seed:sanity-city-services": "sanity exec scripts/seed-city-service-pages.ts --with-user-token",
     "photos:zen": "node scripts/process-zen-photos.mjs",
     "photos:hcb": "node scripts/process-hcb-photos.mjs",
-    "logo:hcb": "node scripts/process-hcb-logo.mjs"
+    "logo:hcb": "node scripts/process-hcb-logo.mjs",
+    "favicon:hcb": "node scripts/process-hcb-favicon.mjs"
   },
   "dependencies": {
     "@babel/runtime": "7.28.4",
@@ -56,6 +57,7 @@
     "dotenv": "^17.4.2",
     "eslint": "^9",
     "eslint-config-next": "16.2.3",
+    "png-to-ico": "^2.1.8",
     "sanity": "^5.22.0",
     "sharp": "^0.34.5",
     "tailwindcss": "^4",
