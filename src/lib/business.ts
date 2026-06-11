@@ -138,10 +138,10 @@ export const BUSINESS = {
     "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d425677.5265753157!2d-111.90041805000001!3d33.5376365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4144c0a539909cfb%3A0x91abca52b94d82a8!2sHatz%20Court%20Builders!5e0!3m2!1sen!2sph!4v1781158489503!5m2!1sen!2sph",
   mapCenter: { lat: 43.615, lng: -116.2146 } as const,
   mapDefaultZoom: 10,
-  logoSrc: "/images/logo/hatz-court-builders-logo.png?v=5",
+  logoSrc: "/images/logo/hatz-court-builders-logo.png",
   logoWidth: 952,
   logoHeight: 161,
-  wordmarkSrc: "/images/logo/hatz-court-builders-logo.png?v=5",
+  wordmarkSrc: "/images/logo/hatz-court-builders-logo.png",
   wordmarkWidth: 952,
   wordmarkHeight: 161,
 } as const;
