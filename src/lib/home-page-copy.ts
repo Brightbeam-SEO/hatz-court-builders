@@ -54,10 +54,12 @@ export type HomePageCopy = {
 
 export const defaultHeroTrustStripLogos: HomeTrustStripLogo[] = [
   { src: "/images/trust/google.png", alt: "Google reviews" },
+  { src: "/images/trust/yelp.png", alt: "Yelp reviews" },
+  { src: "/images/trust/boise.png", alt: "Boise" },
   { src: "/images/trust/hoa.svg", alt: "HOA communities" },
 ];
 
-const REMOVED_TRUST_STRIP_LOGO = /\/trust\/(?:boise|bbb|nextdoor)\.(png|svg|jpe?g|webp)$/i;
+const REMOVED_TRUST_STRIP_LOGO = /\/trust\/(?:bbb|nextdoor)\.(png|svg|jpe?g|webp)$/i;
 
 export function normalizeHeroTrustStripLogos(
   logos: HomeTrustStripLogo[] | undefined,
@@ -83,24 +85,24 @@ export const defaultHomePageCopy: HomePageCopy = {
   heroEyebrow: "Residential & commercial · All surface types · Idaho & Arizona",
   heroTitle: "Best Court Builders in Boise & Scottsdale",
   heroSubtitle:
-    "Custom tennis, basketball, pickleball, and multi-use courts — acrylic, modular tile, hardwood, turf, asphalt, and concrete. Resurfacing, repairs, striping, and full design-build from one trusted team.",
+    "High-performance court construction for residential and commercial projects in Idaho and Arizona.",
   heroTrustSignals: [
     { highlight: "24/7", title: "Available" },
     { highlight: "All", title: "Surface Types" },
     { highlight: "ID & AZ", title: "Two Locations" },
   ],
-  heroStripHeading: "Request Your Free Court Consultation",
+  heroStripHeading: "Get a Free Court Construction Quote",
   heroStripSubheading:
-    "Tell us about your backyard, school, park, or commercial project in Boise, Scottsdale, or anywhere we serve — we'll help you choose the right court system and surface.",
+    "Tell us about your project and we'll help you plan the right court system, surface, and layout.",
   localIntroEyebrow: "Idaho & Arizona Court Builder",
-  localIntroTitleLine1: "Custom Court Construction",
-  localIntroTitleLine2: "From Design to Completion",
+  localIntroTitleLine1: "Boise & Scottsdale Court Builder",
+  localIntroTitleLine2: "for Athletic Courts",
   localIntroBody:
-    "Hatz Court Builders specializes in sports construction for homeowners, parks & recreation, and schools. We install pickleball, basketball, tennis, volleyball, and multi-use courts with acrylic, cushioned acrylic, modular tile, hardwood, synthetic turf, asphalt, and concrete — plus resurfacing, repairs, striping, custom logos, lighting, fencing, and site prep. Unlike competitors who focus on one surfacing option, we're a one-stop shop for every component of your court project.",
-  servicesHeading: "Court Construction & Resurfacing Services",
+    "From backyard courts to multi-court facilities, Hatz Court Builders handles court design, construction, resurfacing, repairs, striping, lighting, fencing, and site prep.",
+  servicesHeading: "Boise & Scottsdale Court Builder Services",
   servicesIntro:
-    "Pickleball, basketball, tennis, and multi-use courts for residential and commercial properties — every major surfacing system and full design-build support.",
-  servicesExploreLabel: "Explore Our Services",
+    "Hatz Court Builders builds, resurfaces, repairs, and designs custom athletic courts for homes, schools, parks, recreation spaces, and commercial properties.",
+  servicesExploreLabel: "Learn more",
   closingShowcaseEyebrow: "Why Hatz Court Builders",
   closingShowcaseHeading: "One Stop Shop for Every Court Surface & Component",
   closingShowcaseBragLine: "★★★★★",
@@ -146,15 +148,36 @@ const STALE_ZEN_HERO_COPY =
   /massage|reflexology|spa services|spa experience|calming spa|walk-ins|same-day appointments|zen day spa|book your massage|scalp treatments|relax[,\s]*&\s*recharge|feel your best|around how you feel|in eagle|schedule your massage|tell us your needs/i;
 
 const STALE_PM_HERO_COPY =
-  /property management|rental (property|analysis|owners?)|greenbelt|tenant placement|rent collection|meridian,?\s*idaho|treasure valley rental|hands-on (service|management)|free rental analysis/i;
+  /property management|rental (property|analysis|owners?)|greenbelt|tenant placement|rent collection|meridian,?\s*idaho|treasure valley rental|hands-on (service|management)|free rental analysis|locally owned and personally managed|responsive communication/i;
+
+const STALE_SUPERSEDED_HERO_COPY =
+  /request your free court consultation|tell us about your backyard, school, park, or commercial project|custom tennis, basketball, pickleball, and multi-use courts/i;
+
+const STALE_SUPERSEDED_LOCAL_INTRO_COPY =
+  /custom court construction|from design to completion|specializes in sports construction for homeowners/i;
 
 export function isStaleZenHeroCopy(value: string | undefined): boolean {
   if (!value?.trim()) return false;
-  return STALE_ZEN_HERO_COPY.test(value) || STALE_PM_HERO_COPY.test(value);
+  return (
+    STALE_ZEN_HERO_COPY.test(value) ||
+    STALE_PM_HERO_COPY.test(value) ||
+    STALE_SUPERSEDED_HERO_COPY.test(value)
+  );
 }
 
+export function isStaleSupersededLocalIntroCopy(value: string | undefined): boolean {
+  if (!value?.trim()) return false;
+  return STALE_SUPERSEDED_LOCAL_INTRO_COPY.test(value);
+}
+
+const STALE_SERVICES_HEADING = /court construction & resurfacing services/i;
 const STALE_SERVICES_INTRO =
-  /residential long-term rentals only|credit checks, inspections, maintenance, marketing, tenant screening, rent collection, and owner reporting|tenant screening, rent collection/i;
+  /residential long-term rentals only|credit checks, inspections, maintenance, marketing, tenant screening, rent collection, and owner reporting|tenant screening, rent collection|pickleball, basketball, tennis, and multi-use courts for residential and commercial properties/i;
+
+export function isStaleServicesHeading(value: string | undefined): boolean {
+  if (!value?.trim()) return false;
+  return STALE_SERVICES_HEADING.test(value);
+}
 
 export function isStaleServicesIntro(value: string | undefined): boolean {
   if (!value?.trim()) return false;
@@ -162,7 +185,7 @@ export function isStaleServicesIntro(value: string | undefined): boolean {
 }
 
 const STALE_LOCAL_INTRO_EYEBROW = /locally owned in meridian|free on-site consultations/i;
-const STALE_LOCAL_INTRO_TITLE_LINE2 = /for the treasure valley/i;
+const STALE_LOCAL_INTRO_TITLE_LINE2 = /for the treasure valley|for custom athletic courts/i;
 const STALE_LOCAL_INTRO_BODY =
   /greenbelt property management|property management meridian|long-term residential rental|tenant placement|rent collection/i;
 
@@ -225,23 +248,41 @@ export function mergeHomePageCopy(
   if (!isStaleZenHeroCopy(remote.localIntroEyebrow) && !isStaleLocalIntroEyebrow(remote.localIntroEyebrow)) {
     assign("localIntroEyebrow", remote.localIntroEyebrow);
   }
-  if (!isStaleZenHeroCopy(remote.localIntroTitleLine1)) {
+  if (
+    !isStaleZenHeroCopy(remote.localIntroTitleLine1) &&
+    !isStaleSupersededLocalIntroCopy(remote.localIntroTitleLine1)
+  ) {
     assign("localIntroTitleLine1", remote.localIntroTitleLine1);
   }
   if (
     !isStaleZenHeroCopy(remote.localIntroTitleLine2) &&
-    !isStaleLocalIntroTitleLine2(remote.localIntroTitleLine2)
+    !isStaleLocalIntroTitleLine2(remote.localIntroTitleLine2) &&
+    !isStaleSupersededLocalIntroCopy(remote.localIntroTitleLine2)
   ) {
     assign("localIntroTitleLine2", remote.localIntroTitleLine2);
   }
-  if (!isStaleZenHeroCopy(remote.localIntroBody) && !isStaleLocalIntroBody(remote.localIntroBody)) {
+  if (
+    !isStaleZenHeroCopy(remote.localIntroBody) &&
+    !isStaleLocalIntroBody(remote.localIntroBody) &&
+    !isStaleSupersededLocalIntroCopy(remote.localIntroBody)
+  ) {
     assign("localIntroBody", remote.localIntroBody);
   }
-  if (!isStaleZenHeroCopy(remote.servicesHeading)) assign("servicesHeading", remote.servicesHeading);
+  if (
+    !isStaleZenHeroCopy(remote.servicesHeading) &&
+    !isStaleServicesHeading(remote.servicesHeading)
+  ) {
+    assign("servicesHeading", remote.servicesHeading);
+  }
   if (!isStaleZenHeroCopy(remote.servicesIntro) && !isStaleServicesIntro(remote.servicesIntro)) {
     assign("servicesIntro", remote.servicesIntro);
   }
-  assign("servicesExploreLabel", remote.servicesExploreLabel);
+  if (
+    remote.servicesExploreLabel?.trim() &&
+    !/^explore our services$/i.test(remote.servicesExploreLabel.trim())
+  ) {
+    assign("servicesExploreLabel", remote.servicesExploreLabel);
+  }
   if (!isStaleZenHeroCopy(remote.closingShowcaseEyebrow)) {
     assign("closingShowcaseEyebrow", remote.closingShowcaseEyebrow);
   }

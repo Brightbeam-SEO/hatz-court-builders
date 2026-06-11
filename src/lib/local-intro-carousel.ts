@@ -14,5 +14,8 @@ export const LOCAL_INTRO_CAROUSEL_PATHS = [
   gpmPick("outdoor multi court pickleball basketball tennis"),
 ] as const;
 
+/** Desktop `LocalIntroSection` right-column fade carousel (5 slides, 3s interval). */
+export const LOCAL_INTRO_DESKTOP_CAROUSEL_PATHS = LOCAL_INTRO_CAROUSEL_PATHS.slice(0, 5);
+
 export const LOCAL_INTRO_ARC_CENTER_SLOT_IMAGE_SRC = LOCAL_INTRO_CAROUSEL_PATHS[0];
 export const LOCAL_INTRO_ARC_RIGHT_SLOT_IMAGE_SRC = LOCAL_INTRO_CAROUSEL_PATHS[1];

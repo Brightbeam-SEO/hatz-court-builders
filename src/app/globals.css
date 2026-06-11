@@ -134,11 +134,11 @@ a.contact-social-link:hover span[aria-hidden] {
 }
 
 /* Unlayered — must beat `color: inherit` and Tailwind `light:text-*` on ancestors */
-a.btn-call:not(.btn-call-inverse),
-a.btn-call:not(.btn-call-inverse):visited,
-a.btn-call:not(.btn-call-inverse):hover,
-a.btn-call:not(.btn-call-inverse):focus-visible,
-a.btn-call:not(.btn-call-inverse):active,
+a.btn-call:not(.btn-call-inverse):not(.btn-call-blue),
+a.btn-call:not(.btn-call-inverse):not(.btn-call-blue):visited,
+a.btn-call:not(.btn-call-inverse):not(.btn-call-blue):hover,
+a.btn-call:not(.btn-call-inverse):not(.btn-call-blue):focus-visible,
+a.btn-call:not(.btn-call-inverse):not(.btn-call-blue):active,
 button.btn-submit:not(.btn-submit-inverse),
 button.btn-submit:not(.btn-submit-inverse):hover:not(:disabled),
 button.btn-submit:not(.btn-submit-inverse):focus-visible,
@@ -163,6 +163,17 @@ button.btn-submit.btn-submit-inverse:focus-visible,
 button.btn-submit.btn-submit-inverse:active {
   color: var(--zen-espresso);
   -webkit-text-fill-color: var(--zen-espresso);
+}
+
+a.btn-call.btn-call-blue,
+a.btn-call.btn-call-blue:visited,
+a.btn-call.btn-call-blue:hover,
+a.btn-call.btn-call-blue:focus-visible,
+a.btn-call.btn-call-blue:active {
+  background-color: var(--zen-crimson) !important;
+  border-color: var(--zen-espresso) !important;
+  color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff !important;
 }
 
 a.nav-call-link:visited,
@@ -323,6 +334,10 @@ a.blog-sidebar-cta-secondary.btn-call:active {
 
 .shell {
   @apply mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8;
+}
+
+.footer-shell {
+  @apply mx-auto w-full max-w-none px-4 sm:px-6 lg:px-10 xl:px-14 2xl:px-16;
 }
 
 /* Full-bleed service area map (Leaflet) */

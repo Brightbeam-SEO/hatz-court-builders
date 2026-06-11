@@ -9,9 +9,38 @@ const SOURCE =
 const OUT_DIR = path.join(process.cwd(), "public", "images", "logo");
 const OUT_PNG = path.join(OUT_DIR, "hatz-court-builders-logo.png");
 
-function isBackgroundPixel(r, g, b, a) {
+function isDarkPixel(r, g, b, a) {
   if (a < 8) return true;
-  return r < 42 && g < 42 && b < 42;
+  return r < 24 && g < 24 && b < 24;
+}
+
+/** Logo outlines are black too — only strip edge-connected dark pixels not touching brand colors. */
+function touchesBrandColor(pixels, width, height, x, y) {
+  for (const [dx, dy] of [
+    [-1, 0],
+    [1, 0],
+    [0, -1],
+    [0, 1],
+  ]) {
+    const nx = x + dx;
+    const ny = y + dy;
+    if (nx < 0 || nx >= width || ny < 0 || ny >= height) continue;
+    const i = (ny * width + nx) * 4;
+    if (pixels[i + 3] < 8) continue;
+    const r = pixels[i];
+    const g = pixels[i + 1];
+    const b = pixels[i + 2];
+    const isBlue = b > 70 && b > r + 18 && b > g + 8;
+    const isGreen = g > 90 && g > r + 25;
+    if (isBlue || isGreen) return true;
+  }
+  return false;
+}
+
+function isRemovableBackground(pixels, width, height, x, y) {
+  const i = (y * width + x) * 4;
+  if (!isDarkPixel(pixels[i], pixels[i + 1], pixels[i + 2], pixels[i + 3])) return false;
+  return !touchesBrandColor(pixels, width, height, x, y);
 }
 
 function floodFillBackground(pixels, width, height) {
@@ -21,8 +50,7 @@ function floodFillBackground(pixels, width, height) {
   const pushIfBackground = (x, y) => {
     const idx = y * width + x;
     if (visited[idx]) return;
-    const i = idx * 4;
-    if (!isBackgroundPixel(pixels[i], pixels[i + 1], pixels[i + 2], pixels[i + 3])) return;
+    if (!isRemovableBackground(pixels, width, height, x, y)) return;
     visited[idx] = 1;
     queue.push(idx);
   };

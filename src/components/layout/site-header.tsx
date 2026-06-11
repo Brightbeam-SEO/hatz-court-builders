@@ -37,17 +37,20 @@ export function SiteHeader({ blendWithBackground = true }: SiteHeaderProps) {
     ? "relative z-[220] w-full bg-transparent text-white light:bg-transparent light:text-zen-espresso"
     : "relative z-[220] w-full bg-zen-espresso text-white light:bg-zen-rice light:text-zen-espresso";
   const shellClass = blendWithBackground
-    ? "overflow-visible rounded-[1.6rem] border border-transparent bg-transparent px-4 shadow-none backdrop-blur-0 sm:rounded-full sm:px-5 md:px-6"
+    ? "overflow-visible rounded-[1.6rem] border border-zen-sand/40 bg-zen-rice/90 px-4 shadow-[0_8px_32px_rgba(0,0,0,0.12)] sm:rounded-full sm:px-5 md:px-6 lg:px-3 xl:px-4"
     : "overflow-visible rounded-[1.6rem] border border-zen-sand/55 bg-zen-rice/58 px-4 shadow-[0_4px_18px_rgba(21,21,21,0.025)] backdrop-blur-sm sm:rounded-full sm:px-5 md:px-6";
+  const innerWrapClass = blendWithBackground
+    ? "mx-auto w-full max-w-[95vw] px-2 pt-3 sm:max-w-[min(80vw,100%)] sm:px-3 sm:pt-4 md:px-4 md:pt-5 lg:max-w-none lg:w-[90%] lg:px-0"
+    : "mx-auto w-full max-w-[95vw] px-2 pt-3 sm:max-w-[min(80vw,100%)] sm:px-3 sm:pt-4 md:px-4 md:pt-5";
 
   return (
     <div className={wrapperClass}>
-      <div className="mx-auto w-full max-w-[95vw] px-2 pt-3 sm:max-w-[min(80vw,100%)] sm:px-3 sm:pt-4 md:px-4 md:pt-5">
+      <div className={innerWrapClass}>
         <div className={shellClass}>
-          <nav className="relative z-[230] flex w-full flex-wrap items-center justify-between gap-2 py-3 sm:gap-3 md:py-4 lg:grid lg:max-w-full lg:grid-cols-[auto_minmax(0,1fr)_auto] lg:flex-nowrap lg:items-center lg:justify-between lg:gap-3 lg:px-0 xl:gap-5">
+          <nav className="relative z-[230] grid w-full max-w-full grid-cols-[minmax(0,1fr)_auto] items-center gap-2 py-3 sm:gap-3 lg:grid-cols-[auto_minmax(0,1fr)_auto] lg:gap-3 lg:px-0 lg:py-3 xl:gap-5">
             <Link
               href="/"
-              className="order-1 shrink-0 justify-self-start rounded-sm bg-transparent focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-zen-crimson"
+              className="min-w-0 justify-self-start rounded-sm bg-transparent focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-zen-crimson lg:col-start-1 lg:row-start-1"
             >
               <Image
                 key={BUSINESS.logoSrc}
@@ -55,15 +58,15 @@ export function SiteHeader({ blendWithBackground = true }: SiteHeaderProps) {
                 alt={BUSINESS.nameFull}
                 width={BUSINESS.logoWidth}
                 height={BUSINESS.logoHeight}
-                sizes="(min-width: 1024px) 304px, (min-width: 768px) 280px, (min-width: 640px) 248px, 216px"
-                className="h-14 w-auto max-w-[min(100%,13.5rem)] bg-transparent object-contain object-left sm:h-16 sm:max-w-[15.5rem] md:h-[4.25rem] md:max-w-[17.5rem] lg:h-[4.75rem] lg:max-w-[19rem] [mix-blend-mode:normal]"
+                sizes="(min-width: 1280px) 248px, (min-width: 1024px) 224px, (min-width: 768px) 280px, (min-width: 640px) 248px, 216px"
+                className="h-14 w-auto max-w-[min(100%,13.5rem)] bg-transparent object-contain object-left sm:h-16 sm:max-w-[15.5rem] md:h-[4.25rem] md:max-w-[17.5rem] lg:h-[3.25rem] lg:max-w-[14.5rem] xl:h-[3.5rem] xl:max-w-[15.5rem] [mix-blend-mode:normal]"
                 style={{ background: "transparent" }}
                 unoptimized
                 priority
               />
             </Link>
 
-            <ul className="order-3 hidden min-w-0 w-full flex-wrap items-center justify-center gap-x-2 gap-y-1 font-sans text-xs font-medium tracking-[0.0125em] text-zen-espresso/80 sm:gap-x-3 lg:order-2 lg:flex lg:w-auto lg:gap-x-3 lg:gap-y-0 xl:gap-x-5 xl:text-sm">
+            <ul className="hidden min-w-0 flex-wrap items-center justify-center gap-x-2 gap-y-1 font-sans text-xs font-medium tracking-[0.0125em] text-zen-espresso/80 sm:gap-x-3 lg:col-start-2 lg:row-start-1 lg:flex lg:w-auto lg:gap-x-3 lg:gap-y-0 xl:gap-x-5 xl:text-sm">
               <li className="shrink-0 whitespace-nowrap">
                 <a className={headerTopLinkClass} href={pmServicePagePath("property-management-services")}>
                   Services
@@ -110,7 +113,7 @@ export function SiteHeader({ blendWithBackground = true }: SiteHeaderProps) {
               </li>
             </ul>
 
-            <div className="order-2 flex shrink-0 items-center gap-2 sm:gap-3 lg:order-3 lg:ml-0 lg:justify-self-end">
+            <div className="col-start-2 row-start-1 flex shrink-0 items-center justify-self-end gap-2 sm:gap-3 lg:col-start-3 lg:ml-0">
               <button
                 type="button"
                 className="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-lg border border-zen-gold/25 bg-white/85 text-zen-espresso backdrop-blur-sm lg:hidden"

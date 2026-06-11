@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+import { HcbImage } from "@/components/ui/hcb-image";
 import Link from "next/link";
 import { gpmImageAlt } from "@/lib/gpm-gallery-images";
 import { gpmPick } from "@/lib/gpm-pick-gallery";
@@ -56,12 +56,12 @@ export function ClosingShowcaseSection() {
 
         <div className="mt-10 grid gap-4 lg:mt-12 lg:grid-cols-[minmax(0,2fr)_minmax(0,3fr)] lg:gap-5 lg:items-stretch">
           <div className="home-reveal home-reveal-left home-reveal-d3 relative min-h-[22rem] overflow-hidden rounded-3xl bg-zen-sand/40 shadow-[0_18px_48px_rgba(21,21,21,0.1)] ring-1 ring-black/5 sm:min-h-[24rem] lg:min-h-0 lg:h-full">
-            <Image
+            <HcbImage
               src={showcaseImage}
               alt={gpmImageAlt(showcaseImage)}
               fill
               className="object-cover"
-              sizes="(max-width: 1024px) 100vw, 40vw"
+              sizes="(max-width: 1024px) 100vw, 50vw"
             />
           </div>
 

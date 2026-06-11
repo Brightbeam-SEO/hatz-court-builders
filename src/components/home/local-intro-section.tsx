@@ -1,215 +1,207 @@
 "use client";
 
-import Image from "next/image";
 import { useEffect, useState, type ReactNode } from "react";
-import { HomeSectionGridDecor } from "@/components/home/home-section-grid-decor";
+import { HcbImage } from "@/components/ui/hcb-image";
+import { HomeActionButtons } from "@/components/home/home-action-buttons";
 import { useHomeScrollReveal } from "@/hooks/use-home-scroll-reveal";
-import { LOCAL_INTRO_CAROUSEL_PATHS } from "@/lib/local-intro-carousel";
 import { gpmImageAlt } from "@/lib/gpm-gallery-images";
 
-type ArcPhoto = {
-  src: string;
-  alt: string;
+const introImageClass =
+  "overflow-hidden rounded-[1.75rem] bg-zen-sand/40 shadow-[0_16px_40px_rgba(15,23,42,0.12)] ring-1 ring-black/5";
+
+type LocalIntroSectionProps = {
+  eyebrow: ReactNode;
+  heading: ReactNode;
+  body: ReactNode;
+  actionButtonsClassName?: string;
+  actionButtonsSecondaryClassName?: string;
+  leftImageSrc: string;
+  leftImageAlt: string;
+  rightImageSrc: string;
+  rightImageAlt: string;
+  rightCarouselImages: readonly string[];
 };
 
-const arcPhotos: ArcPhoto[] = LOCAL_INTRO_CAROUSEL_PATHS.map((src) => ({
-  src,
-  alt: gpmImageAlt(src),
-}));
+const DESKTOP_CAROUSEL_MS = 3000;
 
-const ARC_CARD_CLASS =
-  "overflow-hidden rounded-2xl bg-zen-crimson shadow-[0_16px_40px_rgba(15,23,42,0.14)] transition-all duration-1000 ease-out";
-
-function useArcCarousel() {
+function LocalIntroDesktopImageCarousel({ images }: { images: readonly string[] }) {
   const [activeIndex, setActiveIndex] = useState(0);
 
   useEffect(() => {
-    const interval = window.setInterval(() => {
-      setActiveIndex((prev) => (prev + 1) % arcPhotos.length);
-    }, 3200);
+    if (images.length <= 1) return;
 
-    return () => window.clearInterval(interval);
-  }, []);
+    const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    if (prefersReducedMotion) return;
 
-  const getPosition = (index: number) => {
-    const len = arcPhotos.length;
-    const rawOffset = index - activeIndex;
-    if (rawOffset > len / 2) return rawOffset - len;
-    if (rawOffset < -len / 2) return rawOffset + len;
-    return rawOffset;
-  };
+    const timer = window.setInterval(() => {
+      setActiveIndex((current) => (current + 1) % images.length);
+    }, DESKTOP_CAROUSEL_MS);
 
-  return { activeIndex, getPosition };
-}
-
-function getHorizontalPositionClass(position: number): string {
-  if (position === 0) {
-    return "z-40 -translate-x-1/2 -translate-y-1/2 scale-100 rotate-0 opacity-100";
-  }
-  if (position === -1) {
-    return "z-30 -translate-x-[118%] -translate-y-1/2 scale-[0.92] rotate-[7deg] opacity-100";
-  }
-  if (position === 1) {
-    return "z-30 translate-x-[18%] -translate-y-1/2 scale-[0.92] -rotate-[7deg] opacity-100";
-  }
-  if (position === -2) {
-    return "z-20 -translate-x-[195%] -translate-y-1/2 scale-[0.84] rotate-[10deg] opacity-100";
-  }
-  if (position === 2) {
-    return "z-20 translate-x-[95%] -translate-y-1/2 scale-[0.84] -rotate-[10deg] opacity-100";
-  }
-  if (position < -2) {
-    return "z-10 -translate-x-[240%] -translate-y-1/2 scale-[0.8] rotate-[12deg] opacity-0";
-  }
-  return "z-10 translate-x-[140%] -translate-y-1/2 scale-[0.8] -rotate-[12deg] opacity-0";
-}
-
-/** Vertical arc (lg+): anchored left, fans right; bottom → top carousel. */
-function getVerticalPositionClass(position: number): string {
-  if (position === 0) {
-    return "z-40 -translate-y-1/2 translate-x-0 scale-100 rotate-0 opacity-100";
-  }
-  if (position === -1) {
-    return "z-30 translate-y-[36%] translate-x-[48%] scale-[0.9] -rotate-[8deg] opacity-100";
-  }
-  if (position === 1) {
-    return "z-30 -translate-y-[136%] translate-x-[48%] scale-[0.9] rotate-[8deg] opacity-100";
-  }
-  if (position === -2) {
-    return "z-20 translate-y-[70%] translate-x-[78%] scale-[0.8] -rotate-[11deg] opacity-100";
-  }
-  if (position === 2) {
-    return "z-20 -translate-y-[170%] translate-x-[78%] scale-[0.8] rotate-[11deg] opacity-100";
-  }
-  if (position < -2) {
-    return "z-10 translate-y-[105%] translate-x-[95%] scale-[0.75] -rotate-[12deg] opacity-0";
-  }
-  return "z-10 -translate-y-[205%] translate-x-[95%] scale-[0.75] rotate-[12deg] opacity-0";
-}
-
-function ArcPhotoCard({
-  photo,
-  positionClass,
-  isVisible,
-  sizes,
-  cardClassName,
-  anchor = "center",
-}: {
-  photo: ArcPhoto;
-  positionClass: string;
-  isVisible: boolean;
-  sizes: string;
-  cardClassName: string;
-  anchor?: "center" | "right" | "left";
-}) {
-  const anchorClass =
-    anchor === "right" ? "right-0 top-1/2" : anchor === "left" ? "left-0 top-1/2" : "left-1/2 top-1/2";
+    return () => window.clearInterval(timer);
+  }, [images]);
 
   return (
-    <div
-      className={`absolute ${anchorClass} ${ARC_CARD_CLASS} ${positionClass} ${cardClassName} ${
-        isVisible ? "pointer-events-auto" : "pointer-events-none"
-      }`}
-      aria-hidden={!isVisible}
-    >
-      <div className="relative h-full w-full overflow-hidden rounded-2xl">
-        <Image src={photo.src} alt={photo.alt} fill sizes={sizes} className="object-cover" />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-black/5" />
+    <div className="flex w-full items-center gap-3 xl:gap-4">
+      <div className={`relative aspect-[4/3] min-w-0 flex-1 ${introImageClass}`}>
+        {images.map((src, index) => (
+          <HcbImage
+            key={src}
+            src={src}
+            alt={index === activeIndex ? gpmImageAlt(src) : ""}
+            fill
+            sizes="(min-width: 1280px) 42rem, (min-width: 1024px) 50vw, 100vw"
+            className={`object-cover transition-opacity duration-700 ease-in-out ${
+              index === activeIndex ? "opacity-100" : "opacity-0"
+            }`}
+            priority={index === 0}
+            aria-hidden={index !== activeIndex}
+          />
+        ))}
+      </div>
+
+      <div
+        className="flex shrink-0 flex-col items-center justify-center gap-2.5 py-2"
+        role="tablist"
+        aria-label={`Court project photo ${activeIndex + 1} of ${images.length}`}
+      >
+        {images.map((_, index) => {
+          const isActive = index === activeIndex;
+          return (
+            <button
+              key={index}
+              type="button"
+              role="tab"
+              aria-selected={isActive}
+              aria-label={`Show photo ${index + 1}`}
+              onClick={() => setActiveIndex(index)}
+              className={`h-2.5 w-2.5 rounded-full transition-colors duration-300 ${
+                isActive ? "bg-zen-crimson" : "bg-zen-sand hover:bg-zen-taupe/60"
+              }`}
+            />
+          );
+        })}
       </div>
     </div>
   );
 }
 
-function LocalIntroHorizontalArcGallery({ getPosition }: { getPosition: (index: number) => number }) {
+function LocalIntroMobileImageCollage({
+  leftImageSrc,
+  leftImageAlt,
+  rightImageSrc,
+  rightImageAlt,
+}: Pick<LocalIntroSectionProps, "leftImageSrc" | "leftImageAlt" | "rightImageSrc" | "rightImageAlt">) {
   return (
-    <div
-      className="relative left-1/2 h-[20rem] w-screen max-w-[100vw] -translate-x-1/2 overflow-hidden sm:h-[24rem] lg:hidden"
-      aria-label="Court construction project photos"
-    >
-      {arcPhotos.map((photo, index) => {
-        const position = getPosition(index);
-        const isVisible = Math.abs(position) <= 2;
-
-        return (
-          <ArcPhotoCard
-            key={photo.src}
-            photo={photo}
-            isVisible={isVisible}
-            sizes="(max-width: 1024px) 50vw, 10rem"
-            positionClass={getHorizontalPositionClass(position)}
-            cardClassName="h-[82%] w-auto min-w-[8rem] max-w-[11.5rem] aspect-[10/16] sm:h-[85%] sm:min-w-[9rem] sm:max-w-[13rem]"
+    <div className="home-reveal home-reveal-d2 relative mx-auto w-full max-w-[24rem] sm:max-w-[28rem] md:max-w-[34rem]">
+      <div className="relative min-h-[17rem] w-full pb-6 pr-4 sm:min-h-[19rem] sm:pb-8 sm:pr-5 md:min-h-[22rem] md:pb-10 md:pr-6">
+        <div
+          className={`absolute left-0 top-0 z-10 w-[64%] aspect-square sm:w-[62%] md:w-[58%] ${introImageClass}`}
+        >
+          <HcbImage
+            src={leftImageSrc}
+            alt={leftImageAlt}
+            fill
+            sizes="(min-width: 768px) 320px, (min-width: 640px) 280px, 70vw"
+            className="object-cover"
           />
-        );
-      })}
+        </div>
+        <div
+          className={`absolute bottom-0 right-0 z-20 w-[58%] aspect-square translate-x-[10%] translate-y-[12%] sm:w-[56%] sm:translate-x-[12%] sm:translate-y-[14%] md:w-[54%] md:translate-x-[14%] md:translate-y-[16%] ${introImageClass}`}
+        >
+          <HcbImage
+            src={rightImageSrc}
+            alt={rightImageAlt}
+            fill
+            sizes="(min-width: 768px) 300px, (min-width: 640px) 260px, 65vw"
+            className="object-cover"
+          />
+        </div>
+      </div>
     </div>
   );
 }
 
-function LocalIntroVerticalArcGallery({ getPosition }: { getPosition: (index: number) => number }) {
-  return (
-    <div
-      className="relative hidden h-full min-h-[34rem] w-full overflow-visible lg:block xl:min-h-[38rem]"
-      aria-label="Court construction project photos"
-    >
-      {arcPhotos.map((photo, index) => {
-        const position = getPosition(index);
-        const isVisible = Math.abs(position) <= 2;
-        const heightClass =
-          position === 0
-            ? "h-[min(86%,28rem)] max-h-[28rem] xl:max-h-[30rem]"
-            : Math.abs(position) === 1
-              ? "h-[min(68%,21rem)] max-h-[21rem] xl:max-h-[22rem]"
-              : "h-[min(54%,17rem)] max-h-[17rem] xl:max-h-[18rem]";
-
-        return (
-          <ArcPhotoCard
-            key={photo.src}
-            photo={photo}
-            anchor="left"
-            isVisible={isVisible}
-            sizes="(min-width: 1024px) 42vw, 0px"
-            positionClass={getVerticalPositionClass(position)}
-            cardClassName={`aspect-[16/10] w-auto max-w-[min(100%,36rem)] ${heightClass}`}
-          />
-        );
-      })}
-    </div>
-  );
-}
-
-function LocalIntroArcGallery() {
-  const { getPosition } = useArcCarousel();
-
-  return (
-    <>
-      <LocalIntroHorizontalArcGallery getPosition={getPosition} />
-      <LocalIntroVerticalArcGallery getPosition={getPosition} />
-    </>
-  );
-}
-
-export function LocalIntroSection({ children }: { children: ReactNode }) {
+export function LocalIntroSection({
+  eyebrow,
+  heading,
+  body,
+  actionButtonsClassName = "",
+  actionButtonsSecondaryClassName = "",
+  leftImageSrc,
+  leftImageAlt,
+  rightImageSrc,
+  rightImageAlt,
+  rightCarouselImages,
+}: LocalIntroSectionProps) {
   const { ref, revealed, animateClass } = useHomeScrollReveal();
+
   return (
     <section
       ref={ref}
-      className={`home-section-viewport section-pad relative z-10 overflow-x-clip border-0 border-transparent bg-zen-rice pb-[15px] text-zen-espresso [border-image:none] ${animateClass}`}
+      className={`home-section-viewport relative z-10 overflow-x-clip border-0 border-transparent bg-zen-rice py-20 text-zen-espresso md:py-28 lg:py-32 [border-image:none] ${animateClass}`}
     >
-      <HomeSectionGridDecor placement="right" />
       <div className="shell relative z-10">
         <div className="relative mx-auto w-full max-w-6xl pb-2 pt-2 md:pb-4 md:pt-4 lg:pb-4 lg:pt-6">
-          <div className="grid items-center gap-10 lg:grid-cols-2 lg:items-stretch lg:gap-12 xl:gap-16">
-            <div className="relative z-20 flex w-full flex-col items-center justify-center px-1 py-6 sm:px-2 sm:py-8 lg:items-start lg:py-10">
+          <div className="grid grid-cols-1 gap-8 sm:gap-10 lg:grid-cols-[minmax(0,2fr)_minmax(0,3fr)] lg:items-stretch lg:gap-x-8 xl:gap-x-10">
+            <div className="order-1 w-full text-center max-lg:mx-auto max-lg:max-w-2xl lg:hidden">
               <div
-                className={`local-intro-stack w-full text-center lg:text-left${revealed ? " local-intro-stack--in-view" : ""}`}
+                className={`local-intro-stack flex w-full flex-col items-center${revealed ? " local-intro-stack--in-view" : ""}`}
               >
-                {children}
+                {eyebrow}
+                {heading}
               </div>
             </div>
 
-            <div className="home-reveal home-reveal-right home-reveal-d4 relative z-10 w-full min-w-0 lg:min-h-[34rem] lg:pl-2 xl:min-h-[38rem] xl:pl-4">
-              <LocalIntroArcGallery />
+            <div className="hidden lg:col-start-2 lg:row-start-1 lg:row-span-2 lg:flex lg:min-h-0 lg:flex-col lg:text-right">
+              <div
+                className={`local-intro-stack flex w-full flex-col items-end${revealed ? " local-intro-stack--in-view" : ""}`}
+              >
+                {eyebrow}
+                {heading}
+              </div>
+              <div className="home-reveal home-reveal-right home-reveal-d4 mt-auto w-full max-w-none pt-6 xl:pt-8">
+                <LocalIntroDesktopImageCarousel images={rightCarouselImages} />
+              </div>
             </div>
+
+            <div className="order-2 lg:hidden">
+              <LocalIntroMobileImageCollage
+                leftImageSrc={leftImageSrc}
+                leftImageAlt={leftImageAlt}
+                rightImageSrc={rightImageSrc}
+                rightImageAlt={rightImageAlt}
+              />
+            </div>
+
+            <div className="order-3 flex w-full flex-col max-lg:mx-auto max-lg:mt-6 max-lg:max-w-2xl sm:max-lg:mt-8 lg:order-none lg:col-start-1 lg:row-start-1 lg:row-span-2 lg:mt-0 lg:max-w-[19rem] lg:self-stretch xl:max-w-[22rem]">
+              <div className="home-reveal home-reveal-left home-reveal-d1 hidden shrink-0 lg:block">
+                <div className={`relative aspect-[5/4] w-full ${introImageClass}`}>
+                  <HcbImage
+                    src={leftImageSrc}
+                    alt={leftImageAlt}
+                    fill
+                    sizes="(min-width: 1280px) 440px, (min-width: 1024px) 380px, 80vw"
+                    className="object-cover"
+                  />
+                </div>
+              </div>
+
+              <div className="hidden min-h-0 flex-1 lg:block" aria-hidden="true" />
+
+              <div className="shrink-0 text-center lg:mt-8 lg:text-left xl:mt-10">
+                <div
+                  className={`local-intro-stack flex w-full flex-col items-center lg:items-start${revealed ? " local-intro-stack--in-view" : ""}`}
+                >
+                  {body}
+                  <HomeActionButtons
+                    centered
+                    className={`max-lg:items-center max-lg:justify-center lg:items-start lg:justify-start ${actionButtonsClassName}`.trim()}
+                    secondaryClassName={actionButtonsSecondaryClassName}
+                  />
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
       </div>

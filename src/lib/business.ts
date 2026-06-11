@@ -10,12 +10,12 @@ export const BUSINESS = {
   phoneDisplay: "(208) 929-0002",
   email: "info@hatzconstruction.com",
   emailMailto: "mailto:info@hatzconstruction.com",
-  address: "Boise, Idaho",
+  address: "Boise, Idaho; Scottsdale, Arizona",
   addressLines: ["Boise, Idaho", "Scottsdale, Arizona"] as const,
   mapsGoogleUrl: "https://maps.app.goo.gl/VPikhYpZuKDAp6A39",
   mapsGoogleUrlScottsdale: "https://maps.app.goo.gl/Aqcgk3WWS9B5BMpJ8",
   mapsAppleUrl: "https://maps.apple.com/?address=Boise,%20Idaho",
-  website: "https://hatzconstruction.com/",
+  website: "https://hatzcourtbuilders.com/",
   hoursShort: "Hours: 24/7",
   foundedYearLabel: "2024",
   foundedDate: "June 19, 2024",
@@ -133,13 +133,15 @@ export const BUSINESS = {
     "Court design",
   ] as const,
   mapEmbedSrc:
-    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2965.0!2d-116.2146!3d43.6150!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sHatz%20Court%20Builders!5e0!3m2!1sen!2sus!4v1!5m2!1sen!2sus",
+    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1476293.7556148497!2d-115.61409395!3d43.72330254999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4a7ee46ba4b331ad%3A0xf8a3188e7e80a9fa!2sHatz%20Court%20Builders!5e0!3m2!1sen!2sph!4v1781158453955!5m2!1sen!2sph",
+  mapEmbedSrcScottsdale:
+    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d425677.5265753157!2d-111.90041805000001!3d33.5376365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4144c0a539909cfb%3A0x91abca52b94d82a8!2sHatz%20Court%20Builders!5e0!3m2!1sen!2sph!4v1781158489503!5m2!1sen!2sph",
   mapCenter: { lat: 43.615, lng: -116.2146 } as const,
   mapDefaultZoom: 10,
-  logoSrc: "/images/logo/hatz-court-builders-logo.png",
+  logoSrc: "/images/logo/hatz-court-builders-logo.png?v=5",
   logoWidth: 952,
   logoHeight: 161,
-  wordmarkSrc: "/images/logo/hatz-court-builders-logo.png",
+  wordmarkSrc: "/images/logo/hatz-court-builders-logo.png?v=5",
   wordmarkWidth: 952,
   wordmarkHeight: 161,
 } as const;
@@ -161,4 +163,4 @@ export const DEFAULT_SOCIAL_LINKS: SocialLink[] = [
 export const HOMEPAGE_SIDEBAR_LABEL = "Court Construction Boise";
 
 /** Hostnames treated as “this site” when normalizing markdown links. */
-export const SITE_INTERNAL_HOSTNAMES = ["hatzconstruction.com", "www.hatzconstruction.com"] as const;
+export const SITE_INTERNAL_HOSTNAMES = ["hatzcourtbuilders.com", "www.hatzcourtbuilders.com"] as const;

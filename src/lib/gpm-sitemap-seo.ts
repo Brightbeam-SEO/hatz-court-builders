@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 
-const SITE_ORIGIN = "https://hatzconstruction.com";
+const SITE_ORIGIN = "https://hatzcourtbuilders.com";
 
 /** SEO metadata for active site routes. */
 export const GPM_SITEMAP_SEO: Record<
