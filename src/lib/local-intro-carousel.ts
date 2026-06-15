@@ -6,7 +6,7 @@ import { gpmPick } from "@/lib/gpm-pick-gallery";
 export const LOCAL_INTRO_CAROUSEL_PATHS = [
   gpmPick("backyard pickleball basketball dual sport court"),
   gpmPick("outdoor multi court acrylic surfacing"),
-  gpmPick("indoor hardwood basketball court gym interior"),
+  gpmPick("indoor hardwood basketball court hoops gym interior"),
   gpmPick("backyard gray basketball court installation"),
   gpmPick("modular court tile custom logo branding"),
   gpmPick("tennis court resurface blue green acrylic"),

@@ -33,7 +33,7 @@ export function useHomeScrollReveal<T extends HTMLElement = HTMLElement>(
 
     const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     if (prefersReducedMotion || !("IntersectionObserver" in window)) {
-      queueMicrotask(() => setRevealed(true));
+      setRevealed(true);
       return;
     }
 

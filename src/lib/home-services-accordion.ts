@@ -11,7 +11,7 @@ export type HomeServiceAccordionItem = {
 
 const SERVICE_HREF = pmServicePagePath("property-management-services");
 
-export const SERVICES_SECTION_FEATURED_IMAGE = gpmPick("outdoor multi court acrylic surfacing");
+export const SERVICES_SECTION_FEATURED_IMAGE = gpmPick("tennis court resurface crack repair");
 
 export const HOME_SERVICES_ACCORDION: HomeServiceAccordionItem[] = [
   {

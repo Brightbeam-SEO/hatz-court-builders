@@ -20,7 +20,7 @@ const HERO_COURT_ITEMS = [
 ] as const;
 
 const heroCourtIconClass =
-  "flex h-12 w-12 shrink-0 items-center justify-center rounded-full border-2 border-white bg-zen-crimson shadow-[0_8px_24px_rgba(0,0,0,0.2)] transition-transform duration-200 group-hover:scale-105 xl:h-14 xl:w-14";
+  "flex h-12 w-12 shrink-0 items-center justify-center rounded-full border-2 border-white bg-zen-crimson shadow-[0_8px_24px_rgba(18,84,155,0.35)] transition-transform duration-200 group-hover:scale-105 xl:h-14 xl:w-14";
 
 function HeroBottomBar() {
   return (
@@ -147,9 +147,9 @@ export function HeroSection() {
         <div className="mx-auto w-full max-w-[95vw] sm:max-w-[min(80vw,100%)] px-2 sm:px-3 md:px-4">
           <section
             ref={stripRef}
-            className={`relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] w-screen overflow-hidden border-b border-white/10 bg-zen-crimson text-white shadow-[0_18px_45px_rgba(18,84,155,0.35)] ${stripAnimateClass}`}
+            className={`relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] w-screen overflow-hidden border-b border-white/10 bg-zen-espresso text-white shadow-[0_18px_45px_rgba(21,21,21,0.35)] ${stripAnimateClass}`}
           >
-            <div className="absolute inset-0 bg-zen-crimson" aria-hidden="true" />
+            <div className="absolute inset-0 bg-zen-espresso" aria-hidden="true" />
             <div className="relative mx-auto w-full max-w-[95vw] px-2 py-6 sm:max-w-[min(80vw,100%)] sm:px-3 sm:py-8 md:px-4 md:py-8 lg:py-10">
               <div className="grid gap-6 lg:grid-cols-[minmax(0,0.4fr)_minmax(0,0.6fr)] lg:items-center lg:gap-8">
                 <div className="home-reveal home-reveal-left home-reveal-d1 max-w-md text-left">

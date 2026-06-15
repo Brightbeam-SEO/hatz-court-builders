@@ -10,6 +10,7 @@ import type {
 } from "@/lib/home-content";
 import type { HomePageCopy } from "@/lib/home-page-copy";
 import { isStaleZenHeroCopy, mergeHomePageCopy } from "@/lib/home-page-copy";
+import { normalizeHcbImagePath } from "@/lib/hcb-image-path";
 import { getStaticHomeContent } from "@/components/home/site-data";
 import { getSanityClient } from "./client";
 import { homePageQuery } from "./queries";
@@ -63,9 +64,9 @@ function takeService(s: Partial<ServiceItem> | null | undefined): ServiceItem | 
   return {
     name: s.name,
     blurb: s.blurb,
-    image: s.image,
-    hoverImage: s.hoverImage,
-    cardIcon: s.cardIcon,
+    image: normalizeHcbImagePath(s.image),
+    hoverImage: normalizeHcbImagePath(s.hoverImage),
+    cardIcon: normalizeHcbImagePath(s.cardIcon),
     ...(href ? { href } : {}),
   };
 }
@@ -95,7 +96,7 @@ function takeProcess(s: Partial<ProcessItem> | null | undefined): ProcessItem | 
 
 function takeReview(s: Partial<GoogleReview> | null | undefined): GoogleReview | null {
   if (!s?.id || !s.name || !s.quote || !s.image || isStaleAssetUrl(s.image)) return null;
-  return { id: s.id, name: s.name, quote: s.quote, image: s.image };
+  return { id: s.id, name: s.name, quote: s.quote, image: normalizeHcbImagePath(s.image) };
 }
 
 function takeFaq(s: Partial<Faq> | null | undefined): Faq | null {
@@ -113,7 +114,7 @@ function takeCarouselSlide(
   s: Partial<ServiceCarouselSlide> | null | undefined,
 ): ServiceCarouselSlide | null {
   if (!s?.name?.trim() || !s?.image?.trim() || isStaleAssetUrl(s.image)) return null;
-  return { name: s.name.trim(), image: s.image.trim() };
+  return { name: s.name.trim(), image: normalizeHcbImagePath(s.image.trim()) };
 }
 
 /** Only `/services/foot-massage-reflexology/` is the dedicated primary service landing route. */

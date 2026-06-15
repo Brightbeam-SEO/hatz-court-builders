@@ -3,14 +3,14 @@
 import { SiteFooterRegion } from "@/components/layout/site-footer-region";
 import { HomeContactSection } from "./home-contact-section";
 import { FaqSection } from "./faq-section";
-import { ClosingShowcaseSection } from "./closing-showcase-section";
+import { VercepFeatureSection } from "@/components/ui/vercep-feature-1";
 import { HeroSection } from "./hero-section";
 import { LocalIntroSection } from "./local-intro-section";
 import { ProcessTimelineSection } from "./process-timeline-section";
 import { ServiceAreaSectionAlt } from "./service-area-section-alt";
 import { ServicesSection } from "./services-section";
-import { HomeSectionGridDecor } from "./home-section-grid-decor";
 import { HomeTestimonialsFeatured } from "./home-testimonials-featured";
+import { HomeActionButtons } from "./home-action-buttons";
 import { additionalReviewsPageTestimonials } from "@/lib/reviews-testimonials";
 import { gpmImageAlt } from "@/lib/gpm-gallery-images";
 import { gpmPick } from "@/lib/gpm-pick-gallery";
@@ -40,7 +40,7 @@ export function HomePage() {
             <p className="local-intro-eyebrow section-eyebrow max-lg:mx-auto">{copy.localIntroEyebrow}</p>
           }
           heading={
-            <h2 className="mx-auto max-w-[46rem] font-heading text-3xl font-bold leading-[1.15] tracking-tight text-zen-espresso sm:text-4xl sm:leading-[1.12] md:text-[3rem] md:leading-[1.1] lg:mx-0 lg:ml-auto lg:max-w-none lg:text-[3.75rem] lg:leading-[1.08]">
+            <h2 className="mx-auto max-w-[46rem] font-heading text-4xl font-bold leading-[1.15] tracking-tight text-zen-espresso sm:text-5xl sm:leading-[1.12] md:text-[3.375rem] md:leading-[1.1] lg:mx-0 lg:ml-auto lg:max-w-none lg:text-[4.25rem] lg:leading-[1.08]">
               <span className="text-pretty">
                 <span className="text-zen-crimson">{copy.localIntroTitleLine1}</span>
                 {copy.localIntroTitleLine2.trim() ? (
@@ -62,10 +62,9 @@ export function HomePage() {
 
         <ServicesSection />
 
-        <section className="home-section-viewport home-section-viewport--center relative flex flex-col overflow-hidden bg-zen-rice pt-6 text-zen-espresso sm:pt-8 md:pt-10 lg:py-0">
-          <HomeSectionGridDecor placement="left" />
+        <section className="home-section-viewport home-section-viewport--center relative flex flex-col overflow-hidden bg-zen-rice pt-6 pb-6 text-zen-espresso sm:pt-8 sm:pb-8 md:pt-10 md:pb-10 lg:py-24 xl:py-28">
           <div className="home-section-viewport-inner relative z-10 mx-auto w-full max-w-[95vw] shrink-0 px-2 sm:max-w-[min(80vw,100%)] sm:px-3 md:px-4">
-            <ClosingShowcaseSection />
+            <VercepFeatureSection />
           </div>
         </section>
 
@@ -73,18 +72,23 @@ export function HomePage() {
 
         <section
           ref={trustRef}
-          className={`home-section-viewport home-section-viewport--center section-pad bg-zen-espresso text-white lg:min-h-[108dvh] lg:justify-start lg:!pt-16 lg:pb-8 xl:!pt-24 xl:min-h-[112dvh] 2xl:!pt-28 ${trustAnimateClass}`}
+          className={`home-section-viewport home-section-viewport--center section-pad bg-zen-espresso text-white ${trustAnimateClass}`}
           id="trust"
         >
-          <div className="shell mb-10 md:mb-14 lg:mb-16 xl:mb-20">
-            <h2 className="trust-intro-reveal mx-auto max-w-4xl text-center font-heading text-3xl font-bold leading-[0.98] tracking-tight text-white md:text-4xl">
-              {copy.trustMarqueeHeading}
-            </h2>
-            <p className="trust-intro-reveal mx-auto mt-4 max-w-3xl text-center text-base leading-7 text-white/88 sm:text-lg">
-              {copy.trustMarqueeSubtext}
-            </p>
-            <div className="trust-carousel-reveal mt-12 lg:mt-14">
-              <HomeTestimonialsFeatured testimonials={additionalReviewsPageTestimonials} />
+          <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8 xl:px-10">
+            <div className="grid gap-10 lg:grid-cols-[minmax(0,30%)_minmax(0,70%)] lg:items-center lg:gap-8 xl:gap-12">
+              <div className="trust-intro-reveal mx-auto max-w-xl text-center lg:mx-0 lg:max-w-none lg:text-left">
+                <h2 className="font-heading text-4xl font-bold leading-[0.98] tracking-tight text-white md:text-5xl lg:text-[2.75rem] lg:leading-[1.02] xl:text-5xl">
+                  {copy.trustMarqueeHeading}
+                </h2>
+                <p className="mx-auto mt-4 max-w-xl text-base leading-7 text-white/88 sm:text-lg lg:mx-0 lg:max-w-[22rem] xl:max-w-[26rem]">
+                  {copy.trustMarqueeSubtext}
+                </p>
+                <HomeActionButtons centered secondaryClassName="btn-alt-inverse" />
+              </div>
+              <div className="trust-carousel-reveal min-w-0 lg:w-full">
+                <HomeTestimonialsFeatured testimonials={additionalReviewsPageTestimonials} />
+              </div>
             </div>
           </div>
         </section>

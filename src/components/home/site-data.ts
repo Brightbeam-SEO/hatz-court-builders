@@ -67,22 +67,22 @@ export const servicesCarousel: ServiceCarouselSlide[] = [
 export const whyChooseUs = [
   {
     title: "All Surface Types",
-    body: "Acrylic, cushioned acrylic, modular tile, hardwood, synthetic turf, asphalt, and concrete — not just one system like most competitors.",
+    body: "Choose from acrylic, cushioned acrylic, modular, synthetic turf, asphalt, concrete, and other court systems based on your sport, budget, and play style.",
     icon: "/images/why-choose/icons/licensed-insured.svg",
   },
   {
-    title: "One-Stop Shop",
-    body: "Design, construction, resurfacing, striping, fencing, lighting, and components — everything from site prep to completion.",
+    title: "Complete Court Construction",
+    body: "From site prep and base work to surfacing, striping, equipment, and final walkthrough, our team manages the full build from start to finish.",
     icon: "/images/why-choose/icons/residential-commercial.svg",
   },
   {
-    title: "Residential & Commercial",
-    body: "From backyard courts to school facilities, parks, and multi-court complexes across Idaho and Arizona.",
+    title: "Residential & Commercial Projects",
+    body: "We build backyard courts, school courts, park courts, HOA courts, private club courts, and commercial multi-court facilities.",
     icon: "/images/why-choose/icons/reliable-scheduling.svg",
   },
   {
-    title: "Custom Design-Build",
-    body: "Every court is built to your space, sport mix, and surfacing preference with professional striping and optional custom logos.",
+    title: "Custom Design-Build Approach",
+    body: "Every court is planned around your space, goals, surface needs, colors, game lines, logos, and long-term use.",
     icon: "/images/why-choose/icons/surface-specific-cleaning.svg",
   },
 ];
@@ -91,25 +91,25 @@ export const processSteps: ProcessItem[] = [
   {
     step: "01",
     title: "Consultation & Site Evaluation",
-    body: "We review your space, sports mix, and surfacing goals to recommend the right court system.",
+    body: "We review your space, goals, sport preferences, drainage, access, and project needs to recommend the right court construction plan.",
     icon: "/images/process/steps/step-1.svg",
   },
   {
     step: "02",
-    title: "Design & Surface Selection",
-    body: "Choose acrylic, modular tile, hardwood, turf, or concrete — with custom colors, logos, and layout.",
+    title: "Court Design & Surface Selection",
+    body: "Choose the layout, court type, colors, surfacing system, fencing, lighting, logos, and components that fit your property and style of play.",
     icon: "/images/process/steps/step-2.svg",
   },
   {
     step: "03",
-    title: "Construction & Installation",
-    body: "Our team handles site prep, surfacing, hoops, fencing, lighting, and striping from start to finish.",
+    title: "Site Prep & Court Construction",
+    body: "Our team handles grading, base work, surfacing, installation, striping, equipment, and finishing details from start to finish.",
     icon: "/images/process/steps/step-3.svg",
   },
   {
     step: "04",
-    title: "Finishing & Handoff",
-    body: "Final inspection, line paint, and walkthrough so your court is ready for play.",
+    title: "Final Walkthrough & Ready for Play",
+    body: "We complete the final inspection, review the finished court with you, and make sure everything is clean, accurate, and ready for use.",
     icon: "/images/process/steps/step-4.svg",
   },
 ];

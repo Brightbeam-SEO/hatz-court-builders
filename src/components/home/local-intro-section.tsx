@@ -3,6 +3,7 @@
 import { useEffect, useState, type ReactNode } from "react";
 import { HcbImage } from "@/components/ui/hcb-image";
 import { HomeActionButtons } from "@/components/home/home-action-buttons";
+import { useHasMounted } from "@/hooks/use-has-mounted";
 import { useHomeScrollReveal } from "@/hooks/use-home-scroll-reveal";
 import { gpmImageAlt } from "@/lib/gpm-gallery-images";
 
@@ -25,10 +26,12 @@ type LocalIntroSectionProps = {
 const DESKTOP_CAROUSEL_MS = 3000;
 
 function LocalIntroDesktopImageCarousel({ images }: { images: readonly string[] }) {
+  const mounted = useHasMounted();
   const [activeIndex, setActiveIndex] = useState(0);
+  const carouselImages = mounted ? images : images.slice(0, 1);
 
   useEffect(() => {
-    if (images.length <= 1) return;
+    if (!mounted || images.length <= 1) return;
 
     const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     if (prefersReducedMotion) return;
@@ -38,12 +41,12 @@ function LocalIntroDesktopImageCarousel({ images }: { images: readonly string[] 
     }, DESKTOP_CAROUSEL_MS);
 
     return () => window.clearInterval(timer);
-  }, [images]);
+  }, [images, mounted]);
 
   return (
     <div className="flex w-full items-center gap-3 xl:gap-4">
       <div className={`relative aspect-[4/3] min-w-0 flex-1 ${introImageClass}`}>
-        {images.map((src, index) => (
+        {carouselImages.map((src, index) => (
           <HcbImage
             key={src}
             src={src}
@@ -51,36 +54,42 @@ function LocalIntroDesktopImageCarousel({ images }: { images: readonly string[] 
             fill
             sizes="(min-width: 1280px) 42rem, (min-width: 1024px) 50vw, 100vw"
             className={`object-cover transition-opacity duration-700 ease-in-out ${
-              index === activeIndex ? "opacity-100" : "opacity-0"
+              !mounted || index === activeIndex ? "opacity-100" : "opacity-0"
             }`}
             priority={index === 0}
-            aria-hidden={index !== activeIndex}
+            aria-hidden={mounted ? index !== activeIndex : false}
           />
         ))}
       </div>
 
-      <div
-        className="flex shrink-0 flex-col items-center justify-center gap-2.5 py-2"
-        role="tablist"
-        aria-label={`Court project photo ${activeIndex + 1} of ${images.length}`}
-      >
-        {images.map((_, index) => {
-          const isActive = index === activeIndex;
-          return (
-            <button
-              key={index}
-              type="button"
-              role="tab"
-              aria-selected={isActive}
-              aria-label={`Show photo ${index + 1}`}
-              onClick={() => setActiveIndex(index)}
-              className={`h-2.5 w-2.5 rounded-full transition-colors duration-300 ${
-                isActive ? "bg-zen-crimson" : "bg-zen-sand hover:bg-zen-taupe/60"
-              }`}
-            />
-          );
-        })}
-      </div>
+      {mounted ? (
+        <div
+          className="flex shrink-0 flex-col items-center justify-center gap-2.5 py-2"
+          role="tablist"
+          aria-label={`Court project photo ${activeIndex + 1} of ${images.length}`}
+        >
+          {images.map((_, index) => {
+            const isActive = index === activeIndex;
+            return (
+              <button
+                key={index}
+                type="button"
+                role="tab"
+                aria-selected={isActive}
+                aria-label={`Show photo ${index + 1}`}
+                onClick={() => setActiveIndex(index)}
+                className={`h-2.5 w-2.5 rounded-full transition-colors duration-300 ${
+                  isActive ? "bg-zen-crimson" : "bg-zen-sand hover:bg-zen-taupe/60"
+                }`}
+              />
+            );
+          })}
+        </div>
+      ) : (
+        <div className="flex shrink-0 flex-col items-center justify-center gap-2.5 py-2" aria-hidden>
+          <span className="h-2.5 w-2.5 rounded-full bg-zen-crimson" />
+        </div>
+      )}
     </div>
   );
 }

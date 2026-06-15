@@ -1,27 +1,23 @@
 "use client";
 
-import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
-import { HomeActionButtons } from "@/components/home/home-action-buttons";
-import { HomeSectionGridDecor } from "@/components/home/home-section-grid-decor";
 import { useHomeScrollReveal } from "@/hooks/use-home-scroll-reveal";
-import { additionalReviewsPageTestimonials } from "@/lib/reviews-testimonials";
+import { highlightTextPhrase } from "@/lib/highlight-text";
 import { processSteps as staticProcessSteps } from "./site-data";
 import { useHomeContent } from "./home-content-context";
 
-const processAvatars = additionalReviewsPageTestimonials.slice(0, 3);
+function processCellBorderClass(index: number, total: number) {
+  const isLeft = index % 2 === 0;
+  const isTop = index < 2;
 
-const PROCESS_TRUST_LINE = "Trusted by homeowners, schools, and parks";
-
-function ProcessStarRow({ className }: { className?: string }) {
-  return (
-    <span
-      className={`inline-flex text-lg leading-none tracking-tight text-zen-crimson ${className ?? ""}`}
-      aria-label="5 out of 5 stars"
-    >
-      ★★★★★
-    </span>
-  );
+  return [
+    "p-8 sm:p-10 lg:p-12 xl:p-14",
+    index < total - 1 ? "max-md:border-b border-zen-sand/80" : "",
+    isTop ? "md:border-b border-zen-sand/80" : "",
+    isLeft ? "md:border-r border-zen-sand/80" : "",
+  ]
+    .filter(Boolean)
+    .join(" ");
 }
 
 export function ProcessTimelineSection() {
@@ -30,121 +26,137 @@ export function ProcessTimelineSection() {
     cmsProcessSteps.length >= staticProcessSteps.length ? cmsProcessSteps : staticProcessSteps;
 
   const stepRefs = useRef<(HTMLLIElement | null)[]>([]);
-  const [activeThroughIndex, setActiveThroughIndex] = useState(-1);
+  const lastScrollYRef = useRef(0);
+  const [activatedSteps, setActivatedSteps] = useState<boolean[]>([]);
   const { ref: sectionRef, animateClass } = useHomeScrollReveal();
+  const headingRest = copy.processSectionHeadingRest.trim();
+  const heading =
+    headingRest && !/^works$/i.test(headingRest)
+      ? `${copy.processSectionHeadingLead} ${headingRest}`
+      : copy.processSectionHeadingLead;
 
   useEffect(() => {
     const items = stepRefs.current.filter(Boolean) as HTMLLIElement[];
     if (items.length === 0) return;
 
     const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    if (prefersReducedMotion || !("IntersectionObserver" in window)) {
-      queueMicrotask(() => setActiveThroughIndex(items.length - 1));
+    if (prefersReducedMotion) {
+      setActivatedSteps(Array.from({ length: items.length }, () => true));
       return;
     }
 
-    const observer = new IntersectionObserver(
-      (entries) => {
-        setActiveThroughIndex((prev) => {
-          let next = prev;
-          for (const entry of entries) {
-            if (!entry.isIntersecting) continue;
-            const index = items.indexOf(entry.target as HTMLLIElement);
-            if (index >= 0) next = Math.max(next, index);
-          }
-          return next;
-        });
-      },
-      { root: null, threshold: 0.35, rootMargin: "-8% 0px -35% 0px" },
-    );
+    let raf = 0;
+    let isFirstSync = true;
+    lastScrollYRef.current = window.scrollY;
 
-    items.forEach((el) => observer.observe(el));
-    return () => observer.disconnect();
+    const syncActivatedSteps = () => {
+      const scrollY = window.scrollY;
+      const scrollingDown = isFirstSync ? true : scrollY >= lastScrollYRef.current;
+      isFirstSync = false;
+      lastScrollYRef.current = scrollY;
+
+      const activateLine = window.innerHeight * 0.68;
+
+      setActivatedSteps((prev) => {
+        const next =
+          prev.length === items.length ? [...prev] : Array.from({ length: items.length }, () => false);
+        let changed = prev.length !== items.length;
+
+        for (let i = 0; i < items.length; i++) {
+          const rect = items[i]!.getBoundingClientRect();
+          const { top, bottom } = rect;
+
+          if (scrollingDown) {
+            if (top < activateLine && bottom > 0 && !next[i]) {
+              next[i] = true;
+              changed = true;
+            }
+            continue;
+          }
+
+          if ((top > activateLine || bottom < 0) && next[i]) {
+            for (let j = i; j < items.length; j++) {
+              if (next[j]) {
+                next[j] = false;
+                changed = true;
+              }
+            }
+            break;
+          }
+        }
+
+        return changed ? next : prev;
+      });
+    };
+
+    const scheduleSync = () => {
+      cancelAnimationFrame(raf);
+      raf = requestAnimationFrame(syncActivatedSteps);
+    };
+
+    scheduleSync();
+    window.addEventListener("scroll", scheduleSync, { passive: true });
+    window.addEventListener("resize", scheduleSync, { passive: true });
+
+    return () => {
+      cancelAnimationFrame(raf);
+      window.removeEventListener("scroll", scheduleSync);
+      window.removeEventListener("resize", scheduleSync);
+    };
   }, [processSteps.length]);
 
   return (
     <section
       ref={sectionRef}
-      className={`home-section-viewport home-section-viewport--center relative overflow-hidden section-pad bg-zen-rice text-zen-espresso lg:py-0 ${animateClass}`}
+      className={`relative overflow-hidden bg-zen-rice py-16 text-zen-espresso md:py-24 lg:py-28 xl:py-32 ${animateClass}`}
       aria-labelledby="process-heading"
     >
-      <HomeSectionGridDecor placement="bottom-right" />
       <div className="shell relative z-10">
-        <div className="grid gap-12 lg:grid-cols-[minmax(0,2fr)_minmax(0,3fr)] lg:gap-14 xl:gap-20">
-          <div className="flex flex-col justify-between gap-10 lg:min-h-[32rem]">
-            <div className="home-reveal home-reveal-d1 text-center lg:text-left">
-              <p className="section-eyebrow">{copy.processSectionEyebrow}</p>
-              <h2
-                id="process-heading"
-                className="mx-auto mt-2 max-w-xl font-heading text-3xl font-bold leading-[1.1] tracking-tight text-zen-espresso sm:text-4xl md:text-5xl lg:mx-0 lg:text-[3.25rem]"
-              >
-                How Our Property Management Meridian{" "}
-                <span className="text-zen-crimson">Process</span> Works
-              </h2>
-              <HomeActionButtons centered />
-            </div>
-
-            <div className="home-reveal home-reveal-d3 flex flex-col items-center gap-4 text-center lg:flex-row lg:items-start lg:gap-5 lg:text-left">
-              <div className="flex shrink-0 items-center justify-center lg:justify-start">
-                {processAvatars.map((review, idx) => (
-                  <div
-                    key={review.id}
-                    className={`relative h-10 w-10 overflow-hidden rounded-full border-2 border-zen-rice bg-zen-sand/40 sm:h-11 sm:w-11 ${
-                      idx > 0 ? "-ml-3" : ""
-                    }`}
-                  >
-                    <Image
-                      src={review.image}
-                      alt=""
-                      fill
-                      className="object-cover"
-                      sizes="44px"
-                      unoptimized
-                    />
-                  </div>
-                ))}
-              </div>
-              <div className="min-w-0">
-                <ProcessStarRow className="mb-2" />
-                <p className="mx-auto max-w-[16rem] text-sm font-medium leading-relaxed text-zen-espresso sm:max-w-xs sm:text-[0.95rem] lg:mx-0">
-                  {PROCESS_TRUST_LINE}
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <ol className="home-reveal home-reveal-right home-reveal-d4 border-t border-zen-sand/80">
-            {processSteps.map((step, index) => {
-              const stepActive = index <= activeThroughIndex;
-              return (
-                <li
-                  key={step.title}
-                  ref={(el) => {
-                    stepRefs.current[index] = el;
-                  }}
-                  className={`grid grid-cols-[auto_minmax(0,1fr)] gap-4 border-zen-sand/80 py-8 sm:gap-6 sm:py-10 ${
-                    index < processSteps.length - 1 ? "border-b" : ""
-                  }`}
-                >
-                  <span
-                    className={`flex h-11 w-11 shrink-0 items-center justify-center rounded-full border text-sm font-semibold tabular-nums transition-colors duration-300 ${
-                      stepActive
-                        ? "border-zen-crimson bg-zen-crimson text-white"
-                        : "border-zen-sand bg-zen-rice text-zen-taupe"
-                    }`}
-                    aria-hidden="true"
-                  >
-                    {step.step}
-                  </span>
-                  <div>
-                    <h3 className="font-heading text-lg font-bold text-zen-espresso sm:text-xl">{step.title}</h3>
-                    <p className="mt-2 text-sm leading-relaxed text-zen-taupe sm:text-base">{step.body}</p>
-                  </div>
-                </li>
-              );
-            })}
-          </ol>
+        <div className="home-reveal home-reveal-d1 mx-auto max-w-3xl text-center">
+          <p className="section-eyebrow mx-auto">{copy.processSectionEyebrow}</p>
+          <h2
+            id="process-heading"
+            className="font-heading text-4xl font-bold leading-[1.08] tracking-tight text-zen-espresso sm:text-5xl md:text-[3.375rem]"
+          >
+            {highlightTextPhrase(heading, "Bring Your Project to Life")}
+          </h2>
+          {copy.processSectionSubtext.trim() ? (
+            <p className="mx-auto mt-4 max-w-3xl text-base leading-relaxed text-zen-taupe sm:text-lg">
+              {copy.processSectionSubtext}
+            </p>
+          ) : null}
         </div>
+
+        <ol className="home-reveal home-reveal-d2 mx-auto mt-10 grid max-w-5xl grid-cols-1 md:mt-14 md:grid-cols-2 lg:mt-16 xl:max-w-6xl">
+          {processSteps.map((step, index) => {
+            const stepActive = activatedSteps[index] ?? false;
+
+            return (
+              <li
+                key={step.title}
+                ref={(el) => {
+                  stepRefs.current[index] = el;
+                }}
+                className={`home-reveal home-reveal-d${Math.min(index + 3, 8)} ${processCellBorderClass(index, processSteps.length)}`}
+              >
+                <span
+                  className={`block font-heading text-[clamp(3.5rem,11vw,6.75rem)] font-bold leading-[0.9] tracking-tighter transition-colors duration-500 ease-out ${
+                    stepActive ? "text-zen-gold" : "text-zen-crimson"
+                  }`}
+                  aria-hidden="true"
+                >
+                  {step.step}
+                </span>
+                <h3 className="mt-4 font-heading text-xl font-bold text-zen-espresso sm:text-2xl">
+                  {step.title}
+                </h3>
+                <p className="mt-3 max-w-md text-sm leading-relaxed text-zen-taupe sm:text-base">
+                  {step.body}
+                </p>
+              </li>
+            );
+          })}
+        </ol>
       </div>
     </section>
   );

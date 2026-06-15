@@ -1,5 +1,5 @@
 /**
- * Process Hatz Court Builders source photos → public/images/hcb/*.webp (≤2MB, SEO filenames).
+ * Process Hatz Court Builders source photos → public/images/hcb/*.jpg (high quality, SEO filenames).
  * Run: node scripts/process-hcb-photos.mjs
  */
 import fs from "node:fs";
@@ -9,8 +9,9 @@ import sharp from "sharp";
 const SOURCE_DIR = path.resolve("c:/Users/Lenovo/Downloads/HCB Photos");
 const OUT_DIR = path.resolve("public/images/hcb");
 const SUFFIX = "Boise ID - Hatz Court Builders";
-const MAX_BYTES = 2 * 1024 * 1024;
-const MAX_WIDTH = 2400;
+const MAX_BYTES = 3 * 1024 * 1024;
+const MAX_WIDTH = 4000;
+const JPEG_QUALITY = 92;
 
 function slugify(text) {
   return text
@@ -39,34 +40,44 @@ function extractDescriptionFromFilename(name) {
 }
 
 function outputFilename(description) {
-  return `${slugify(description)}-${slugify(SUFFIX)}.webp`;
+  return `${slugify(description)}-${slugify(SUFFIX)}.jpg`;
 }
 
-async function encodeUnderLimit(sharpInstance) {
-  let quality = 85;
-  let width = MAX_WIDTH;
-  let buffer = await sharpInstance
-    .clone()
-    .resize({ width, withoutEnlargement: true })
-    .webp({ quality, effort: 4 })
-    .toBuffer();
-  for (let pass = 0; buffer.length > MAX_BYTES && pass < 28; pass++) {
-    if (quality > 40) quality -= 4;
-    else width = Math.max(960, Math.round(width * 0.9));
-    buffer = await sharpInstance
-      .clone()
-      .resize({ width, withoutEnlargement: true })
-      .webp({ quality, effort: 4 })
-      .toBuffer();
+async function encodeJpeg(sharpInstance) {
+  const meta = await sharpInstance.metadata();
+  let pipeline = sharpInstance.clone().rotate();
+
+  if (meta.width && meta.width > MAX_WIDTH) {
+    pipeline = pipeline.resize({ width: MAX_WIDTH, withoutEnlargement: true });
   }
+
+  let quality = JPEG_QUALITY;
+  let buffer = await pipeline.jpeg({ quality, mozjpeg: true }).toBuffer();
+
+  for (let pass = 0; buffer.length > MAX_BYTES && pass < 12; pass++) {
+    quality = Math.max(80, quality - 2);
+    buffer = await pipeline.jpeg({ quality, mozjpeg: true }).toBuffer();
+  }
+
   if (buffer.length > MAX_BYTES) {
-    throw new Error(`Could not compress below 2MB (got ${buffer.length} bytes)`);
+    throw new Error(`Could not compress below 3MB (got ${buffer.length} bytes)`);
   }
+
   return buffer;
+}
+
+function removeLegacyOutputs() {
+  for (const file of fs.readdirSync(OUT_DIR)) {
+    if (/\.webp$/i.test(file)) {
+      fs.unlinkSync(path.join(OUT_DIR, file));
+    }
+  }
 }
 
 async function main() {
   fs.mkdirSync(OUT_DIR, { recursive: true });
+  removeLegacyOutputs();
+
   const sources = fs.readdirSync(SOURCE_DIR).filter((f) => /\.(jpe?g|png|heic|webp)$/i.test(f));
   const manifest = [];
 
@@ -78,7 +89,7 @@ async function main() {
 
     try {
       const input = sharp(srcPath, { failOn: "none" }).rotate();
-      const buffer = await encodeUnderLimit(input);
+      const buffer = await encodeJpeg(input);
       fs.writeFileSync(outPath, buffer);
 
       const webPath = `/images/hcb/${outName}`;
@@ -103,7 +114,7 @@ export type HcbGalleryImagePath = (typeof HCB_GALLERY_IMAGE_PATHS)[number];
 
 export function hcbImageAlt(imagePath: string): string {
   const filename = imagePath.split("/").pop() ?? "";
-  const stem = filename.replace(/\\.webp$/i, "");
+  const stem = filename.replace(/\\.(webp|jpe?g|png)$/i, "");
   const suf = \`-\${slugifySuffix(HCB_SEO_FILENAME_SUFFIX)}\`;
   const i = stem.endsWith(suf) ? stem.length - suf.length : -1;
   const kw = i === -1 ? stem : stem.slice(0, i);

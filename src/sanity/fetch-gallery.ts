@@ -1,5 +1,6 @@
 import type { GalleryContent, GalleryImageItem, GalleryStatItem } from "@/lib/gallery-content";
 import { getStaticGalleryContent } from "@/components/gallery/site-data";
+import { normalizeHcbImagePath } from "@/lib/hcb-image-path";
 import { getSanityClient } from "./client";
 import { galleryPageQuery } from "./queries";
 
@@ -27,7 +28,7 @@ function isNonEmpty<T>(arr: T[] | null | undefined): arr is T[] {
 function takeImageItem(item: Partial<GalleryImageItem> | null | undefined): GalleryImageItem | null {
   if (!item?.image || !item?.alt) return null;
   return {
-    image: item.image,
+    image: normalizeHcbImagePath(item.image),
     alt: item.alt,
     caption: item.caption,
   };

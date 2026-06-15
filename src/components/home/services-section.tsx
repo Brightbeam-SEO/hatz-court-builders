@@ -21,7 +21,7 @@ export function ServicesSection({ layout = "home" }: { layout?: "home" | "about"
 
     const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     if (prefersReducedMotion || !("IntersectionObserver" in window)) {
-      queueMicrotask(() => setServicesRevealed(true));
+      setServicesRevealed(true);
       return;
     }
 
@@ -43,7 +43,7 @@ export function ServicesSection({ layout = "home" }: { layout?: "home" | "about"
     <section
       ref={sectionRef}
       id="services"
-      className={`${layout === "home" ? "home-section-viewport " : ""}relative z-20 bg-zen-crimson py-20 text-white services-scroll-animate md:py-28 lg:py-32 ${
+      className={`${layout === "home" ? "home-section-viewport " : ""}relative z-20 bg-zen-espresso py-20 text-white services-scroll-animate md:py-28 lg:py-32 ${
         servicesRevealed ? "services-revealed" : ""
       }`}
     >
@@ -52,7 +52,7 @@ export function ServicesSection({ layout = "home" }: { layout?: "home" | "about"
           <div className="flex min-h-0 flex-col gap-8 lg:gap-10 lg:self-stretch">
             <div className="services-intro-reveal services-intro-reveal-title shrink-0 text-center lg:text-left">
               <p className="section-eyebrow mx-auto !text-white lg:mx-0">Our Services</p>
-              <h2 className="mx-auto mt-2 max-w-xl font-heading text-3xl font-bold leading-[1.1] tracking-tight text-white sm:text-4xl md:text-5xl lg:mx-0 lg:text-[3.25rem]">
+              <h2 className="mx-auto mt-2 max-w-xl font-heading text-4xl font-bold leading-[1.1] tracking-tight text-white sm:text-5xl md:text-[3.375rem] lg:mx-0 lg:text-[3.75rem]">
                 {copy.servicesHeading}
               </h2>
               <div className="services-intro-reveal services-intro-reveal-copy mt-6 flex flex-col items-center gap-6 lg:items-start">

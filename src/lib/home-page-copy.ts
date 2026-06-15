@@ -35,7 +35,11 @@ export type HomePageCopy = {
   processSectionSubtext: string;
   trustMarqueeHeading: string;
   trustMarqueeSubtext: string;
+  serviceAreaEyebrow: string;
   serviceAreaHeading: string;
+  serviceAreaSubheading: string;
+  serviceAreaDescriptionIdaho: string;
+  serviceAreaDescriptionArizona: string;
   serviceAreaBody: string;
   faqHeadingLine1: string;
   faqHeadingLine2: string;
@@ -44,6 +48,7 @@ export type HomePageCopy = {
   faqIntroEmphasis: string;
   faqIntroAfterEmphasis: string;
   faqIntroSubtext: string;
+  contactEyebrow: string;
   contactHeading: string;
   contactSubtext: string;
   ctaCallVerb: string;
@@ -103,41 +108,54 @@ export const defaultHomePageCopy: HomePageCopy = {
   servicesIntro:
     "Hatz Court Builders builds, resurfaces, repairs, and designs custom athletic courts for homes, schools, parks, recreation spaces, and commercial properties.",
   servicesExploreLabel: "Learn more",
-  closingShowcaseEyebrow: "Why Hatz Court Builders",
-  closingShowcaseHeading: "One Stop Shop for Every Court Surface & Component",
-  closingShowcaseBragLine: "★★★★★",
-  closingShowcaseBragSubline: "Trusted by homeowners, schools, and parks across Idaho & Arizona",
+  closingShowcaseEyebrow: "Why Choose Hatz",
+  closingShowcaseHeading: "A One-Stop Court Builder for Every Surface, Sport, and Space",
+  closingShowcaseBragLine: "",
+  closingShowcaseBragSubline: "",
   closingShowcaseBody:
-    "Founded June 19, 2024, Hatz Court Builders serves Boise, Meridian, Nampa, Eagle, and communities across Idaho — plus Phoenix, Scottsdale, Mesa, Gilbert, Chandler, and the greater Arizona metro. Licensed Idaho Public Works #9471850. We build everything from backyard pickleball courts to large multi-court facilities.",
+    "Hatz Court Builders gives homeowners, schools, parks, and commercial properties one team for court design, construction, resurfacing, components, and finishing details.",
   closingShowcaseBullets: [
-    "All Surface Types — Acrylic, Modular, Hardwood, Turf & More",
-    "Pickleball, Basketball, Tennis & Multi-Use Courts",
-    "Court Resurfacing, Repairs & Line Striping",
-    "Custom Logos, Lighting, Fencing & Site Prep",
-    "Residential & Commercial Design-Build",
-    "Cushioned & Standard Hardcourt Acrylic Options",
+    "Custom Court Design",
+    "All Surface Types",
+    "Residential Court Construction",
+    "Commercial Court Construction",
+    "Pickleball Court Specialists",
+    "Tennis Court Construction",
+    "Basketball Court Construction",
+    "Multi-Use Court Layouts",
+    "Resurfacing & Repairs",
+    "Fencing, Lighting & Components",
   ],
-  processSectionEyebrow: "Our Process",
-  processSectionHeadingLead: "How We Build Your Court",
+  processSectionEyebrow: "Our Court Construction Process",
+  processSectionHeadingLead: "How Our Court Builders Bring Your Project to Life",
   processSectionHeadingRest: "",
-  processSectionSubtext: "From consultation to your first game",
-  trustMarqueeHeading: "See Why Clients Trust Hatz Court Builders",
+  processSectionSubtext:
+    "From the first site visit to the final walkthrough, Hatz Court Builders handles court design, surfacing, construction, and finishing for residential and commercial projects in Boise, Scottsdale, and surrounding areas.",
+  trustMarqueeHeading: "Trusted Court Builders for Homes, Schools, and Parks",
   trustMarqueeSubtext:
-    "Homeowners, parks & rec departments, and schools choose us for quality surfacing, honest guidance, and courts built to last.",
-  serviceAreaHeading: "Boise & Scottsdale · Idaho & Arizona Service Areas",
+    "Hatz Court Builders helps residential and commercial clients create high-quality courts with the right surface, layout, equipment, and finishing details for long-term play.",
+  serviceAreaEyebrow: "Service Areas",
+  serviceAreaHeading: "Court Builders Serving Boise & Scottsdale",
+  serviceAreaSubheading: "",
+  serviceAreaDescriptionIdaho:
+    "Custom court construction for homes, schools, parks, and commercial properties across Idaho.",
+  serviceAreaDescriptionArizona:
+    "High-quality tennis, basketball, pickleball, and multi-use court construction across Arizona.",
   serviceAreaBody:
     "Idaho: Boise, Meridian, Nampa, Caldwell, Eagle, Star, Kuna, Middleton, Twin Falls, McCall, Sun Valley, and more. Arizona: Phoenix, Scottsdale, Fountain Hills, Mesa, Gilbert, Chandler, Tempe, Peoria, Arcadia, and Anthem.",
-  faqHeadingLine1: "Answers From a Trusted Court Builder",
-  faqHeadingLine2: "in Boise & Scottsdale",
+  faqHeadingLine1: "Answers From a Trusted Court Builder in Boise & Scottsdale",
+  faqHeadingLine2: "",
   faqSubtext:
-    "Common questions about court construction, surfacing options, resurfacing, and our service areas in Idaho and Arizona.",
+    "Common questions about custom court construction, surface options, resurfacing, and residential and commercial court projects in Idaho and Arizona.",
   faqIntroBeforeEmphasis: "Have ",
   faqIntroEmphasis: "Questions",
   faqIntroAfterEmphasis: " About Your Court Project?",
   faqIntroSubtext:
     "Straight answers about surfaces, timelines, and service areas — so you can plan your court with confidence.",
-  contactHeading: "Request Your Court Estimate",
-  contactSubtext: "Tell us about your court project and we'll follow up promptly.",
+  contactEyebrow: "Contact Hatz Court Builders",
+  contactHeading: "Talk With Top Rated Court Builders in Boise & Scottsdale",
+  contactSubtext:
+    "Our court builders in Boise and Scottsdale will help you review your space, surface options, and next steps.",
   ctaCallVerb: "Call",
   ctaBookNowLabel: "Get A Court Estimate",
   contactFormSubmitLabel: "Submit",
@@ -202,6 +220,46 @@ export function isStaleLocalIntroTitleLine2(value: string | undefined): boolean 
 export function isStaleLocalIntroBody(value: string | undefined): boolean {
   if (!value?.trim()) return false;
   return STALE_LOCAL_INTRO_BODY.test(value);
+}
+
+const STALE_CONTACT_HEADING =
+  /speak with a meridian|property management expert|request your (court estimate|free consultation)/i;
+
+export function isStaleContactHeading(value: string | undefined): boolean {
+  if (!value?.trim()) return false;
+  return isStaleZenHeroCopy(value) || STALE_CONTACT_HEADING.test(value);
+}
+
+const STALE_CONTACT_SUBTEXT =
+  /tell us about your court project and we'll follow up promptly/i;
+
+export function isStaleContactSubtext(value: string | undefined): boolean {
+  if (!value?.trim()) return false;
+  return isStaleZenHeroCopy(value) || STALE_CONTACT_SUBTEXT.test(value);
+}
+
+const STALE_FAQ_SUBTEXT =
+  /common questions about court construction, surfacing options, resurfacing, and our service areas/i;
+
+export function isStaleFaqSubtext(value: string | undefined): boolean {
+  if (!value?.trim()) return false;
+  return isStaleZenHeroCopy(value) || STALE_FAQ_SUBTEXT.test(value);
+}
+
+const STALE_SERVICE_AREA_HEADING =
+  /meridian home base|treasure valley service area|court construction throughout idaho/i;
+
+export function isStaleServiceAreaHeading(value: string | undefined): boolean {
+  if (!value?.trim()) return false;
+  return isStaleZenHeroCopy(value) || STALE_SERVICE_AREA_HEADING.test(value);
+}
+
+const STALE_CLOSING_SHOWCASE_COPY =
+  /locally owned|husband & wife|personally managed|long-term rental|property management|greenbelt|one stop shop for every court surface|founded june 19, 2024/i;
+
+export function isStaleClosingShowcaseCopy(value: string | undefined): boolean {
+  if (!value?.trim()) return false;
+  return isStaleZenHeroCopy(value) || STALE_CLOSING_SHOWCASE_COPY.test(value);
 }
 
 export function isStaleZenHeroTrustSignal(signal: HomeHeroTrustSignal): boolean {
@@ -283,24 +341,41 @@ export function mergeHomePageCopy(
   ) {
     assign("servicesExploreLabel", remote.servicesExploreLabel);
   }
-  if (!isStaleZenHeroCopy(remote.closingShowcaseEyebrow)) {
+  if (
+    !isStaleZenHeroCopy(remote.closingShowcaseEyebrow) &&
+    !isStaleClosingShowcaseCopy(remote.closingShowcaseEyebrow)
+  ) {
     assign("closingShowcaseEyebrow", remote.closingShowcaseEyebrow);
   }
-  if (!isStaleZenHeroCopy(remote.closingShowcaseHeading)) {
+  if (
+    !isStaleZenHeroCopy(remote.closingShowcaseHeading) &&
+    !isStaleClosingShowcaseCopy(remote.closingShowcaseHeading)
+  ) {
     assign("closingShowcaseHeading", remote.closingShowcaseHeading);
   }
-  if (!isStaleZenHeroCopy(remote.closingShowcaseBragLine)) {
+  if (
+    !isStaleZenHeroCopy(remote.closingShowcaseBragLine) &&
+    !isStaleClosingShowcaseCopy(remote.closingShowcaseBragLine)
+  ) {
     assign("closingShowcaseBragLine", remote.closingShowcaseBragLine);
   }
-  if (!isStaleZenHeroCopy(remote.closingShowcaseBragSubline)) {
+  if (
+    !isStaleZenHeroCopy(remote.closingShowcaseBragSubline) &&
+    !isStaleClosingShowcaseCopy(remote.closingShowcaseBragSubline)
+  ) {
     assign("closingShowcaseBragSubline", remote.closingShowcaseBragSubline);
   }
-  if (!isStaleZenHeroCopy(remote.closingShowcaseBody)) assign("closingShowcaseBody", remote.closingShowcaseBody);
+  if (
+    !isStaleZenHeroCopy(remote.closingShowcaseBody) &&
+    !isStaleClosingShowcaseCopy(remote.closingShowcaseBody)
+  ) {
+    assign("closingShowcaseBody", remote.closingShowcaseBody);
+  }
   if (remote.closingShowcaseBullets && remote.closingShowcaseBullets.length > 0) {
     const bullets = remote.closingShowcaseBullets
       .map((b) => b.trim())
       .filter(Boolean)
-      .filter((b) => !isStaleZenHeroCopy(b));
+      .filter((b) => !isStaleZenHeroCopy(b) && !isStaleClosingShowcaseCopy(b));
     if (bullets.length > 0) next.closingShowcaseBullets = bullets;
   }
   if (!isStaleZenHeroCopy(remote.processSectionEyebrow)) {
@@ -309,7 +384,7 @@ export function mergeHomePageCopy(
   if (!isStaleZenHeroCopy(remote.processSectionHeadingLead)) {
     assign("processSectionHeadingLead", remote.processSectionHeadingLead);
   }
-  if (!isStaleZenHeroCopy(remote.processSectionHeadingRest)) {
+  if (!isStaleZenHeroCopy(remote.processSectionHeadingRest) && !/^works$/i.test(remote.processSectionHeadingRest?.trim() ?? "")) {
     assign("processSectionHeadingRest", remote.processSectionHeadingRest);
   }
   if (!isStaleZenHeroCopy(remote.processSectionSubtext)) {
@@ -321,17 +396,25 @@ export function mergeHomePageCopy(
   if (!isStaleZenHeroCopy(remote.trustMarqueeSubtext)) {
     assign("trustMarqueeSubtext", remote.trustMarqueeSubtext);
   }
-  if (!isStaleZenHeroCopy(remote.serviceAreaHeading)) assign("serviceAreaHeading", remote.serviceAreaHeading);
+  if (!isStaleServiceAreaHeading(remote.serviceAreaHeading)) assign("serviceAreaHeading", remote.serviceAreaHeading);
+  if (!isStaleZenHeroCopy(remote.serviceAreaSubheading)) assign("serviceAreaSubheading", remote.serviceAreaSubheading);
+  if (!isStaleZenHeroCopy(remote.serviceAreaDescriptionIdaho)) {
+    assign("serviceAreaDescriptionIdaho", remote.serviceAreaDescriptionIdaho);
+  }
+  if (!isStaleZenHeroCopy(remote.serviceAreaDescriptionArizona)) {
+    assign("serviceAreaDescriptionArizona", remote.serviceAreaDescriptionArizona);
+  }
   if (!isStaleZenHeroCopy(remote.serviceAreaBody)) assign("serviceAreaBody", remote.serviceAreaBody);
   if (!isStaleZenHeroCopy(remote.faqHeadingLine1)) assign("faqHeadingLine1", remote.faqHeadingLine1);
   if (!isStaleZenHeroCopy(remote.faqHeadingLine2)) assign("faqHeadingLine2", remote.faqHeadingLine2);
-  if (!isStaleZenHeroCopy(remote.faqSubtext)) assign("faqSubtext", remote.faqSubtext);
+  if (!isStaleFaqSubtext(remote.faqSubtext)) assign("faqSubtext", remote.faqSubtext);
   if (!isStaleZenHeroCopy(remote.faqIntroBeforeEmphasis)) assign("faqIntroBeforeEmphasis", remote.faqIntroBeforeEmphasis);
   if (!isStaleZenHeroCopy(remote.faqIntroEmphasis)) assign("faqIntroEmphasis", remote.faqIntroEmphasis);
   if (!isStaleZenHeroCopy(remote.faqIntroAfterEmphasis)) assign("faqIntroAfterEmphasis", remote.faqIntroAfterEmphasis);
   if (!isStaleZenHeroCopy(remote.faqIntroSubtext)) assign("faqIntroSubtext", remote.faqIntroSubtext);
-  if (!isStaleZenHeroCopy(remote.contactHeading)) assign("contactHeading", remote.contactHeading);
-  if (!isStaleZenHeroCopy(remote.contactSubtext)) assign("contactSubtext", remote.contactSubtext);
+  if (!isStaleContactHeading(remote.contactHeading)) assign("contactHeading", remote.contactHeading);
+  if (!isStaleContactSubtext(remote.contactSubtext)) assign("contactSubtext", remote.contactSubtext);
+  if (remote.contactEyebrow?.trim()) assign("contactEyebrow", remote.contactEyebrow);
   assign("ctaCallVerb", remote.ctaCallVerb);
   if (!isStaleZenHeroCopy(remote.ctaBookNowLabel) && remote.ctaBookNowLabel?.trim() !== "Book Now") {
     assign("ctaBookNowLabel", remote.ctaBookNowLabel);

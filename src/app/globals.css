@@ -62,6 +62,8 @@ html[data-theme="light"] {
   --color-sol-teal: var(--sol-teal);
   --color-sol-blue: var(--sol-blue);
   --color-sol-muted: var(--sol-muted);
+  --animate-marquee: marquee var(--duration) infinite linear;
+  --animate-marquee-vertical: marquee-vertical var(--duration) linear infinite;
 }
 
 * {
@@ -341,30 +343,62 @@ a.blog-sidebar-cta-secondary.btn-call:active {
 }
 
 /* Full-bleed service area map (Leaflet) */
-.service-area-map-layer .service-area-leaflet-map {
-  z-index: 0;
-  background: var(--zen-sand);
+.service-area-map-layer {
+  --service-area-map-off-white: #f7f5f0;
 }
 
+.service-area-map-layer .service-area-leaflet-map,
+.service-area-map-layer .leaflet-container,
+.service-area-map-layer--dark .service-area-leaflet-map,
+.service-area-map-layer--dark .leaflet-container {
+  background: var(--service-area-map-off-white) !important;
+}
+
+/* Wash tiles toward #F7F5F0 — off-white shows through + warm cream overlay on tile pane. */
 .service-area-map-layer .leaflet-tile-pane {
-  filter: sepia(0.16) saturate(0.65) brightness(0.93) contrast(1.1);
+  filter: sepia(0.14) saturate(0.06) brightness(1.06) contrast(0.96);
 }
 
-/* Black section frame; map tiles use light zen-rice tone (see --dark tile filter). */
-.service-area-map-layer--dark .service-area-leaflet-map {
-  background: var(--zen-rice);
+.service-area-map-layer .leaflet-tile-pane::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  background: var(--service-area-map-off-white);
+  opacity: 0.42;
+  mix-blend-mode: multiply;
+}
+
+.service-area-map-layer .leaflet-tile {
+  opacity: 0.58;
 }
 
 .service-area-map-layer--dark .leaflet-tile-pane {
-  filter: saturate(0.42) brightness(0.94) contrast(1.32);
+  filter: sepia(0.14) saturate(0.06) brightness(1.06) contrast(0.96);
+}
+
+.service-area-map-layer--dark .leaflet-tile-pane::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  background: var(--service-area-map-off-white);
+  opacity: 0.42;
+  mix-blend-mode: multiply;
+}
+
+.service-area-map-layer--dark .leaflet-tile {
+  opacity: 0.58;
 }
 
 /* Smooth zen-rice → map fade below the service-area heading (many stops avoid banding). */
 .service-area-top-fade {
   background: linear-gradient(
     180deg,
-    var(--zen-rice) 0%,
-    var(--zen-rice) 34%,
+    #f7f5f0 0%,
+    #f7f5f0 34%,
     rgb(247 245 240 / 0.98) 42%,
     rgb(247 245 240 / 0.94) 50%,
     rgb(247 245 240 / 0.88) 58%,
@@ -377,11 +411,26 @@ a.blog-sidebar-cta-secondary.btn-call:active {
   );
 }
 
+@media (min-width: 1024px) {
+  .service-area-top-fade {
+    background: linear-gradient(
+      180deg,
+      #f7f5f0 0%,
+      #f7f5f0 24%,
+      rgb(247 245 240 / 0.92) 42%,
+      rgb(247 245 240 / 0.72) 58%,
+      rgb(247 245 240 / 0.4) 74%,
+      rgb(247 245 240 / 0.12) 88%,
+      transparent 100%
+    );
+  }
+}
+
 .service-area-map-layer .leaflet-control-zoom a,
 .service-area-map-layer--dark .leaflet-control-zoom a {
   border-color: rgb(21 21 21 / 0.12);
   color: var(--zen-espresso);
-  background: var(--zen-rice);
+  background: #f7f5f0;
 }
 
 .service-area-map-layer .leaflet-control-zoom a:hover,
@@ -392,13 +441,7 @@ a.blog-sidebar-cta-secondary.btn-call:active {
 
 .service-area-map-layer .leaflet-control-attribution,
 .service-area-map-layer--dark .leaflet-control-attribution {
-  font-size: 0.65rem;
-  color: var(--zen-taupe);
-  background: rgb(247 245 240 / 0.92);
-}
-
-.service-area-map-layer--dark .leaflet-control-attribution a {
-  color: var(--zen-espresso);
+  display: none !important;
 }
 
 .service-area-map-pin-wrap {
@@ -619,6 +662,78 @@ a.blog-sidebar-cta-secondary.btn-call:active {
     outline-offset: 2px;
   }
 
+  .service-area-region-toggle {
+    display: inline-flex;
+    max-width: 100%;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: center;
+    gap: 0.25rem;
+    padding: 0.375rem;
+    border-radius: 9999px;
+    border: 2px solid var(--zen-espresso);
+    background-color: #ffffff;
+    box-shadow: 4px 4px 0 var(--zen-espresso);
+  }
+
+  .service-area-region-toggle__option {
+    box-sizing: border-box;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 9.5rem;
+    min-height: 2.75rem;
+    flex: 1 1 auto;
+    padding: 0.75rem 1.5rem;
+    font-family: var(--font-sans);
+    font-size: 0.875rem;
+    font-weight: 700;
+    line-height: 1.25;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    text-align: center;
+    border-radius: 9999px;
+    border: none;
+    background-color: transparent;
+    color: var(--zen-espresso);
+    cursor: pointer;
+    transition:
+      background-color 200ms ease,
+      color 200ms ease;
+    box-shadow: none;
+  }
+
+  .service-area-region-toggle__option:hover,
+  .service-area-region-toggle__option:focus-visible {
+    background-color: rgb(21 21 21 / 0.05);
+    outline: none;
+  }
+
+  .service-area-region-toggle__option[aria-pressed="true"] {
+    background-color: var(--zen-gold);
+    color: var(--zen-espresso);
+    transform: none;
+    box-shadow: none;
+  }
+
+  .service-area-region-toggle__option[aria-pressed="true"]:hover,
+  .service-area-region-toggle__option[aria-pressed="true"]:focus-visible {
+    background-color: var(--zen-gold);
+    outline: 2px solid var(--zen-espresso);
+    outline-offset: 2px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .service-area-region-toggle__option,
+    .service-area-region-toggle__option:hover,
+    .service-area-region-toggle__option:focus-visible,
+    .service-area-region-toggle__option[aria-pressed="true"],
+    .service-area-region-toggle__option[aria-pressed="true"]:hover,
+    .service-area-region-toggle__option[aria-pressed="true"]:focus-visible {
+      transition: background-color 200ms ease, color 200ms ease;
+    }
+  }
+
   .btn-call.btn-call-inverse,
   a.btn-call.btn-call-inverse,
   a.btn-call.btn-call-inverse:visited,
@@ -801,6 +916,24 @@ a.blog-sidebar-cta-secondary.btn-call:active {
   .boise-contact-testimonials-track,
   .boise-contact-testimonials-track--down {
     animation: none;
+  }
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-100% - var(--gap)));
+  }
+}
+
+@keyframes marquee-vertical {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(calc(-100% - var(--gap)));
   }
 }
 
@@ -1519,20 +1652,23 @@ html[data-theme="light"] .faq-answer-collapsed {
   color: var(--zen-taupe);
 }
 
-html[data-theme="light"] .faq-item-reveal[data-faq-open="false"] .faq-chevron {
+html[data-theme="light"] .faq-item-reveal[data-faq-open="false"]:not(:hover) .faq-chevron {
   color: rgb(184 155 106 / 0.85);
 }
 
-html[data-theme="light"] .faq-item-reveal[data-faq-open="true"] .faq-chevron {
-  color: rgb(21 21 21 / 0.75);
+html[data-theme="light"] .faq-item-reveal[data-faq-open="true"] .faq-chevron,
+html[data-theme="light"] .faq-item-reveal:hover .faq-chevron {
+  color: rgb(255 255 255 / 0.95);
 }
 
-html[data-theme="light"] .faq-item-reveal[data-faq-open="true"] .faq-answer {
-  color: var(--zen-taupe);
+html[data-theme="light"] .faq-item-reveal[data-faq-open="true"] .faq-answer,
+html[data-theme="light"] .faq-item-reveal:hover .faq-answer {
+  color: rgb(255 255 255 / 0.95);
 }
 
-html[data-theme="light"] .faq-item-reveal[data-faq-open="true"] button > span:first-child {
-  color: var(--zen-espresso);
+html[data-theme="light"] .faq-item-reveal[data-faq-open="true"] button > span:first-child,
+html[data-theme="light"] .faq-item-reveal:hover button > span:first-child {
+  color: rgb(255 255 255);
 }
 
 /* City / service landing FAQs — green outline; open state green panel with white text */
