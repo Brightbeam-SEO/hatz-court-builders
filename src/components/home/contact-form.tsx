@@ -98,7 +98,11 @@ export function ContactForm({
       ? "grid gap-3 md:grid-cols-2"
       : "grid gap-4 sm:grid-cols-2";
   const fullWidthClass = compactStack ? "" : compactInline ? "md:col-span-2" : "sm:col-span-2";
-  const phoneClass = compactFields ? labelClass : `${labelClass} sm:col-span-2`;
+  const messageLabelClass = compactInline
+    ? `${labelClass} md:col-span-2`
+    : compactStack
+      ? labelClass
+      : `${labelClass} ${fullWidthClass}`;
   const siteKey = process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY;
 
   const formatPhone = (value: string) => {
@@ -121,6 +125,7 @@ export function ContactForm({
       name: String(formData.get("name") ?? "").trim(),
       email: String(formData.get("email") ?? "").trim(),
       phone: String(formData.get("phone") ?? "").trim(),
+      city: String(formData.get("city") ?? "").trim(),
       message: String(formData.get("message") ?? "").trim() || fallbackMessage,
     };
 
@@ -192,7 +197,7 @@ export function ContactForm({
           required
         />
       </label>
-      <label className={phoneClass}>
+      <label className={labelClass}>
         Phone
         <input
           type="tel"
@@ -205,10 +210,20 @@ export function ContactForm({
           onChange={(e) => setPhone(formatPhone(e.target.value))}
         />
       </label>
+      <label className={labelClass}>
+        City
+        <input
+          type="text"
+          name="city"
+          autoComplete="address-level2"
+          className={fieldClass}
+          placeholder="Boise, ID"
+        />
+      </label>
       {defaultMessage ? (
         <input type="hidden" name="message" defaultValue={defaultMessage} />
       ) : compactFields ? (
-        <label className={labelClass}>
+        <label className={messageLabelClass}>
           Message
           <textarea
             name="message"
@@ -219,7 +234,7 @@ export function ContactForm({
           />
         </label>
       ) : (
-        <label className={`${labelClass} ${fullWidthClass}`}>
+        <label className={messageLabelClass}>
           How can we help you?
           <textarea
             name="message"

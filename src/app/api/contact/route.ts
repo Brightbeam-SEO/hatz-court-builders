@@ -5,6 +5,7 @@ type ContactPayload = {
   name?: string;
   email?: string;
   phone?: string;
+  city?: string;
   message?: string;
   recaptchaToken?: string;
   /** Shown in Zapier as "Form Name" (which page/placement sent the lead). */
@@ -41,6 +42,7 @@ export async function POST(request: NextRequest) {
   const name = (body.name ?? "").trim();
   const email = (body.email ?? "").trim();
   const phone = (body.phone ?? "").trim();
+  const city = (body.city ?? "").trim();
   const message = (body.message ?? "").trim();
   const recaptchaToken = (body.recaptchaToken ?? "").trim();
   const formNameRaw = (body.formName ?? "").trim().slice(0, 120);
@@ -118,6 +120,7 @@ export async function POST(request: NextRequest) {
   append("name", name);
   append("email", email);
   append("phone", phone);
+  append("city", city);
   append("message", message);
   append("Name", name);
   append("Email", email);
@@ -153,6 +156,7 @@ export async function POST(request: NextRequest) {
   }
   append("Page Title", pageTitle);
   append("Phone", phone);
+  append("City", city);
   append("Message", message);
   append("utm_source", "");
   append("utm_medium", "");
