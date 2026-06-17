@@ -19,7 +19,12 @@ export const ARIZONA_SERVICE_AREA_NAV_LINKS = [
   { label: "Tempe", href: "/court-builder-tempe-az/" },
 ] as const;
 
-export const SERVICE_AREA_NAV_GROUPS = [
+type ServiceAreaNavLink = { readonly label: string; readonly href: string };
+
+export const SERVICE_AREA_NAV_GROUPS: readonly {
+  readonly label: string;
+  readonly links: readonly ServiceAreaNavLink[];
+}[] = [
   {
     label: "Idaho",
     links: IDAHO_SERVICE_AREA_NAV_LINKS,
@@ -28,7 +33,10 @@ export const SERVICE_AREA_NAV_GROUPS = [
     label: "Arizona",
     links: ARIZONA_SERVICE_AREA_NAV_LINKS,
   },
-] as const;
+];
 
 /** Backwards-compatible flattened links list. */
-export const SERVICE_AREA_NAV_LINKS = SERVICE_AREA_NAV_GROUPS.flatMap((group) => group.links);
+export const SERVICE_AREA_NAV_LINKS: ServiceAreaNavLink[] = [
+  ...IDAHO_SERVICE_AREA_NAV_LINKS,
+  ...ARIZONA_SERVICE_AREA_NAV_LINKS,
+];
