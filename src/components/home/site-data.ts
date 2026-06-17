@@ -5,7 +5,7 @@ import { additionalReviewsPageTestimonials } from "@/lib/reviews-testimonials";
 import { DEFAULT_SOCIAL_LINKS } from "@/lib/business";
 import { gpmPick } from "@/lib/gpm-pick-gallery";
 
-const SERVICE_HREF = "/property-management-services/";
+const COURT_BUILDERS_HUB = "/court-builders-boise-id/";
 
 export const navItems = ["Court Construction"];
 
@@ -25,7 +25,7 @@ export const services = [
     image: gpmPick("pickleball court backyard modular tile"),
     hoverImage: gpmPick("backyard pickleball basketball dual sport court"),
     cardIcon: gpmPick("pickleball court green blue backyard"),
-    href: SERVICE_HREF,
+    href: COURT_BUILDERS_HUB,
   },
   {
     name: "Basketball court construction",
@@ -34,7 +34,7 @@ export const services = [
     image: gpmPick("basketball tile court modular hoop goal"),
     hoverImage: gpmPick("backyard gray basketball court installation"),
     cardIcon: gpmPick("basketball tile court custom logo branding"),
-    href: SERVICE_HREF,
+    href: COURT_BUILDERS_HUB,
   },
   {
     name: "Tennis court resurfacing",
@@ -43,7 +43,7 @@ export const services = [
     image: gpmPick("tennis court resurface blue green acrylic"),
     hoverImage: gpmPick("tennis court crack repair resurfacing"),
     cardIcon: gpmPick("tennis court side by side before after repair"),
-    href: SERVICE_HREF,
+    href: COURT_BUILDERS_HUB,
   },
   {
     name: "Multi-use court design-build",
@@ -52,7 +52,7 @@ export const services = [
     image: gpmPick("outdoor multi court pickleball basketball tennis"),
     hoverImage: gpmPick("modular court tile custom logo branding"),
     cardIcon: gpmPick("multi sport outdoor backyard court"),
-    href: SERVICE_HREF,
+    href: COURT_BUILDERS_HUB,
   },
 ];
 

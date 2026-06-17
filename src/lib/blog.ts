@@ -17,11 +17,12 @@ export {
 export const BLOG_GRID_PAGE_SIZE = 9;
 
 /** First featured slot on /blog is reserved for this slug via `blog/page.tsx`. */
-export const BLOG_FEATURED_LEAD_SLUG = "what-is-property-management";
+export const BLOG_FEATURED_LEAD_SLUG = "what-to-consider-before-building-a-custom-court-in-boise-or-scottsdale";
 
 /** Legacy slug → canonical slug (Sanity may still publish the old slug). */
 export const BLOG_SLUG_ALIASES: Record<string, string> = {
-  "property-management-meridian": "what-is-property-management",
+  "property-management-meridian": "what-to-consider-before-building-a-custom-court-in-boise-or-scottsdale",
+  "what-is-property-management": "what-to-consider-before-building-a-custom-court-in-boise-or-scottsdale",
 };
 
 /** Only these blog posts remain after the site trim. */

@@ -8,9 +8,7 @@ import { BlogHeroBand } from "@/components/blog/blog-hero-band";
 import { ContactForm } from "@/components/home/contact-form";
 import { useHomeContent } from "@/components/home/home-content-context";
 import { PageHeroCtaButtons } from "@/components/layout/page-hero-cta-buttons";
-import { SiteBreadcrumbs } from "@/components/layout/site-breadcrumbs";
 import { SiteFooterRegion } from "@/components/layout/site-footer-region";
-import { SiteHeader } from "@/components/layout/site-header";
 import { BUSINESS } from "@/lib/business";
 import { HOME_FOOTER_CONTACT_FORM_ID } from "@/lib/home-anchors";
 import { zenImageAlt } from "@/lib/zen-gallery-images";
@@ -105,12 +103,7 @@ function PricingContactSection() {
 export function PricingPage({ socialLinks }: { socialLinks: SocialLink[] }) {
   return (
     <div className="min-h-screen bg-zen-espresso text-white light:bg-transparent light:text-zen-espresso">
-      <header className="relative z-[200] isolate min-h-0 overflow-x-clip bg-zen-espresso text-white light:bg-transparent light:text-zen-espresso">
-        <SiteHeader anchorBase="/" />
-      </header>
-
       <main className="bg-zen-espresso pb-16 light:bg-transparent">
-        <SiteBreadcrumbs />
         <BlogHeroBand imageSrc={PRICING_HERO_IMAGE} imageAlt={zenImageAlt(PRICING_HERO_IMAGE)}>
           <div className="min-w-0 w-full max-w-3xl">
             <h1 className="font-heading text-4xl font-bold leading-tight text-white sm:text-5xl md:text-6xl">

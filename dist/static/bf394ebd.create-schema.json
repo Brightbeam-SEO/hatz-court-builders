@@ -1,0 +1,1835 @@
+[
+  {
+    "fields": [
+      {
+        "name": "siteTitle",
+        "type": "string",
+        "title": "Site title"
+      },
+      {
+        "name": "tagline",
+        "type": "string"
+      },
+      {
+        "name": "phone",
+        "type": "string"
+      },
+      {
+        "name": "email",
+        "type": "string"
+      },
+      {
+        "rows": 3,
+        "name": "address",
+        "type": "text"
+      },
+      {
+        "of": [
+          {
+            "fields": [
+              {
+                "name": "label",
+                "type": "string"
+              },
+              {
+                "validation": [
+                  {
+                    "level": "error",
+                    "rules": [
+                      {
+                        "flag": "uri",
+                        "constraint": {
+                          "options": {
+                            "scheme": [
+                              "/^http$/",
+                              "/^https$/"
+                            ],
+                            "allowRelative": false,
+                            "relativeOnly": false,
+                            "allowCredentials": false
+                          }
+                        }
+                      }
+                    ]
+                  }
+                ],
+                "name": "href",
+                "type": "url",
+                "title": "URL"
+              }
+            ],
+            "type": "object"
+          }
+        ],
+        "name": "socialLinks",
+        "type": "array",
+        "title": "Social links"
+      },
+      {
+        "fields": [
+          {
+            "name": "metaTitle",
+            "type": "string",
+            "title": "Meta title"
+          },
+          {
+            "rows": 3,
+            "name": "metaDescription",
+            "type": "text",
+            "title": "Meta description"
+          }
+        ],
+        "name": "defaultSeo",
+        "type": "object",
+        "title": "Default SEO"
+      }
+    ],
+    "name": "siteSettings",
+    "type": "document",
+    "title": "Site settings"
+  },
+  {
+    "fields": [
+      {
+        "description": "Internal name (optional).",
+        "name": "title",
+        "type": "string",
+        "title": "Label"
+      },
+      {
+        "options": {
+          "collapsible": true,
+          "collapsed": false
+        },
+        "description": "Hero headlines, section titles, body text, CTAs, and crimson-strip trust logos. Matches the live site when seeded.",
+        "fields": [
+          {
+            "name": "heroEyebrow",
+            "type": "string",
+            "title": "Hero eyebrow"
+          },
+          {
+            "name": "heroTitle",
+            "type": "string",
+            "title": "Hero headline"
+          },
+          {
+            "rows": 3,
+            "name": "heroSubtitle",
+            "type": "text",
+            "title": "Hero supporting text"
+          },
+          {
+            "name": "localIntroEyebrow",
+            "type": "string",
+            "title": "Intro — eyebrow"
+          },
+          {
+            "of": [
+              {
+                "fields": [
+                  {
+                    "name": "highlight",
+                    "type": "string",
+                    "title": "Big number / word"
+                  },
+                  {
+                    "name": "title",
+                    "type": "string",
+                    "title": "Label"
+                  }
+                ],
+                "type": "object"
+              }
+            ],
+            "name": "heroTrustSignals",
+            "type": "array",
+            "title": "Hero stat cards (right column)"
+          },
+          {
+            "name": "heroStripHeading",
+            "type": "string",
+            "title": "Crimson strip — heading"
+          },
+          {
+            "rows": 3,
+            "name": "heroStripSubheading",
+            "type": "text",
+            "title": "Crimson strip — supporting text"
+          },
+          {
+            "description": "Image paths under /public (e.g. /images/trust/google.png).",
+            "of": [
+              {
+                "fields": [
+                  {
+                    "description": "e.g. /images/trust/yelp.png",
+                    "name": "src",
+                    "type": "string",
+                    "title": "Image path"
+                  },
+                  {
+                    "name": "alt",
+                    "type": "string",
+                    "title": "Alt text"
+                  }
+                ],
+                "type": "object"
+              }
+            ],
+            "name": "heroTrustStripLogos",
+            "type": "array",
+            "title": "Crimson strip — scrolling trust logos"
+          },
+          {
+            "initialValue": "Call",
+            "description": "Shown as: “{this} {phone}”. Example: “Call”.",
+            "name": "ctaCallVerb",
+            "type": "string",
+            "title": "Call button — word before phone"
+          },
+          {
+            "initialValue": "Book Now",
+            "name": "ctaBookNowLabel",
+            "type": "string",
+            "title": "Book / secondary button label"
+          },
+          {
+            "initialValue": "Submit",
+            "name": "contactFormSubmitLabel",
+            "type": "string",
+            "title": "Contact form submit button"
+          },
+          {
+            "name": "localIntroTitleLine1",
+            "type": "string",
+            "title": "Intro — title line 1"
+          },
+          {
+            "name": "localIntroTitleLine2",
+            "type": "string",
+            "title": "Intro — title line 2"
+          },
+          {
+            "rows": 4,
+            "name": "localIntroBody",
+            "type": "text",
+            "title": "Intro — paragraph"
+          },
+          {
+            "name": "servicesHeading",
+            "type": "string",
+            "title": "Services section — heading"
+          },
+          {
+            "rows": 3,
+            "name": "servicesIntro",
+            "type": "text",
+            "title": "Services section — intro"
+          },
+          {
+            "name": "servicesExploreLabel",
+            "type": "string",
+            "title": "Services carousel — footer label"
+          },
+          {
+            "name": "closingShowcaseEyebrow",
+            "type": "string",
+            "title": "Showcase — small label"
+          },
+          {
+            "name": "closingShowcaseHeading",
+            "type": "string",
+            "title": "Showcase — heading"
+          },
+          {
+            "name": "closingShowcaseBragLine",
+            "type": "string",
+            "title": "Showcase — stars line"
+          },
+          {
+            "name": "closingShowcaseBragSubline",
+            "type": "string",
+            "title": "Showcase — under stars"
+          },
+          {
+            "rows": 4,
+            "name": "closingShowcaseBody",
+            "type": "text",
+            "title": "Showcase — paragraph"
+          },
+          {
+            "of": [
+              {
+                "type": "string"
+              }
+            ],
+            "name": "closingShowcaseBullets",
+            "type": "array",
+            "title": "Showcase — bullet list"
+          },
+          {
+            "name": "processSectionEyebrow",
+            "type": "string",
+            "title": "Process — eyebrow"
+          },
+          {
+            "description": "Shown with brush underline before the rest of the heading.",
+            "name": "processSectionHeadingLead",
+            "type": "string",
+            "title": "Process — emphasized part of heading"
+          },
+          {
+            "name": "processSectionHeadingRest",
+            "type": "string",
+            "title": "Process — rest of heading"
+          },
+          {
+            "name": "processSectionSubtext",
+            "type": "string",
+            "title": "Process — subtext"
+          },
+          {
+            "name": "trustMarqueeHeading",
+            "type": "string",
+            "title": "Testimonials band — heading"
+          },
+          {
+            "rows": 3,
+            "name": "trustMarqueeSubtext",
+            "type": "text",
+            "title": "Testimonials band — subtext"
+          },
+          {
+            "name": "serviceAreaHeading",
+            "type": "string",
+            "title": "Service area — heading"
+          },
+          {
+            "rows": 4,
+            "name": "serviceAreaBody",
+            "type": "text",
+            "title": "Service area — body"
+          },
+          {
+            "name": "faqHeadingLine1",
+            "type": "string",
+            "title": "FAQ band — heading line 1"
+          },
+          {
+            "name": "faqHeadingLine2",
+            "type": "string",
+            "title": "FAQ band — heading line 2 (crimson)"
+          },
+          {
+            "rows": 3,
+            "name": "faqSubtext",
+            "type": "text",
+            "title": "FAQ band — subtext"
+          },
+          {
+            "name": "faqIntroBeforeEmphasis",
+            "type": "string",
+            "title": "FAQ intro — text before emphasis word"
+          },
+          {
+            "name": "faqIntroEmphasis",
+            "type": "string",
+            "title": "FAQ intro — emphasized word"
+          },
+          {
+            "name": "faqIntroAfterEmphasis",
+            "type": "string",
+            "title": "FAQ intro — text after emphasis word"
+          },
+          {
+            "rows": 3,
+            "name": "faqIntroSubtext",
+            "type": "text",
+            "title": "FAQ intro — supporting text"
+          },
+          {
+            "name": "contactHeading",
+            "type": "string",
+            "title": "Contact section — heading"
+          },
+          {
+            "rows": 2,
+            "name": "contactSubtext",
+            "type": "text",
+            "title": "Contact section — supporting text"
+          }
+        ],
+        "name": "pageCopy",
+        "type": "object",
+        "title": "Homepage copy"
+      },
+      {
+        "of": [
+          {
+            "type": "string"
+          }
+        ],
+        "name": "navItems",
+        "type": "array",
+        "title": "Navigation labels"
+      },
+      {
+        "of": [
+          {
+            "type": "string"
+          }
+        ],
+        "name": "trustBarItems",
+        "type": "array",
+        "title": "Trust bar items"
+      },
+      {
+        "of": [
+          {
+            "fields": [
+              {
+                "name": "name",
+                "type": "string"
+              },
+              {
+                "name": "blurb",
+                "type": "text"
+              },
+              {
+                "description": "Public URL path, e.g. /images/services/pressure-washing.svg",
+                "name": "image",
+                "type": "string",
+                "title": "Illustration path"
+              },
+              {
+                "description": "Shown on hover, e.g. /images/services/pressure-washing-photo.jpg",
+                "name": "hoverImage",
+                "type": "string",
+                "title": "Photo path"
+              },
+              {
+                "description": "Small icon in the service card",
+                "name": "cardIcon",
+                "type": "string",
+                "title": "Card icon path"
+              }
+            ],
+            "type": "object"
+          }
+        ],
+        "name": "services",
+        "type": "array",
+        "title": "Service cards (grid)"
+      },
+      {
+        "description": "Horizontal scrolling cards on the red services band (name + image path under /public).",
+        "of": [
+          {
+            "fields": [
+              {
+                "name": "name",
+                "type": "string",
+                "title": "Title on card"
+              },
+              {
+                "description": "e.g. /services/foot-massage.webp",
+                "name": "image",
+                "type": "string",
+                "title": "Image path"
+              }
+            ],
+            "type": "object"
+          }
+        ],
+        "name": "servicesCarousel",
+        "type": "array",
+        "title": "Services image carousel"
+      },
+      {
+        "of": [
+          {
+            "fields": [
+              {
+                "name": "title",
+                "type": "string"
+              },
+              {
+                "name": "body",
+                "type": "text"
+              },
+              {
+                "name": "icon",
+                "type": "string",
+                "title": "Icon path"
+              }
+            ],
+            "type": "object"
+          }
+        ],
+        "name": "whyChooseUs",
+        "type": "array",
+        "title": "Why choose us"
+      },
+      {
+        "of": [
+          {
+            "fields": [
+              {
+                "name": "step",
+                "type": "string",
+                "title": "Step number"
+              },
+              {
+                "name": "title",
+                "type": "string"
+              },
+              {
+                "name": "body",
+                "type": "text"
+              },
+              {
+                "name": "icon",
+                "type": "string",
+                "title": "Icon path"
+              }
+            ],
+            "type": "object"
+          }
+        ],
+        "name": "processSteps",
+        "type": "array",
+        "title": "Process steps"
+      },
+      {
+        "of": [
+          {
+            "fields": [
+              {
+                "name": "id",
+                "type": "string",
+                "title": "Stable id (slug)"
+              },
+              {
+                "name": "name",
+                "type": "string"
+              },
+              {
+                "name": "quote",
+                "type": "text"
+              },
+              {
+                "description": "e.g. /images/testimonials/ashley-johnson-v2.png",
+                "name": "image",
+                "type": "string",
+                "title": "Avatar path"
+              }
+            ],
+            "type": "object"
+          }
+        ],
+        "name": "googleReviews",
+        "type": "array",
+        "title": "Google reviews"
+      },
+      {
+        "of": [
+          {
+            "fields": [
+              {
+                "name": "question",
+                "type": "string"
+              },
+              {
+                "name": "answer",
+                "type": "text"
+              }
+            ],
+            "type": "object"
+          }
+        ],
+        "name": "faqs",
+        "type": "array",
+        "title": "FAQs"
+      },
+      {
+        "of": [
+          {
+            "fields": [
+              {
+                "name": "label",
+                "type": "string"
+              },
+              {
+                "name": "href",
+                "type": "string",
+                "title": "URL"
+              }
+            ],
+            "type": "object"
+          }
+        ],
+        "name": "socialLinks",
+        "type": "array",
+        "title": "Social links"
+      }
+    ],
+    "name": "homePage",
+    "type": "document",
+    "title": "Home page"
+  },
+  {
+    "description": "City pages → **Location pages** (`/court-builder-…/`). Run `npm run seed:sanity-location-pages` to sync Markdown from the repo.",
+    "fields": [
+      {
+        "options": {
+          "list": [
+            {
+              "title": "Service / city landing (hero + Markdown article)",
+              "value": "pressureWashingBoise"
+            }
+          ],
+          "layout": "radio"
+        },
+        "initialValue": "pressureWashingBoise",
+        "validation": [
+          {
+            "level": "error",
+            "rules": [
+              {
+                "flag": "valid",
+                "constraint": [
+                  "pressureWashingBoise"
+                ]
+              },
+              {
+                "flag": "presence",
+                "constraint": "required"
+              }
+            ]
+          }
+        ],
+        "description": "New locations should keep this option unless we add another React template. Markdown embed markers (see Article markdown) control FAQs, map, process timeline, etc.",
+        "name": "layoutTemplate",
+        "type": "string",
+        "title": "Page layout"
+      },
+      {
+        "validation": [
+          {
+            "level": "error",
+            "rules": [
+              {
+                "flag": "presence",
+                "constraint": "required"
+              }
+            ]
+          }
+        ],
+        "name": "title",
+        "type": "string"
+      },
+      {
+        "options": {
+          "source": "title",
+          "maxLength": 96
+        },
+        "validation": [
+          {
+            "level": "error",
+            "rules": [
+              {
+                "flag": "custom"
+              },
+              {
+                "flag": "presence",
+                "constraint": "required"
+              }
+            ]
+          }
+        ],
+        "description": "URL slug only — must match the site registry (e.g. `court-builders-boise-id`, `court-builder-phoenix-az`).",
+        "name": "slug",
+        "type": "slug"
+      },
+      {
+        "options": {
+          "list": [
+            {
+              "title": "Location page",
+              "value": "city"
+            }
+          ],
+          "layout": "radio"
+        },
+        "initialValue": "city",
+        "validation": [
+          {
+            "level": "error",
+            "rules": [
+              {
+                "flag": "valid",
+                "constraint": [
+                  "city"
+                ]
+              },
+              {
+                "flag": "presence",
+                "constraint": "required"
+              }
+            ]
+          }
+        ],
+        "description": "Court builder city landing — appears under **Location pages** in Studio.",
+        "name": "pageCategory",
+        "type": "string",
+        "title": "Page type"
+      },
+      {
+        "description": "Optional display label for editors (hero copy still lives in Markdown unless wired later).",
+        "name": "locationName",
+        "type": "string",
+        "title": "Location name"
+      },
+      {
+        "description": "Reserved for future templates; Boise-style landing uses fixed hero in code.",
+        "hidden": "conditional",
+        "name": "heroHeadline",
+        "type": "string",
+        "title": "Hero headline"
+      },
+      {
+        "rows": 3,
+        "hidden": "conditional",
+        "name": "heroSubheadline",
+        "type": "text",
+        "title": "Hero subheadline"
+      },
+      {
+        "of": [
+          {
+            "type": "string"
+          }
+        ],
+        "hidden": "conditional",
+        "name": "servicesOffered",
+        "type": "array",
+        "title": "Services offered"
+      },
+      {
+        "rows": 36,
+        "description": "Powers the article column (react-markdown). Keep embed markers: `<!--SOL_BOISE_PROCESS_TIMELINE-->`, `<!--SOL_BOISE_FAQ-->`, etc. Run `npm run seed:sanity-location-pages` to sync from repo Markdown.",
+        "hidden": "conditional",
+        "name": "articleMarkdown",
+        "type": "text",
+        "title": "Article body (Markdown)"
+      },
+      {
+        "description": "Not used for Boise-style pages; use Article markdown instead.",
+        "of": [
+          {
+            "lists": [
+              {
+                "value": "bullet",
+                "title": "Bulleted list"
+              },
+              {
+                "value": "number",
+                "title": "Numbered list"
+              }
+            ],
+            "marks": {
+              "annotations": [
+                {
+                  "i18nTitleKey": "inputs.portable-text.annotation.link",
+                  "options": {
+                    "modal": {
+                      "type": "popover"
+                    }
+                  },
+                  "fields": [
+                    {
+                      "validation": [
+                        {
+                          "level": "error",
+                          "rules": [
+                            {
+                              "flag": "uri",
+                              "constraint": {
+                                "options": {
+                                  "scheme": [
+                                    "/^http$/",
+                                    "/^https$/",
+                                    "/^tel$/",
+                                    "/^mailto$/"
+                                  ],
+                                  "allowRelative": true,
+                                  "relativeOnly": false,
+                                  "allowCredentials": false
+                                }
+                              }
+                            }
+                          ]
+                        }
+                      ],
+                      "description": "A valid web, email, phone, or relative link.",
+                      "name": "href",
+                      "type": "url",
+                      "title": "Link"
+                    }
+                  ],
+                  "name": "link",
+                  "type": "object"
+                }
+              ],
+              "decorators": [
+                {
+                  "value": "strong",
+                  "title": "Strong"
+                },
+                {
+                  "value": "em",
+                  "title": "Italic"
+                },
+                {
+                  "value": "code",
+                  "title": "Code"
+                },
+                {
+                  "value": "underline",
+                  "title": "Underline"
+                },
+                {
+                  "value": "strike-through",
+                  "title": "Strike"
+                }
+              ]
+            },
+            "of": [],
+            "styles": [
+              {
+                "value": "normal",
+                "title": "Normal"
+              },
+              {
+                "value": "h1",
+                "title": "Heading 1"
+              },
+              {
+                "value": "h2",
+                "title": "Heading 2"
+              },
+              {
+                "value": "h3",
+                "title": "Heading 3"
+              },
+              {
+                "value": "h4",
+                "title": "Heading 4"
+              },
+              {
+                "value": "h5",
+                "title": "Heading 5"
+              },
+              {
+                "value": "h6",
+                "title": "Heading 6"
+              },
+              {
+                "value": "blockquote",
+                "title": "Quote"
+              }
+            ],
+            "type": "block"
+          }
+        ],
+        "hidden": "conditional",
+        "name": "body",
+        "type": "array",
+        "title": "Body (Portable Text — legacy)"
+      },
+      {
+        "fields": [
+          {
+            "name": "metaTitle",
+            "type": "string",
+            "title": "Meta title"
+          },
+          {
+            "rows": 3,
+            "name": "metaDescription",
+            "type": "text",
+            "title": "Meta description"
+          }
+        ],
+        "name": "seo",
+        "type": "object",
+        "title": "SEO"
+      }
+    ],
+    "name": "locationPage",
+    "type": "document",
+    "title": "Location pages"
+  },
+  {
+    "fields": [
+      {
+        "validation": [
+          {
+            "level": "error",
+            "rules": [
+              {
+                "flag": "presence",
+                "constraint": "required"
+              }
+            ]
+          }
+        ],
+        "name": "title",
+        "type": "string"
+      },
+      {
+        "options": {
+          "source": "title",
+          "maxLength": 96
+        },
+        "validation": [
+          {
+            "level": "error",
+            "rules": [
+              {
+                "flag": "custom"
+              },
+              {
+                "flag": "presence",
+                "constraint": "required"
+              }
+            ]
+          }
+        ],
+        "description": "Article slug only. Live URL: /blog/[slug]/",
+        "name": "slug",
+        "type": "slug"
+      },
+      {
+        "options": {
+          "list": [
+            {
+              "title": "Body Massage",
+              "value": "body-massage"
+            },
+            {
+              "title": "Facials",
+              "value": "facials"
+            },
+            {
+              "title": "Foot Massage – Reflexology",
+              "value": "foot-massage-reflexology"
+            },
+            {
+              "title": "Scalp Massage",
+              "value": "scalp-massage"
+            }
+          ],
+          "layout": "radio"
+        },
+        "initialValue": "body-massage",
+        "validation": [
+          {
+            "level": "error",
+            "rules": [
+              {
+                "flag": "valid",
+                "constraint": [
+                  "body-massage",
+                  "facials",
+                  "foot-massage-reflexology",
+                  "scalp-massage"
+                ]
+              },
+              {
+                "flag": "presence",
+                "constraint": "required"
+              }
+            ]
+          }
+        ],
+        "description": "URL segment before the slug, e.g. /body-massage/massage-therapist-cost/",
+        "name": "category",
+        "type": "string"
+      },
+      {
+        "description": "Shown under the title on the hero for full-article posts.",
+        "name": "subtitle",
+        "type": "string",
+        "title": "Subtitle (hero)"
+      },
+      {
+        "rows": 36,
+        "description": "This plain-text field powers the live blog (react-markdown). Use Markdown plus HTML for anchored headings, e.g. `<h2 id=\"intro\">Introduction</h2>`, lists, `---`, and `![alt](/images/...)` for images in `public/`.",
+        "name": "bodyMarkdown",
+        "type": "text",
+        "title": "Article body (Markdown)"
+      },
+      {
+        "description": "Optional. Drives the sidebar / mobile TOC for full-article posts.",
+        "of": [
+          {
+            "fields": [
+              {
+                "validation": [
+                  {
+                    "level": "error",
+                    "rules": [
+                      {
+                        "flag": "presence",
+                        "constraint": "required"
+                      }
+                    ]
+                  }
+                ],
+                "name": "id",
+                "type": "string",
+                "title": "Anchor id"
+              },
+              {
+                "validation": [
+                  {
+                    "level": "error",
+                    "rules": [
+                      {
+                        "flag": "presence",
+                        "constraint": "required"
+                      }
+                    ]
+                  }
+                ],
+                "name": "label",
+                "type": "string"
+              },
+              {
+                "options": {
+                  "list": [
+                    2,
+                    3
+                  ]
+                },
+                "initialValue": 2,
+                "validation": [
+                  {
+                    "level": "error",
+                    "rules": [
+                      {
+                        "flag": "valid",
+                        "constraint": [
+                          2,
+                          3
+                        ]
+                      },
+                      {
+                        "flag": "presence",
+                        "constraint": "required"
+                      },
+                      {
+                        "flag": "min",
+                        "constraint": 2
+                      },
+                      {
+                        "flag": "max",
+                        "constraint": 3
+                      }
+                    ]
+                  }
+                ],
+                "name": "level",
+                "type": "number"
+              }
+            ],
+            "type": "object",
+            "name": "tocItem"
+          }
+        ],
+        "name": "tocItems",
+        "type": "array",
+        "title": "Table of contents"
+      },
+      {
+        "rows": 4,
+        "name": "excerpt",
+        "type": "text",
+        "title": "Excerpt / card summary"
+      },
+      {
+        "validation": [
+          {
+            "level": "error",
+            "rules": [
+              {
+                "flag": "presence",
+                "constraint": "required"
+              }
+            ]
+          }
+        ],
+        "description": "Public URL path served by Next.js, e.g. /images/gallery/photo.webp",
+        "name": "featuredImage",
+        "type": "string",
+        "title": "Featured image path"
+      },
+      {
+        "validation": [
+          {
+            "level": "error",
+            "rules": [
+              {
+                "flag": "presence",
+                "constraint": "required"
+              }
+            ]
+          }
+        ],
+        "name": "featuredImageAlt",
+        "type": "string",
+        "title": "Featured image alt text"
+      },
+      {
+        "fields": [
+          {
+            "name": "metaTitle",
+            "type": "string",
+            "title": "Meta title"
+          },
+          {
+            "rows": 4,
+            "name": "metaDescription",
+            "type": "text",
+            "title": "Meta description"
+          }
+        ],
+        "name": "seo",
+        "type": "object",
+        "title": "SEO"
+      },
+      {
+        "name": "publishedAt",
+        "type": "datetime",
+        "title": "Published at"
+      },
+      {
+        "initialValue": false,
+        "description": "The `/blog` page always promotes `massage-therapist-cost` first; turn this on to pin additional posts in the Featured row when using Sanity as source.",
+        "name": "featured",
+        "type": "boolean",
+        "title": "Featured on blog index (after lead slot)"
+      },
+      {
+        "options": {
+          "list": [
+            {
+              "title": "Full article (Cost article template)",
+              "value": "fullArticle"
+            },
+            {
+              "title": "Simple article",
+              "value": "simple"
+            }
+          ],
+          "layout": "radio"
+        },
+        "initialValue": "fullArticle",
+        "description": "Use **Full article** for long guides: same shell as `/blog/massage-therapist-cost` (hero, TOC, sidebar CTA, recommended posts). **Simple** is a compact layout without that shell.",
+        "name": "layoutTemplate",
+        "type": "string",
+        "title": "Page layout"
+      }
+    ],
+    "name": "blogPost",
+    "type": "document",
+    "title": "Blog post"
+  },
+  {
+    "fields": [
+      {
+        "validation": [
+          {
+            "level": "error",
+            "rules": [
+              {
+                "flag": "presence",
+                "constraint": "required"
+              }
+            ]
+          }
+        ],
+        "name": "title",
+        "type": "string"
+      },
+      {
+        "options": {
+          "source": "title",
+          "maxLength": 96
+        },
+        "validation": [
+          {
+            "level": "error",
+            "rules": [
+              {
+                "flag": "custom"
+              },
+              {
+                "flag": "presence",
+                "constraint": "required"
+              }
+            ]
+          }
+        ],
+        "name": "slug",
+        "type": "slug"
+      },
+      {
+        "options": {
+          "list": [
+            "Privacy Policy",
+            "Terms of Use",
+            "License Agreement",
+            "Other"
+          ]
+        },
+        "name": "pageType",
+        "type": "string",
+        "title": "Page type"
+      },
+      {
+        "of": [
+          {
+            "lists": [
+              {
+                "value": "bullet",
+                "title": "Bulleted list"
+              },
+              {
+                "value": "number",
+                "title": "Numbered list"
+              }
+            ],
+            "marks": {
+              "annotations": [
+                {
+                  "i18nTitleKey": "inputs.portable-text.annotation.link",
+                  "options": {
+                    "modal": {
+                      "type": "popover"
+                    }
+                  },
+                  "fields": [
+                    {
+                      "validation": [
+                        {
+                          "level": "error",
+                          "rules": [
+                            {
+                              "flag": "uri",
+                              "constraint": {
+                                "options": {
+                                  "scheme": [
+                                    "/^http$/",
+                                    "/^https$/",
+                                    "/^tel$/",
+                                    "/^mailto$/"
+                                  ],
+                                  "allowRelative": true,
+                                  "relativeOnly": false,
+                                  "allowCredentials": false
+                                }
+                              }
+                            }
+                          ]
+                        }
+                      ],
+                      "description": "A valid web, email, phone, or relative link.",
+                      "name": "href",
+                      "type": "url",
+                      "title": "Link"
+                    }
+                  ],
+                  "name": "link",
+                  "type": "object"
+                }
+              ],
+              "decorators": [
+                {
+                  "value": "strong",
+                  "title": "Strong"
+                },
+                {
+                  "value": "em",
+                  "title": "Italic"
+                },
+                {
+                  "value": "code",
+                  "title": "Code"
+                },
+                {
+                  "value": "underline",
+                  "title": "Underline"
+                },
+                {
+                  "value": "strike-through",
+                  "title": "Strike"
+                }
+              ]
+            },
+            "of": [],
+            "styles": [
+              {
+                "value": "normal",
+                "title": "Normal"
+              },
+              {
+                "value": "h1",
+                "title": "Heading 1"
+              },
+              {
+                "value": "h2",
+                "title": "Heading 2"
+              },
+              {
+                "value": "h3",
+                "title": "Heading 3"
+              },
+              {
+                "value": "h4",
+                "title": "Heading 4"
+              },
+              {
+                "value": "h5",
+                "title": "Heading 5"
+              },
+              {
+                "value": "h6",
+                "title": "Heading 6"
+              },
+              {
+                "value": "blockquote",
+                "title": "Quote"
+              }
+            ],
+            "type": "block"
+          }
+        ],
+        "name": "body",
+        "type": "array"
+      }
+    ],
+    "name": "legalPage",
+    "type": "document",
+    "title": "Legal"
+  },
+  {
+    "fields": [
+      {
+        "validation": [
+          {
+            "level": "error",
+            "rules": [
+              {
+                "flag": "presence",
+                "constraint": "required"
+              }
+            ]
+          }
+        ],
+        "name": "title",
+        "type": "string"
+      },
+      {
+        "options": {
+          "source": "title",
+          "maxLength": 96
+        },
+        "validation": [
+          {
+            "level": "error",
+            "rules": [
+              {
+                "flag": "custom"
+              },
+              {
+                "flag": "presence",
+                "constraint": "required"
+              }
+            ]
+          }
+        ],
+        "name": "slug",
+        "type": "slug"
+      },
+      {
+        "rows": 2,
+        "name": "heroSubheading",
+        "type": "text",
+        "title": "Hero subheading"
+      },
+      {
+        "of": [
+          {
+            "fields": [
+              {
+                "validation": [
+                  {
+                    "level": "error",
+                    "rules": [
+                      {
+                        "flag": "presence",
+                        "constraint": "required"
+                      }
+                    ]
+                  }
+                ],
+                "description": "Stable key, e.g. basics — used internally for the tab.",
+                "name": "id",
+                "type": "string",
+                "title": "Category ID"
+              },
+              {
+                "validation": [
+                  {
+                    "level": "error",
+                    "rules": [
+                      {
+                        "flag": "presence",
+                        "constraint": "required"
+                      }
+                    ]
+                  }
+                ],
+                "name": "label",
+                "type": "string",
+                "title": "Tab label"
+              },
+              {
+                "of": [
+                  {
+                    "fields": [
+                      {
+                        "name": "question",
+                        "type": "string"
+                      },
+                      {
+                        "rows": 6,
+                        "name": "answer",
+                        "type": "text"
+                      }
+                    ],
+                    "type": "object"
+                  }
+                ],
+                "name": "faqs",
+                "type": "array",
+                "title": "Questions in this category"
+              }
+            ],
+            "type": "object"
+          }
+        ],
+        "name": "categories",
+        "type": "array",
+        "title": "FAQ categories (tabs)"
+      },
+      {
+        "fields": [
+          {
+            "name": "metaTitle",
+            "type": "string",
+            "title": "Meta title"
+          },
+          {
+            "rows": 3,
+            "name": "metaDescription",
+            "type": "text",
+            "title": "Meta description"
+          }
+        ],
+        "name": "seo",
+        "type": "object",
+        "title": "SEO"
+      }
+    ],
+    "name": "faqPage",
+    "type": "document",
+    "title": "FAQ Page"
+  },
+  {
+    "fields": [
+      {
+        "validation": [
+          {
+            "level": "error",
+            "rules": [
+              {
+                "flag": "presence",
+                "constraint": "required"
+              }
+            ]
+          }
+        ],
+        "name": "title",
+        "type": "string"
+      },
+      {
+        "options": {
+          "source": "title",
+          "maxLength": 96
+        },
+        "validation": [
+          {
+            "level": "error",
+            "rules": [
+              {
+                "flag": "custom"
+              },
+              {
+                "flag": "presence",
+                "constraint": "required"
+              }
+            ]
+          }
+        ],
+        "name": "slug",
+        "type": "slug"
+      },
+      {
+        "rows": 3,
+        "name": "intro",
+        "type": "text"
+      },
+      {
+        "rows": 2,
+        "name": "heroSubheading",
+        "type": "text",
+        "title": "Hero subheading"
+      },
+      {
+        "name": "overviewHeadline",
+        "type": "string",
+        "title": "Overview headline"
+      },
+      {
+        "rows": 4,
+        "name": "overviewBody",
+        "type": "text",
+        "title": "Overview body"
+      },
+      {
+        "of": [
+          {
+            "fields": [
+              {
+                "name": "value",
+                "type": "string"
+              },
+              {
+                "name": "label",
+                "type": "string"
+              }
+            ],
+            "type": "object"
+          }
+        ],
+        "name": "overviewStats",
+        "type": "array",
+        "title": "Overview stats"
+      },
+      {
+        "name": "highlightsTitle",
+        "type": "string",
+        "title": "Highlights title"
+      },
+      {
+        "rows": 3,
+        "name": "highlightsIntro",
+        "type": "text",
+        "title": "Highlights intro"
+      },
+      {
+        "of": [
+          {
+            "fields": [
+              {
+                "name": "image",
+                "type": "string",
+                "title": "Image path"
+              },
+              {
+                "name": "caption",
+                "type": "string"
+              },
+              {
+                "name": "alt",
+                "type": "string",
+                "title": "Alt text"
+              }
+            ],
+            "type": "object"
+          }
+        ],
+        "name": "highlightItems",
+        "type": "array",
+        "title": "Highlight items"
+      },
+      {
+        "of": [
+          {
+            "fields": [
+              {
+                "name": "image",
+                "type": "string",
+                "title": "Image path"
+              },
+              {
+                "name": "caption",
+                "type": "string"
+              },
+              {
+                "name": "alt",
+                "type": "string",
+                "title": "Alt text"
+              }
+            ],
+            "type": "object"
+          }
+        ],
+        "name": "items",
+        "type": "array",
+        "title": "Gallery items"
+      },
+      {
+        "fields": [
+          {
+            "name": "metaTitle",
+            "type": "string",
+            "title": "Meta title"
+          },
+          {
+            "rows": 3,
+            "name": "metaDescription",
+            "type": "text",
+            "title": "Meta description"
+          }
+        ],
+        "name": "seo",
+        "type": "object",
+        "title": "SEO"
+      }
+    ],
+    "name": "galleryPage",
+    "type": "document"
+  },
+  {
+    "fields": [
+      {
+        "validation": [
+          {
+            "level": "error",
+            "rules": [
+              {
+                "flag": "presence",
+                "constraint": "required"
+              }
+            ]
+          }
+        ],
+        "name": "title",
+        "type": "string"
+      },
+      {
+        "options": {
+          "source": "title",
+          "maxLength": 96
+        },
+        "validation": [
+          {
+            "level": "error",
+            "rules": [
+              {
+                "flag": "custom"
+              },
+              {
+                "flag": "presence",
+                "constraint": "required"
+              }
+            ]
+          }
+        ],
+        "name": "slug",
+        "type": "slug"
+      },
+      {
+        "name": "heroHeadline",
+        "type": "string",
+        "title": "Hero headline"
+      },
+      {
+        "rows": 3,
+        "name": "intro",
+        "type": "text"
+      },
+      {
+        "name": "phone",
+        "type": "string"
+      },
+      {
+        "name": "email",
+        "type": "string"
+      },
+      {
+        "rows": 3,
+        "name": "address",
+        "type": "text"
+      },
+      {
+        "validation": [
+          {
+            "level": "error",
+            "rules": [
+              {
+                "flag": "uri",
+                "constraint": {
+                  "options": {
+                    "scheme": [
+                      "/^http$/",
+                      "/^https$/"
+                    ],
+                    "allowRelative": false,
+                    "relativeOnly": false,
+                    "allowCredentials": false
+                  }
+                }
+              }
+            ]
+          }
+        ],
+        "name": "mapEmbedUrl",
+        "type": "url",
+        "title": "Map embed URL"
+      },
+      {
+        "fields": [
+          {
+            "name": "metaTitle",
+            "type": "string",
+            "title": "Meta title"
+          },
+          {
+            "rows": 3,
+            "name": "metaDescription",
+            "type": "text",
+            "title": "Meta description"
+          }
+        ],
+        "name": "seo",
+        "type": "object",
+        "title": "SEO"
+      }
+    ],
+    "name": "contactPage",
+    "type": "document"
+  },
+  {
+    "fields": [
+      {
+        "validation": [
+          {
+            "level": "error",
+            "rules": [
+              {
+                "flag": "presence",
+                "constraint": "required"
+              }
+            ]
+          }
+        ],
+        "name": "title",
+        "type": "string"
+      },
+      {
+        "options": {
+          "source": "title",
+          "maxLength": 96
+        },
+        "validation": [
+          {
+            "level": "error",
+            "rules": [
+              {
+                "flag": "custom"
+              },
+              {
+                "flag": "presence",
+                "constraint": "required"
+              }
+            ]
+          }
+        ],
+        "name": "slug",
+        "type": "slug"
+      },
+      {
+        "rows": 3,
+        "name": "intro",
+        "type": "text"
+      },
+      {
+        "of": [
+          {
+            "fields": [
+              {
+                "name": "name",
+                "type": "string",
+                "title": "Reviewer name"
+              },
+              {
+                "rows": 4,
+                "name": "quote",
+                "type": "text"
+              },
+              {
+                "name": "rating",
+                "type": "number",
+                "title": "Rating (1-5)"
+              },
+              {
+                "name": "image",
+                "type": "string",
+                "title": "Avatar image path"
+              }
+            ],
+            "type": "object"
+          }
+        ],
+        "name": "reviews",
+        "type": "array"
+      },
+      {
+        "fields": [
+          {
+            "name": "metaTitle",
+            "type": "string",
+            "title": "Meta title"
+          },
+          {
+            "rows": 3,
+            "name": "metaDescription",
+            "type": "text",
+            "title": "Meta description"
+          }
+        ],
+        "name": "seo",
+        "type": "object",
+        "title": "SEO"
+      }
+    ],
+    "name": "reviewsPage",
+    "type": "document"
+  }
+]

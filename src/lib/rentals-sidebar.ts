@@ -3,7 +3,7 @@ import { RENTALS_NAV_LINKS } from "@/lib/rentals-nav";
 
 /** “Other Services” links on the main /rentals/ page (matches main Services menu). */
 export const RENTALS_OTHER_SERVICES_LINKS = [
-  { label: "Property Management Services", href: pmServicePagePath("property-management-services") },
+  { label: "Court Builders Boise", href: pmServicePagePath("court-builders-boise-id") },
   { label: "Rental Property Marketing", href: pmServicePagePath("rental-property-marketing") },
   { label: "Property Inspections", href: pmServicePagePath("property-inspections") },
   { label: "Property Maintenance Services", href: pmServicePagePath("property-maintenance-services") },

@@ -1,16 +1,12 @@
 "use client";
 
-import Link from "next/link";
-import { BlogBookingStrip } from "@/components/blog/blog-article-lead-cta";
 import { BlogHeroBand } from "@/components/blog/blog-hero-band";
-import { HomeSectionGridDecor } from "@/components/home/home-section-grid-decor";
+import { BlogBookingStrip } from "@/components/blog/blog-article-lead-cta";
 import { useEffect, useRef, useState } from "react";
 import type { FaqPageContent } from "@/lib/faq-page-content";
 import type { SocialLink } from "@/lib/home-content";
 import { PageHeroCtaButtons } from "@/components/layout/page-hero-cta-buttons";
-import { SiteBreadcrumbs } from "@/components/layout/site-breadcrumbs";
 import { SiteFooterRegion } from "@/components/layout/site-footer-region";
-import { SiteHeader } from "@/components/layout/site-header";
 import { BUSINESS } from "@/lib/business";
 import { gpmImageAlt } from "@/lib/gpm-gallery-images";
 import { gpmPick } from "@/lib/gpm-pick-gallery";
@@ -24,7 +20,7 @@ export function FaqPage({
   socialLinks: SocialLink[];
   content: FaqPageContent;
 }) {
-  const firstId = content.categories[0]?.id ?? "property-owners";
+  const firstId = content.categories[0]?.id ?? "tennis-court";
   const [activeCategoryId, setActiveCategoryId] = useState(firstId);
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
   const sectionRef = useRef<HTMLElement | null>(null);
@@ -70,12 +66,7 @@ export function FaqPage({
 
   return (
     <div className="min-h-screen bg-zen-espresso text-white light:bg-transparent light:text-zen-espresso">
-      <header className="relative z-[200] isolate min-h-0 overflow-x-clip bg-zen-espresso text-white light:bg-transparent light:text-zen-espresso">
-        <SiteHeader anchorBase="/" />
-      </header>
-
       <main className="bg-zen-espresso pb-16 light:bg-transparent">
-        <SiteBreadcrumbs />
         <BlogHeroBand imageSrc={FAQ_HERO_IMAGE} imageAlt={gpmImageAlt(FAQ_HERO_IMAGE)}>
           <div className="min-w-0 w-full max-w-3xl">
             <h1 className="font-heading text-4xl font-bold leading-tight text-white sm:text-5xl md:text-6xl">
@@ -94,7 +85,6 @@ export function FaqPage({
             faqRevealed ? "faq-revealed" : ""
           }`}
         >
-          <HomeSectionGridDecor placement="faq-panel-left" />
           <div className="shell relative z-10">
             <div className="mx-auto w-full max-w-3xl space-y-5 px-3 sm:px-4">
               <div
@@ -149,10 +139,10 @@ export function FaqPage({
                     <article
                       key={uid}
                       data-faq-open={open ? "true" : "false"}
-                      className={`faq-item-reveal rounded-2xl border p-5 transition duration-500 ease-out motion-reduce:transition-none ${
+                      className={`faq-item-reveal group rounded-2xl border p-5 shadow-sm transition-[background-color,border-color,color,box-shadow] duration-200 motion-reduce:transition-none ${
                         open
-                          ? "border-zen-crimson bg-zen-crimson ring-1 ring-white/20 light:border-zen-crimson light:bg-zen-crimson"
-                          : "hero-glass-light border border-white/25 bg-white/15 backdrop-blur-xl light:shadow-none"
+                          ? "border-zen-crimson bg-zen-crimson text-white shadow-md ring-1 ring-white/20 light:border-zen-crimson light:bg-zen-crimson"
+                          : "border-white/25 bg-white/15 text-white hover:border-zen-crimson hover:bg-zen-crimson hover:text-white hover:shadow-md light:border-slate-200/80 light:bg-white/90 light:text-zen-espresso light:hover:text-white"
                       }`}
                     >
                       <button
@@ -164,14 +154,16 @@ export function FaqPage({
                         id={`faq-page-question-${uid}`}
                       >
                         <span
-                          className={`min-w-0 flex-1 break-words font-heading text-base font-semibold sm:text-lg ${
-                            open ? "!text-white light:!text-white" : "text-white light:text-zen-espresso"
+                          className={`min-w-0 flex-1 break-words font-heading text-base font-semibold leading-snug transition-colors duration-200 sm:text-lg ${
+                            open ? "text-white" : "text-inherit group-hover:text-white"
                           }`}
                         >
                           {faq.question}
                         </span>
                         <span
-                          className={`faq-chevron shrink-0 text-2xl ${open ? "!text-white light:!text-white" : "text-white/70 light:text-zen-taupe"}`}
+                          className={`faq-chevron shrink-0 text-2xl transition-colors duration-200 ${
+                            open ? "text-white" : "text-white/70 group-hover:text-white light:text-zen-taupe"
+                          }`}
                           aria-hidden="true"
                         >
                           {open ? "−" : "+"}
@@ -188,7 +180,9 @@ export function FaqPage({
                         <div className="min-h-0 overflow-hidden">
                           <p
                             className={`faq-answer mt-3 whitespace-pre-line text-sm leading-7 ${
-                              open ? "!text-white light:!text-white" : "text-white/95 light:text-zen-taupe faq-answer-collapsed"
+                              open
+                                ? "text-white/95"
+                                : "text-white/95 group-hover:text-white/95 light:text-zen-taupe faq-answer-collapsed"
                             }`}
                           >
                             {faq.answer}
@@ -203,10 +197,11 @@ export function FaqPage({
           </div>
         </section>
 
-        <BlogBookingStrip />
+        <BlogBookingStrip showLead={false} />
       </main>
 
       <SiteFooterRegion socialLinks={socialLinks} />
     </div>
   );
 }
+

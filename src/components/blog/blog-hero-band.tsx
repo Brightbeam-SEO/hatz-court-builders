@@ -1,5 +1,5 @@
 import type { ReactNode } from "react";
-import { getBlogHeroBlendStyle } from "@/lib/homepage-hero-bg";
+import { InnerPageHeroShell } from "@/components/layout/inner-page-hero-shell";
 
 type BlogHeroBandProps = {
   imageSrc: string;
@@ -11,9 +11,7 @@ type BlogHeroBandProps = {
   photoTopOnMd?: boolean;
 };
 
-/**
- * Full-bleed blog hero: cover image + gradient over the site texture (no rounded “card”).
- */
+/** Full-bleed inner-page hero with nav + breadcrumbs over the cover image. */
 export function BlogHeroBand({
   imageSrc,
   imageAlt,
@@ -22,21 +20,14 @@ export function BlogHeroBand({
   photoTopOnMd = false,
 }: BlogHeroBandProps) {
   return (
-    <section
-      aria-label={imageAlt}
-      className={`relative left-1/2 w-screen max-w-[100vw] -translate-x-1/2 min-h-[28rem] overflow-hidden bg-transparent md:min-h-[28rem] lg:min-h-[32rem]${photoTopOnMd ? " blog-hero-band-photo-top-md" : ""}`}
-      style={{
-        ...getBlogHeroBlendStyle(imageSrc, imagePosition),
-        ...(photoTopOnMd
-          ? {}
-          : { ["--blog-hero-photo-position" as string]: imagePosition }),
-      }}
+    <InnerPageHeroShell
+      imageSrc={imageSrc}
+      imageAlt={imageAlt}
+      imagePosition={imagePosition}
+      photoTopOnMd={photoTopOnMd}
+      layout="band"
     >
-      <div className="absolute inset-0 z-10 flex items-end">
-        <div className="mx-auto w-full max-w-[95vw] px-2 pb-6 pt-24 sm:max-w-[min(80vw,100%)] sm:px-3 sm:pb-8 md:px-4 md:pb-10">
-          {children}
-        </div>
-      </div>
-    </section>
+      {children}
+    </InnerPageHeroShell>
   );
 }

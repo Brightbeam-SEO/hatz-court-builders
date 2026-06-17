@@ -1,14 +1,14 @@
 import { getCliClient } from "sanity/cli";
-import { CITY_PROPERTY_PAGE_SLUGS } from "../src/lib/city-property-pages";
+import { isCourtConstructionSlug } from "../src/lib/court-construction-nav";
+import { isCourtLocationPageSlug } from "../sanity/constants/locationPageFilters";
 
-const CITY_SLUGS = new Set(CITY_PROPERTY_PAGE_SLUGS);
-
-/** Same rule as Studio **Location pages** list (sanity/constants/locationPageFilters.ts). */
-function isCityLocationSlug(slug: string): boolean {
-  return CITY_SLUGS.has(slug) || /^property-management-.+-id$/.test(slug);
+function pageCategoryFor(slug: string): "city" | "service" {
+  if (isCourtConstructionSlug(slug)) return "service";
+  if (isCourtLocationPageSlug(slug)) return "city";
+  return "service";
 }
 
-/** Ensures pageCategory matches GPM registry so Studio filters stay in sync. */
+/** Ensures pageCategory matches court location registry so Studio filters stay in sync. */
 async function main() {
   const client = getCliClient({ apiVersion: "2024-01-01" });
 
@@ -19,7 +19,7 @@ async function main() {
   let patched = 0;
 
   for (const doc of docs) {
-    const pageCategory = isCityLocationSlug(doc.slug) ? "city" : "service";
+    const pageCategory = pageCategoryFor(doc.slug);
     if (doc.pageCategory === pageCategory) continue;
 
     await client.patch(doc._id).set({ pageCategory }).commit();

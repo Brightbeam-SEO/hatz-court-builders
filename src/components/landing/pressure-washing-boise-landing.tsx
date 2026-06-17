@@ -3,12 +3,11 @@
 import { ContactForm } from "@/components/home/contact-form";
 import { HeroTrustLogoMarquee } from "@/components/home/hero-trust-logo-marquee";
 import type { HomeTrustStripLogo } from "@/lib/home-page-copy";
-import { SiteBreadcrumbs } from "@/components/layout/site-breadcrumbs";
+import { InnerPageHeroShell } from "@/components/layout/inner-page-hero-shell";
 import { SiteWordmarkFooter } from "@/components/layout/site-wordmark-footer";
 import { PageHeroCtaButtons } from "@/components/layout/page-hero-cta-buttons";
 import { PortalSignInButtons } from "@/components/layout/portal-sign-in-buttons";
 import { RentalsListingSection } from "@/components/landing/rentals-listing-section";
-import { SiteHeader } from "@/components/layout/site-header";
 import { CenteredContactSection } from "@/components/contact/centered-contact-section";
 import { HomeContactSection } from "@/components/home/home-contact-section";
 import { BoiseBottomContactSection } from "@/components/landing/boise-bottom-contact-section";
@@ -17,7 +16,6 @@ import { PropertyManagementGallerySection } from "@/components/landing/property-
 import { PressureWashingBoiseArticleSection } from "@/components/landing/pressure-washing-boise-article-section";
 import type { GoogleReview, SocialLink } from "@/lib/home-content";
 import { BUSINESS } from "@/lib/business";
-import { getBlogHeroBlendStyle } from "@/lib/homepage-hero-bg";
 import type { TreasureValleyPressurePageConfig } from "@/lib/treasure-valley-pressure-page-config";
 import { gpmPick } from "@/lib/gpm-pick-gallery";
 
@@ -58,47 +56,39 @@ export function PressureWashingBoiseLanding({
 
   return (
     <div className="min-h-screen bg-zen-espresso text-white light:bg-transparent light:text-zen-espresso">
-      <header className="relative z-[200] isolate min-h-0 overflow-x-clip bg-zen-espresso text-white light:bg-transparent light:text-zen-espresso">
-        <SiteHeader anchorBase="/" />
-      </header>
-
       <main className="bg-zen-espresso pb-16 light:bg-transparent">
-        <SiteBreadcrumbs />
-
-        <section
-          aria-label={heroAlt}
-          className="relative left-1/2 z-10 flex w-screen max-w-[100vw] -translate-x-1/2 flex-col justify-center bg-transparent min-h-[28rem] md:min-h-[30rem] lg:min-h-[32rem]"
-          style={getBlogHeroBlendStyle(heroSrc)}
+        <InnerPageHeroShell
+          imageSrc={heroSrc}
+          imageAlt={heroAlt}
+          layout="landing"
         >
-          <div className="relative z-10 mx-auto w-full max-w-[95vw] px-2 py-8 sm:max-w-[min(80vw,100%)] sm:px-3 sm:py-10 md:px-4 md:py-12 lg:py-14">
-            <div className="flex w-full flex-col gap-6 sm:gap-8 md:flex-row md:items-center md:justify-between md:gap-8 lg:gap-10">
-              <div className="flex min-w-0 w-full max-w-3xl flex-col justify-center md:flex-1">
-                <h1 className="font-heading text-4xl font-bold leading-tight text-white sm:text-5xl md:text-6xl">
-                  {heroTitle}
-                </h1>
-                <p className="mt-4 max-w-2xl text-sm font-medium text-white/90 md:text-base">
-                  {heroSubtitle}
-                </p>
-                {cityPage?.heroCtaVariant === "portal-sign-in" ? (
-                  <PortalSignInButtons className="mt-8 !mt-8" />
-                ) : (
-                  <PageHeroCtaButtons
-                    className="mt-8 !mt-8"
-                    secondaryHref={`#${heroFormId}`}
-                  />
-                )}
-              </div>
-              <div className="flex w-full flex-col items-stretch md:min-h-0 md:flex-1 md:basis-0 md:items-center md:justify-center md:pb-0">
-                <div
-                  id={heroFormId}
-                  className="fade-up relative z-20 w-full max-w-xl scroll-mt-28 rounded-3xl border border-white/25 bg-zen-crimson p-6 text-left shadow-[0_24px_55px_rgba(21, 21, 21,0.35)] ring-1 ring-white/20 sm:p-8 md:mx-auto md:w-full md:max-w-sm lg:max-w-md"
-                >
-                  <ContactForm variant="dark" formName={heroFormName} />
-                </div>
+          <div className="flex w-full flex-col gap-6 sm:gap-8 md:flex-row md:items-center md:justify-between md:gap-8 lg:gap-10">
+            <div className="flex min-w-0 w-full max-w-3xl flex-col justify-center md:flex-1">
+              <h1 className="font-heading text-4xl font-bold leading-tight text-white sm:text-5xl md:text-6xl">
+                {heroTitle}
+              </h1>
+              <p className="mt-4 max-w-2xl text-sm font-medium text-white/90 md:text-base">
+                {heroSubtitle}
+              </p>
+              {cityPage?.heroCtaVariant === "portal-sign-in" ? (
+                <PortalSignInButtons className="mt-8 !mt-8" />
+              ) : (
+                <PageHeroCtaButtons
+                  className="mt-8 !mt-8"
+                  secondaryHref={`#${heroFormId}`}
+                />
+              )}
+            </div>
+            <div className="flex w-full flex-col items-stretch md:min-h-0 md:flex-1 md:basis-0 md:items-center md:justify-center md:pb-0">
+              <div
+                id={heroFormId}
+                className="fade-up relative z-20 w-full max-w-xl scroll-mt-28 rounded-3xl border border-white/25 bg-zen-crimson p-6 text-left shadow-[0_24px_55px_rgba(21, 21, 21,0.35)] ring-1 ring-white/20 sm:p-8 md:mx-auto md:w-full md:max-w-sm lg:max-w-md"
+              >
+                <ContactForm variant="dark" formName={heroFormName} />
               </div>
             </div>
           </div>
-        </section>
+        </InnerPageHeroShell>
 
         <section className="relative left-1/2 right-1/2 z-20 -ml-[50vw] -mr-[50vw] w-screen overflow-hidden border-y border-zen-gold/30 bg-zen-crimson text-white shadow-[0_18px_45px_rgba(21, 21, 21,0.12)]">
           <HeroTrustLogoMarquee logos={heroTrustStripLogos} showTopBorder={false} />
@@ -130,6 +120,7 @@ export function PressureWashingBoiseLanding({
                 formName={cityPage.bottomFormName}
                 sectionId={cityPage.centeredContactSectionId ?? "property-management-booking-contact"}
                 formWrapperId={cityPage.centeredContactFormId ?? "property-management-booking-form"}
+                className="-mb-16"
               />
             ) : null}
           </>
@@ -182,6 +173,7 @@ export function PressureWashingBoiseLanding({
                 formName={cityPage.bottomFormName}
                 sectionId={cityPage.centeredContactSectionId ?? "property-management-booking-contact"}
                 formWrapperId={cityPage.centeredContactFormId ?? "property-management-booking-form"}
+                className="-mb-16"
               />
             ) : cityPage?.showCenteredContactSection ? (
               <CenteredContactSection

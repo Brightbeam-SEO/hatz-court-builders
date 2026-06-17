@@ -16,34 +16,55 @@ type BlogSeedDef = {
   tocItems: Array<{ id: string; label: string; level: number }>;
 };
 
-const WHAT_IS_PROPERTY_MANAGEMENT: BlogSeedDef = {
-  slug: "what-is-property-management",
-  title: "What Is Property Management? A Guide for Rental Property Owners in Meridian, Idaho",
+const COURT_PLANNING_GUIDE: BlogSeedDef = {
+  slug: "what-to-consider-before-building-a-custom-court-in-boise-or-scottsdale",
+  title: "What to Consider Before Building a Custom Court in Boise or Scottsdale",
   excerpt:
-    "Learn what property management is, what a property manager does, and whether hiring a company is worth it—plus how Greenbelt serves Meridian and the Treasure Valley.",
-  metaTitle: "What Is Property Management? Meridian ID Guide | Greenbelt PM",
+    "Planning a tennis, basketball, pickleball, or multi-use court? Discover the key factors to consider before starting a custom sports court construction project.",
+  metaTitle: "What to Consider Before Building a Custom Court in Boise or Scottsdale",
   metaDescription:
-    "What is property management? Learn what property managers do, services included, FAQs, and how Greenbelt Property Management helps rental owners in Meridian, Idaho.",
-  image: "/images/gpm/modern-kitchen-interior-rental-property-marketing-meridian-idaho-greenbelt-property-management.webp",
-  imageAlt: "Greenbelt Property Management — Meridian, Idaho",
+    "Planning a tennis, basketball, pickleball, or multi-use court? Discover the key factors to consider before starting a custom sports court construction project.",
+  image: "/images/hcb/multi-sport-outdoor-backyard-court-boise-id-hatz-court-builders.jpg",
+  imageAlt: "Multi sport outdoor backyard court by Hatz Court Builders",
   publishedAt: "2026-05-10T15:00:00.000Z",
   featured: true,
-  mdFile: "what-is-property-management-body.md",
+  mdFile: "what-to-consider-before-building-a-custom-court-in-boise-or-scottsdale-body.md",
   tocItems: [
-    { id: "what-is-property-management", label: "What is property management?", level: 2 },
-    { id: "what-does-a-pm-company-do", label: "What does a PM company do?", level: 2 },
-    { id: "why-hire", label: "Why owners hire a PM company", level: 2 },
-    { id: "is-it-worth-it", label: "Is property management worth it?", level: 2 },
-    { id: "good-pm-company", label: "What makes a good PM company?", level: 2 },
-    { id: "meridian-idaho", label: "Property management in Meridian", level: 2 },
-    { id: "long-term-vs-short-term", label: "Long-term vs. short-term", level: 2 },
-    { id: "faq", label: "FAQs", level: 2 },
-    { id: "get-started", label: "Get started in Meridian", level: 2 },
+    { id: "start-with-the-main-purpose-of-the-court", label: "Start With the Main Purpose of the Court", level: 2 },
+    { id: "think-about-your-available-space", label: "Think About Your Available Space", level: 2 },
+    { id: "choose-the-right-court-surface", label: "Choose the Right Court Surface", level: 2 },
+    {
+      id: "decide-between-a-dedicated-court-and-a-multi-use-court",
+      label: "Dedicated vs. Multi-Use Court",
+      level: 2,
+    },
+    {
+      id: "plan-for-site-preparation-drainage-and-base-work",
+      label: "Site Prep, Drainage, and Base Work",
+      level: 2,
+    },
+    {
+      id: "consider-fencing-lighting-equipment-and-court-components",
+      label: "Fencing, Lighting, and Equipment",
+      level: 2,
+    },
+    { id: "think-about-long-term-maintenance", label: "Long-Term Maintenance", level: 2 },
+    {
+      id: "work-with-a-court-builder-that-understands-multiple-sports-and-surfaces",
+      label: "Work With the Right Builder",
+      level: 2,
+    },
+    {
+      id: "frequently-asked-questions-about-custom-court-construction",
+      label: "FAQs About Court Construction",
+      level: 2,
+    },
+    { id: "build-the-right-court-from-the-start", label: "Build the Right Court From the Start", level: 2 },
   ],
 };
 
 const BLOG_SPECS: BlogSeedDef[] = [
-  WHAT_IS_PROPERTY_MANAGEMENT,
+  COURT_PLANNING_GUIDE,
   ...GPM_IMPORTED_BLOG_FALLBACK_DEFS.map((def) => ({
     slug: def.slug,
     title: def.title,

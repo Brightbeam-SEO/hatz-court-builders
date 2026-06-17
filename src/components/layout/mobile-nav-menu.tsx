@@ -2,8 +2,8 @@
 
 import { useEffect, useState } from "react";
 import { BUSINESS } from "@/lib/business";
-import { pmServicePagePath } from "@/lib/pm-service-pages";
-import { SERVICE_AREA_NAV_LINKS } from "@/lib/service-area-nav";
+import { COURT_CONSTRUCTION_NAV_LINKS } from "@/lib/court-construction-nav";
+import { SERVICE_AREA_NAV_GROUPS } from "@/lib/service-area-nav";
 import {
   headerMobileAccordionPanelClass,
   headerMobileAccordionSubLinkClass,
@@ -30,10 +30,19 @@ type MobileNavAccordionProps = {
   isOpen: boolean;
   onToggle: () => void;
   onNavigate: () => void;
+  nestedSections?: { label: string; links: NavLink[] }[];
 };
 
-function MobileNavAccordion({ label, links, isOpen, onToggle, onNavigate }: MobileNavAccordionProps) {
+function MobileNavAccordion({
+  label,
+  links,
+  isOpen,
+  onToggle,
+  onNavigate,
+  nestedSections,
+}: MobileNavAccordionProps) {
   const panelId = `mobile-nav-${label.replace(/\s+/g, "-").toLowerCase()}`;
+  const hasNestedSections = (nestedSections?.length ?? 0) > 0;
 
   return (
     <div className="overflow-hidden rounded-xl border border-zen-gold/20 bg-white">
@@ -56,13 +65,28 @@ function MobileNavAccordion({ label, links, isOpen, onToggle, onNavigate }: Mobi
       </button>
       {isOpen ? (
         <ul id={panelId} className={headerMobileAccordionPanelClass}>
-          {links.map(({ label: linkLabel, href }) => (
-            <li key={href}>
-              <a href={href} className={headerMobileAccordionSubLinkClass} onClick={onNavigate}>
-                {linkLabel}
-              </a>
-            </li>
-          ))}
+          {hasNestedSections
+            ? nestedSections?.map((section) => (
+                <li key={section.label}>
+                  <p className={headerMobileSectionLabelClass}>{section.label}</p>
+                  <ul className="mt-1 space-y-1 border-l border-zen-gold/20 pl-3">
+                    {section.links.map(({ label: linkLabel, href }) => (
+                      <li key={href}>
+                        <a href={href} className={headerMobileAccordionSubLinkClass} onClick={onNavigate}>
+                          {linkLabel}
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                </li>
+              ))
+            : links.map(({ label: linkLabel, href }) => (
+                <li key={href}>
+                  <a href={href} className={headerMobileAccordionSubLinkClass} onClick={onNavigate}>
+                    {linkLabel}
+                  </a>
+                </li>
+              ))}
         </ul>
       ) : null}
     </div>
@@ -99,18 +123,28 @@ export function MobileNavMenu({ open, onClose }: MobileNavMenuProps) {
     >
       <ul className="grid gap-2">
         <li>
-          <a
-            href={pmServicePagePath("property-management-services")}
-            className={headerMobileTopLinkClass}
-            onClick={onClose}
-          >
-            Services
-          </a>
+          <MobileNavAccordion
+            label="Services"
+            links={[]}
+            nestedSections={[
+              {
+                label: "Court Construction",
+                links: COURT_CONSTRUCTION_NAV_LINKS.map(({ label, href }) => ({ label, href })),
+              },
+            ]}
+            isOpen={openSections.has("services")}
+            onToggle={() => toggleSection("services")}
+            onNavigate={onClose}
+          />
         </li>
         <li>
           <MobileNavAccordion
             label="Service Areas"
-            links={SERVICE_AREA_NAV_LINKS.map(({ label, href }) => ({ label, href }))}
+            links={[]}
+            nestedSections={SERVICE_AREA_NAV_GROUPS.map((group) => ({
+              label: group.label,
+              links: group.links.map(({ label, href }) => ({ label, href })),
+            }))}
             isOpen={openSections.has("service-areas")}
             onToggle={() => toggleSection("service-areas")}
             onNavigate={onClose}

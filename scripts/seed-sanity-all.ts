@@ -1,5 +1,5 @@
 /**
- * Seeds all Greenbelt Property Management CMS content from the repo.
+ * Seeds all Hatz Court Builders CMS content from the repo.
  * Requires: sanity login + `npm run seed:sanity-all`
  */
 import { execSync } from "node:child_process";
@@ -22,7 +22,7 @@ function run(script: (typeof SEEDS)[number]) {
 }
 
 async function main() {
-  console.log("Greenbelt Property Management — full Sanity seed\n");
+  console.log("Hatz Court Builders — full Sanity seed\n");
   for (const script of SEEDS) {
     run(script);
   }

@@ -3,7 +3,6 @@ import { GPM_GALLERY_IMAGE_PATHS } from "@/lib/gpm-gallery-images";
 import type { PropertyGalleryImage } from "@/lib/property-management-gallery-section";
 
 const SERVICE_GALLERY_OFFSETS: Record<string, number> = {
-  "property-management-services": 2,
   "rental-property-marketing": 6,
   "property-inspections": 10,
   "property-maintenance-services": 14,

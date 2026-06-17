@@ -72,11 +72,11 @@ export function HomeContactSection({
     <section
       ref={contactSectionRef}
       id={sectionId}
-      className={`home-section-viewport relative overflow-hidden bg-zen-rice text-zen-espresso contact-scroll-animate ${
+      className={`relative overflow-hidden bg-zen-rice pb-0 text-zen-espresso contact-scroll-animate ${
         contactRevealed ? "contact-revealed" : ""
       } ${className}`.trim()}
     >
-      <div className="pt-16 md:pt-24">
+      <div className="pt-24 md:pt-32">
         <div className="shell relative z-10">
           <div className="mx-auto flex w-full max-w-2xl flex-col gap-8 xl:max-w-3xl">
             <div className="contact-heading-reveal text-center">

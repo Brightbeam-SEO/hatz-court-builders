@@ -1,5 +1,7 @@
 import type { NextConfig } from "next";
 
+const REMOVED_SERVICE_HUB = "/court-builders-boise-id/";
+
 const REMOVED_SERVICE_REDIRECTS = [
   "rental-property-marketing",
   "property-inspections",
@@ -44,12 +46,12 @@ const nextConfig: NextConfig = {
     const serviceRedirects = REMOVED_SERVICE_REDIRECTS.flatMap((slug) => [
       {
         source: `/${slug}`,
-        destination: "/property-management-services/",
+        destination: REMOVED_SERVICE_HUB,
         permanent: true,
       },
       {
         source: `/services/${slug}`,
-        destination: "/property-management-services/",
+        destination: REMOVED_SERVICE_HUB,
         permanent: true,
       },
     ]);
@@ -97,8 +99,13 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
+        source: "/property-management-services",
+        destination: REMOVED_SERVICE_HUB,
+        permanent: true,
+      },
+      {
         source: "/services/property-management-services",
-        destination: "/property-management-services/",
+        destination: REMOVED_SERVICE_HUB,
         permanent: true,
       },
       ...serviceRedirects,

@@ -9,7 +9,7 @@ export type HomeServiceAccordionItem = {
   href: string;
 };
 
-const SERVICE_HREF = pmServicePagePath("property-management-services");
+const SERVICE_HREF = pmServicePagePath("court-builders-boise-id");
 
 export const SERVICES_SECTION_FEATURED_IMAGE = gpmPick("tennis court resurface crack repair");
 

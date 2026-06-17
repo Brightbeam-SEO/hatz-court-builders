@@ -1,5 +1,5 @@
 /** Location tag shown on blog cards (all posts). */
-export const BLOG_LOCATION_LABEL = "Meridian, ID";
+export const BLOG_LOCATION_LABEL = "Idaho & Arizona";
 
 /** Card shells: no border; image areas stay open, copy blocks use {@link blogPostBodySurfaceClass}. */
 export const blogPanelSurfaceClass = "border-0 bg-transparent shadow-none";
@@ -16,4 +16,4 @@ export const blogPanelCardInteractiveClass = `group ${blogPanelCardClass} ${blog
 export const blogPanelLeadCtaClass =
   "relative z-10 rounded-3xl border-0 bg-transparent p-8 shadow-none sm:p-10";
 
-export const blogLocationPillClass = `inline-flex shrink-0 rounded-full border px-2.5 py-0.5 text-[11px] font-semibold uppercase tracking-wide border-white/25 bg-transparent text-white/80 light:border-zen-taupe/35 light:bg-transparent light:text-zen-taupe`;
+export const blogLocationPillClass = `inline-flex shrink-0 rounded-full border px-2.5 py-0.5 text-[11px] font-semibold tracking-wide border-white/25 bg-transparent text-white/80 light:border-zen-taupe/35 light:bg-transparent light:text-zen-taupe`;

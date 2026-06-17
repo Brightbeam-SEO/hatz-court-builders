@@ -9,9 +9,7 @@ import { getBlogPostPathFromPost } from "@/lib/blog-categories";
 import type { BlogPost } from "@/lib/blog-types";
 import type { SocialLink } from "@/lib/home-content";
 import { PageHeroCtaButtons } from "@/components/layout/page-hero-cta-buttons";
-import { SiteBreadcrumbs } from "@/components/layout/site-breadcrumbs";
 import { SiteFooterRegion } from "@/components/layout/site-footer-region";
-import { SiteHeader } from "@/components/layout/site-header";
 import { BlogArticleLeadCta } from "@/components/blog/blog-article-lead-cta";
 import { BUSINESS } from "@/lib/business";
 
@@ -42,12 +40,7 @@ export function BlogArticlePage({
 
   return (
     <div className="min-h-screen bg-zen-espresso text-white light:bg-transparent light:text-zen-espresso">
-      <header className="relative z-[200] isolate min-h-0 overflow-x-clip bg-zen-espresso text-white light:bg-transparent light:text-zen-espresso">
-        <SiteHeader anchorBase="/" />
-      </header>
-
       <main className="bg-zen-espresso pb-16 light:bg-transparent">
-        <SiteBreadcrumbs />
         <BlogHeroBand imageSrc={post.image} imageAlt={post.imageAlt}>
           <div className="min-w-0 w-full max-w-3xl">
             <p className="text-xs font-semibold uppercase tracking-wide text-white/75">Blog</p>

@@ -14,17 +14,9 @@ const SEGMENT_LABELS: Record<string, string> = {
   blog: "Blog",
   services: "Services",
   city: "Service Areas",
-  "property-management-boise-id": "Property Management Boise",
-  "property-management-eagle-id": "Property Management Eagle",
-  "property-management-in-middleton-id": "Property Management Middleton",
-  "property-management-in-nampa-id": "Property Management Nampa",
-  "property-management-in-star-id": "Property Management Star",
-  "property-management-in-kuna-id": "Property Management Kuna",
-  "property-management-in-garden-city-id": "Property Management Garden City",
   "body-massage": "Body Massage",
   facials: "Facials",
   "foot-massage-reflexology": "Property Management Meridian",
-  "property-management-services": "Property Management Services",
   "rental-property-marketing": "Rental Property Marketing",
   "property-inspections": "Property Inspections",
   "property-maintenance-services": "Property Maintenance Services",
@@ -92,7 +84,7 @@ function labelForSegment(segment: string) {
  * Faint breadcrumb row — place as the first child inside `<main>`, directly above the hero
  * section (same horizontal padding as the hero). Renders nothing on `/`.
  */
-export function SiteBreadcrumbs() {
+export function SiteBreadcrumbs({ onHero = false }: { onHero?: boolean }) {
   const pathname = usePathname() ?? "/";
   const normalized = pathname.endsWith("/") && pathname.length > 1 ? pathname.slice(0, -1) : pathname;
 
@@ -114,19 +106,26 @@ export function SiteBreadcrumbs() {
       aria-label="Breadcrumb"
       className="mx-auto w-full max-w-[95vw] sm:max-w-[min(80vw,100%)] px-2 sm:px-3 md:px-4 pb-2 pt-1 sm:pb-2.5 sm:pt-1.5"
     >
-      <ol className="flex flex-wrap items-center gap-x-1 gap-y-0.5 text-[10px] font-normal leading-snug tracking-wide text-white/38 sm:text-[11px] light:text-zen-taupe">
+      <ol
+        className={`flex flex-wrap items-center gap-x-1 gap-y-0.5 text-[10px] font-normal leading-snug tracking-wide sm:text-[11px] ${
+          onHero ? "text-white/90" : "text-white/38 light:text-zen-taupe"
+        }`}
+      >
         {crumbs.map((crumb, index) => {
           const isLast = index === crumbs.length - 1;
           return (
             <li key={crumb.href} className="inline-flex max-w-full items-center gap-x-1">
               {index > 0 ? (
-                <span className="shrink-0 text-white/25 light:text-slate-400/80" aria-hidden>
+                <span
+                  className={`shrink-0 ${onHero ? "text-white/55" : "text-white/25 light:text-slate-400/80"}`}
+                  aria-hidden
+                >
                   /
                 </span>
               ) : null}
               {isLast ? (
                 <span
-                  className="min-w-0 truncate text-white/48 light:text-zen-taupe"
+                  className={`min-w-0 truncate ${onHero ? "text-white" : "text-white/48 light:text-zen-taupe"}`}
                   aria-current="page"
                 >
                   {crumb.label}
@@ -134,7 +133,11 @@ export function SiteBreadcrumbs() {
               ) : (
                 <Link
                   href={crumb.href}
-                  className="shrink-0 text-white/42 transition hover:text-white/65 light:text-zen-taupe light:hover:text-zen-taupe"
+                  className={`shrink-0 transition ${
+                    onHero
+                      ? "text-white/85 hover:text-white"
+                      : "text-white/42 hover:text-white/65 light:text-zen-taupe light:hover:text-zen-taupe"
+                  }`}
                 >
                   {crumb.label}
                 </Link>

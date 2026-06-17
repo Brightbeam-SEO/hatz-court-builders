@@ -4,8 +4,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { BUSINESS } from "@/lib/business";
-import { pmServicePagePath } from "@/lib/pm-service-pages";
-import { SERVICE_AREA_NAV_LINKS } from "@/lib/service-area-nav";
+import { COURT_CONSTRUCTION_NAV_LINKS } from "@/lib/court-construction-nav";
+import { SERVICE_AREA_NAV_GROUPS } from "@/lib/service-area-nav";
 import { MobileNavMenu } from "@/components/layout/mobile-nav-menu";
 import {
   headerDropdownPanelClass,
@@ -67,10 +67,35 @@ export function SiteHeader({ blendWithBackground = true }: SiteHeaderProps) {
             </Link>
 
             <ul className="hidden min-w-0 flex-wrap items-center justify-center gap-x-2 gap-y-1 font-sans text-xs font-medium tracking-[0.0125em] text-zen-espresso/80 sm:gap-x-3 lg:col-start-2 lg:row-start-1 lg:flex lg:w-auto lg:gap-x-3 lg:gap-y-0 xl:gap-x-5 xl:text-sm">
-              <li className="shrink-0 whitespace-nowrap">
-                <a className={headerTopLinkClass} href={pmServicePagePath("property-management-services")}>
+              <li className="group relative shrink-0 whitespace-nowrap after:absolute after:left-0 after:top-full after:h-3 after:w-full after:content-['']">
+                <button type="button" className={`inline-flex items-center gap-1 ${headerTopLinkClass}`}>
                   Services
-                </a>
+                  <svg className="h-4 w-4" viewBox="0 0 20 20" fill="currentColor" aria-hidden>
+                    <path d="M5.75 7.5L10 11.75L14.25 7.5" />
+                  </svg>
+                </button>
+                <ul className={`${headerDropdownPanelClass} left-0 top-full mt-1 w-56 translate-y-1`}>
+                  <li className="group/court relative">
+                    <button
+                      type="button"
+                      className={`${headerNavSubLinkClass} inline-flex w-full items-center justify-between`}
+                    >
+                      Court Construction
+                      <svg className="h-4 w-4" viewBox="0 0 20 20" fill="currentColor" aria-hidden>
+                        <path d="M7.5 5.75L11.75 10L7.5 14.25" />
+                      </svg>
+                    </button>
+                    <ul className={`${headerDropdownPanelClass} left-full top-0 ml-1 hidden w-72 group-hover/court:block`}>
+                      {COURT_CONSTRUCTION_NAV_LINKS.map(({ label, href }) => (
+                        <li key={label}>
+                          <a className={headerNavSubLinkClass} href={href}>
+                            {label}
+                          </a>
+                        </li>
+                      ))}
+                    </ul>
+                  </li>
+                </ul>
               </li>
               <li className="group relative shrink-0 whitespace-nowrap after:absolute after:left-0 after:top-full after:h-3 after:w-full after:content-['']">
                 <button type="button" className={`inline-flex items-center gap-1 ${headerTopLinkClass}`}>
@@ -80,11 +105,26 @@ export function SiteHeader({ blendWithBackground = true }: SiteHeaderProps) {
                   </svg>
                 </button>
                 <ul className={`${headerDropdownPanelClass} left-0 top-full mt-1 w-56 translate-y-1`}>
-                  {SERVICE_AREA_NAV_LINKS.map(({ label, href }) => (
-                    <li key={label}>
-                      <a className={headerNavSubLinkClass} href={href}>
-                        {label}
-                      </a>
+                  {SERVICE_AREA_NAV_GROUPS.map((group) => (
+                    <li key={group.label} className="group/area relative">
+                      <button
+                        type="button"
+                        className={`${headerNavSubLinkClass} inline-flex w-full items-center justify-between`}
+                      >
+                        {group.label}
+                        <svg className="h-4 w-4" viewBox="0 0 20 20" fill="currentColor" aria-hidden>
+                          <path d="M7.5 5.75L11.75 10L7.5 14.25" />
+                        </svg>
+                      </button>
+                      <ul className={`${headerDropdownPanelClass} left-full top-0 ml-1 hidden w-64 group-hover/area:block`}>
+                        {group.links.map(({ label, href }) => (
+                          <li key={label}>
+                            <a className={headerNavSubLinkClass} href={href}>
+                              {label}
+                            </a>
+                          </li>
+                        ))}
+                      </ul>
                     </li>
                   ))}
                 </ul>

@@ -9,9 +9,7 @@ import { HeroTrustLogoMarquee } from "@/components/home/hero-trust-logo-marquee"
 import { HomeContentProvider } from "@/components/home/home-content-context";
 import { ServicesSection } from "@/components/home/services-section";
 import { PageHeroCtaButtons } from "@/components/layout/page-hero-cta-buttons";
-import { SiteBreadcrumbs } from "@/components/layout/site-breadcrumbs";
 import { SiteFooterRegion } from "@/components/layout/site-footer-region";
-import { SiteHeader } from "@/components/layout/site-header";
 import { BUSINESS } from "@/lib/business";
 import { defaultHomePageCopy } from "@/lib/home-page-copy";
 import { additionalReviewsPageTestimonials } from "@/lib/reviews-testimonials";
@@ -22,32 +20,65 @@ const aboutHeroImage = gpmPick("outdoor multi court acrylic surfacing");
 const aboutCollagePrimary = gpmPick("backyard pickleball basketball dual sport court");
 const aboutCollageSecondary = gpmPick("indoor hardwood basketball court gym interior");
 const aboutCollageFoot = gpmPick("tennis court resurface blue green acrylic");
-const aboutWhyPanel = gpmPick("basketball tile court custom logo branding");
+const aboutWhyPanel = gpmPick("multi sport outdoor backyard court");
 
 const closingShowcaseAvatars = additionalReviewsPageTestimonials.slice(0, 3);
 
 const whyHomeownersItems = [
   {
-    icon: "/images/about/family-owned-operated.svg",
-    title: "All surface types",
+    icon: "/images/about/all-surface-types.png",
+    title: "All Surface Types",
     body: "Acrylic, cushioned acrylic, modular tile, hardwood, synthetic turf, asphalt, and concrete — not just one system.",
   },
   {
-    icon: "/images/about/personally-managed.svg",
-    title: "One-stop shop",
+    icon: "/images/about/one-stop-shop.png",
+    title: "One-Stop Shop",
     body: "Design, construction, resurfacing, striping, fencing, lighting, and components from one trusted team.",
   },
   {
-    icon: "/images/about/integrity-transparency.svg",
-    title: "Residential & commercial",
+    icon: "/images/about/residential-commercial.svg",
+    title: "Residential & Commercial",
     body: "Backyard courts, school facilities, parks & rec projects, and multi-court complexes across Idaho and Arizona.",
   },
   {
-    icon: "/images/about/treasure-valley-focus.svg",
+    icon: "/images/about/idaho-arizona.svg",
     title: "Idaho & Arizona",
     body: `Founded ${BUSINESS.foundedDate} — serving Boise, Scottsdale, and communities across both states.`,
   },
 ] as const;
+
+function AboutWhyIcon({ src }: { src: string }) {
+  if (src.endsWith(".svg")) {
+    return (
+      <Image
+        src={src}
+        alt=""
+        width={36}
+        height={36}
+        className="mt-1 h-9 w-9 shrink-0 object-contain"
+        unoptimized
+        aria-hidden
+      />
+    );
+  }
+
+  return (
+    <span
+      aria-hidden
+      className="mt-1 inline-block h-9 w-9 shrink-0 bg-zen-crimson"
+      style={{
+        WebkitMaskImage: `url(${src})`,
+        maskImage: `url(${src})`,
+        WebkitMaskSize: "contain",
+        maskSize: "contain",
+        WebkitMaskRepeat: "no-repeat",
+        maskRepeat: "no-repeat",
+        WebkitMaskPosition: "center",
+        maskPosition: "center",
+      }}
+    />
+  );
+}
 
 function AboutTrustedLocalsCard() {
   const { closingShowcaseBragLine, closingShowcaseBragSubline } = defaultHomePageCopy;
@@ -97,20 +128,15 @@ export function AboutPage({
 }) {
   return (
     <div className="min-h-screen bg-zen-espresso text-white light:bg-transparent light:text-zen-espresso">
-      <header className="relative z-[200] isolate min-h-0 overflow-x-clip bg-zen-espresso text-white light:bg-transparent light:text-zen-espresso">
-        <SiteHeader anchorBase="/" />
-      </header>
-
       <main className="bg-zen-espresso pb-16 light:bg-transparent">
-        <SiteBreadcrumbs />
         <BlogHeroBand imageSrc={aboutHeroImage} imageAlt={gpmImageAlt(aboutHeroImage)}>
           <div className="min-w-0 w-full max-w-3xl">
             <h1 className="font-heading text-4xl font-bold leading-tight text-white sm:text-5xl md:text-6xl">
               About Us
             </h1>
             <p className="mt-2 max-w-2xl text-sm font-medium text-white/90 md:text-base">
-              {BUSINESS.nameFull} — {BUSINESS.legalNote}. Custom tennis, basketball, pickleball, and multi-use
-              courts for homeowners, schools, and parks.
+              Court builders in Boise and Scottsdale specializing in custom tennis, basketball, pickleball, and
+              multi-use court construction for homes, schools, parks, and commercial properties.
             </p>
             <PageHeroCtaButtons />
           </div>
@@ -161,12 +187,15 @@ export function AboutPage({
                   About {BUSINESS.nameShort}
                 </h2>
                 <p className="mt-4 text-base leading-7 text-white/85 light:text-zen-taupe">
-                  {BUSINESS.nameShort} opened {BUSINESS.foundedDate} as a trusted court builder serving Idaho and
-                  Arizona. We specialize in sports construction for residential and commercial projects.
+                  Hatz Court Builders designs and builds custom sports courts for homeowners, schools, parks, HOAs,
+                  and commercial properties throughout Idaho and Arizona. With locations in Boise and Scottsdale, we
+                  create courts built for performance, durability, and long-term enjoyment.
                 </p>
                 <p className="mt-4 text-base leading-7 text-white/85 light:text-zen-taupe">
-                  {BUSINESS.descriptionShort} We also serve Phoenix, Scottsdale, Mesa, Gilbert, Chandler, and
-                  surrounding Arizona communities with the same full design-build approach.
+                  We specialize in tennis, basketball, pickleball, volleyball, bocce, padel, futsal, and multi-use
+                  courts, offering complete construction, resurfacing, repairs, fencing, lighting, and custom court
+                  features. Our team manages every stage of the project to deliver a court tailored to your space and
+                  goals.
                 </p>
                 <PageHeroCtaButtons onDark={false} />
               </article>
@@ -198,30 +227,22 @@ export function AboutPage({
               <article className="flex min-w-0 flex-col rounded-3xl border border-zen-crimson/40 bg-zen-crimson p-6 text-white shadow-[0_28px_60px_rgba(18,84,155,0.35)] sm:p-8 lg:col-span-2 lg:col-start-1 lg:row-start-2">
                 <p className="text-xs font-semibold uppercase tracking-[0.16em] text-white/85">Vision</p>
                 <p className="mt-2 text-sm leading-7 text-white/95 sm:text-base">
-                  Every court project deserves a builder who understands surfacing, playability, and long-term
-                  durability — not a one-size-fits-all approach.
+                  Every court should be built around the way it will be used, from the surface underfoot to the layout,
+                  striping, equipment, and long-term durability.
                 </p>
                 <p className="mt-6 text-xs font-semibold uppercase tracking-[0.16em] text-white/85">
                   Mission
                 </p>
                 <p className="mt-2 text-sm leading-7 text-white/95 sm:text-base">
-                  Deliver custom court construction and resurfacing with integrity — from backyard pickleball courts
-                  to large multi-court facilities, with every component handled in-house.
+                  To deliver custom court construction, resurfacing, and design-build solutions with honest guidance,
+                  quality craftsmanship, and every major component handled by one trusted team.
                 </p>
               </article>
 
               <ul className="grid min-w-0 grid-cols-1 gap-6 sm:grid-cols-2 sm:gap-6 lg:col-span-2 lg:col-start-1 lg:row-start-3 lg:gap-x-8 lg:gap-y-8">
                 {whyHomeownersItems.map((item) => (
                   <li key={item.title} className="flex min-w-0 gap-4">
-                    <Image
-                      src={item.icon}
-                      alt=""
-                      width={32}
-                      height={32}
-                      className="mt-1 h-8 w-8 shrink-0 object-contain"
-                      unoptimized
-                      aria-hidden
-                    />
+                    <AboutWhyIcon src={item.icon} />
                     <div className="min-w-0">
                       <p className="font-heading text-base font-semibold text-white light:text-zen-espresso sm:text-lg">
                         {item.title}

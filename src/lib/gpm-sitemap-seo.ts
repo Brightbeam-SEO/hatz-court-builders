@@ -42,10 +42,30 @@ export const GPM_SITEMAP_SEO: Record<
     description:
       "Tips and guides about court construction, surfacing options, and multi-use court design from Hatz Court Builders.",
   },
-  "/property-management-services/": {
-    title: "Court Construction Services | Hatz Court Builders",
+  "/basketball-court-construction/": {
+    title: "Basketball Court Construction | Custom Courts | Hatz",
     description:
-      "Custom tennis, basketball, pickleball, and multi-use court construction in Idaho and Arizona. Free consultation.",
+      "Custom basketball court construction for homes, schools, HOAs, parks, gyms, and commercial properties. Call us today!",
+  },
+  "/pickleball-court-construction/": {
+    title: "Pickleball Court Construction | One-Stop Shop | Hatz",
+    description:
+      "Professional pickleball court construction for homes, schools, HOAs, parks, clubs, and commercial properties. Call us today.",
+  },
+  "/volleyball-court-construction/": {
+    title: "Volleyball Court Construction | Custom Courts | Hatz",
+    description:
+      "Custom volleyball court construction for homes, schools, parks, HOAs, clubs, recreation centers, and commercial properties. Call us today!",
+  },
+  "/futsal-soccer-court-construction/": {
+    title: "Futsal / Soccer Court Construction | Custom Courts | Hatz",
+    description:
+      "Custom futsal and soccer court construction for schools, parks, clubs, training facilities, HOAs, gyms, and commercial properties. Call us today!",
+  },
+  "/tennis-court-construction/": {
+    title: "Tennis Court Construction | Custom Courts | Hatz",
+    description:
+      "Custom tennis court construction for homes, schools, clubs, HOAs, parks, and commercial properties. Call us today!",
   },
 };
 

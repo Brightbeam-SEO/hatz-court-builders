@@ -44,8 +44,8 @@ async function main() {
       href: link.href,
     })),
     defaultSeo: {
-      metaTitle: `${BUSINESS.nameFull} | Meridian, Idaho`,
-      metaDescription: `${BUSINESS.description} ${BUSINESS.offers.join(". ")}.`,
+      metaTitle: `${BUSINESS.nameFull} | Boise & Scottsdale Court Builder`,
+      metaDescription: BUSINESS.descriptionShort,
     },
   };
 

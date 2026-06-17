@@ -129,10 +129,10 @@ a:not(.btn-call):not(.btn-submit) {
   color: inherit;
 }
 
-/* Contact / social icon pills: force white glyphs on green hover */
+/* Contact / social icon pills: dark glyphs on neon green hover */
 a.contact-social-link:hover svg,
 a.contact-social-link:hover span[aria-hidden] {
-  color: #ffffff;
+  color: var(--zen-espresso);
 }
 
 /* Unlayered — must beat `color: inherit` and Tailwind `light:text-*` on ancestors */
@@ -247,6 +247,25 @@ html[data-theme="light"] a.blog-lead-cta-secondary.btn-alt:active {
   background-color: #000000 !important;
   color: #ffffff !important;
   -webkit-text-fill-color: #ffffff !important;
+}
+
+/* Property gallery CTA on rice background: keep black outline/text in all states. */
+a.property-gallery-cta-secondary.btn-alt,
+a.property-gallery-cta-secondary.btn-alt:link,
+a.property-gallery-cta-secondary.btn-alt:visited,
+a.property-gallery-cta-secondary.page-hero-cta-secondary.btn-alt.btn-alt-inverse,
+a.property-gallery-cta-secondary.page-hero-cta-secondary.btn-alt.btn-alt-inverse:link,
+a.property-gallery-cta-secondary.page-hero-cta-secondary.btn-alt.btn-alt-inverse:visited,
+a.property-gallery-cta-secondary.btn-alt:hover,
+a.property-gallery-cta-secondary.btn-alt:focus-visible,
+a.property-gallery-cta-secondary.btn-alt:active,
+a.property-gallery-cta-secondary.page-hero-cta-secondary.btn-alt.btn-alt-inverse:hover,
+a.property-gallery-cta-secondary.page-hero-cta-secondary.btn-alt.btn-alt-inverse:focus-visible,
+a.property-gallery-cta-secondary.page-hero-cta-secondary.btn-alt.btn-alt-inverse:active {
+  border-color: #000000 !important;
+  background-color: transparent !important;
+  color: #000000 !important;
+  -webkit-text-fill-color: #000000 !important;
 }
 
 /* Blog article sidebar CTA card — outlined button on green panel */
@@ -1650,6 +1669,18 @@ html[data-theme="light"] .trust-signal-logo-on-crimson {
 }
 html[data-theme="light"] .faq-answer-collapsed {
   color: var(--zen-taupe);
+}
+
+.faq-item-reveal[data-faq-open="false"]:hover {
+  border-color: var(--zen-crimson) !important;
+  background-color: var(--zen-crimson) !important;
+  color: rgb(255 255 255);
+}
+
+.faq-item-reveal[data-faq-open="false"]:hover .faq-chevron,
+.faq-item-reveal[data-faq-open="false"]:hover button > span:first-child,
+.faq-item-reveal[data-faq-open="false"]:hover .faq-answer {
+  color: rgb(255 255 255 / 0.95) !important;
 }
 
 html[data-theme="light"] .faq-item-reveal[data-faq-open="false"]:not(:hover) .faq-chevron {

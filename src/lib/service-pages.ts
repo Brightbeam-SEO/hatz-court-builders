@@ -24,8 +24,7 @@ export const SERVICE_PAGES: Record<string, ServicePageEntry> = {
 
 /** Homepage `#services` carousel titles → page slugs. */
 const SERVICE_CAROUSEL_LABEL_TO_SLUG: Record<string, string> = {
-  "Property Management": "property-management-services",
-  "Property Management Services": "property-management-services",
+  "Court Construction": "court-builders-boise-id",
   "Foot Massage & Reflexology": "foot-massage-reflexology",
 };
 

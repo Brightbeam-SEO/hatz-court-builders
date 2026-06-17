@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 210" role="img" aria-labelledby="title desc">
+  <title id="title">Zen wave pattern</title>
+  <desc id="desc">Red repeating scallop pattern with warm gold linework.</desc>
+  <defs>
+    <pattern id="zen-wave" width="120" height="70" patternUnits="userSpaceOnUse">
+      <rect width="120" height="70" fill="#a01204" />
+      <g fill="none" stroke="#e7c98f" stroke-linecap="round">
+        <path d="M0 70a60 60 0 0 1 120 0" stroke-width="4" />
+        <path d="M12 70a48 48 0 0 1 96 0" stroke-width="4" />
+        <path d="M24 70a36 36 0 0 1 72 0" stroke-width="4" />
+        <path d="M36 70a24 24 0 0 1 48 0" stroke-width="4" />
+
+        <path d="M-60 35a60 60 0 0 1 120 0" stroke-width="4" />
+        <path d="M-48 35a48 48 0 0 1 96 0" stroke-width="4" />
+        <path d="M-36 35a36 36 0 0 1 72 0" stroke-width="4" />
+        <path d="M-24 35a24 24 0 0 1 48 0" stroke-width="4" />
+
+        <path d="M60 35a60 60 0 0 1 120 0" stroke-width="4" />
+        <path d="M72 35a48 48 0 0 1 96 0" stroke-width="4" />
+        <path d="M84 35a36 36 0 0 1 72 0" stroke-width="4" />
+        <path d="M96 35a24 24 0 0 1 48 0" stroke-width="4" />
+      </g>
+    </pattern>
+  </defs>
+  <rect width="360" height="210" fill="url(#zen-wave)" />
+</svg>

@@ -6,12 +6,12 @@ import {
   BlogMarkdownArticle,
   type BlogMarkdownListBulletStyle,
 } from "@/components/blog/blog-markdown-article";
-import { BoiseGetStartedCta } from "@/components/landing/boise-get-started-cta";
 import { BoiseMapEmbed } from "@/components/landing/boise-map-embed";
 import { ChristmasLightInstallationGallery } from "@/components/landing/christmas-light-installation-gallery";
 import { HeavyEquipmentFleetGallery } from "@/components/landing/heavy-equipment-fleet-gallery";
 import { OtherServicesNav } from "@/components/landing/other-services-nav";
 import { cityPagePath, isCityPropertyPageSlug } from "@/lib/city-property-pages";
+import { isCourtConstructionSlug } from "@/lib/court-construction-nav";
 import {
   getOtherServicesSidebarGroups,
   getOtherServicesSidebarLinks,
@@ -44,6 +44,26 @@ function stripMapMarkers(markdown: string): string {
   return markdown
     .replaceAll(MAP_EMBED_MARKER, "")
     .replace(/\n*---\n*\n*(?=<h2)/g, "\n\n")
+    .replace(/\n{3,}/g, "\n\n")
+    .trim();
+}
+
+/**
+ * City markdown sometimes contains a written FAQ section that duplicates
+ * the dedicated accordion component. Keep only the accordion on city pages.
+ */
+function stripCityMarkdownFaqSection(markdown: string): string {
+  const faqHeadingPattern =
+    /(?:^|\n)##\s+.*(?:frequently asked questions?|faqs?|questions?)(?:\s.*)?(?:\n|$)/im;
+  const match = faqHeadingPattern.exec(markdown);
+  if (!match || typeof match.index !== "number") return markdown;
+  return markdown.slice(0, match.index).trim();
+}
+
+/** Remove inline markdown image blocks from Arizona city article bodies. */
+function stripMarkdownImages(markdown: string): string {
+  return markdown
+    .replace(/!\[[^\]]*]\([^)]+\)/g, "")
     .replace(/\n{3,}/g, "\n\n")
     .trim();
 }
@@ -129,20 +149,17 @@ function MarkdownChunkWithOptionalFleetGallery({
 function renderMarkdownWithGetStartedCta(
   chunk: string,
   wrapperClassName: string,
-  contactFormHref?: string,
   listBulletStyle: BlogMarkdownListBulletStyle = "sunset-check",
 ) {
   const trimmed = chunk.trim();
   if (!trimmed) return null;
   const ctaParts = trimmed.split(GET_STARTED_CTA_MARKER);
-  const hasCta = ctaParts.length > 1;
   const beforeCta = (ctaParts[0] ?? "").trim();
-  const afterCta = hasCta ? ctaParts.slice(1).join(GET_STARTED_CTA_MARKER).trim() : "";
+  const afterCta = ctaParts.length > 1 ? ctaParts.slice(1).join(GET_STARTED_CTA_MARKER).trim() : "";
 
   return (
     <div className={wrapperClassName}>
       {beforeCta ? <BlogMarkdownArticle markdown={beforeCta} listBulletStyle={listBulletStyle} /> : null}
-      {hasCta ? <BoiseGetStartedCta contactFormHref={contactFormHref} /> : null}
       {afterCta ? <BlogMarkdownArticle markdown={afterCta} listBulletStyle={listBulletStyle} /> : null}
     </div>
   );
@@ -150,16 +167,14 @@ function renderMarkdownWithGetStartedCta(
 
 function MarkdownAfterProcessBlock({
   markdown,
-  contactFormHref,
   listBulletStyle = "sunset-check",
 }: {
   markdown: string;
-  contactFormHref?: string;
   listBulletStyle?: BlogMarkdownListBulletStyle;
 }) {
   const trimmed = markdown.trim();
   if (!trimmed) return null;
-  return renderMarkdownWithGetStartedCta(trimmed, "mt-8", contactFormHref, listBulletStyle);
+  return renderMarkdownWithGetStartedCta(trimmed, "mt-8", listBulletStyle);
 }
 
 /** Long-form service copy for Boise ID landing; sidebar uses “Other services” hub links instead of author/share/TOC. */
@@ -170,21 +185,23 @@ export function PressureWashingBoiseArticleSection({
   markdown: string;
   cityPage?: TreasureValleyPressurePageConfig | null;
 }) {
-  const body = stripMapMarkers(markdown.trim());
+  const baseBody = stripMapMarkers(markdown.trim());
+  const cityAdjustedBody = cityPage ? stripCityMarkdownFaqSection(baseBody) : baseBody;
+  const body =
+    cityPage?.slug.includes("-az") ? stripMarkdownImages(cityAdjustedBody) : cityAdjustedBody;
   const mapEmbedSrc = cityPage?.mapEmbedSrc ?? EAGLE_AREA_MAP.mapEmbedSrc;
   const mapIframeTitle = cityPage?.mapIframeTitle ?? EAGLE_AREA_MAP.mapIframeTitle;
   const sidebarPath = cityPage
     ? isCityPropertyPageSlug(cityPage.slug)
       ? cityPagePath(cityPage.slug)
       : landingSidebarPath(cityPage.slug)
-    : pmServicePagePath("property-management-services");
+    : pmServicePagePath("court-builders-boise-id");
   const shareTitle =
     cityPage?.shareTitle ?? `${BUSINESS.nameShort} · Massage & spa · Eagle, ID`;
   const sidebarPanelId = cityPage?.sidebarPanelId ?? "boise-other-services-desktop";
   const otherServicesGroups = cityPage ? getOtherServicesSidebarGroups(cityPage.slug) : undefined;
   const otherServicesLinks =
     cityPage && !otherServicesGroups ? getOtherServicesSidebarLinks(cityPage.slug) : undefined;
-  const bottomFormHref = cityPage ? `#${cityPage.bottomContactFormId}` : undefined;
   const listBulletStyle: BlogMarkdownListBulletStyle =
     cityPage?.articleListBulletStyle ?? "sunset-check";
   const stepBadgeVariant = cityPage?.timelineStepBadgeVariant ?? "gradient";
@@ -207,7 +224,7 @@ export function PressureWashingBoiseArticleSection({
   const markdownAfterProcess = hasProcessTimeline ? procParts.slice(1).join(PROCESS_MARKER).trim() : "";
 
   return (
-    <section className="section-pad bg-zen-espresso text-white light:bg-transparent light:text-zen-espresso">
+    <section className="section-pad bg-zen-crimson text-white light:bg-transparent light:text-zen-espresso">
       <div className="shell">
         <div className="mx-auto w-full max-w-6xl">
           <div className="grid items-start gap-10 border-t border-white/10 pt-8 light:border-slate-200 xl:grid-cols-[minmax(0,1fr)_19rem] xl:gap-12">
@@ -242,7 +259,6 @@ export function PressureWashingBoiseArticleSection({
                       {markdownAfterProcess ? (
                         <MarkdownAfterProcessBlock
                           markdown={markdownAfterProcess}
-                          contactFormHref={bottomFormHref}
                           listBulletStyle={listBulletStyle}
                         />
                       ) : null}
@@ -254,7 +270,7 @@ export function PressureWashingBoiseArticleSection({
                       wrapperClassName={hasWhatWeOptimize ? "mt-8" : undefined}
                     />
                   ) : null}
-                  {cityPage ? (
+                  {cityPage && !isCourtConstructionSlug(cityPage.slug) ? (
                     <BoiseMapEmbed className="mt-12" src={mapEmbedSrc} title={mapIframeTitle} />
                   ) : null}
                   {cityPage?.serviceHighlightCards?.length ? (

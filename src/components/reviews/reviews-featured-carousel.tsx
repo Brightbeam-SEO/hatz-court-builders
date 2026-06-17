@@ -5,6 +5,8 @@ import { useEffect, useState } from "react";
 import type { GoogleReview } from "@/lib/home-content";
 
 const reviewStarClass = "text-[#FFD54A] drop-shadow-[0_0_1px_rgba(0,0,0,0.35)]";
+const FEATURED_REVIEW_QUOTE_LEFT_SRC = "/images/reviews/quotation-marks-left.svg";
+const FEATURED_REVIEW_QUOTE_RIGHT_SRC = "/images/reviews/quotation-marks-right.svg";
 
 export function ReviewsFeaturedCarousel({ testimonials }: { testimonials: GoogleReview[] }) {
   const [activeReviewIndex, setActiveReviewIndex] = useState(0);
@@ -19,9 +21,25 @@ export function ReviewsFeaturedCarousel({ testimonials }: { testimonials: Google
   }, [testimonials.length]);
 
   return (
-    <article className="relative overflow-hidden rounded-3xl bg-zen-crimson p-8 text-white shadow-[0_24px_50px_rgba(18,84,155,0.45)] ring-1 ring-white/15 sm:p-10">
+    <article className="relative overflow-visible rounded-3xl bg-zen-crimson p-8 text-white shadow-[0_24px_50px_rgba(18,84,155,0.45)] ring-1 ring-white/15 sm:p-10">
+      <Image
+        src={FEATURED_REVIEW_QUOTE_LEFT_SRC}
+        alt=""
+        width={136}
+        height={78}
+        aria-hidden
+        className="pointer-events-none absolute left-6 top-0 z-[1] h-[3.75rem] w-auto -translate-y-[42%] sm:left-8 sm:h-[4.25rem]"
+      />
+      <Image
+        src={FEATURED_REVIEW_QUOTE_RIGHT_SRC}
+        alt=""
+        width={136}
+        height={78}
+        aria-hidden
+        className="pointer-events-none absolute bottom-0 right-6 z-[1] h-[3.75rem] w-auto translate-y-[42%] sm:right-8 sm:h-[4.25rem]"
+      />
       <div
-        className="pointer-events-none absolute inset-0 opacity-25"
+        className="pointer-events-none absolute inset-0 overflow-hidden rounded-3xl opacity-25"
         aria-hidden
         style={{
           backgroundImage:
@@ -29,7 +47,7 @@ export function ReviewsFeaturedCarousel({ testimonials }: { testimonials: Google
         }}
       />
       {activeReview ? (
-        <div key={activeReview.id} className="relative">
+        <div key={activeReview.id} className="relative z-10">
           <p className="text-sm font-semibold uppercase tracking-[0.14em] text-white/80">Featured Review</p>
           <div className="mt-4 flex items-center gap-3">
             <div className="relative h-12 w-12 overflow-hidden rounded-full ring-2 ring-white/25">
@@ -54,7 +72,7 @@ export function ReviewsFeaturedCarousel({ testimonials }: { testimonials: Google
           </blockquote>
         </div>
       ) : (
-        <p className="relative text-sm text-white/90">Reviews will appear here soon.</p>
+        <p className="relative z-10 text-sm text-white/90">Reviews will appear here soon.</p>
       )}
     </article>
   );

@@ -9,11 +9,8 @@ import type { BlogPost } from "@/lib/blog-types";
 import type { SocialLink } from "@/lib/home-content";
 import { BlogBookingStrip } from "@/components/blog/blog-article-lead-cta";
 import { BlogHeroBand } from "@/components/blog/blog-hero-band";
-import { HomeSectionGridDecor } from "@/components/home/home-section-grid-decor";
 import { PageHeroCtaButtons } from "@/components/layout/page-hero-cta-buttons";
-import { SiteBreadcrumbs } from "@/components/layout/site-breadcrumbs";
 import { SiteFooterRegion } from "@/components/layout/site-footer-region";
-import { SiteHeader } from "@/components/layout/site-header";
 import { BUSINESS } from "@/lib/business";
 import {
   BLOG_LOCATION_LABEL,
@@ -296,20 +293,15 @@ export function BlogPage({
 
   return (
     <div className="min-h-screen bg-zen-espresso text-white light:bg-transparent light:text-zen-espresso">
-      <header className="relative z-[200] isolate min-h-0 overflow-x-clip bg-zen-espresso text-white light:bg-transparent light:text-zen-espresso">
-        <SiteHeader anchorBase="/" />
-      </header>
-
       <main className="bg-zen-espresso pb-16 light:bg-transparent">
-        <SiteBreadcrumbs />
         <BlogHeroBand imageSrc={BLOG_HERO_IMAGE} imageAlt={zenImageAlt(BLOG_HERO_IMAGE)}>
           <div className="min-w-0 w-full max-w-3xl">
             <h1 className="font-heading text-4xl font-bold leading-tight text-white sm:text-5xl md:text-6xl">
               Blog
             </h1>
             <p className="mt-2 max-w-2xl text-sm font-medium text-white/90 md:text-base">
-              Property management insights, rental tips, and Treasure Valley market updates for Meridian
-              property owners and real estate investors.
+              Court construction tips, surfacing guides, and design ideas for homeowners, schools, parks,
+              and commercial properties in Idaho and Arizona.
             </p>
             <PageHeroCtaButtons align="start" />
           </div>
@@ -317,15 +309,14 @@ export function BlogPage({
 
         {featuredPosts.length > 0 ? (
           <section className="section-pad relative overflow-hidden bg-zen-espresso pb-10 text-white light:bg-transparent light:text-zen-espresso lg:pb-12">
-            <HomeSectionGridDecor placement="top-left-cards" />
             <div className="shell relative z-10">
               <h2 className="font-heading text-2xl font-bold md:text-3xl">
                 <span className="text-white light:text-zen-espresso">Featured</span>
                 <span className="text-white light:text-zen-espresso"> Articles</span>
               </h2>
               <p className="mt-2 max-w-2xl text-sm text-white/75 light:text-zen-taupe sm:text-base">
-                Helpful resources for property owners looking to simplify rental management and protect
-                their investments.
+                Helpful resources about custom tennis, basketball, pickleball, and multi-use court
+                construction, including surface options, project planning, resurfacing, and court design.
               </p>
               <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3 lg:gap-8">
                 {featuredPosts.map((post) => (
@@ -342,8 +333,8 @@ export function BlogPage({
               All Articles
             </h2>
             <p className="mt-2 max-w-2xl text-sm text-white/75 light:text-zen-taupe sm:text-base">
-              Explore all our property management articles, rental tips, and Treasure Valley market
-              insights for property owners and real estate investors.
+              Explore court construction guides, sports surface tips, resurfacing advice, and project ideas
+              from Hatz Court Builders for clients in Boise, Scottsdale, and surrounding areas.
             </p>
             {hasListContent ? (
               <div className="mt-8 sm:mt-10">

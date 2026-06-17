@@ -9,7 +9,7 @@ export const locationPage = defineType({
   title: "Location pages",
   type: "document",
   description:
-    "City pages → **Location pages** (`/city/…/`). Service pages → **Service pages** (site root, e.g. `/property-management-services/`). Run `npm run seed:sanity-location-pages` to sync Markdown from the repo.",
+    "City pages → **Location pages** (`/court-builder-…/`). Run `npm run seed:sanity-location-pages` to sync Markdown from the repo.",
   groups: [
     { name: "content", title: "Content", default: true },
     { name: "seo", title: "SEO" },
@@ -49,7 +49,7 @@ export const locationPage = defineType({
       options: { source: "title", maxLength: 96 },
       validation: (r) => r.required(),
       description:
-        "URL slug only — must match the site registry (e.g. `property-management-services`, `property-management-boise-id`).",
+        "URL slug only — must match the site registry (e.g. `court-builders-boise-id`, `court-builder-phoenix-az`).",
     }),
     defineField({
       name: "pageCategory",
@@ -58,14 +58,15 @@ export const locationPage = defineType({
       group: "content",
       options: {
         list: [
-          { title: "Location page — city (/city/…)", value: "city" },
-          { title: "Service page — site root (/[slug]/)", value: "service" },
+          { title: "Location page", value: "city" },
+          { title: "Service page", value: "service" },
         ],
         layout: "radio",
       },
+      initialValue: "city",
       validation: (r) => r.required(),
       description:
-        "Location page → **Location pages** in Studio. Service page → **Service pages** (URL is `greenbeltpm.com/{slug}/`, not `/services/`).",
+        "Location pages appear under **Location pages**; service landings (e.g. basketball-court-construction) under **Service pages**.",
     }),
     defineField({
       name: "locationName",

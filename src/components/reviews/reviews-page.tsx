@@ -3,11 +3,8 @@ import Image from "next/image";
 import type { GoogleReview, SocialLink } from "@/lib/home-content";
 import { BlogHeroBand } from "@/components/blog/blog-hero-band";
 import { HomeContactSection } from "@/components/home/home-contact-section";
-import { HomeSectionGridDecor } from "@/components/home/home-section-grid-decor";
 import { PageHeroCtaButtons } from "@/components/layout/page-hero-cta-buttons";
-import { SiteBreadcrumbs } from "@/components/layout/site-breadcrumbs";
 import { SiteFooterRegion } from "@/components/layout/site-footer-region";
-import { SiteHeader } from "@/components/layout/site-header";
 import { ReviewsFeaturedCarousel } from "@/components/reviews/reviews-featured-carousel";
 import { BUSINESS } from "@/lib/business";
 import { gpmImageAlt } from "@/lib/gpm-gallery-images";
@@ -26,12 +23,7 @@ export function ReviewsPage({
 }) {
   return (
     <div className="min-h-screen bg-zen-espresso text-white light:bg-transparent light:text-zen-espresso">
-      <header className="relative z-[200] isolate min-h-0 overflow-x-clip bg-zen-espresso text-white light:bg-transparent light:text-zen-espresso">
-        <SiteHeader anchorBase="/" />
-      </header>
-
-      <main className="bg-zen-espresso pb-16 light:bg-transparent">
-        <SiteBreadcrumbs />
+      <main className="bg-zen-espresso light:bg-transparent">
         <BlogHeroBand imageSrc={REVIEWS_HERO_IMAGE} imageAlt={gpmImageAlt(REVIEWS_HERO_IMAGE)}>
           <div className="min-w-0 w-full max-w-3xl">
             <h1 className="font-heading text-4xl font-bold leading-tight text-white sm:text-5xl md:text-6xl">
@@ -45,7 +37,6 @@ export function ReviewsPage({
         </BlogHeroBand>
 
         <section className="section-pad relative overflow-hidden bg-zen-espresso text-white light:bg-transparent light:text-zen-espresso">
-          <HomeSectionGridDecor placement="reviews-featured-right" />
           <div className="shell relative z-10">
             <div className="mx-auto w-full max-w-5xl space-y-6 px-3 sm:px-4">
               <ReviewsFeaturedCarousel testimonials={testimonials} />

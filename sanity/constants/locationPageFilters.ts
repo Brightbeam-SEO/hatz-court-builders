@@ -1,19 +1,38 @@
 /**
  * Studio list filters for `locationPage` documents.
- * City landings use `/city/{slug}/`; PM services use `/{slug}/` at site root (no `/services/`).
+ * Court builder landings use pageCategory "city" → **Location pages** in Studio.
  */
-export const CITY_LOCATION_SLUG_GLOB = "property-management-*-id";
+const LOCATION_SLUG_MATCHES = [
+  "court-builder*",
+  "court-builders*",
+  "*court-builder*",
+  "*court-builders*",
+  "*court-contractor*",
+  "*court-construction*",
+  "*court-installation*",
+] as const;
 
-/** Treasure Valley city pages → **Location pages** in Studio. */
-export const CITY_LOCATION_FILTER = `_type == "locationPage" && slug.current match "${CITY_LOCATION_SLUG_GLOB}"`;
+const LOCATION_SLUG_MATCH_EXPR = LOCATION_SLUG_MATCHES.map(
+  (glob) => `slug.current match "${glob}"`,
+).join(" || ");
 
-/** PM service landings at site root → **Service pages** in Studio. */
-export const SERVICE_LOCATION_FILTER = `_type == "locationPage" && !(slug.current match "${CITY_LOCATION_SLUG_GLOB}")`;
+/** Court builder location pages → **Location pages** in Studio. */
+export const CITY_LOCATION_FILTER = `_type == "locationPage" && pageCategory == "city"`;
+
+/** Non-location landings (legacy / unused). */
+export const SERVICE_LOCATION_FILTER = `_type == "locationPage" && pageCategory == "service"`;
+
+export function isCourtLocationPageSlug(slug: string): boolean {
+  return LOCATION_SLUG_MATCHES.some((glob) => {
+    const pattern = glob
+      .replace(/[.+?^${}()|[\]\\]/g, "\\$&")
+      .replace(/\*/g, ".*");
+    return new RegExp(`^${pattern}$`).test(slug);
+  });
+}
 
 export function locationPagePreviewPath(slug: string, pageCategory?: string | null): string {
   if (!slug) return "Missing slug";
-  if (pageCategory === "city" || slug.match(/^property-management-.+-id$/)) {
-    return `/city/${slug}/`;
-  }
+  void pageCategory;
   return `/${slug}/`;
 }

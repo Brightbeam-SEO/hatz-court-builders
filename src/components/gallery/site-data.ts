@@ -50,19 +50,20 @@ const highlightItems = HIGHLIGHT_IMAGE_PATHS.map((image) => ({
 
 export function getStaticGalleryContent(): GalleryContent {
   return {
-    title: "Gallery",
+    title: "Court Construction Gallery",
     slug: "gallery",
     heroSubheading:
-      "Browse custom tennis, basketball, pickleball, and multi-use courts built across Idaho",
-    overviewHeadline: "Court Construction Gallery • Boise, Idaho",
+      "Browse custom tennis, basketball, pickleball, and multi-use courts built by Hatz Court Builders in Idaho and Arizona.",
+    overviewHeadline: "Custom Court Projects Built for Real Play",
     overviewBody:
-      "Explore residential and commercial court projects — from backyard pickleball courts to tennis resurfacing, modular tile systems, and full design-build installations.",
+      "Explore completed court construction, resurfacing, and design-build projects for homes, schools, parks, and commercial properties. Each project is built for performance, durability, and long-term use.",
     overviewStats: [
-      { value: "47+", label: "Court Projects" },
-      { value: "All", label: "Surface Types" },
+      { value: "24/7", label: "Available for Inquiries" },
+      { value: "6+", label: "Surface Options" },
     ],
     highlightsTitle: "Gallery Highlights",
-    highlightsIntro: "Pickleball, basketball, tennis, and multi-use courts throughout Idaho.",
+    highlightsIntro:
+      "See examples of custom court surfaces, clean striping, multi-use layouts, and finished court details from Hatz Court Builders.",
     highlightItems: highlightItems.map((item) => ({ ...item })),
     items: collageItems.map((item) => ({ ...item })),
     seo: {

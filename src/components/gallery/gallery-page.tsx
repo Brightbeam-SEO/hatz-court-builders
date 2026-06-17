@@ -3,13 +3,11 @@
 import Image from "next/image";
 import Link from "next/link";
 import { BlogHeroBand } from "@/components/blog/blog-hero-band";
-import { HomeSectionGridDecor } from "@/components/home/home-section-grid-decor";
+import { BlogBookingStrip } from "@/components/blog/blog-article-lead-cta";
 import type { GalleryContent } from "@/lib/gallery-content";
 import type { SocialLink } from "@/lib/home-content";
 import { PageHeroCtaButtons } from "@/components/layout/page-hero-cta-buttons";
-import { SiteBreadcrumbs } from "@/components/layout/site-breadcrumbs";
 import { SiteFooterRegion } from "@/components/layout/site-footer-region";
-import { SiteHeader } from "@/components/layout/site-header";
 import { BUSINESS } from "@/lib/business";
 import { gpmImageAlt } from "@/lib/gpm-gallery-images";
 import { gpmPick } from "@/lib/gpm-pick-gallery";
@@ -42,16 +40,11 @@ export function GalleryPage({
 
   return (
     <div className="min-h-screen bg-zen-espresso text-white light:bg-transparent light:text-zen-espresso">
-      <header className="relative z-[200] isolate min-h-0 overflow-x-clip bg-zen-espresso text-white light:bg-transparent light:text-zen-espresso">
-        <SiteHeader anchorBase="/" />
-      </header>
-
       <main className="bg-zen-espresso pb-16 light:bg-transparent">
-        <SiteBreadcrumbs />
         <BlogHeroBand imageSrc={galleryHeroImage} imageAlt={galleryHeroAlt}>
           <div className="min-w-0 w-full max-w-3xl">
             <h1 className="font-heading text-4xl font-bold leading-tight text-white sm:text-5xl md:text-6xl">
-              Gallery
+              {content.title}
             </h1>
             <p className="mt-2 max-w-2xl text-sm font-medium text-white/90 md:text-base">
               {content.heroSubheading}
@@ -61,7 +54,6 @@ export function GalleryPage({
         </BlogHeroBand>
 
         <section className="section-pad relative overflow-hidden">
-          <HomeSectionGridDecor placement="gallery-highlights-right" />
           <div className="shell relative z-10">
             <div className="grid gap-8 rounded-3xl lg:grid-cols-[minmax(0,1fr)_minmax(0,0.95fr)]">
               <article className="hero-glass-light rounded-3xl border border-white/20 bg-white/10 p-6 backdrop-blur-xl light:border-slate-200 light:bg-white/90 sm:p-8">
@@ -136,9 +128,12 @@ export function GalleryPage({
             ))}
           </div>
         </section>
+
+        <BlogBookingStrip showLead={false} />
       </main>
 
       <SiteFooterRegion socialLinks={socialLinks} />
     </div>
   );
 }
+

@@ -16,6 +16,7 @@ const CATEGORY_SLUG_SET = new Set<string>(BLOG_CATEGORY_SLUGS);
 
 /** Default category when CMS omits the field. */
 const SLUG_CATEGORY_FALLBACK: Record<string, BlogCategorySlug> = {
+  "what-to-consider-before-building-a-custom-court-in-boise-or-scottsdale": "property-management",
   "what-is-property-management": "property-management",
   "property-management-meridian": "property-management",
   "top-property-management-services-in-idaho-what-you-need-to-know": "property-management",

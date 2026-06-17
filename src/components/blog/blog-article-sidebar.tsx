@@ -188,11 +188,11 @@ export function BlogArticleSidebar({
             }}
           />
           <p className="relative font-heading text-lg font-bold leading-snug text-white">
-            Need a Trusted Property Management Team?
+            Ready to Build Your Custom Court?
           </p>
           <p className="relative mx-auto mt-2 max-w-md text-sm leading-6 text-white/90">
-            Get custom court construction and resurfacing from a trusted Idaho and Arizona court builder that
-            your property
+            Get custom court construction, resurfacing, and design-build support from court builders serving
+            Boise, Scottsdale, and surrounding areas.
           </p>
           <div className="relative mt-4 flex w-full flex-col items-center gap-3">
             <a className="btn-call blog-sidebar-cta-secondary" href={BUSINESS.phoneTel}>

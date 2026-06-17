@@ -48,8 +48,8 @@ export function ContactForm({
   variant?: "dark" | "light";
   /** Zapier / CRM label for which form placement sent the lead (optional). */
   formName?: string;
-  /** `compact-inline`: hero strip (2-col from md). `compact-stack`: same fields/styling, single column. */
-  layout?: "default" | "compact-inline" | "compact-stack";
+  /** `compact-inline`: hero strip (2-col from md). `compact-stack`: same fields/styling, single column. `contact-page`: email/name row, stacked fields, left-aligned submit. */
+  layout?: "default" | "compact-inline" | "compact-stack" | "contact-page";
   /** Hero strip only: message field matches single-line input height (phone, etc.). */
   compactMessageSingleLine?: boolean;
   /** Hidden fallback for compact forms that do not show a message field. */
@@ -61,43 +61,60 @@ export function ContactForm({
   const [statusMessage, setStatusMessage] = useState("");
   const [statusError, setStatusError] = useState(false);
   const light = variant === "light";
+  const contactPage = layout === "contact-page";
   const compactInline = layout === "compact-inline";
   const compactStack = layout === "compact-stack";
   const compactFields = compactInline || compactStack;
-  const labelClass = compactFields
+  const labelClass = contactPage
+    ? "flex flex-col gap-1.5 text-sm font-semibold text-white"
+    : compactFields
     ? light
       ? "flex flex-col gap-1.5 text-[0.68rem] font-semibold uppercase tracking-[0.14em] text-black/70"
       : "flex flex-col gap-1.5 text-[0.68rem] font-semibold uppercase tracking-[0.14em] text-white/82"
     : light
       ? labelLight
       : labelDark;
-  const fieldClass = compactFields
+  const fieldClass = contactPage
+    ? "rounded-xl border border-slate-200/90 bg-white px-3 py-2.5 text-sm text-zen-espresso placeholder:text-zen-taupe/70 outline-none transition focus:border-zen-crimson focus:ring-2 focus:ring-zen-crimson/25"
+    : compactFields
     ? light
       ? "rounded-full border border-zen-gold/25 bg-white px-4 py-3 text-sm text-zen-espresso placeholder:text-zen-taupe/75 outline-none transition focus:border-zen-crimson focus:ring-2 focus:ring-zen-crimson/15"
       : "rounded-full border border-white/75 bg-white px-4 py-3 text-sm text-zen-espresso placeholder:text-zen-taupe/75 outline-none transition focus:border-zen-crimson focus:ring-2 focus:ring-zen-crimson/15"
     : light
       ? fieldLight
       : fieldDark;
-  const messageFieldClass = compactFields
+  const messageFieldClass = contactPage
+    ? "min-h-[7.5rem] resize-y rounded-xl border border-slate-200/90 bg-white px-3 py-2.5 text-sm leading-relaxed text-zen-espresso placeholder:text-zen-taupe/70 outline-none transition focus:border-zen-crimson focus:ring-2 focus:ring-zen-crimson/25"
+    : compactFields
     ? compactMessageSingleLine
       ? `${fieldClass} min-h-0 resize-none`
       : light
         ? "min-h-[7.5rem] resize-y rounded-2xl border border-zen-gold/25 bg-white px-4 py-3 text-sm leading-relaxed text-zen-espresso placeholder:text-zen-taupe/75 outline-none transition focus:border-zen-crimson focus:ring-2 focus:ring-zen-crimson/15"
         : "min-h-[7.5rem] resize-y rounded-2xl border border-white/75 bg-white px-4 py-3 text-sm leading-relaxed text-zen-espresso placeholder:text-zen-taupe/75 outline-none transition focus:border-zen-crimson focus:ring-2 focus:ring-zen-crimson/15"
     : fieldClass;
-  const disclaimerClass = compactFields
+  const disclaimerClass = contactPage
+    ? "text-xs text-white/55"
+    : compactFields
     ? light
       ? "text-[0.72rem] leading-relaxed text-black/55"
       : "text-[0.72rem] leading-relaxed text-white/68"
     : light
       ? "text-xs text-black/55"
       : "text-xs text-white/55";
-  const formClass = compactStack
+  const formClass = contactPage
+    ? "grid gap-4"
+    : compactStack
     ? "grid grid-cols-1 gap-3"
     : compactInline
       ? "grid gap-3 md:grid-cols-2"
       : "grid gap-4 sm:grid-cols-2";
-  const fullWidthClass = compactStack ? "" : compactInline ? "md:col-span-2" : "sm:col-span-2";
+  const fullWidthClass = contactPage
+    ? ""
+    : compactStack
+      ? ""
+      : compactInline
+        ? "md:col-span-2"
+        : "sm:col-span-2";
   const messageLabelClass = compactInline
     ? `${labelClass} md:col-span-2`
     : compactStack
@@ -175,51 +192,110 @@ export function ContactForm({
 
   return (
     <form className={formClass} onSubmit={handleSubmit}>
-      <label className={labelClass}>
-        Name
-        <input
-          type="text"
-          name="name"
-          autoComplete="name"
-          className={fieldClass}
-          placeholder="Your name"
-          required
-        />
-      </label>
-      <label className={labelClass}>
-        Email
-        <input
-          type="email"
-          name="email"
-          autoComplete="email"
-          className={fieldClass}
-          placeholder="you@example.com"
-          required
-        />
-      </label>
-      <label className={labelClass}>
-        Phone
-        <input
-          type="tel"
-          name="phone"
-          autoComplete="tel"
-          className={fieldClass}
-          placeholder="(208) 555-1234"
-          inputMode="numeric"
-          value={phone}
-          onChange={(e) => setPhone(formatPhone(e.target.value))}
-        />
-      </label>
-      <label className={labelClass}>
-        City
-        <input
-          type="text"
-          name="city"
-          autoComplete="address-level2"
-          className={fieldClass}
-          placeholder="Boise, ID"
-        />
-      </label>
+      {contactPage ? (
+        <div className="grid gap-4 sm:grid-cols-2">
+          <label className={labelClass}>
+            Email
+            <input
+              type="email"
+              name="email"
+              autoComplete="email"
+              className={fieldClass}
+              placeholder="you@example.com"
+              required
+            />
+          </label>
+          <label className={labelClass}>
+            Name
+            <input
+              type="text"
+              name="name"
+              autoComplete="name"
+              className={fieldClass}
+              placeholder="Your name"
+              required
+            />
+          </label>
+        </div>
+      ) : (
+        <>
+          <label className={labelClass}>
+            Name
+            <input
+              type="text"
+              name="name"
+              autoComplete="name"
+              className={fieldClass}
+              placeholder="Your name"
+              required
+            />
+          </label>
+          <label className={labelClass}>
+            Email
+            <input
+              type="email"
+              name="email"
+              autoComplete="email"
+              className={fieldClass}
+              placeholder="you@example.com"
+              required
+            />
+          </label>
+        </>
+      )}
+      {contactPage ? (
+        <div className="grid gap-4 sm:grid-cols-2">
+          <label className={labelClass}>
+            Phone
+            <input
+              type="tel"
+              name="phone"
+              autoComplete="tel"
+              className={fieldClass}
+              placeholder="(208) 555-1234"
+              inputMode="numeric"
+              value={phone}
+              onChange={(e) => setPhone(formatPhone(e.target.value))}
+            />
+          </label>
+          <label className={labelClass}>
+            City
+            <input
+              type="text"
+              name="city"
+              autoComplete="address-level2"
+              className={fieldClass}
+              placeholder="Boise, ID"
+            />
+          </label>
+        </div>
+      ) : (
+        <>
+          <label className={labelClass}>
+            Phone
+            <input
+              type="tel"
+              name="phone"
+              autoComplete="tel"
+              className={fieldClass}
+              placeholder="(208) 555-1234"
+              inputMode="numeric"
+              value={phone}
+              onChange={(e) => setPhone(formatPhone(e.target.value))}
+            />
+          </label>
+          <label className={labelClass}>
+            City
+            <input
+              type="text"
+              name="city"
+              autoComplete="address-level2"
+              className={fieldClass}
+              placeholder="Boise, ID"
+            />
+          </label>
+        </>
+      )}
       {defaultMessage ? (
         <input type="hidden" name="message" defaultValue={defaultMessage} />
       ) : compactFields ? (
@@ -230,6 +306,17 @@ export function ContactForm({
             rows={compactMessageSingleLine ? 1 : 5}
             className={messageFieldClass}
             placeholder="Message"
+            required
+          />
+        </label>
+      ) : contactPage ? (
+        <label className={labelClass}>
+          How can we help you?
+          <textarea
+            name="message"
+            rows={5}
+            className={messageFieldClass}
+            placeholder="Tell us about your project..."
             required
           />
         </label>
@@ -269,11 +356,13 @@ export function ContactForm({
       ) : null}
       <div
         className={
-          compactStack
+          contactPage
             ? "flex w-full justify-center"
-            : compactInline
-              ? "flex w-full justify-center md:col-span-2"
-              : "flex w-full justify-center sm:col-span-2"
+            : compactStack
+              ? "flex w-full justify-center"
+              : compactInline
+                ? "flex w-full justify-center md:col-span-2"
+                : "flex w-full justify-center sm:col-span-2"
         }
       >
         <button

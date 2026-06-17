@@ -35,10 +35,10 @@ export const structure: StructureResolver = (S) =>
       S.divider(),
       S.listItem()
         .title("Location pages")
-        .id("gpm-location-pages")
+        .id("hcb-location-pages")
         .child(
           S.documentList()
-            .id("gpm-location-pages-list")
+            .id("hcb-location-pages-list")
             .title("Location pages")
             .schemaType("locationPage")
             .filter(CITY_LOCATION_FILTER)
@@ -46,10 +46,10 @@ export const structure: StructureResolver = (S) =>
         ),
       S.listItem()
         .title("Service pages")
-        .id("gpm-service-pages")
+        .id("hcb-service-pages")
         .child(
           S.documentList()
-            .id("gpm-service-pages-list")
+            .id("hcb-service-pages-list")
             .title("Service pages")
             .schemaType("locationPage")
             .filter(SERVICE_LOCATION_FILTER)

@@ -15,8 +15,8 @@ if (!studioProjectId) {
 const dataset = studioDataset ?? "production";
 
 export default defineConfig({
-  name: "greenbelt-property-management",
-  title: "Greenbelt Property Management",
+  name: "hatz-court-builders",
+  title: "Hatz Court Builders",
   projectId: studioProjectId,
   dataset,
   plugins: [structureTool({ structure }), visionTool()],
@@ -35,9 +35,9 @@ export default defineConfig({
       ),
       {
         id: "locationPage-city",
-        title: "City location page (/city/…)",
+        title: "Location page (court builder city)",
         schemaType: "locationPage",
-        description: "Treasure Valley city landing — slug e.g. property-management-boise-id",
+        description: "Court builder city landing — slug e.g. court-builders-boise-id",
         value: () => ({
           layoutTemplate: "pressureWashingBoise",
           pageCategory: "city",
@@ -49,9 +49,9 @@ export default defineConfig({
       },
       {
         id: "locationPage-service",
-        title: "Service page (site root)",
+        title: "Service page (court construction)",
         schemaType: "locationPage",
-        description: "PM service landing — slug e.g. property-management-services",
+        description: "Court construction service landing — slug e.g. basketball-court-construction",
         value: () => ({
           layoutTemplate: "pressureWashingBoise",
           pageCategory: "service",

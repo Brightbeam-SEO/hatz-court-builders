@@ -1,14 +1,12 @@
 import { getCliClient } from "sanity/cli";
-import { CITY_PROPERTY_PAGES } from "../src/lib/city-property-pages";
+import { isCourtConstructionSlug } from "../src/lib/court-construction-nav";
+import { isCourtLocationPageSlug } from "../sanity/constants/locationPageFilters";
 import { getGpmSitemapSeo } from "../src/lib/gpm-sitemap-seo";
 import { PM_SERVICE_PAGES } from "../src/lib/pm-service-pages";
 import { readMarkdown } from "./lib/sanity-seed-utils";
 
-type PageCategory = "city" | "service";
-
 type SeedTarget = {
   slug: string;
-  pageCategory: PageCategory;
   title: string;
   locationName: string;
   metaTitle: string;
@@ -26,11 +24,10 @@ function seoFromPath(publicPath: string, fallback: { metaTitle: string; metaDesc
 }
 
 function buildTargets(): SeedTarget[] {
-  const services: SeedTarget[] = Object.values(PM_SERVICE_PAGES).map((entry) => {
+  return Object.values(PM_SERVICE_PAGES).map((entry) => {
     const publicPath = `/${entry.slug}/`;
     return {
       slug: entry.sanitySlug,
-      pageCategory: "service" as const,
       title: entry.config.heroTitle,
       locationName: entry.config.cityName ?? "Meridian",
       ...seoFromPath(publicPath, {
@@ -41,24 +38,6 @@ function buildTargets(): SeedTarget[] {
       publicPath,
     };
   });
-
-  const cities: SeedTarget[] = Object.values(CITY_PROPERTY_PAGES).map((entry) => {
-    const publicPath = `/city/${entry.slug}/`;
-    return {
-      slug: entry.slug,
-      pageCategory: "city" as const,
-      title: entry.config.heroTitle,
-      locationName: entry.config.cityName ?? "Treasure Valley",
-      ...seoFromPath(publicPath, {
-        metaTitle: entry.config.metaTitle,
-        metaDescription: entry.config.metaDescription,
-      }),
-      fallbackMarkdownPath: entry.fallbackMarkdownPath,
-      publicPath,
-    };
-  });
-
-  return [...services, ...cities];
 }
 
 async function upsertLocationPage(client: ReturnType<typeof getCliClient>, target: SeedTarget) {
@@ -75,7 +54,7 @@ async function upsertLocationPage(client: ReturnType<typeof getCliClient>, targe
     _id: docId,
     _type: "locationPage",
     layoutTemplate: "pressureWashingBoise",
-    pageCategory: target.pageCategory,
+    pageCategory: isCourtConstructionSlug(target.slug) ? "service" : "city",
     title: target.title,
     slug: { _type: "slug", current: target.slug },
     locationName: target.locationName,
@@ -87,25 +66,20 @@ async function upsertLocationPage(client: ReturnType<typeof getCliClient>, targe
     },
   });
 
-  console.log(`  ✓ ${docId} → ${target.publicPath} (${target.pageCategory})`);
+  console.log(`  ✓ ${docId} → ${target.publicPath} (${isCourtConstructionSlug(target.slug) ? "service" : "location"})`);
 }
 
 async function main() {
   const client = getCliClient({ apiVersion: "2024-01-01" });
   const targets = buildTargets();
 
-  console.log(`Seeding ${targets.length} Greenbelt locationPage documents:\n`);
-
-  let services = 0;
-  let cities = 0;
+  console.log(`Seeding ${targets.length} Hatz Court Builders locationPage documents:\n`);
 
   for (const target of targets) {
     await upsertLocationPage(client, target);
-    if (target.pageCategory === "service") services += 1;
-    else cities += 1;
   }
 
-  console.log(`\nDone: ${services} city service pages, ${cities} location pages.`);
+  console.log(`\nDone: ${targets.length} location pages.`);
 }
 
 main().catch((err) => {
