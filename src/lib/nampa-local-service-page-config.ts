@@ -146,7 +146,7 @@ export const NAMPA_LOCAL_SERVICE_PAGES: Record<NampaLocalServiceSlug, TreasureVa
     slug: "power-washing-nampa-id",
     metaTitle: "Power Washing Nampa ID | 24/7 Service, 5 Star Rated | Zen Day Spa",
     metaDescription:
-      "Power washing in Nampa ID—farm dust, driveway stains, and patio buildup cleared by local crews. Fast Canyon County response. Call (208) 927-3160.",
+      "Power washing in Nampa ID—farm dust, driveway stains, and patio buildup cleared by local crews. Fast Canyon County response. Call (208) 979-0002.",
     cityName: "Nampa",
     heroTitle: "Power Washing Nampa ID",
     heroSubtitle:
@@ -178,7 +178,7 @@ export const NAMPA_LOCAL_SERVICE_PAGES: Record<NampaLocalServiceSlug, TreasureVa
     slug: "window-cleaning-nampa-id",
     metaTitle: "Window Cleaning Nampa ID | 24/7 Service, 5.0 Star Rated | Zen Day Spa",
     metaDescription:
-      "Window cleaning in Nampa ID—farm dust, sprinkler spots, and hazy glass cleared fast. Residential & commercial. Call (208) 927-3160.",
+      "Window cleaning in Nampa ID—farm dust, sprinkler spots, and hazy glass cleared fast. Residential & commercial. Call (208) 979-0002.",
     cityName: "Nampa",
     heroTitle: "Window Cleaning Nampa ID",
     heroSubtitle:
@@ -210,7 +210,7 @@ export const NAMPA_LOCAL_SERVICE_PAGES: Record<NampaLocalServiceSlug, TreasureVa
     slug: "gutter-cleaning-nampa-id",
     metaTitle: "Gutter Cleaning Nampa ID | 24/7 Service, 5.0 Star Rated | Zen Day Spa",
     metaDescription:
-      "Gutter cleaning in Nampa ID—leaves, roof grit, and clogged downspouts cleared. Overflow fixes & fast scheduling. Call (208) 927-3160.",
+      "Gutter cleaning in Nampa ID—leaves, roof grit, and clogged downspouts cleared. Overflow fixes & fast scheduling. Call (208) 979-0002.",
     cityName: "Nampa",
     heroTitle: "Gutter Cleaning Nampa ID",
     heroSubtitle:

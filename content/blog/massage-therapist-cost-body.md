@@ -107,4 +107,4 @@ A technique that applies pressure to specific points on the feet to promote over
 
 At Zen Day Spa, we're committed to providing high-quality massage services tailored to your needs. Whether you're looking to relax or relieve tension, our experienced therapists are here to help.
 
-Contact **(208) 927-3160** today and experience professional massage therapy in a calm, welcoming environment.
+Contact **(208) 979-0002** today and experience professional massage therapy in a calm, welcoming environment.

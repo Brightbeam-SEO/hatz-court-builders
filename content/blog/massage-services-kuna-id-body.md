@@ -1,6 +1,6 @@
 Massage services in Kuna, Idaho are now more accessible than ever, thanks to Zen Day Spa—your local destination for therapeutic, professional care. Whether you're easing chronic pain, recovering from a workout, or simply in need of a break, our licensed massage therapists are here to support your well-being.
 
-Call now to schedule — **(208) 927-3160**.
+Call now to schedule — **(208) 979-0002**.
 
 <h2 id="kuna">Feel Great with Expert Massage Services in Kuna</h2>
 
@@ -48,4 +48,4 @@ We also offer services for other cities in the area: [Boise](/city/massage-servi
 
 **[Contact us](/contact-us/)** or call now to book your personalized massage.
 
-Call now to schedule — **(208) 927-3160**.
+Call now to schedule — **(208) 979-0002**.

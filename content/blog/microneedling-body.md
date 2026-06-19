@@ -1,6 +1,6 @@
 Microneedling is a minimally invasive cosmetic treatment designed to rejuvenate the skin, reducing signs of aging, scars, and imperfections. At Zen Day Spa in Eagle, Idaho, our microneedling treatments help stimulate your skin's natural healing process, resulting in smoother texture, improved tone, and a revitalized appearance.
 
-Call now to schedule your microneedling appointment — **(208) 927-3160**.
+Call now to schedule your microneedling appointment — **(208) 979-0002**.
 
 <h2 id="what-is">Microneedling: What is it?</h2>
 
@@ -15,7 +15,7 @@ Microneedling involves the use of tiny, sterile needles that gently create micro
 - **Even Skin Tone:** Helps fade hyperpigmentation, sunspots, and age-related discoloration.
 - **Improved Product Absorption:** Enhances the effectiveness of skincare products by allowing deeper penetration.
 
-Call now to schedule your microneedling appointment — **(208) 927-3160**.
+Call now to schedule your microneedling appointment — **(208) 979-0002**.
 
 <h2 id="experience">The Microneedling Experience at Zen Day Spa</h2>
 
@@ -25,7 +25,7 @@ During treatment, a specialized device with ultra-fine needles is gently moved a
 
 Most clients notice visible improvement within days, with optimal results emerging after a series of sessions.
 
-Call now to schedule your microneedling appointment — **(208) 927-3160**.
+Call now to schedule your microneedling appointment — **(208) 979-0002**.
 
 <h2 id="aftercare">Aftercare and Results</h2>
 
@@ -40,6 +40,6 @@ Proper aftercare maximizes the benefits of your microneedling treatment. Our ski
 
 Ready to experience younger, healthier-looking skin? **[Contact us](/contact-us/)** today to schedule your microneedling appointment.
 
-Call now to schedule your microneedling appointment — **(208) 927-3160**.
+Call now to schedule your microneedling appointment — **(208) 979-0002**.
 
 <!--SOL_BOISE_FAQ-->

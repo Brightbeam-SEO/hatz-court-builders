@@ -20,7 +20,7 @@ const crossLinks = {
   myofascial: "[myofascial massage](/services/myofascial-massage/)",
 };
 
-function intro(text, cta = "Call now to schedule — **(208) 927-3160**.") {
+function intro(text, cta = "Call now to schedule — **(208) 979-0002**.") {
   return `${text}\n\n${cta}\n\n`;
 }
 
@@ -75,7 +75,7 @@ Located conveniently in the Treasure Valley, our spa is easily accessible for re
 
 <h2 id="contact">Ready to Experience the Best Scalp Massage in Boise?</h2>
 
-Don't let stress and tension control your well-being. ${crossLinks.contact} today at **(208) 927-3160** to schedule your scalp massage appointment in Boise.`,
+Don't let stress and tension control your well-being. ${crossLinks.contact} today at **(208) 979-0002** to schedule your scalp massage appointment in Boise.`,
 
   "hot-stone-massage-boise-id": `${intro(
     "Muscle tension in Boise often builds quietly—from long workdays, outdoor activity, or stress that settles deep into the shoulders and back. Hot stone massage uses smooth, heated stones combined with therapeutic massage to warm tight tissue, improve circulation, and help your body relax more fully than heat or massage alone.",
@@ -110,7 +110,7 @@ Many clients explore other ${crossLinks.city} options alongside hot stone work. 
 
 <h2 id="book">Book Your Hot Stone Massage in Boise</h2>
 
-${crossLinks.contact} today at **(208) 927-3160** to schedule your hot stone massage in Boise, ID.`,
+${crossLinks.contact} today at **(208) 979-0002** to schedule your hot stone massage in Boise, ID.`,
 
   "prenatal-massage-boise-id": `${intro(
     "Pregnancy changes how your body feels day by day. What starts as mild discomfort can turn into constant pressure in the lower back, hips, and legs as your body adjusts to support new weight and movement. At Zen Day Spa, prenatal massage is designed to support your body during this stage, using gentle, targeted techniques to ease discomfort, improve circulation, and help you feel more relaxed as your body continues to change.",
@@ -143,7 +143,7 @@ Some clients choose a ${crossLinks.foot} to reduce swelling, ${crossLinks.scalp}
 
 <h2 id="schedule">Schedule Your Prenatal Massage Boise Wellness Session at Zen Day Spa</h2>
 
-${crossLinks.contact} today at **(208) 927-3160** to schedule a prenatal massage Boise session.${FAQ}`,
+${crossLinks.contact} today at **(208) 979-0002** to schedule a prenatal massage Boise session.${FAQ}`,
 
   "deep-tissue-massage-boise-id": `${intro(
     "Deep muscle tension builds over time, often from desk work, repetitive movement, or old injuries that never fully healed. Many people in Boise live with tightness in the neck, shoulders, or lower back without realizing how much it affects their movement and daily comfort. At Zen Day Spa, deep tissue massage focuses on those deeper layers of tension, using controlled pressure to release stiffness, improve mobility, and help your body feel more relaxed and functional again.",
@@ -176,7 +176,7 @@ Many clients explore other ${crossLinks.city} options. Some book ${crossLinks.co
 
 <h2 id="book">Schedule Your Deep Tissue Massage in Boise</h2>
 
-${crossLinks.contact} today at **(208) 927-3160** for a deep tissue massage Boise session.${FAQ}`,
+${crossLinks.contact} today at **(208) 979-0002** for a deep tissue massage Boise session.${FAQ}`,
 
   "foot-massage-boise-id": `${intro(
     "By the end of a long day, it's not just your feet that feel worn out. Your whole body starts to feel it. Many people in Boise ignore foot discomfort until it turns into constant soreness, tight calves, or even lower back strain. At Zen Day Spa, foot massage is treated as a focused therapy, not just a quick add-on. Our sessions are designed to target tension points, improve circulation, and help your body reset.",
@@ -209,7 +209,7 @@ Many guests explore other ${crossLinks.city} options. Some choose reflexology, $
 
 <h2 id="book">Book Your Foot Massage Boise Appointment</h2>
 
-${crossLinks.contact} today at **(208) 927-3160** to schedule your foot massage session.${FAQ}`,
+${crossLinks.contact} today at **(208) 979-0002** to schedule your foot massage session.${FAQ}`,
 
   "couples-massage-boise-id": `${intro(
     "Spending time together should feel relaxing, not rushed or stressful. Many couples in Boise find it hard to slow down, especially with busy work schedules and family responsibilities. At Zen Day Spa, couples massage Boise is designed to give you both a shared space to relax, unwind, and recharge while experienced therapists focus on easing tension and supporting your overall well-being.",
@@ -242,7 +242,7 @@ Some clients follow up with ${crossLinks.foot}, ${crossLinks.scalp}, ${crossLink
 
 <h2 id="book">Schedule Your Couples Massage Boise Session Today</h2>
 
-${crossLinks.contact} today at **(208) 927-3160** for a relaxing couples massage Boise session.${FAQ}`,
+${crossLinks.contact} today at **(208) 979-0002** for a relaxing couples massage Boise session.${FAQ}`,
 };
 
 const outDir = path.join(process.cwd(), "content", "blog");

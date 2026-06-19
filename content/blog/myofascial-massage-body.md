@@ -1,6 +1,6 @@
 Myofascial massage is a specialized technique designed to release tightness in your muscles and fascia—the connective tissue surrounding muscles. At Zen Day Spa in Eagle, Idaho, our myofascial massage therapy targets chronic pain, reduces tension, and restores mobility, helping you move more freely and comfortably.
 
-Call now to schedule your myofascial massage — **(208) 927-3160**.
+Call now to schedule your myofascial massage — **(208) 979-0002**.
 
 <h2 id="what-is">What Is Myofascial Massage?</h2>
 
@@ -17,7 +17,7 @@ Using gentle, sustained pressure, our therapists carefully release these restric
 - **Enhanced Circulation:** Boosts blood flow, promoting healing and recovery.
 - **Reduced Stress and Tension:** Soothes tight muscles, easing both physical and mental stress.
 
-Call now to schedule your myofascial massage — **(208) 927-3160**.
+Call now to schedule your myofascial massage — **(208) 979-0002**.
 
 <h2 id="experience">The Myofascial Massage Experience at Zen Day Spa</h2>
 
@@ -34,6 +34,6 @@ During the session, you might experience a warming sensation as circulation impr
 
 Experience lasting relief and improved mobility through myofascial massage therapy. **[Contact Us](/contact-us/)** today to schedule your session.
 
-Call now to schedule your myofascial massage — **(208) 927-3160**.
+Call now to schedule your myofascial massage — **(208) 979-0002**.
 
 <!--SOL_BOISE_FAQ-->

@@ -1,6 +1,6 @@
 Indulge in a rejuvenating scalp massage and wash designed to leave you feeling refreshed and renewed. At Zen Day Spa, our waterfall head spa delivers gentle, all-around water flow that cleanses your hair while soothing your scalp—reducing stress, stimulating circulation, and supporting scalp health in one luxurious session.
 
-Call now to schedule — **(208) 927-3160**.
+Call now to schedule — **(208) 979-0002**.
 
 <h2 id="welcome">Welcome to Your Ultimate Scalp Massage and Treatment</h2>
 
@@ -24,7 +24,7 @@ Our treatment is straightforward and designed for ultimate relaxation:
 
 Our waterfall head spa system creates a natural cascade effect for balanced, gentle massage. Hands-free operation lets your therapist focus on your comfort, with adjustable flow for your needs.
 
-Call now to schedule your scalp massage and wash — **(208) 927-3160**.
+Call now to schedule your scalp massage and wash — **(208) 979-0002**.
 
 <h2 id="quality">Our Commitment to Quality</h2>
 
@@ -36,6 +36,6 @@ Ready for a treatment that nurtures your scalp and relieves stress? Call us toda
 
 Learn more: [foot massage](/services/foot-massage-reflexology/), [facial](/services/facial/), [body massage](/services/body-massage/), and [pregnancy massage](/services/pregnancy-massage/).
 
-Call now to schedule your scalp massage and wash — **(208) 927-3160**.
+Call now to schedule your scalp massage and wash — **(208) 979-0002**.
 
 <!--SOL_BOISE_FAQ-->

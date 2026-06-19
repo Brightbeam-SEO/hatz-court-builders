@@ -1,6 +1,6 @@
 Massage services in Middleton, Idaho at Zen Day Spa are now more accessible than ever. Whether you're looking to reduce stress, manage chronic pain, or simply enjoy a moment of peace, our licensed massage therapists provide personalized, therapeutic care tailored to your individual needs.
 
-Call now to schedule — **(208) 927-3160**.
+Call now to schedule — **(208) 979-0002**.
 
 <h2 id="middleton">Local Choice for Massage Services in Middleton</h2>
 
@@ -47,4 +47,4 @@ We also offer services for other cities in the area: [Boise](/city/massage-servi
 
 **[Contact us](/contact-us/)** today to book your massage appointment in Middleton.
 
-Call now to schedule — **(208) 927-3160**.
+Call now to schedule — **(208) 979-0002**.

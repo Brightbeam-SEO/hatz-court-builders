@@ -1,6 +1,6 @@
 Massage Services in Caldwell, Idaho, at Zen Day Spa are designed to help you unwind, relieve tension, and restore balance to your body and mind. Our licensed massage therapists provide expert therapeutic care tailored to your specific needs in a peaceful, supportive environment.
 
-Call now to schedule — **(208) 927-3160**.
+Call now to schedule — **(208) 979-0002**.
 
 <h2 id="caldwell">Best Massage Services in Caldwell</h2>
 
@@ -49,4 +49,4 @@ We also offer services for other cities in the area: [Boise](/city/massage-servi
 
 **[Contact us today](/contact-us/)** and take your first step toward lasting relief and relaxation.
 
-Call now to schedule — **(208) 927-3160**.
+Call now to schedule — **(208) 979-0002**.

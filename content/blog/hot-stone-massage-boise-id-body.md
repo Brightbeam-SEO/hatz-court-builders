@@ -32,4 +32,4 @@ Many clients explore other [massage services in Boise, Idaho](/city/massage-serv
 
 <h2 id="book">Book Your Hot Stone Massage in Boise</h2>
 
-[Contact Zen Day Spa](/contact-us/) today at **(208) 927-3160** to schedule your hot stone massage in Boise, ID.
+[Contact Zen Day Spa](/contact-us/) today at **(208) 979-0002** to schedule your hot stone massage in Boise, ID.

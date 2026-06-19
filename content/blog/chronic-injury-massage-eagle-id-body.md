@@ -1,6 +1,6 @@
 Chronic injuries can significantly impact your quality of life, limiting mobility and causing persistent discomfort that affects everything from work performance to sleep quality. At Zen Day Spa, we understand that managing chronic pain requires more than temporary relief—it demands a comprehensive approach that addresses the root causes of your discomfort while promoting long-term healing and recovery.
 
-Call now to schedule your chronic injury massage in Eagle, ID — **(208) 927-3160**.
+Call now to schedule your chronic injury massage in Eagle, ID — **(208) 979-0002**.
 
 <h2 id="why-essential">Why Chronic Injury Massage Eagle ID Therapy Is Essential</h2>
 
@@ -14,7 +14,7 @@ Chronic injuries create a cycle of inflammation and tissue dysfunction that can 
 
 The mechanical pressure and movement techniques used in chronic injury massage help realign muscle fibers, break down adhesions, and restore normal tissue texture. This process not only reduces pain but also improves flexibility and strength in the affected area, creating conditions for true healing rather than just symptom management.
 
-Call now to schedule your chronic injury massage in Eagle, ID — **(208) 927-3160**.
+Call now to schedule your chronic injury massage in Eagle, ID — **(208) 979-0002**.
 
 <h2 id="why-zen">Why Choose Zen Day Spa for Chronic Injury Massage Eagle ID</h2>
 
@@ -40,8 +40,8 @@ In addition to our core treatments, we also provide specialized care tailored to
 
 <h2 id="schedule">Schedule Your Chronic Injury Massage Eagle ID Consultation Today</h2>
 
-Don't let chronic pain control your life any longer. Take the first step toward lasting relief and improved function with professional chronic injury massage Eagle ID services. **[Contact Zen Day Spa today at (208) 927-3160](tel:2089273160)** to schedule your chronic injury massage consultation and begin your journey back to pain-free living.
+Don't let chronic pain control your life any longer. Take the first step toward lasting relief and improved function with professional chronic injury massage Eagle ID services. **[Contact Zen Day Spa today at (208) 979-0002](tel:+12089790002)** to schedule your chronic injury massage consultation and begin your journey back to pain-free living.
 
-Call now to schedule your chronic injury massage in Eagle, ID — **(208) 927-3160**.
+Call now to schedule your chronic injury massage in Eagle, ID — **(208) 979-0002**.
 
 <!--SOL_BOISE_FAQ-->

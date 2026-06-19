@@ -1,6 +1,6 @@
 In the bustling city of Nampa, Idaho, finding moments of tranquility and self-care can be challenging. A professional scalp massage offers the perfect escape from daily stress while promoting both relaxation and hair health. This therapeutic treatment combines the benefits of stress relief with targeted techniques that stimulate blood circulation to the scalp, creating an ideal environment for healthy hair growth and overall wellness.
 
-Call now to schedule — **(208) 927-3160**.
+Call now to schedule — **(208) 979-0002**.
 
 <h2 id="why-nampa">Why Scalp Massage Nampa is Essential for Your Well-being</h2>
 
@@ -42,4 +42,4 @@ The dry climate conditions common in Idaho can particularly benefit from regular
 
 Transform your hair health and discover deep relaxation with our professional scalp massage services. Our expert therapists are ready to provide you with a personalized treatment that addresses your specific needs while delivering the therapeutic benefits your body deserves.
 
-**[Contact us](/contact-us/)** today at **(208) 927-3160** to schedule your scalp massage appointment in Nampa and take the first step toward enhanced wellness and beautiful, healthy hair.
+**[Contact us](/contact-us/)** today at **(208) 979-0002** to schedule your scalp massage appointment in Nampa and take the first step toward enhanced wellness and beautiful, healthy hair.

@@ -1,6 +1,6 @@
 Sports massage is a specialized treatment designed to help athletes and active individuals improve performance and speed up recovery. At Zen Day Spa in Eagle, Idaho, our sports massage targets muscle tension, enhances flexibility, and aids in injury prevention—all within a calm and inviting environment.
 
-Call now to schedule your sports massage — **(208) 927-3160**.
+Call now to schedule your sports massage — **(208) 979-0002**.
 
 <h2 id="what-is">What Is Sports Massage?</h2>
 
@@ -17,7 +17,7 @@ Whether you are training for a competition or simply staying active, sports mass
 - **Stress Reduction:** The treatment helps lower overall stress levels by releasing physical tension and calming the nervous system.
 - **Injury Prevention:** Early intervention through sports massage can help detect and address minor strains before they develop into serious issues.
 
-Call now to schedule your sports massage — **(208) 927-3160**.
+Call now to schedule your sports massage — **(208) 979-0002**.
 
 <h2 id="experience">The Sports Massage Experience at Zen Day Spa</h2>
 
@@ -29,7 +29,7 @@ During the massage, our therapists use deliberate, rhythmic movements combined w
 
 Many clients report that after their session, they experience not only immediate relief from muscle soreness but also enhanced flexibility and a noticeable boost in energy levels. The soothing nature of the treatment creates an ideal balance between recovery and performance enhancement.
 
-Call now to schedule your sports massage — **(208) 927-3160**.
+Call now to schedule your sports massage — **(208) 979-0002**.
 
 <h2 id="why-zen">Why Choose Zen Day Spa for Sports Massage?</h2>
 
@@ -48,6 +48,6 @@ At Zen Day Spa, we believe that achieving peak performance isn't just about rigo
 
 For more details about our services, please visit **[Zen Day Spa](/)**. Ready to elevate your performance and speed up recovery? **[Contact Us](/contact-us/)** today to schedule your sports massage appointment and experience the benefits for yourself.
 
-Call now to schedule your sports massage — **(208) 927-3160**.
+Call now to schedule your sports massage — **(208) 979-0002**.
 
 <!--SOL_BOISE_FAQ-->

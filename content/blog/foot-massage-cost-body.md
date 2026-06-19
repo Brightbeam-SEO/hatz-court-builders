@@ -116,4 +116,4 @@ A 30-minute session is effective for quick relief, while longer sessions provide
 
 <h2 id="local-expertise-foot">Local Expertise in Eagle, ID</h2>
 
-At Zen Day Spa, we're proud to serve the Eagle community with high-quality massage services. Whether you're looking for stress relief, pain management, or relaxation, our experienced therapists are here to help. Call **(208) 927-3160** today to book your appointment and experience the benefits of professional massage therapy.
+At Zen Day Spa, we're proud to serve the Eagle community with high-quality massage services. Whether you're looking for stress relief, pain management, or relaxation, our experienced therapists are here to help. Call **(208) 979-0002** today to book your appointment and experience the benefits of professional massage therapy.

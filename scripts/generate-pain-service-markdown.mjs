@@ -10,7 +10,7 @@ function intro(introText, cta) {
 const pages = {
   "chronic-injury-massage-eagle-id": `${intro(
     "Chronic injuries can significantly impact your quality of life, limiting mobility and causing persistent discomfort that affects everything from work performance to sleep quality. At Zen Day Spa, we understand that managing chronic pain requires more than temporary relief—it demands a comprehensive approach that addresses the root causes of your discomfort while promoting long-term healing and recovery.",
-    "Call now to schedule your chronic injury massage in Eagle, ID — **(208) 927-3160**.",
+    "Call now to schedule your chronic injury massage in Eagle, ID — **(208) 979-0002**.",
   )}<h2 id="why-essential">Why Chronic Injury Massage Eagle ID Therapy Is Essential</h2>
 
 Living with chronic injuries means dealing with ongoing inflammation, muscle tension, and reduced range of motion that can worsen over time without proper treatment. Chronic injury massage offers a non-invasive, drug-free solution that targets these issues at their source. This specialized form of therapeutic massage focuses on breaking down scar tissue, improving circulation, and reducing inflammation in affected areas.
@@ -23,7 +23,7 @@ Chronic injuries create a cycle of inflammation and tissue dysfunction that can 
 
 The mechanical pressure and movement techniques used in chronic injury massage help realign muscle fibers, break down adhesions, and restore normal tissue texture. This process not only reduces pain but also improves flexibility and strength in the affected area, creating conditions for true healing rather than just symptom management.
 
-Call now to schedule your chronic injury massage in Eagle, ID — **(208) 927-3160**.
+Call now to schedule your chronic injury massage in Eagle, ID — **(208) 979-0002**.
 
 <h2 id="why-zen">Why Choose Zen Day Spa for Chronic Injury Massage Eagle ID</h2>
 
@@ -49,13 +49,13 @@ In addition to our core treatments, we also provide specialized care tailored to
 
 <h2 id="schedule">Schedule Your Chronic Injury Massage Eagle ID Consultation Today</h2>
 
-Don't let chronic pain control your life any longer. Take the first step toward lasting relief and improved function with professional chronic injury massage Eagle ID services. **[Contact Zen Day Spa today at (208) 927-3160](tel:2089273160)** to schedule your chronic injury massage consultation and begin your journey back to pain-free living.
+Don't let chronic pain control your life any longer. Take the first step toward lasting relief and improved function with professional chronic injury massage Eagle ID services. **[Contact Zen Day Spa today at (208) 979-0002](tel:+12089790002)** to schedule your chronic injury massage consultation and begin your journey back to pain-free living.
 
-Call now to schedule your chronic injury massage in Eagle, ID — **(208) 927-3160**.${FAQ}`,
+Call now to schedule your chronic injury massage in Eagle, ID — **(208) 979-0002**.${FAQ}`,
 
   "sciatica-pain-massage-eagle-id": `${intro(
     "Living with sciatica can feel overwhelming, affecting every aspect of your daily life from walking and sitting to sleeping comfortably. This debilitating condition, characterized by shooting pain that radiates from your lower back down through your leg, impacts millions of people seeking effective, non-invasive treatment options.",
-    "Call now to schedule your sciatica pain massage in Eagle, ID — **(208) 927-3160**.",
+    "Call now to schedule your sciatica pain massage in Eagle, ID — **(208) 979-0002**.",
   )}<h2 id="understanding">Understanding Sciatica and Its Impact</h2>
 
 Sciatica occurs when the sciatic nerve—the longest nerve in your body—becomes compressed or irritated. This compression typically happens in the lower spine due to herniated discs, bone spurs, or muscle tension. The resulting pain can range from a mild ache to sharp, burning sensations that make simple movements excruciating.
@@ -76,7 +76,7 @@ Professional massage therapy helps by:
 - Releasing endorphins to naturally manage pain
 - Restoring proper muscle balance and spinal alignment
 
-Call now to schedule your sciatica pain massage in Eagle, ID — **(208) 927-3160**.
+Call now to schedule your sciatica pain massage in Eagle, ID — **(208) 979-0002**.
 
 <h2 id="why-zen">Why Choose Zen Day Spa for Sciatica Pain Massage Eagle Services</h2>
 
@@ -106,7 +106,7 @@ We utilize multiple massage modalities proven effective for sciatica relief:
 
 Beyond your massage sessions, we provide guidance on home care techniques, stretches, and lifestyle modifications to help manage your sciatica between appointments and prevent future flare-ups.
 
-Call now to schedule your sciatica pain massage in Eagle, ID — **(208) 927-3160**.
+Call now to schedule your sciatica pain massage in Eagle, ID — **(208) 979-0002**.
 
 <h2 id="expect">What to Expect During Your Treatment</h2>
 
@@ -120,13 +120,13 @@ Along with our primary services, we also focus on targeted therapies designed fo
 
 Don't let sciatica control your life any longer. Our experienced team is ready to help you find the natural, effective relief you deserve through specialized therapeutic massage.
 
-Ready to experience sciatica relief? **[Contact Zen Day Spa today at (208) 927-3160](tel:2089273160)** to schedule your consultation and begin your journey back to pain-free living.
+Ready to experience sciatica relief? **[Contact Zen Day Spa today at (208) 979-0002](tel:+12089790002)** to schedule your consultation and begin your journey back to pain-free living.
 
-Call now to schedule your sciatica pain massage in Eagle, ID — **(208) 927-3160**.${FAQ}`,
+Call now to schedule your sciatica pain massage in Eagle, ID — **(208) 979-0002**.${FAQ}`,
 
   "chronic-pain-massage-eagle-id": `${intro(
     "Living with chronic pain can feel overwhelming, affecting every aspect of your daily life from work productivity to personal relationships. At Zen Day Spa, we understand that chronic pain isn't just a physical challenge—it's an emotional and mental burden that requires compassionate, professional care. Our specialized chronic pain massage therapy in Eagle offers a natural, non-invasive approach to managing persistent discomfort and reclaiming your quality of life.\n\nChronic pain affects millions of Americans, often stemming from conditions like fibromyalgia, arthritis, old injuries, repetitive stress disorders, or underlying medical conditions. Traditional pain management approaches sometimes fall short, leaving individuals searching for alternative solutions that address both the symptoms and root causes of their discomfort.",
-    "Call now to schedule your chronic pain massage in Eagle, ID — **(208) 927-3160**.",
+    "Call now to schedule your chronic pain massage in Eagle, ID — **(208) 979-0002**.",
   )}<h2 id="importance">The Importance of Specialized Chronic Pain Massage Therapy</h2>
 
 Chronic pain massage therapy goes far beyond simple relaxation—it's a targeted therapeutic intervention designed to address the complex nature of persistent pain. Unlike acute pain, which serves as a protective mechanism, chronic pain often involves altered nerve pathways, muscle tension patterns, and inflammatory responses that require specialized attention.
@@ -137,7 +137,7 @@ Our therapeutic massage techniques work by improving circulation, reducing muscl
 
 The benefits of chronic pain massage extend into multiple areas of wellness. Clients often experience improved sleep patterns, reduced stress hormones, enhanced mood stability, better range of motion, and increased energy levels. These improvements create a positive cycle where reduced pain leads to better sleep, which supports healing and further pain reduction.
 
-Call now to schedule your chronic pain massage in Eagle, ID — **(208) 927-3160**.
+Call now to schedule your chronic pain massage in Eagle, ID — **(208) 979-0002**.
 
 <h2 id="why-zen">Why Choose Zen Day Spa for Chronic Pain Management In Eagle, ID</h2>
 
@@ -163,9 +163,9 @@ Managing chronic pain is a journey, not a destination. We provide ongoing suppor
 
 Don't let chronic pain control your life any longer. Our experienced chronic pain massage Eagle team is ready to help you discover the relief you've been seeking through specialized massage therapy tailored to your unique needs.
 
-**[Contact Zen Day Spa (208) 927-3160](tel:2089273160)** today to schedule your consultation and begin your journey toward lasting pain relief.
+**[Contact Zen Day Spa (208) 979-0002](tel:+12089790002)** today to schedule your consultation and begin your journey toward lasting pain relief.
 
-Call now to schedule your chronic pain massage in Eagle, ID — **(208) 927-3160**.${FAQ}`,
+Call now to schedule your chronic pain massage in Eagle, ID — **(208) 979-0002**.${FAQ}`,
 };
 
 const outDir = path.join(process.cwd(), "content", "blog");

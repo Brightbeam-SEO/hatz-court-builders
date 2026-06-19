@@ -1,6 +1,6 @@
 Lymphatic massage is a gentle, specialized technique designed to support your body's natural detoxification process. At Zen Day Spa in Eagle, Idaho, our lymphatic massage sessions help reduce swelling, enhance immunity, and promote overall wellness through gentle, rhythmic strokes that stimulate lymphatic flow.
 
-Call now to schedule your lymphatic massage — **(208) 927-3160**.
+Call now to schedule your lymphatic massage — **(208) 979-0002**.
 
 <h2 id="what-is">Lymphatic Massage: What is it?</h2>
 
@@ -23,7 +23,7 @@ Your lymphatic massage session at **[Zen Day Spa](/)** begins with a personalize
 
 Clients often describe lymphatic massage as calming and deeply relaxing. The soft touch techniques used are intentionally soothing, designed not only to support physical health but also promote emotional well-being.
 
-Call now to schedule your lymphatic massage — **(208) 927-3160**.
+Call now to schedule your lymphatic massage — **(208) 979-0002**.
 
 <h2 id="who-benefits">Who Can Benefit from Lymphatic Massage?</h2>
 
@@ -42,6 +42,6 @@ Call now to schedule your lymphatic massage — **(208) 927-3160**.
 
 Ready to boost your wellness and reduce swelling naturally? **[Contact us](/contact-us/)** today to schedule your lymphatic massage appointment.
 
-Call now to schedule your lymphatic massage — **(208) 927-3160**.
+Call now to schedule your lymphatic massage — **(208) 979-0002**.
 
 <!--SOL_BOISE_FAQ-->

@@ -1,6 +1,6 @@
 Medical massage is a targeted treatment designed to alleviate pain and discomfort related to medical conditions or injuries. At Zen Day Spa in Eagle, Idaho, our medical massage therapy combines specialized techniques tailored to your specific health needs, providing therapeutic relief and enhancing your overall quality of life.
 
-Call now to schedule your medical massage — **(208) 927-3160**.
+Call now to schedule your medical massage — **(208) 979-0002**.
 
 <h2 id="what-is">Medical Massage: What is it?</h2>
 
@@ -24,7 +24,7 @@ Medical massage involves focused, goal-oriented treatments that specifically tar
 - **Stress Reduction:** Relieves both physical and mental stress associated with ongoing health conditions.
 - **Postpartum Recovery:** Supports new mothers with gentle [massage for post-pregnancy recovery in Eagle](/services/post-pregnancy-massage-eagle-id/), easing discomfort and restoring balance after childbirth.
 
-Call now to schedule your medical massage — **(208) 927-3160**.
+Call now to schedule your medical massage — **(208) 979-0002**.
 
 <h2 id="session">What to Expect During Your Session</h2>
 
@@ -45,6 +45,6 @@ We also offer [body massage](/services/body-massage/) and related wellness servi
 
 Ready to find relief and support your healing process? **[Contact us](/contact-us/)** today to schedule your medical massage appointment.
 
-Call now to schedule your medical massage — **(208) 927-3160**.
+Call now to schedule your medical massage — **(208) 979-0002**.
 
 <!--SOL_BOISE_FAQ-->

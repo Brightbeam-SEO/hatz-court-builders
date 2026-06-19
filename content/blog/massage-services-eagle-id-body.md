@@ -1,6 +1,6 @@
 Massage services in Eagle, Idaho, at Zen Day Spa—crafted to help you unwind, relieve pain, and restore balance to your body and mind. Whether you're managing chronic tension, recovering from an injury, or simply in need of relaxation, our licensed massage therapists deliver personalized treatments that meet your individual needs with care and precision.
 
-Call now to schedule — **(208) 927-3160**.
+Call now to schedule — **(208) 979-0002**.
 
 <h2 id="why-eagle">Why We Love Offering Massage Services in Eagle</h2>
 
@@ -52,4 +52,4 @@ We also offer services for other cities in the area: [Boise](/city/massage-servi
 
 Ready to schedule your massage or have questions? **[Contact us](/contact-us/)** today to book your appointment or learn more about how we can help.
 
-Call now to schedule — **(208) 927-3160**.
+Call now to schedule — **(208) 979-0002**.

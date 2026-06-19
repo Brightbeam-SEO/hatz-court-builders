@@ -67,7 +67,7 @@ export const BOISE_ADDON_SERVICE_PAGES: Record<BoiseAddonServiceSlug, TreasureVa
     slug: "gutter-cleaning-boise-id",
     metaTitle: "Gutter Cleaning Boise | Fast, Hassle-Free Quotes | Zen Day Spa",
     metaDescription:
-      "Professional gutter cleaning in Boise—clear troughs, flushed downspouts, and roof-safe ladder work. Protect siding and foundations. Call (208) 927-3160.",
+      "Professional gutter cleaning in Boise—clear troughs, flushed downspouts, and roof-safe ladder work. Protect siding and foundations. Call (208) 979-0002.",
     cityName: "Boise",
     heroTitle: "Gutter Cleaning Boise ID",
     heroSubtitle:
@@ -125,7 +125,7 @@ export const BOISE_ADDON_SERVICE_PAGES: Record<BoiseAddonServiceSlug, TreasureVa
     slug: "christmas-light-installation-boise-id",
     metaTitle: "Christmas Light Installation Boise ID | Free & Fast Estimates | Zen Day Spa",
     metaDescription:
-      "Full-service holiday lighting in Boise—custom design, professional install, takedown, and storage. Premium LED displays for homes and businesses. Call (208) 927-3160.",
+      "Full-service holiday lighting in Boise—custom design, professional install, takedown, and storage. Premium LED displays for homes and businesses. Call (208) 979-0002.",
     cityName: "Boise",
     heroTitle: "Christmas Light Installation Boise ID",
     heroSubtitle:

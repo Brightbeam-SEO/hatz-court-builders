@@ -1,6 +1,6 @@
 Massage services in Nampa, Idaho, at Zen Day Spa offer expert, therapeutic treatments designed to relax your body, reduce stress, and restore balance to your mind. Each session is fully customized to your needs, ensuring a soothing and personalized experience in a serene, client-focused environment.
 
-Call now to schedule — **(208) 927-3160**.
+Call now to schedule — **(208) 979-0002**.
 
 <h2 id="trusted-nampa">Trusted Massage Services in Nampa</h2>
 
@@ -57,4 +57,4 @@ We also offer services for other cities in the area: [Boise](/city/massage-servi
 
 Ready to feel better? **[Contact us](/contact-us/)** today to schedule your massage appointment or learn more about our services in Nampa.
 
-Call now to schedule — **(208) 927-3160**.
+Call now to schedule — **(208) 979-0002**.

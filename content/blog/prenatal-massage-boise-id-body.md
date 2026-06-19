@@ -30,6 +30,6 @@ Some clients choose a [foot massage Boise](/services/foot-massage-boise-id/) to 
 
 <h2 id="schedule">Schedule Your Prenatal Massage Boise Wellness Session at Zen Day Spa</h2>
 
-[Contact Zen Day Spa](/contact-us/) today at **(208) 927-3160** to schedule a prenatal massage Boise session.
+[Contact Zen Day Spa](/contact-us/) today at **(208) 979-0002** to schedule a prenatal massage Boise session.
 
 <!--SOL_BOISE_FAQ-->

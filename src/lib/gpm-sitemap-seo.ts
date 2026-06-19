@@ -21,7 +21,7 @@ export const GPM_SITEMAP_SEO: Record<
   "/contact/": {
     title: "Contact Hatz Court Builders | Free Court Consultation",
     description:
-      "Contact Hatz Court Builders for custom court construction, resurfacing, and design-build in Boise, Scottsdale, and surrounding areas. Call (208) 929-0002.",
+      "Contact Hatz Court Builders for custom court construction, resurfacing, and design-build in Boise, Scottsdale, and surrounding areas. Call (208) 979-0002.",
   },
   "/gallery/": {
     title: "Court Construction Gallery | Hatz Court Builders",

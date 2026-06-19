@@ -1,6 +1,6 @@
 Massage services in Star, Idaho at Zen Day Spa offer a peaceful escape from everyday stress while supporting your body's natural healing process. Whether you're dealing with chronic pain, recovering from an injury, or simply seeking time to relax, our licensed massage therapists provide personalized care.
 
-Call now to schedule — **(208) 927-3160**.
+Call now to schedule — **(208) 979-0002**.
 
 <h2 id="star">Healing Massage Services in Star</h2>
 
@@ -47,4 +47,4 @@ We also offer services for other cities in the area: [Boise](/city/massage-servi
 
 **[Contact us today](/contact-us/)** to schedule your massage in Star or to learn more about our services.
 
-Call now to schedule — **(208) 927-3160**.
+Call now to schedule — **(208) 979-0002**.

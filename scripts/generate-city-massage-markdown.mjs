@@ -4,7 +4,7 @@ import path from "node:path";
 const CITY_LINKS =
   "We also offer services for other cities in the area: [Boise](/city/massage-services-boise-id/), [Eagle](/city/massage-services-eagle-id/), [Meridian](/city/massage-services-meridian-id/), [Nampa](/city/massage-services-nampa-id/), [Caldwell](/city/massage-services-caldwell-id/), [Star](/city/massage-services-star-id/), [Kuna](/city/massage-services-kuna-id/), and [Middleton](/city/massage-services-middleton-id/).";
 
-function intro(introText, cta = "Call now to schedule — **(208) 927-3160**.") {
+function intro(introText, cta = "Call now to schedule — **(208) 979-0002**.") {
   return `${introText}\n\n${cta}\n\n`;
 }
 
@@ -70,7 +70,7 @@ Ready to experience the best massage services Boise has to offer? Reach out to Z
 
 **[Contact us](/contact-us/)** now to schedule your appointment and discover true relaxation.
 
-Call now to schedule — **(208) 927-3160**.`,
+Call now to schedule — **(208) 979-0002**.`,
 
   "massage-services-nampa-id": `${intro(
     "Massage services in Nampa, Idaho, at Zen Day Spa offer expert, therapeutic treatments designed to relax your body, reduce stress, and restore balance to your mind. Each session is fully customized to your needs, ensuring a soothing and personalized experience in a serene, client-focused environment.",
@@ -129,7 +129,7 @@ ${CITY_LINKS}
 
 Ready to feel better? **[Contact us](/contact-us/)** today to schedule your massage appointment or learn more about our services in Nampa.
 
-Call now to schedule — **(208) 927-3160**.`,
+Call now to schedule — **(208) 979-0002**.`,
 
   "massage-services-eagle-id": `${intro(
     "Massage services in Eagle, Idaho, at Zen Day Spa—crafted to help you unwind, relieve pain, and restore balance to your body and mind. Whether you're managing chronic tension, recovering from an injury, or simply in need of relaxation, our licensed massage therapists deliver personalized treatments that meet your individual needs with care and precision.",
@@ -183,7 +183,7 @@ ${CITY_LINKS}
 
 Ready to schedule your massage or have questions? **[Contact us](/contact-us/)** today to book your appointment or learn more about how we can help.
 
-Call now to schedule — **(208) 927-3160**.`,
+Call now to schedule — **(208) 979-0002**.`,
 
   "massage-services-meridian-id": `${intro(
     "Experience professional massage services in Meridian, Idaho at Zen Day Spa. Whether you're managing pain, recovering from an injury, or simply need to relax, our licensed therapists offer personalized treatments to support your wellness in a peaceful, restorative setting.",
@@ -227,7 +227,7 @@ ${CITY_LINKS}
 
 **[Contact us](/contact-us/)** today to schedule your appointment. We look forward to serving you in Meridian, Idaho.
 
-Call now to schedule — **(208) 927-3160**.`,
+Call now to schedule — **(208) 979-0002**.`,
 
   "massage-services-kuna-id": `${intro(
     "Massage services in Kuna, Idaho are now more accessible than ever, thanks to Zen Day Spa—your local destination for therapeutic, professional care. Whether you're easing chronic pain, recovering from a workout, or simply in need of a break, our licensed massage therapists are here to support your well-being.",
@@ -277,7 +277,7 @@ ${CITY_LINKS}
 
 **[Contact us](/contact-us/)** or call now to book your personalized massage.
 
-Call now to schedule — **(208) 927-3160**.`,
+Call now to schedule — **(208) 979-0002**.`,
 
   "massage-services-star-id": `${intro(
     "Massage services in Star, Idaho at Zen Day Spa offer a peaceful escape from everyday stress while supporting your body's natural healing process. Whether you're dealing with chronic pain, recovering from an injury, or simply seeking time to relax, our licensed massage therapists provide personalized care.",
@@ -326,7 +326,7 @@ ${CITY_LINKS}
 
 **[Contact us today](/contact-us/)** to schedule your massage in Star or to learn more about our services.
 
-Call now to schedule — **(208) 927-3160**.`,
+Call now to schedule — **(208) 979-0002**.`,
 
   "massage-services-caldwell-id": `${intro(
     "Massage Services in Caldwell, Idaho, at Zen Day Spa are designed to help you unwind, relieve tension, and restore balance to your body and mind. Our licensed massage therapists provide expert therapeutic care tailored to your specific needs in a peaceful, supportive environment.",
@@ -377,7 +377,7 @@ ${CITY_LINKS}
 
 **[Contact us today](/contact-us/)** and take your first step toward lasting relief and relaxation.
 
-Call now to schedule — **(208) 927-3160**.`,
+Call now to schedule — **(208) 979-0002**.`,
 
   "massage-services-middleton-id": `${intro(
     "Massage services in Middleton, Idaho at Zen Day Spa are now more accessible than ever. Whether you're looking to reduce stress, manage chronic pain, or simply enjoy a moment of peace, our licensed massage therapists provide personalized, therapeutic care tailored to your individual needs.",
@@ -426,7 +426,7 @@ ${CITY_LINKS}
 
 **[Contact us](/contact-us/)** today to book your massage appointment in Middleton.
 
-Call now to schedule — **(208) 927-3160**.`,
+Call now to schedule — **(208) 979-0002**.`,
 };
 
 const outDir = path.join(process.cwd(), "content", "blog");

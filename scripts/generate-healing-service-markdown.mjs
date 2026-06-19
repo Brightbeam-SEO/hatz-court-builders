@@ -10,7 +10,7 @@ function intro(introText, cta) {
 const pages = {
   "medical-massage": `${intro(
     "Medical massage is a targeted treatment designed to alleviate pain and discomfort related to medical conditions or injuries. At Zen Day Spa in Eagle, Idaho, our medical massage therapy combines specialized techniques tailored to your specific health needs, providing therapeutic relief and enhancing your overall quality of life.",
-    "Call now to schedule your medical massage — **(208) 927-3160**.",
+    "Call now to schedule your medical massage — **(208) 979-0002**.",
   )}<h2 id="what-is">Medical Massage: What is it?</h2>
 
 Medical massage involves focused, goal-oriented treatments that specifically target areas of pain or dysfunction associated with diagnosed medical conditions. Unlike general relaxation massages, medical massage therapy uses techniques customized to support recovery, reduce pain, improve mobility, and manage chronic symptoms. It's ideal for those dealing with injuries, chronic pain conditions, or post-surgical recovery.
@@ -33,7 +33,7 @@ Medical massage involves focused, goal-oriented treatments that specifically tar
 - **Stress Reduction:** Relieves both physical and mental stress associated with ongoing health conditions.
 - **Postpartum Recovery:** Supports new mothers with gentle [massage for post-pregnancy recovery in Eagle](/services/post-pregnancy-massage-eagle-id/), easing discomfort and restoring balance after childbirth.
 
-Call now to schedule your medical massage — **(208) 927-3160**.
+Call now to schedule your medical massage — **(208) 979-0002**.
 
 <h2 id="session">What to Expect During Your Session</h2>
 
@@ -54,11 +54,11 @@ We also offer [body massage](/services/body-massage/) and related wellness servi
 
 Ready to find relief and support your healing process? **[Contact us](/contact-us/)** today to schedule your medical massage appointment.
 
-Call now to schedule your medical massage — **(208) 927-3160**.${FAQ}`,
+Call now to schedule your medical massage — **(208) 979-0002**.${FAQ}`,
 
   "sports-massage": `${intro(
     "Sports massage is a specialized treatment designed to help athletes and active individuals improve performance and speed up recovery. At Zen Day Spa in Eagle, Idaho, our sports massage targets muscle tension, enhances flexibility, and aids in injury prevention—all within a calm and inviting environment.",
-    "Call now to schedule your sports massage — **(208) 927-3160**.",
+    "Call now to schedule your sports massage — **(208) 979-0002**.",
   )}<h2 id="what-is">What Is Sports Massage?</h2>
 
 Sports massage uses a combination of deep tissue techniques, trigger point therapy, and targeted stretching to address the unique needs of those who engage in regular physical activity. This treatment focuses on breaking down adhesions, releasing tight muscle fibers, and promoting better blood flow.
@@ -74,7 +74,7 @@ Whether you are training for a competition or simply staying active, sports mass
 - **Stress Reduction:** The treatment helps lower overall stress levels by releasing physical tension and calming the nervous system.
 - **Injury Prevention:** Early intervention through sports massage can help detect and address minor strains before they develop into serious issues.
 
-Call now to schedule your sports massage — **(208) 927-3160**.
+Call now to schedule your sports massage — **(208) 979-0002**.
 
 <h2 id="experience">The Sports Massage Experience at Zen Day Spa</h2>
 
@@ -86,7 +86,7 @@ During the massage, our therapists use deliberate, rhythmic movements combined w
 
 Many clients report that after their session, they experience not only immediate relief from muscle soreness but also enhanced flexibility and a noticeable boost in energy levels. The soothing nature of the treatment creates an ideal balance between recovery and performance enhancement.
 
-Call now to schedule your sports massage — **(208) 927-3160**.
+Call now to schedule your sports massage — **(208) 979-0002**.
 
 <h2 id="why-zen">Why Choose Zen Day Spa for Sports Massage?</h2>
 
@@ -105,11 +105,11 @@ At Zen Day Spa, we believe that achieving peak performance isn't just about rigo
 
 For more details about our services, please visit **[Zen Day Spa](/)**. Ready to elevate your performance and speed up recovery? **[Contact Us](/contact-us/)** today to schedule your sports massage appointment and experience the benefits for yourself.
 
-Call now to schedule your sports massage — **(208) 927-3160**.${FAQ}`,
+Call now to schedule your sports massage — **(208) 979-0002**.${FAQ}`,
 
   "myofascial-massage": `${intro(
     "Myofascial massage is a specialized technique designed to release tightness in your muscles and fascia—the connective tissue surrounding muscles. At Zen Day Spa in Eagle, Idaho, our myofascial massage therapy targets chronic pain, reduces tension, and restores mobility, helping you move more freely and comfortably.",
-    "Call now to schedule your myofascial massage — **(208) 927-3160**.",
+    "Call now to schedule your myofascial massage — **(208) 979-0002**.",
   )}<h2 id="what-is">What Is Myofascial Massage?</h2>
 
 Myofascial massage specifically targets the fascia, a web-like structure of connective tissue that wraps around and supports your muscles. Over time, due to stress, injuries, or poor posture, this tissue can become tight and restricted, causing discomfort and limiting movement.
@@ -125,7 +125,7 @@ Using gentle, sustained pressure, our therapists carefully release these restric
 - **Enhanced Circulation:** Boosts blood flow, promoting healing and recovery.
 - **Reduced Stress and Tension:** Soothes tight muscles, easing both physical and mental stress.
 
-Call now to schedule your myofascial massage — **(208) 927-3160**.
+Call now to schedule your myofascial massage — **(208) 979-0002**.
 
 <h2 id="experience">The Myofascial Massage Experience at Zen Day Spa</h2>
 
@@ -142,11 +142,11 @@ During the session, you might experience a warming sensation as circulation impr
 
 Experience lasting relief and improved mobility through myofascial massage therapy. **[Contact Us](/contact-us/)** today to schedule your session.
 
-Call now to schedule your myofascial massage — **(208) 927-3160**.${FAQ}`,
+Call now to schedule your myofascial massage — **(208) 979-0002**.${FAQ}`,
 
   "lymphatic-massage": `${intro(
     "Lymphatic massage is a gentle, specialized technique designed to support your body's natural detoxification process. At Zen Day Spa in Eagle, Idaho, our lymphatic massage sessions help reduce swelling, enhance immunity, and promote overall wellness through gentle, rhythmic strokes that stimulate lymphatic flow.",
-    "Call now to schedule your lymphatic massage — **(208) 927-3160**.",
+    "Call now to schedule your lymphatic massage — **(208) 979-0002**.",
   )}<h2 id="what-is">Lymphatic Massage: What is it?</h2>
 
 Lymphatic massage, also known as lymphatic drainage massage, is a therapeutic practice focusing on the lymphatic system—your body's waste removal network.
@@ -168,7 +168,7 @@ Your lymphatic massage session at **[Zen Day Spa](/)** begins with a personalize
 
 Clients often describe lymphatic massage as calming and deeply relaxing. The soft touch techniques used are intentionally soothing, designed not only to support physical health but also promote emotional well-being.
 
-Call now to schedule your lymphatic massage — **(208) 927-3160**.
+Call now to schedule your lymphatic massage — **(208) 979-0002**.
 
 <h2 id="who-benefits">Who Can Benefit from Lymphatic Massage?</h2>
 
@@ -187,11 +187,11 @@ Call now to schedule your lymphatic massage — **(208) 927-3160**.
 
 Ready to boost your wellness and reduce swelling naturally? **[Contact us](/contact-us/)** today to schedule your lymphatic massage appointment.
 
-Call now to schedule your lymphatic massage — **(208) 927-3160**.${FAQ}`,
+Call now to schedule your lymphatic massage — **(208) 979-0002**.${FAQ}`,
 
   "craniosacral-therapy": `${intro(
     "Craniosacral therapy is a gentle, non-invasive technique designed to release tension deep within the body, particularly around the head, neck, and spine. At Zen Day Spa in Eagle, Idaho, our craniosacral therapy sessions provide deep relaxation, ease chronic pain, and help restore natural balance and well-being.",
-    "Call now to schedule your craniosacral massage — **(208) 927-3160**.",
+    "Call now to schedule your craniosacral massage — **(208) 979-0002**.",
   )}<h2 id="what-is">Craniosacral Therapy: What Is It?</h2>
 
 Craniosacral therapy involves soft, subtle touch to relieve compression in the bones of the head, spinal column, and sacrum (lower back). Using very light pressure, therapists help release restrictions in the craniosacral system, enhancing your body's natural ability to heal and promoting overall relaxation.
@@ -207,7 +207,7 @@ This therapy is especially beneficial for those experiencing stress, headaches, 
 - **Enhanced Emotional Balance:** Can help ease anxiety, depression, and emotional stress.
 - **Boosted Immunity:** Supports the body's natural healing processes and immune response.
 
-Call now to schedule your craniosacral massage — **(208) 927-3160**.
+Call now to schedule your craniosacral massage — **(208) 979-0002**.
 
 <h2 id="experience">The Craniosacral Therapy Experience at Zen Day Spa</h2>
 
@@ -224,7 +224,7 @@ We also offer [scalp massage in Nampa](/services/scalp-massage-nampa/) and [scal
 
 For lasting relief and deep relaxation, consider incorporating craniosacral therapy into your wellness routine. **[Contact Us](/contact-us/)** today to schedule your craniosacral therapy session.
 
-Call now to schedule your craniosacral massage — **(208) 927-3160**.${FAQ}`,
+Call now to schedule your craniosacral massage — **(208) 979-0002**.${FAQ}`,
 };
 
 const outDir = path.join(process.cwd(), "content", "blog");

@@ -30,6 +30,6 @@ Many clients explore other [massage services in Boise, Idaho](/city/massage-serv
 
 <h2 id="book">Schedule Your Deep Tissue Massage in Boise</h2>
 
-[Contact Zen Day Spa](/contact-us/) today at **(208) 927-3160** for a deep tissue massage Boise session.
+[Contact Zen Day Spa](/contact-us/) today at **(208) 979-0002** for a deep tissue massage Boise session.
 
 <!--SOL_BOISE_FAQ-->

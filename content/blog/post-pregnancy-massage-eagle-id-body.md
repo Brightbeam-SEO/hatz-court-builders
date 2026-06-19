@@ -1,6 +1,6 @@
 After bringing new life into the world, your body deserves gentle care and healing. Post pregnancy massage offers Eagle mothers a therapeutic pathway to physical restoration and emotional well-being during this transformative time.
 
-Call now to schedule your post pregnancy massage — **(208) 927-3160**.
+Call now to schedule your post pregnancy massage — **(208) 979-0002**.
 
 <h2 id="why-essential">Why Post Pregnancy Massage is Essential for New Mothers</h2>
 
@@ -10,7 +10,7 @@ The postpartum period brings significant physical and emotional changes. Post pr
 
 Gentle techniques improve circulation to reduce swelling and support healing of stretched abdominal muscles. [Targeted deep massage work](/services/deep-tissue-massage/) relieves tension from breastfeeding and baby care, and can improve sleep when rest is limited.
 
-Call now to schedule your post pregnancy massage — **(208) 927-3160**.
+Call now to schedule your post pregnancy massage — **(208) 979-0002**.
 
 <h2 id="why-zen">Why Choose Zen Day Spa for Your Post Pregnancy Massage</h2>
 
@@ -26,8 +26,8 @@ Most providers recommend waiting until after your six-week postpartum checkup; a
 
 <h2 id="book">Schedule Your Post Pregnancy Massage Today</h2>
 
-**[Contact Zen Day Spa today at (208) 927-3160](tel:2089273160)** to schedule your personalized postpartum session in Eagle.
+**[Contact Zen Day Spa today at (208) 979-0002](tel:+12089790002)** to schedule your personalized postpartum session in Eagle.
 
-Call now to schedule your post pregnancy massage — **(208) 927-3160**.
+Call now to schedule your post pregnancy massage — **(208) 979-0002**.
 
 <!--SOL_BOISE_FAQ-->

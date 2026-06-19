@@ -116,7 +116,7 @@ export const TREASURE_VALLEY_PRESSURE_PAGES: Record<
     slug: "pressure-washing-eagle-id",
     metaTitle: "Pressure Washing Eagle ID | Free Estimate | Zen Day Spa",
     metaDescription:
-      "House washing, concrete cleaning, and soft washing for Eagle homes and estates near the Boise River and foothills—insured crews and fast scheduling. Call (208) 927-3160.",
+      "House washing, concrete cleaning, and soft washing for Eagle homes and estates near the Boise River and foothills—insured crews and fast scheduling. Call (208) 979-0002.",
     cityName: "Eagle",
     heroTitle: "Pressure Washing Eagle ID",
     heroSubtitle:
@@ -192,7 +192,7 @@ export const TREASURE_VALLEY_PRESSURE_PAGES: Record<
     slug: "pressure-washing-nampa-id",
     metaTitle: "Pressure Washing Nampa ID | Free Estimate | Zen Day Spa",
     metaDescription:
-      "Residential and commercial washing across Nampa — storefront concrete, fleet grime, and Canyon County dust control with insured Treasure Valley crews. Call (208) 927-3160.",
+      "Residential and commercial washing across Nampa — storefront concrete, fleet grime, and Canyon County dust control with insured Treasure Valley crews. Call (208) 979-0002.",
     cityName: "Nampa",
     heroTitle: "Pressure Washing Nampa ID",
     heroSubtitle:
@@ -268,7 +268,7 @@ export const TREASURE_VALLEY_PRESSURE_PAGES: Record<
     slug: "pressure-washing-meridian-id",
     metaTitle: "Pressure Washing Meridian ID | Free Estimate | Zen Day Spa",
     metaDescription:
-      "Fast-growing Meridian neighborhoods deserve siding-safe washing and crisp concrete — soft washing, driveway detailing, and HOA-friendly crews. Call (208) 927-3160.",
+      "Fast-growing Meridian neighborhoods deserve siding-safe washing and crisp concrete — soft washing, driveway detailing, and HOA-friendly crews. Call (208) 979-0002.",
     cityName: "Meridian",
     heroTitle: "Pressure Washing Meridian ID",
     heroSubtitle:
@@ -344,7 +344,7 @@ export const TREASURE_VALLEY_PRESSURE_PAGES: Record<
     slug: "pressure-washing-middleton-id",
     metaTitle: "Pressure Washing Middleton ID | Free Estimate | Zen Day Spa",
     metaDescription:
-      "Small-town routes and agricultural-adjacent dust — house washing, barn pads, and farmhouse concrete detailing throughout Middleton. Call (208) 927-3160.",
+      "Small-town routes and agricultural-adjacent dust — house washing, barn pads, and farmhouse concrete detailing throughout Middleton. Call (208) 979-0002.",
     cityName: "Middleton",
     heroTitle: "Pressure Washing Middleton ID",
     heroSubtitle:
@@ -420,7 +420,7 @@ export const TREASURE_VALLEY_PRESSURE_PAGES: Record<
     slug: "pressure-washing-caldwell-id",
     metaTitle: "Pressure Washing Caldwell ID | Free Estimate | Zen Day Spa",
     metaDescription:
-      "Industrial-road films, alley approaches, and ranch-property resets — soft washing and concrete detailing across Caldwell & Canyon County. Call (208) 927-3160.",
+      "Industrial-road films, alley approaches, and ranch-property resets — soft washing and concrete detailing across Caldwell & Canyon County. Call (208) 979-0002.",
     cityName: "Caldwell",
     heroTitle: "Pressure Washing Caldwell ID",
     heroSubtitle:
@@ -496,7 +496,7 @@ export const TREASURE_VALLEY_PRESSURE_PAGES: Record<
     slug: "pressure-washing-kuna-id",
     metaTitle: "Pressure Washing Kuna ID | Free Estimate | Zen Day Spa",
     metaDescription:
-      "South Valley growth meets desert breezes — driveway detailing, siding-safe washing, and athletic-complex concrete around Kuna. Call (208) 927-3160.",
+      "South Valley growth meets desert breezes — driveway detailing, siding-safe washing, and athletic-complex concrete around Kuna. Call (208) 979-0002.",
     cityName: "Kuna",
     heroTitle: "Pressure Washing Kuna ID",
     heroSubtitle:
@@ -572,7 +572,7 @@ export const TREASURE_VALLEY_PRESSURE_PAGES: Record<
     slug: "pressure-washing-garden-city-id",
     metaTitle: "Pressure Washing Garden City ID | Free Estimate | Zen Day Spa",
     metaDescription:
-      "Boise-adjacent corridors, river recreation traffic, and tight residential lots — washing for Garden City homes & brick-and-mortar shops. Call (208) 927-3160.",
+      "Boise-adjacent corridors, river recreation traffic, and tight residential lots — washing for Garden City homes & brick-and-mortar shops. Call (208) 979-0002.",
     cityName: "Garden City",
     heroTitle: "Pressure Washing Garden City ID",
     heroSubtitle:
@@ -648,7 +648,7 @@ export const TREASURE_VALLEY_PRESSURE_PAGES: Record<
     slug: "pressure-washing-star-id",
     metaTitle: "Pressure Washing Star ID | Free Estimate | Zen Day Spa",
     metaDescription:
-      "Country-club curb appeal and semi-rural estates — driveway revivals, soft washing, and perimeter fencing resets throughout Star. Call (208) 927-3160.",
+      "Country-club curb appeal and semi-rural estates — driveway revivals, soft washing, and perimeter fencing resets throughout Star. Call (208) 979-0002.",
     cityName: "Star",
     heroTitle: "Pressure Washing Star ID",
     heroSubtitle:

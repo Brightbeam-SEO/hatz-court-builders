@@ -30,6 +30,6 @@ Many guests explore other [massage services in Boise, Idaho](/city/massage-servi
 
 <h2 id="book">Book Your Foot Massage Boise Appointment</h2>
 
-[Contact Zen Day Spa](/contact-us/) today at **(208) 927-3160** to schedule your foot massage session.
+[Contact Zen Day Spa](/contact-us/) today at **(208) 979-0002** to schedule your foot massage session.
 
 <!--SOL_BOISE_FAQ-->

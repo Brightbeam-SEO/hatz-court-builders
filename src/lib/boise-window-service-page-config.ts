@@ -56,7 +56,7 @@ export const BOISE_WINDOW_SERVICE_PAGES: Record<BoiseWindowServiceSlug, Treasure
     slug: "window-cleaning-boise-id",
     metaTitle: "Window Cleaning Boise | Fast, Hassle-Free Quotes | Zen Day Spa",
     metaDescription:
-      "Professional window cleaning in Boise—interior and exterior glass, tracks, screens, and hard-water spotting lifted safely. Insured crews. Call (208) 927-3160.",
+      "Professional window cleaning in Boise—interior and exterior glass, tracks, screens, and hard-water spotting lifted safely. Insured crews. Call (208) 979-0002.",
     cityName: "Boise",
     heroTitle: "Window Cleaning Boise ID",
     heroSubtitle:
@@ -115,7 +115,7 @@ export const BOISE_WINDOW_SERVICE_PAGES: Record<BoiseWindowServiceSlug, Treasure
     slug: "commercial-window-cleaning-boise-id",
     metaTitle: "Commercial Window Cleaning Boise | 24/7 Availability | Zen Day Spa",
     metaDescription:
-      "Commercial window cleaning in Boise—retail glass, office parks, medical entries, and multi-story façades with eco-conscious products. Call (208) 927-3160.",
+      "Commercial window cleaning in Boise—retail glass, office parks, medical entries, and multi-story façades with eco-conscious products. Call (208) 979-0002.",
     cityName: "Boise",
     heroTitle: "Commercial Window Cleaning Boise ID",
     heroSubtitle:
@@ -173,7 +173,7 @@ export const BOISE_WINDOW_SERVICE_PAGES: Record<BoiseWindowServiceSlug, Treasure
     slug: "high-rise-window-cleaning-boise-id",
     metaTitle: "High Rise Window Cleaning Boise | 24/7 Availability | Zen Day Spa",
     metaDescription:
-      "High-rise window cleaning in Boise—rope descent and lift programs for multi-story glass façades with documented safety planning. Call (208) 927-3160.",
+      "High-rise window cleaning in Boise—rope descent and lift programs for multi-story glass façades with documented safety planning. Call (208) 979-0002.",
     cityName: "Boise",
     heroTitle: "High-Rise Window Cleaning Boise ID",
     heroSubtitle:
@@ -231,7 +231,7 @@ export const BOISE_WINDOW_SERVICE_PAGES: Record<BoiseWindowServiceSlug, Treasure
     slug: "residential-window-cleaning-boise-id",
     metaTitle: "Residential Window Cleaning Boise ID | 24/7 Local Service | Zen Day Spa",
     metaDescription:
-      "Residential window cleaning in Boise—interior/exterior glass, vaulted panes, screens, and mineral spotting with gentle, eco-safe methods. Call (208) 927-3160.",
+      "Residential window cleaning in Boise—interior/exterior glass, vaulted panes, screens, and mineral spotting with gentle, eco-safe methods. Call (208) 979-0002.",
     cityName: "Boise",
     heroTitle: "Residential Window Cleaning Boise ID",
     heroSubtitle:
@@ -289,7 +289,7 @@ export const BOISE_WINDOW_SERVICE_PAGES: Record<BoiseWindowServiceSlug, Treasure
     slug: "solar-panel-cleaning-boise-id",
     metaTitle: "Solar Panel Cleaning Boise ID | 24/7 Service, 5.0 Star Rated | Zen Day Spa",
     metaDescription:
-      "Solar panel cleaning in Boise—pollen, dust, smoke residue, and bird mess rinsed without voiding warranties. Fast local scheduling. Call (208) 927-3160.",
+      "Solar panel cleaning in Boise—pollen, dust, smoke residue, and bird mess rinsed without voiding warranties. Fast local scheduling. Call (208) 979-0002.",
     cityName: "Boise",
     heroTitle: "Solar Panel Cleaning Boise ID",
     heroSubtitle:

@@ -154,7 +154,7 @@ export const BOISE_NEIGHBORHOOD_PRESSURE_PAGES: Record<
     {
       metaTitle: "Pressure Washing North End Boise ID | 24/7 Service | Zen Day Spa",
       metaDescription:
-        "Pressure washing for North End Boise—tree shade, sidewalks, and vintage siding cleaned safely. Insured local crews. Call (208) 927-3160.",
+        "Pressure washing for North End Boise—tree shade, sidewalks, and vintage siding cleaned safely. Insured local crews. Call (208) 979-0002.",
       heroTitle: "Pressure Washing North End Boise ID",
       heroSubtitle:
         "Shaded sidewalks, gracious setbacks, and steady foot traffic mean grime films return quickly—we dial chemistry for mature canopy drip lines without trading curb appeal.",
@@ -171,7 +171,7 @@ export const BOISE_NEIGHBORHOOD_PRESSURE_PAGES: Record<
     {
       metaTitle: "Pressure Washing Collister Boise ID | 24/7 Service | Zen Day Spa",
       metaDescription:
-        "Collister Boise pressure washing—shade-heavy patios, driveways, and siding freed from algae and foothill moisture film. Call (208) 927-3160.",
+        "Collister Boise pressure washing—shade-heavy patios, driveways, and siding freed from algae and foothill moisture film. Call (208) 979-0002.",
       heroTitle: "Pressure Washing Collister Boise ID",
       heroSubtitle:
         "Extra shade keeps moisture on concrete longer—green slip hazards and patio grout stains lift best when detergents match foothill pollen mixes.",
@@ -187,7 +187,7 @@ export const BOISE_NEIGHBORHOOD_PRESSURE_PAGES: Record<
     {
       metaTitle: "Pressure Washing Quail Ridge Boise ID | 24/7 Service | Zen Day Spa",
       metaDescription:
-        "Quail Ridge Boise pressure washing—driveways, walks, and elevations tuned for suburban setbacks and HOA-ready curb appeal. Call (208) 927-3160.",
+        "Quail Ridge Boise pressure washing—driveways, walks, and elevations tuned for suburban setbacks and HOA-ready curb appeal. Call (208) 979-0002.",
       heroTitle: "Pressure Washing Quail Ridge Boise ID",
       heroSubtitle:
         "Curving courts and cul-de-sacs catch pollen differently than grid streets—we route fans so irrigation arcs don’t reset stains overnight.",
@@ -203,7 +203,7 @@ export const BOISE_NEIGHBORHOOD_PRESSURE_PAGES: Record<
     {
       metaTitle: "Pressure Washing Winstead Park Boise ID | 24/7 Service | Zen Day Spa",
       metaDescription:
-        "Winstead Park Boise pressure washing near foothill access—entries, garages, and patios cleared of dust and algae. Call (208) 927-3160.",
+        "Winstead Park Boise pressure washing near foothill access—entries, garages, and patios cleared of dust and algae. Call (208) 979-0002.",
       heroTitle: "Pressure Washing Winstead Park Boise ID",
       heroSubtitle:
         "Foothill breezes push grit faster onto garages and north faces—we chase streak-free rinses before Bench gusts dry detergent unevenly.",
@@ -219,7 +219,7 @@ export const BOISE_NEIGHBORHOOD_PRESSURE_PAGES: Record<
     {
       metaTitle: "Pressure Washing West Bench Boise ID | 24/7 Service | Zen Day Spa",
       metaDescription:
-        "West Bench Boise pressure washing—Fairview/Five Mile corridors, shaded walks, winter runoff stains lifted safely. Call (208) 927-3160.",
+        "West Bench Boise pressure washing—Fairview/Five Mile corridors, shaded walks, winter runoff stains lifted safely. Call (208) 979-0002.",
       heroTitle: "Pressure Washing West Bench Boise ID",
       heroSubtitle:
         "Bench runoff and mature street trees gang up on sidewalks near arterials—we strip algae rings without chewing aggregate.",
@@ -235,7 +235,7 @@ export const BOISE_NEIGHBORHOOD_PRESSURE_PAGES: Record<
     {
       metaTitle: "Pressure Washing Morris Hill Boise ID | 24/7 Service | Zen Day Spa",
       metaDescription:
-        "Morris Hill Boise pressure washing—Bench runoff, shade-heavy walks, and compact lots refreshed safely. Call (208) 927-3160.",
+        "Morris Hill Boise pressure washing—Bench runoff, shade-heavy walks, and compact lots refreshed safely. Call (208) 979-0002.",
       heroTitle: "Pressure Washing Morris Hill Boise ID",
       heroSubtitle:
         "Moisture hangs near Bench transitions—Owyhee-area walks and Morris Hill Park loops polish best when crews sequence shady slabs last.",
@@ -251,7 +251,7 @@ export const BOISE_NEIGHBORHOOD_PRESSURE_PAGES: Record<
     {
       metaTitle: "Pressure Washing Boise Bench Boise ID | 24/7 Service | Zen Day Spa",
       metaDescription:
-        "Boise Bench pressure washing—arterial dust, tight setbacks, and mixed-era siding cleaned with Bench-aware methods. Call (208) 927-3160.",
+        "Boise Bench pressure washing—arterial dust, tight setbacks, and mixed-era siding cleaned with Bench-aware methods. Call (208) 979-0002.",
       heroTitle: "Pressure Washing Boise Bench Boise ID",
       heroSubtitle:
         "Emerald-to-Overland corridors move dust fast—fan discipline keeps siding crisp while flatwork loses winter brine ghosts.",
@@ -267,7 +267,7 @@ export const BOISE_NEIGHBORHOOD_PRESSURE_PAGES: Record<
     {
       metaTitle: "Pressure Washing Central Bench Boise ID | 24/7 Service | Zen Day Spa",
       metaDescription:
-        "Central Bench Boise pressure washing—Vista corridor grit, mature landscapes, and breezeway concrete detailed locally. Call (208) 927-3160.",
+        "Central Bench Boise pressure washing—Vista corridor grit, mature landscapes, and breezeway concrete detailed locally. Call (208) 979-0002.",
       heroTitle: "Pressure Washing Central Bench Boise ID",
       heroSubtitle:
         "Central Bench picks up Vista-driven dust and sprinkler filming—we separate elevation soft washes from aggressive driveway passes.",
@@ -283,7 +283,7 @@ export const BOISE_NEIGHBORHOOD_PRESSURE_PAGES: Record<
     {
       metaTitle: "Pressure Washing Warm Springs Mesa Boise ID | 24/7 | Zen Day Spa",
       metaDescription:
-        "Warm Springs Mesa Boise pressure washing—foothill dust, golf-course pollen, river-corridor moisture controlled safely. Call (208) 927-3160.",
+        "Warm Springs Mesa Boise pressure washing—foothill dust, golf-course pollen, river-corridor moisture controlled safely. Call (208) 979-0002.",
       heroTitle: "Pressure Washing Warm Springs Mesa Boise ID",
       heroSubtitle:
         "Warm Springs Avenue traffic and foothill upslope dust twin-team your siding—we rinse stone, stucco, and aggregate without zebra-striping sunny slabs.",

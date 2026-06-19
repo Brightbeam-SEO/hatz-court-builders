@@ -1,6 +1,6 @@
 When daily stress weighs on your mind and tension builds in your head and neck, a professional scalp massage offers the perfect escape. Our specialized scalp massage treatments in Boise combine therapeutic techniques with luxurious relaxation, targeting pressure points that relieve stress while promoting healthy hair growth and overall wellness.
 
-Call now to schedule — **(208) 927-3160**.
+Call now to schedule — **(208) 979-0002**.
 
 <h2 id="why-boise">Why Scalp Massage In Boise Is Essential for Your Wellness</h2>
 
@@ -50,4 +50,4 @@ Located conveniently in the Treasure Valley, our spa is easily accessible for re
 
 <h2 id="contact">Ready to Experience the Best Scalp Massage in Boise?</h2>
 
-Don't let stress and tension control your well-being. [Contact Zen Day Spa](/contact-us/) today at **(208) 927-3160** to schedule your scalp massage appointment in Boise.
+Don't let stress and tension control your well-being. [Contact Zen Day Spa](/contact-us/) today at **(208) 979-0002** to schedule your scalp massage appointment in Boise.

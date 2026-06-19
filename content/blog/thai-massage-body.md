@@ -1,6 +1,6 @@
 Thai massage combines assisted stretching, acupressure, and rhythmic compression to increase flexibility, release tension, and restore energy. At Zen Day Spa in Eagle, Idaho, experience authentic Thai massage in a calm, professional setting.
 
-Call now to schedule your Thai massage with Zen Day Spa — **(208) 927-3160**.
+Call now to schedule your Thai massage with Zen Day Spa — **(208) 979-0002**.
 
 <h2 id="what-is">What Is Thai Massage?</h2>
 
@@ -15,7 +15,7 @@ Often called "lazy person's yoga," Thai massage uses the therapist's hands, elbo
 - **Stress reduction** — Deep relaxation for body and mind.
 - **Enhanced energy** — Many clients feel revitalized after a session.
 
-Call now to schedule your Thai massage with Zen Day Spa — **(208) 927-3160**.
+Call now to schedule your Thai massage with Zen Day Spa — **(208) 979-0002**.
 
 <h2 id="experience">Your Thai Massage at Zen Day Spa</h2>
 
@@ -25,6 +25,6 @@ Each session is tailored to your comfort level and goals. Our Eagle therapists a
 
 Experienced therapists, a peaceful spa environment, and personalized care in Eagle serving the Treasure Valley. Visit **[Zen Day Spa](/)** and **[contact us](/contact-us/)** to book.
 
-Call now to schedule your Thai massage with Zen Day Spa — **(208) 927-3160**.
+Call now to schedule your Thai massage with Zen Day Spa — **(208) 979-0002**.
 
 <!--SOL_BOISE_FAQ-->

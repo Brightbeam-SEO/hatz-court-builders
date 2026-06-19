@@ -1,6 +1,6 @@
 Deep tissue massage targets chronic muscle tension with focused pressure and deliberate techniques that break down adhesions and improve mobility. Experience lasting relief at Zen Day Spa in Eagle, Idaho.
 
-Call now to schedule your deep tissue massage with Zen Day Spa — **(208) 927-3160**.
+Call now to schedule your deep tissue massage with Zen Day Spa — **(208) 979-0002**.
 
 <h2 id="what-is">Deep Tissue Massage: What Is It?</h2>
 
@@ -19,7 +19,7 @@ Firm pressure and slow strokes reach deeper muscle and connective tissue—ideal
 
 Your session begins with a personalized consultation. Sustained pressure and slow strokes work deeply into muscle tissue while you relax in our calm Eagle spa.
 
-Call now to schedule your deep tissue massage with Zen Day Spa — **(208) 927-3160**.
+Call now to schedule your deep tissue massage with Zen Day Spa — **(208) 979-0002**.
 
 <h2 id="quality">Our Commitment to Quality</h2>
 
@@ -29,6 +29,6 @@ Highly trained therapists, proven methods, soft lighting, and soothing music cre
 
 Skilled therapists, customized treatments, and a calming Eagle setting serving Boise, Meridian, Nampa, and Star. Visit **[Zen Day Spa](/)** or **[contact us](/contact-us/)** to book.
 
-Call now to schedule your deep tissue massage with Zen Day Spa — **(208) 927-3160**.
+Call now to schedule your deep tissue massage with Zen Day Spa — **(208) 979-0002**.
 
 <!--SOL_BOISE_FAQ-->

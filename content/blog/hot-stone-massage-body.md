@@ -1,6 +1,6 @@
 Hot stone massage is a therapeutic treatment that uses heated stones to warm your muscles, ease tension, and improve circulation. At Zen Day Spa in Eagle, Idaho, our hot stone massage offers an indulgent, calming experience that soothes both body and mind.
 
-Call now to schedule your hot stone massage with Zen Day Spa — **(208) 927-3160**.
+Call now to schedule your hot stone massage with Zen Day Spa — **(208) 979-0002**.
 
 <h2 id="what-is">Hot Stone Massage: What Is It?</h2>
 
@@ -14,7 +14,7 @@ Hot stone massage uses smooth, heated basalt stones placed on specific areas of 
 - **Stress reduction** — Soothing heat calms the nervous system.
 - **Increased flexibility** — Warmed muscles become more supple.
 
-Call now to schedule your hot stone massage with Zen Day Spa — **(208) 927-3160**.
+Call now to schedule your hot stone massage with Zen Day Spa — **(208) 979-0002**.
 
 <h2 id="experience">The Hot Stone Massage Experience at Zen Day Spa</h2>
 
@@ -24,6 +24,6 @@ Your session begins with a personalized consultation. Our therapists design a ta
 
 Skilled therapists, a calming atmosphere, personalized care, and a convenient Eagle location serving the Treasure Valley. Visit **[Zen Day Spa](/)** and **[contact us](/contact-us/)** to book. We also offer [hot stone massage in Boise](/services/hot-stone-massage-boise-id/) for clients in the Boise area.
 
-Call now to schedule your hot stone massage with Zen Day Spa — **(208) 927-3160**.
+Call now to schedule your hot stone massage with Zen Day Spa — **(208) 979-0002**.
 
 <!--SOL_BOISE_FAQ-->

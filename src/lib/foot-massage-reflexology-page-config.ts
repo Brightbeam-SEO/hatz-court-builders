@@ -12,7 +12,7 @@ export const FOOT_MASSAGE_REFLEXOLOGY_PAGE_CONFIG: TreasureValleyPressurePageCon
   slug: "foot-massage-reflexology",
   metaTitle: "Property Management Meridian ID | Greenbelt Property Management",
   metaDescription:
-    "Full-service long-term residential property management in Meridian, Idaho. Tenant placement, rent collection, and maintenance. Call (208) 863-8009.",
+    "Full-service long-term residential property management in Meridian, Idaho. Tenant placement, rent collection, and maintenance. Call (208) 979-0002.",
   cityName: "Meridian",
   heroTitle: "Residential Property Management",
   heroSubtitle:

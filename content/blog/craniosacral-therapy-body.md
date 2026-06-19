@@ -1,6 +1,6 @@
 Craniosacral therapy is a gentle, non-invasive technique designed to release tension deep within the body, particularly around the head, neck, and spine. At Zen Day Spa in Eagle, Idaho, our craniosacral therapy sessions provide deep relaxation, ease chronic pain, and help restore natural balance and well-being.
 
-Call now to schedule your craniosacral massage — **(208) 927-3160**.
+Call now to schedule your craniosacral massage — **(208) 979-0002**.
 
 <h2 id="what-is">Craniosacral Therapy: What Is It?</h2>
 
@@ -17,7 +17,7 @@ This therapy is especially beneficial for those experiencing stress, headaches, 
 - **Enhanced Emotional Balance:** Can help ease anxiety, depression, and emotional stress.
 - **Boosted Immunity:** Supports the body's natural healing processes and immune response.
 
-Call now to schedule your craniosacral massage — **(208) 927-3160**.
+Call now to schedule your craniosacral massage — **(208) 979-0002**.
 
 <h2 id="experience">The Craniosacral Therapy Experience at Zen Day Spa</h2>
 
@@ -34,6 +34,6 @@ We also offer [scalp massage in Nampa](/services/scalp-massage-nampa/) and [scal
 
 For lasting relief and deep relaxation, consider incorporating craniosacral therapy into your wellness routine. **[Contact Us](/contact-us/)** today to schedule your craniosacral therapy session.
 
-Call now to schedule your craniosacral massage — **(208) 927-3160**.
+Call now to schedule your craniosacral massage — **(208) 979-0002**.
 
 <!--SOL_BOISE_FAQ-->

@@ -2,7 +2,7 @@ Living with chronic pain can feel overwhelming, affecting every aspect of your d
 
 Chronic pain affects millions of Americans, often stemming from conditions like fibromyalgia, arthritis, old injuries, repetitive stress disorders, or underlying medical conditions. Traditional pain management approaches sometimes fall short, leaving individuals searching for alternative solutions that address both the symptoms and root causes of their discomfort.
 
-Call now to schedule your chronic pain massage in Eagle, ID — **(208) 927-3160**.
+Call now to schedule your chronic pain massage in Eagle, ID — **(208) 979-0002**.
 
 <h2 id="importance">The Importance of Specialized Chronic Pain Massage Therapy</h2>
 
@@ -14,7 +14,7 @@ Our therapeutic massage techniques work by improving circulation, reducing muscl
 
 The benefits of chronic pain massage extend into multiple areas of wellness. Clients often experience improved sleep patterns, reduced stress hormones, enhanced mood stability, better range of motion, and increased energy levels. These improvements create a positive cycle where reduced pain leads to better sleep, which supports healing and further pain reduction.
 
-Call now to schedule your chronic pain massage in Eagle, ID — **(208) 927-3160**.
+Call now to schedule your chronic pain massage in Eagle, ID — **(208) 979-0002**.
 
 <h2 id="why-zen">Why Choose Zen Day Spa for Chronic Pain Management In Eagle, ID</h2>
 
@@ -40,8 +40,8 @@ Managing chronic pain is a journey, not a destination. We provide ongoing suppor
 
 Don't let chronic pain control your life any longer. Our experienced chronic pain massage Eagle team is ready to help you discover the relief you've been seeking through specialized massage therapy tailored to your unique needs.
 
-**[Contact Zen Day Spa (208) 927-3160](tel:2089273160)** today to schedule your consultation and begin your journey toward lasting pain relief.
+**[Contact Zen Day Spa (208) 979-0002](tel:+12089790002)** today to schedule your consultation and begin your journey toward lasting pain relief.
 
-Call now to schedule your chronic pain massage in Eagle, ID — **(208) 927-3160**.
+Call now to schedule your chronic pain massage in Eagle, ID — **(208) 979-0002**.
 
 <!--SOL_BOISE_FAQ-->

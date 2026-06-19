@@ -28,4 +28,4 @@ Our office is located in **Meridian, Idaho**. We manage rentals throughout Ada a
 
 <h2 id="get-started">Schedule Your Free Consultation</h2>
 
-Ready to reduce the stress of owning a rental? Call **(208) 863-8009** or **[contact us](/contact-us/)** to request your free on-site consultation and rental analysis.
+Ready to reduce the stress of owning a rental? Call **(208) 979-0002** or **[contact us](/contact-us/)** to request your free on-site consultation and rental analysis.

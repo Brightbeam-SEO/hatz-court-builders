@@ -1,6 +1,6 @@
 Massage services in Boise, Idaho, at Zen Day Spa provide professional and relaxing therapeutic massages designed to help you unwind, relieve stress, and refresh your body and mind. Our spa is committed to delivering exceptional massage treatments tailored specifically to each client's unique needs.
 
-Call now to schedule — **(208) 927-3160**.
+Call now to schedule — **(208) 979-0002**.
 
 <h2 id="relaxing-boise">Relaxing Massage Services in Boise</h2>
 
@@ -61,4 +61,4 @@ Ready to experience the best massage services Boise has to offer? Reach out to Z
 
 **[Contact us](/contact-us/)** now to schedule your appointment and discover true relaxation.
 
-Call now to schedule — **(208) 927-3160**.
+Call now to schedule — **(208) 979-0002**.

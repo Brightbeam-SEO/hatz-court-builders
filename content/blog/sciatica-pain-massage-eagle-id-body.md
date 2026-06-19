@@ -1,6 +1,6 @@
 Living with sciatica can feel overwhelming, affecting every aspect of your daily life from walking and sitting to sleeping comfortably. This debilitating condition, characterized by shooting pain that radiates from your lower back down through your leg, impacts millions of people seeking effective, non-invasive treatment options.
 
-Call now to schedule your sciatica pain massage in Eagle, ID — **(208) 927-3160**.
+Call now to schedule your sciatica pain massage in Eagle, ID — **(208) 979-0002**.
 
 <h2 id="understanding">Understanding Sciatica and Its Impact</h2>
 
@@ -22,7 +22,7 @@ Professional massage therapy helps by:
 - Releasing endorphins to naturally manage pain
 - Restoring proper muscle balance and spinal alignment
 
-Call now to schedule your sciatica pain massage in Eagle, ID — **(208) 927-3160**.
+Call now to schedule your sciatica pain massage in Eagle, ID — **(208) 979-0002**.
 
 <h2 id="why-zen">Why Choose Zen Day Spa for Sciatica Pain Massage Eagle Services</h2>
 
@@ -52,7 +52,7 @@ We utilize multiple massage modalities proven effective for sciatica relief:
 
 Beyond your massage sessions, we provide guidance on home care techniques, stretches, and lifestyle modifications to help manage your sciatica between appointments and prevent future flare-ups.
 
-Call now to schedule your sciatica pain massage in Eagle, ID — **(208) 927-3160**.
+Call now to schedule your sciatica pain massage in Eagle, ID — **(208) 979-0002**.
 
 <h2 id="expect">What to Expect During Your Treatment</h2>
 
@@ -66,8 +66,8 @@ Along with our primary services, we also focus on targeted therapies designed fo
 
 Don't let sciatica control your life any longer. Our experienced team is ready to help you find the natural, effective relief you deserve through specialized therapeutic massage.
 
-Ready to experience sciatica relief? **[Contact Zen Day Spa today at (208) 927-3160](tel:2089273160)** to schedule your consultation and begin your journey back to pain-free living.
+Ready to experience sciatica relief? **[Contact Zen Day Spa today at (208) 979-0002](tel:+12089790002)** to schedule your consultation and begin your journey back to pain-free living.
 
-Call now to schedule your sciatica pain massage in Eagle, ID — **(208) 927-3160**.
+Call now to schedule your sciatica pain massage in Eagle, ID — **(208) 979-0002**.
 
 <!--SOL_BOISE_FAQ-->

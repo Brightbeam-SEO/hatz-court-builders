@@ -28,7 +28,7 @@ async function main() {
     seo: {
       metaTitle: "Pressure Washing Boise ID | Free Estimate | Sol Pressure Washing Boise",
       metaDescription:
-        "Residential and commercial pressure washing & soft washing in Boise and the Treasure Valley—honest quotes, insured crews, and HOA-friendly scheduling. Call (208) 514-5302.",
+        "Residential and commercial pressure washing & soft washing in Boise and the Treasure Valley—honest quotes, insured crews, and HOA-friendly scheduling. Call (208) 979-0002.",
     },
   });
 

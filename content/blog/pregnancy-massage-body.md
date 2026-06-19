@@ -1,6 +1,6 @@
 Our pregnancy massage offers a nurturing environment for expecting mothers. Expert prenatal therapists use gentle techniques that soothe aches, reduce swelling, and promote relaxation in our dedicated pregnancy massage spa.
 
-Call now to schedule your pregnancy massage experience — **(208) 927-3160**.
+Call now to schedule your pregnancy massage experience — **(208) 979-0002**.
 
 <h2 id="approach">Pregnancy Massage: Our Specialized Prenatal Approach</h2>
 
@@ -18,7 +18,7 @@ We focus on alleviating common pregnancy discomforts, improving circulation, rel
 - Enhanced circulation and reduced swelling
 - Overall relaxation and well-being
 
-Call now to schedule your pregnancy massage experience — **(208) 927-3160**.
+Call now to schedule your pregnancy massage experience — **(208) 979-0002**.
 
 <h2 id="why-spa">Why Choose Our Pregnancy Massage Spa</h2>
 
@@ -35,6 +35,6 @@ Safe, supportive care in a calming atmosphere with therapists trained in prenata
 
 Call to reserve your session in Eagle, Idaho. Learn more: [scalp massage](/services/scalp-massage/), [foot massage](/services/foot-massage-reflexology/), [facial](/services/facial/), [body massage](/services/body-massage/), and [post-pregnancy massage](/services/post-pregnancy-massage-eagle-id/).
 
-Call now to schedule your pregnancy massage experience — **(208) 927-3160**.
+Call now to schedule your pregnancy massage experience — **(208) 979-0002**.
 
 <!--SOL_BOISE_FAQ-->

@@ -58,7 +58,7 @@ export const BOISE_POWER_SERVICE_PAGES: Record<BoisePowerServiceSlug, TreasureVa
     slug: "power-washing-boise-id",
     metaTitle: "Power Washing Boise ID | Free Estimate | Zen Day Spa",
     metaDescription:
-      "Residential and commercial power washing in Boise and the Treasure Valley—heated rinse capability when buildup needs it, insured crews, fast scheduling. Call (208) 927-3160.",
+      "Residential and commercial power washing in Boise and the Treasure Valley—heated rinse capability when buildup needs it, insured crews, fast scheduling. Call (208) 979-0002.",
     cityName: "Boise",
     heroTitle: "Power Washing Boise ID",
     heroSubtitle:
@@ -117,7 +117,7 @@ export const BOISE_POWER_SERVICE_PAGES: Record<BoisePowerServiceSlug, TreasureVa
     slug: "house-power-washing-in-boise-id",
     metaTitle: "House Power Washing in Boise | 5 Star Rated | Zen Day Spa",
     metaDescription:
-      "Professional house power washing in Boise—north-wall mildew, garage wings, and mixed cladding cleaned with surface-smart pressure and detergents. Call (208) 927-3160.",
+      "Professional house power washing in Boise—north-wall mildew, garage wings, and mixed cladding cleaned with surface-smart pressure and detergents. Call (208) 979-0002.",
     cityName: "Boise",
     heroTitle: "House Power Washing Boise ID",
     heroSubtitle:
@@ -175,7 +175,7 @@ export const BOISE_POWER_SERVICE_PAGES: Record<BoisePowerServiceSlug, TreasureVa
     slug: "driveway-power-washing-in-boise-id",
     metaTitle: "Driveway Power Washing in Boise | Fast Quotes | Zen Day Spa",
     metaDescription:
-      "Driveway and sidewalk power washing in Boise—oil-aware concrete treatments, crisp joints, safer footing. Free estimates. Call (208) 927-3160.",
+      "Driveway and sidewalk power washing in Boise—oil-aware concrete treatments, crisp joints, safer footing. Free estimates. Call (208) 979-0002.",
     cityName: "Boise",
     heroTitle: "Driveway Power Washing Boise ID",
     heroSubtitle:
@@ -233,7 +233,7 @@ export const BOISE_POWER_SERVICE_PAGES: Record<BoisePowerServiceSlug, TreasureVa
     slug: "apartment-power-washing-company-in-boise-id",
     metaTitle: "Apartment Power Washing Company in Boise | Fast Quotes | Zen Day Spa",
     metaDescription:
-      "Apartment and multi-family power washing in Boise—breezeways, stairs, parking approaches, and dumpster pads with resident-conscious scheduling. Call (208) 927-3160.",
+      "Apartment and multi-family power washing in Boise—breezeways, stairs, parking approaches, and dumpster pads with resident-conscious scheduling. Call (208) 979-0002.",
     cityName: "Boise",
     heroTitle: "Apartment Power Washing Boise ID",
     heroSubtitle:
@@ -291,7 +291,7 @@ export const BOISE_POWER_SERVICE_PAGES: Record<BoisePowerServiceSlug, TreasureVa
     slug: "commercial-power-washing-company-in-boise-id",
     metaTitle: "Commercial Power Washing Company in Boise | 24/7 | Zen Day Spa",
     metaDescription:
-      "Commercial power washing in Boise—retail pads, restaurants, warehouses, and office entries with flexible hours and slip-conscious finishes. Call (208) 927-3160.",
+      "Commercial power washing in Boise—retail pads, restaurants, warehouses, and office entries with flexible hours and slip-conscious finishes. Call (208) 979-0002.",
     cityName: "Boise",
     heroTitle: "Commercial Power Washing Boise ID",
     heroSubtitle:
@@ -349,7 +349,7 @@ export const BOISE_POWER_SERVICE_PAGES: Record<BoisePowerServiceSlug, TreasureVa
     slug: "patio-power-washing-company-in-boise-id",
     metaTitle: "Patio Power Washing Company in Boise | 24/7 Service | Zen Day Spa",
     metaDescription:
-      "Patio and deck power washing in Boise—pavers, stamped concrete, wood, and composite outdoor rooms without wrecking joints. Call (208) 927-3160.",
+      "Patio and deck power washing in Boise—pavers, stamped concrete, wood, and composite outdoor rooms without wrecking joints. Call (208) 979-0002.",
     cityName: "Boise",
     heroTitle: "Patio Power Washing Boise ID",
     heroSubtitle:

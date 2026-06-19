@@ -1,6 +1,6 @@
 Experience professional massage services in Meridian, Idaho at Zen Day Spa. Whether you're managing pain, recovering from an injury, or simply need to relax, our licensed therapists offer personalized treatments to support your wellness in a peaceful, restorative setting.
 
-Call now to schedule — **(208) 927-3160**.
+Call now to schedule — **(208) 979-0002**.
 
 <h2 id="therapeutic">Therapeutic Massage Services in Meridian</h2>
 
@@ -42,4 +42,4 @@ We also offer services for other cities in the area: [Boise](/city/massage-servi
 
 **[Contact us](/contact-us/)** today to schedule your appointment. We look forward to serving you in Meridian, Idaho.
 
-Call now to schedule — **(208) 927-3160**.
+Call now to schedule — **(208) 979-0002**.

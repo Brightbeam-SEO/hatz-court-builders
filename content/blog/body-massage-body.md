@@ -1,6 +1,6 @@
 At Zen Day Spa, our body massage offers an unparalleled escape from everyday stress. In a dedicated massage spa environment with expert care, we tailor each session so you experience the deep relaxation only a true body massage can provide.
 
-Call now to schedule your personalized body massage experience — **(208) 927-3160**.
+Call now to schedule your personalized body massage experience — **(208) 979-0002**.
 
 <h2 id="personalized">Personalized Body Massage Treatment for Lasting Relief</h2>
 
@@ -26,7 +26,7 @@ Methodical pressure eases mental stress and promotes calmness so you leave with 
 
 Regular sessions support flexibility, reduced stiffness, and enhanced energy for long-term self-care.
 
-Call now to schedule your personalized body massage experience — **(208) 927-3160**.
+Call now to schedule your personalized body massage experience — **(208) 979-0002**.
 
 <h2 id="why-zen">Why Choose Zen Day Spa as Your Body Massage Spa</h2>
 
@@ -36,6 +36,6 @@ Expert therapists, a serene environment at **[Zen Day Spa – Massage, Scalp, an
 
 Call us today to schedule in Eagle, Idaho. Learn more: [scalp massage](/services/scalp-massage/), [foot massage](/services/foot-massage-reflexology/), [facial](/services/facial/), and [pregnancy massage](/services/pregnancy-massage/).
 
-Call now to schedule your personalized body massage experience — **(208) 927-3160**.
+Call now to schedule your personalized body massage experience — **(208) 979-0002**.
 
 <!--SOL_BOISE_FAQ-->

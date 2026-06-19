@@ -220,7 +220,7 @@ export const RENTALS_LONG_TERM_CONFIG = pmServiceConfig({
   serviceName: "Long Term Rentals Meridian Idaho",
   metaTitle: "Long Term Rentals Meridian Idaho | Greenbelt Property Management",
   metaDescription:
-    "Long-term rentals in Meridian, Idaho. Stable tenants, rent collection, inspections, and lease oversight. Call (208) 863-8009.",
+    "Long-term rentals in Meridian, Idaho. Stable tenants, rent collection, inspections, and lease oversight. Call (208) 979-0002.",
   heroTitle: "Long Term Rentals Meridian Idaho",
   heroSubtitle:
     "Qualified long-term tenants. Steady rental income. Clear reporting and lease oversight.",

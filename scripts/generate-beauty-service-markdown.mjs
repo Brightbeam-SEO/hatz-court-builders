@@ -10,7 +10,7 @@ function intro(introText, cta) {
 const pages = {
   facial: `${intro(
     "Indulge in our professional facial services designed to rejuvenate your skin and boost your confidence. At Zen Day Spa, our facial treatments are crafted to address a variety of skin concerns—from hydration and anti-aging to deep cleansing and soothing sensitive skin.\n\nOur expert estheticians use high-quality products and proven techniques to help reveal a luminous complexion.",
-    "Call now to schedule your personalized facial experience — **(208) 927-3160**.",
+    "Call now to schedule your personalized facial experience — **(208) 979-0002**.",
   )}<h2 id="what-we-offer">What Our Facial Spa Offers</h2>
 
 - **[Contact Us](/contact-us/)**
@@ -36,7 +36,7 @@ Using advanced techniques and specially formulated products, our anti-aging faci
 
 Ideal for dry or dehydrated skin, this facial replenishes moisture and restores balance. Our hydrating facial uses products rich in antioxidants and vitamins to soothe irritation while locking in essential hydration for lasting comfort.
 
-Call now to schedule your personalized facial experience — **(208) 927-3160**.
+Call now to schedule your personalized facial experience — **(208) 979-0002**.
 
 <h2 id="benefits">Benefits of Our Facial Services</h2>
 
@@ -60,7 +60,7 @@ At Zen Day Spa, quality and customer satisfaction are our top priorities. Our fa
 - **Relaxing Environment:** Our spa is designed to be a sanctuary where you can unwind, recharge, and enjoy a holistic skincare experience.
 - **Ongoing Support:** Post-treatment care is an essential part of our service. We offer personalized recommendations to help you maintain the benefits of your facial at home.
 
-Call now to schedule your personalized facial experience — **(208) 927-3160**.
+Call now to schedule your personalized facial experience — **(208) 979-0002**.
 
 <h3 id="booking">Simple Booking Process</h3>
 
@@ -78,11 +78,11 @@ Call us today to schedule your appointment and discover the transformative power
 
 Learn more about our massage spa services: [scalp massage](/services/scalp-massage/), [foot massage](/services/foot-massage-reflexology/), facial, [body massage](/services/body-massage/), and [pregnancy massage](/services/pregnancy-massage/).
 
-Call now to schedule your personalized facial experience — **(208) 927-3160**.${FAQ}`,
+Call now to schedule your personalized facial experience — **(208) 979-0002**.${FAQ}`,
 
   microneedling: `${intro(
     "Microneedling is a minimally invasive cosmetic treatment designed to rejuvenate the skin, reducing signs of aging, scars, and imperfections. At Zen Day Spa in Eagle, Idaho, our microneedling treatments help stimulate your skin's natural healing process, resulting in smoother texture, improved tone, and a revitalized appearance.",
-    "Call now to schedule your microneedling appointment — **(208) 927-3160**.",
+    "Call now to schedule your microneedling appointment — **(208) 979-0002**.",
   )}<h2 id="what-is">Microneedling: What is it?</h2>
 
 Microneedling involves the use of tiny, sterile needles that gently create microscopic channels in the skin. This controlled injury triggers your skin's natural healing response, stimulating the production of collagen and elastin—essential proteins that maintain healthy, youthful skin. Over time, this process significantly improves skin texture, reduces fine lines and wrinkles, and diminishes acne scars and pigmentation issues.
@@ -96,7 +96,7 @@ Microneedling involves the use of tiny, sterile needles that gently create micro
 - **Even Skin Tone:** Helps fade hyperpigmentation, sunspots, and age-related discoloration.
 - **Improved Product Absorption:** Enhances the effectiveness of skincare products by allowing deeper penetration.
 
-Call now to schedule your microneedling appointment — **(208) 927-3160**.
+Call now to schedule your microneedling appointment — **(208) 979-0002**.
 
 <h2 id="experience">The Microneedling Experience at Zen Day Spa</h2>
 
@@ -106,7 +106,7 @@ During treatment, a specialized device with ultra-fine needles is gently moved a
 
 Most clients notice visible improvement within days, with optimal results emerging after a series of sessions.
 
-Call now to schedule your microneedling appointment — **(208) 927-3160**.
+Call now to schedule your microneedling appointment — **(208) 979-0002**.
 
 <h2 id="aftercare">Aftercare and Results</h2>
 
@@ -121,7 +121,7 @@ Proper aftercare maximizes the benefits of your microneedling treatment. Our ski
 
 Ready to experience younger, healthier-looking skin? **[Contact us](/contact-us/)** today to schedule your microneedling appointment.
 
-Call now to schedule your microneedling appointment — **(208) 927-3160**.${FAQ}`,
+Call now to schedule your microneedling appointment — **(208) 979-0002**.${FAQ}`,
 };
 
 const outDir = path.join(process.cwd(), "content", "blog");

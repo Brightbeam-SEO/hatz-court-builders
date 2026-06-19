@@ -2,7 +2,7 @@ Indulge in our professional facial services designed to rejuvenate your skin and
 
 Our expert estheticians use high-quality products and proven techniques to help reveal a luminous complexion.
 
-Call now to schedule your personalized facial experience — **(208) 927-3160**.
+Call now to schedule your personalized facial experience — **(208) 979-0002**.
 
 <h2 id="what-we-offer">What Our Facial Spa Offers</h2>
 
@@ -29,7 +29,7 @@ Using advanced techniques and specially formulated products, our anti-aging faci
 
 Ideal for dry or dehydrated skin, this facial replenishes moisture and restores balance. Our hydrating facial uses products rich in antioxidants and vitamins to soothe irritation while locking in essential hydration for lasting comfort.
 
-Call now to schedule your personalized facial experience — **(208) 927-3160**.
+Call now to schedule your personalized facial experience — **(208) 979-0002**.
 
 <h2 id="benefits">Benefits of Our Facial Services</h2>
 
@@ -53,7 +53,7 @@ At Zen Day Spa, quality and customer satisfaction are our top priorities. Our fa
 - **Relaxing Environment:** Our spa is designed to be a sanctuary where you can unwind, recharge, and enjoy a holistic skincare experience.
 - **Ongoing Support:** Post-treatment care is an essential part of our service. We offer personalized recommendations to help you maintain the benefits of your facial at home.
 
-Call now to schedule your personalized facial experience — **(208) 927-3160**.
+Call now to schedule your personalized facial experience — **(208) 979-0002**.
 
 <h3 id="booking">Simple Booking Process</h3>
 
@@ -71,6 +71,6 @@ Call us today to schedule your appointment and discover the transformative power
 
 Learn more about our massage spa services: [scalp massage](/services/scalp-massage/), [foot massage](/services/foot-massage-reflexology/), facial, [body massage](/services/body-massage/), and [pregnancy massage](/services/pregnancy-massage/).
 
-Call now to schedule your personalized facial experience — **(208) 927-3160**.
+Call now to schedule your personalized facial experience — **(208) 979-0002**.
 
 <!--SOL_BOISE_FAQ-->

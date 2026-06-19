@@ -146,7 +146,7 @@ export const EAGLE_LOCAL_SERVICE_PAGES: Record<EagleLocalServiceSlug, TreasureVa
     slug: "power-washing-eagle-id",
     metaTitle: "Power Washing Eagle ID | 24/7 Service, 5.0 Star Rated | Zen Day Spa",
     metaDescription:
-      "Local power washing in Eagle ID—wind dust, pollen, and winter road spray lifted from siding and concrete. Fast Treasure Valley dispatch. Call (208) 927-3160.",
+      "Local power washing in Eagle ID—wind dust, pollen, and winter road spray lifted from siding and concrete. Fast Treasure Valley dispatch. Call (208) 979-0002.",
     cityName: "Eagle",
     heroTitle: "Power Washing Eagle ID",
     heroSubtitle:
@@ -178,7 +178,7 @@ export const EAGLE_LOCAL_SERVICE_PAGES: Record<EagleLocalServiceSlug, TreasureVa
     slug: "window-cleaning-eagle-id",
     metaTitle: "Window Cleaning Eagle ID | 24/7 Service, 5.0 Star Rated | Zen Day Spa",
     metaDescription:
-      "Window cleaning in Eagle ID—dust, pollen, and sprinkler mineral spots lifted from residential and commercial glass. Call (208) 927-3160.",
+      "Window cleaning in Eagle ID—dust, pollen, and sprinkler mineral spots lifted from residential and commercial glass. Call (208) 979-0002.",
     cityName: "Eagle",
     heroTitle: "Window Cleaning Eagle ID",
     heroSubtitle:
@@ -210,7 +210,7 @@ export const EAGLE_LOCAL_SERVICE_PAGES: Record<EagleLocalServiceSlug, TreasureVa
     slug: "gutter-cleaning-eagle-id",
     metaTitle: "Gutter Cleaning Eagle | 24/7 Service, 5.0 Star Rated | Zen Day Spa",
     metaDescription:
-      "Gutter cleaning in Eagle ID—needles, leaves, and roof grit cleared with flushed downspouts. Fast local service. Call (208) 927-3160.",
+      "Gutter cleaning in Eagle ID—needles, leaves, and roof grit cleared with flushed downspouts. Fast local service. Call (208) 979-0002.",
     cityName: "Eagle",
     heroTitle: "Gutter Cleaning Eagle ID",
     heroSubtitle:

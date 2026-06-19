@@ -99,4 +99,4 @@ Yes, massage can help reduce muscle tension and improve circulation.
 
 At Zen Day Spa, we proudly serve the Eagle community with professional massage services tailored to relaxation and wellness. Whether you're looking to unwind or relieve tension, our experienced therapists are here to help.
 
-Ready to relax? Book your massage today and experience the benefits of professional care in a calm, welcoming environment. Call **(208) 927-3160** today to book your appointment.
+Ready to relax? Book your massage today and experience the benefits of professional care in a calm, welcoming environment. Call **(208) 979-0002** today to book your appointment.

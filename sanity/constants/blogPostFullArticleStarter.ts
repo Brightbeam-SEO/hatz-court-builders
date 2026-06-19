@@ -55,7 +55,7 @@ Sample answer.
 
 <h2 id="conclusion">Conclusion</h2>
 
-Wrap up with a clear takeaway. For a strong CTA, link <a href="https://solpressurewash.com/" target="_blank" rel="noopener noreferrer">Sol Pressure Washing Boise</a> and phone <a href="tel:+12085145302">(208) 514-5302</a>.
+Wrap up with a clear takeaway. For a strong CTA, link <a href="https://hatzcourtbuilders.com/" target="_blank" rel="noopener noreferrer">Hatz Court Builders</a> and phone <a href="tel:+12089790002">(208) 979-0002</a>.
 `;
 
 /** Starter TOC — align \`id\` values with \`<h2 id="...">\` / \`<h3 id="...">\` in the body above. */

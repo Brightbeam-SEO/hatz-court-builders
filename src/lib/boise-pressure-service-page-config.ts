@@ -61,7 +61,7 @@ export const BOISE_PRESSURE_SERVICE_PAGES: Record<BoisePressureServiceSlug, Trea
     slug: "soft-washing-in-boise-id",
     metaTitle: "Soft Washing in Boise | 100% Satisfaction Guaranteed | Sol",
     metaDescription:
-      "Safe, low-pressure soft washing in Boise for siding, roofs, and delicate exteriors—eco-conscious detergents and insured crews. Call (208) 927-3160 for a free estimate.",
+      "Safe, low-pressure soft washing in Boise for siding, roofs, and delicate exteriors—eco-conscious detergents and insured crews. Call (208) 979-0002 for a free estimate.",
     cityName: "Boise",
     heroTitle: "Soft Washing in Boise ID",
     heroSubtitle:
@@ -119,7 +119,7 @@ export const BOISE_PRESSURE_SERVICE_PAGES: Record<BoisePressureServiceSlug, Trea
     slug: "house-pressure-washing-boise-id",
     metaTitle: "House Pressure Washing Near You Boise | Local Experts | Sol",
     metaDescription:
-      "Professional house pressure washing in Boise—siding, trim, and hard-to-reach elevations cleaned safely with insured, review-backed crews. Call (208) 927-3160.",
+      "Professional house pressure washing in Boise—siding, trim, and hard-to-reach elevations cleaned safely with insured, review-backed crews. Call (208) 979-0002.",
     cityName: "Boise",
     heroTitle: "House Pressure Washing Boise ID",
     heroSubtitle:
@@ -177,7 +177,7 @@ export const BOISE_PRESSURE_SERVICE_PAGES: Record<BoisePressureServiceSlug, Trea
     slug: "commercial-pressure-washing-boise-id",
     metaTitle: "Commercial Pressure Washing Boise | 24/7 Availability | Sol",
     metaDescription:
-      "Storefronts, lots, warehouses, and fleet bays—commercial pressure washing in Boise with flexible scheduling and slip-conscious rinses. Call (208) 927-3160.",
+      "Storefronts, lots, warehouses, and fleet bays—commercial pressure washing in Boise with flexible scheduling and slip-conscious rinses. Call (208) 979-0002.",
     cityName: "Boise",
     heroTitle: "Commercial Pressure Washing Boise ID",
     heroSubtitle:
@@ -235,7 +235,7 @@ export const BOISE_PRESSURE_SERVICE_PAGES: Record<BoisePressureServiceSlug, Trea
     slug: "patio-pressure-washing-company-in-boise-id",
     metaTitle: "Patio Pressure Washing Company in Boise | 24/7 Service | Sol",
     metaDescription:
-      "Patio and deck pressure washing in Boise—pavers, stamped concrete, and outdoor living spaces cleaned without blowing out joint sand. Call (208) 927-3160.",
+      "Patio and deck pressure washing in Boise—pavers, stamped concrete, and outdoor living spaces cleaned without blowing out joint sand. Call (208) 979-0002.",
     cityName: "Boise",
     heroTitle: "Patio Pressure Washing Boise ID",
     heroSubtitle:
@@ -293,7 +293,7 @@ export const BOISE_PRESSURE_SERVICE_PAGES: Record<BoisePressureServiceSlug, Trea
     slug: "driveway-pressure-washing-boise-id",
     metaTitle: "Driveway Pressure Washing Boise ID | Quick Results | Sol",
     metaDescription:
-      "Driveway and sidewalk pressure washing in Boise—oil-aware concrete passes, crisp expansion joints, and safer footing. Call (208) 927-3160.",
+      "Driveway and sidewalk pressure washing in Boise—oil-aware concrete passes, crisp expansion joints, and safer footing. Call (208) 979-0002.",
     cityName: "Boise",
     heroTitle: "Driveway Pressure Washing Boise ID",
     heroSubtitle:
@@ -351,7 +351,7 @@ export const BOISE_PRESSURE_SERVICE_PAGES: Record<BoisePressureServiceSlug, Trea
     slug: "graffiti-removal-boise-id",
     metaTitle: "Graffiti Removal Boise ID | 24/7 Service, 5.0 Star Rated | Sol",
     metaDescription:
-      "Fast graffiti removal in Boise for brick, stucco, concrete, and storefronts—same-day dispatch when possible. Call (208) 927-3160.",
+      "Fast graffiti removal in Boise for brick, stucco, concrete, and storefronts—same-day dispatch when possible. Call (208) 979-0002.",
     cityName: "Boise",
     heroTitle: "Graffiti Removal Boise ID",
     heroSubtitle:
@@ -409,7 +409,7 @@ export const BOISE_PRESSURE_SERVICE_PAGES: Record<BoisePressureServiceSlug, Trea
     slug: "heavy-equipment-fleet-pressure-washing",
     metaTitle: "Heavy Equipment & Fleet Pressure Washing | Treasure Valley",
     metaDescription:
-      "Heavy equipment and fleet washing for Treasure Valley contractors—demucking, brine and road film removal, and job-ready finishes. Call (208) 927-3160.",
+      "Heavy equipment and fleet washing for Treasure Valley contractors—demucking, brine and road film removal, and job-ready finishes. Call (208) 979-0002.",
     cityName: "Treasure Valley",
     heroTitle: "Heavy Equipment & Fleet Washing",
     heroSubtitle:

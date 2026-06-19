@@ -30,6 +30,6 @@ Some clients follow up with [foot massage Boise](/services/foot-massage-boise-id
 
 <h2 id="book">Schedule Your Couples Massage Boise Session Today</h2>
 
-[Contact Zen Day Spa](/contact-us/) today at **(208) 927-3160** for a relaxing couples massage Boise session.
+[Contact Zen Day Spa](/contact-us/) today at **(208) 979-0002** for a relaxing couples massage Boise session.
 
 <!--SOL_BOISE_FAQ-->
