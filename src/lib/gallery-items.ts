@@ -6,6 +6,20 @@ import { normalizeHcbImagePath } from "@/lib/hcb-image-path";
 /** Hero band image — excluded from the masonry grid so it does not appear twice. */
 export const GALLERY_HERO_IMAGE = gpmPick("outdoor multi court pickleball basketball tennis");
 
+/** Visually redundant photos omitted from the gallery collage. */
+const GALLERY_DUPLICATE_FRAGMENTS = [
+  "backyard-pickleball-basketball-court-blue-surfacing",
+  "indoor-acrylic-basketball-pickleball-court-wall-hoop",
+  "indoor-hardwood-basketball-court-wall-hoop",
+  "indoor-hardwood-pickleball-basketball-court-interior",
+] as const;
+
+function pathsMatchingFragments(fragments: readonly string[], pool: readonly string[]): string[] {
+  return fragments
+    .map((fragment) => pool.find((path) => path.includes(fragment)))
+    .filter((path): path is string => Boolean(path));
+}
+
 export function uniqueGalleryItemsByImage(items: GalleryImageItem[]): GalleryImageItem[] {
   const seen = new Set<string>();
   return items.filter((item) => {
@@ -39,10 +53,13 @@ export function buildGalleryCollageItems(): GalleryImageItem[] {
     paths.find((p) => p.includes("multicourt-modular-tile-backyard-installation"))!,
   ].filter(Boolean);
 
+  const duplicatePaths = pathsMatchingFragments(GALLERY_DUPLICATE_FRAGMENTS, paths);
+
   const excluded = new Set<string>([
     GALLERY_HERO_IMAGE,
     ...highlightPaths,
     ...pinnedTop,
+    ...duplicatePaths,
   ]);
 
   const collageRest = paths
@@ -74,6 +91,9 @@ export function finalizeGalleryContent(content: GalleryContent): GalleryContent 
     })),
   );
   const highlightImages = new Set(highlightItems.map((item) => item.image));
+  const duplicateImages = new Set(
+    pathsMatchingFragments(GALLERY_DUPLICATE_FRAGMENTS, GPM_GALLERY_IMAGE_PATHS),
+  );
 
   const items = uniqueGalleryItemsByImage(
     content.items
@@ -82,7 +102,10 @@ export function finalizeGalleryContent(content: GalleryContent): GalleryContent 
         image: normalizeHcbImagePath(item.image),
       }))
       .filter(
-        (item) => item.image !== GALLERY_HERO_IMAGE && !highlightImages.has(item.image),
+        (item) =>
+          item.image !== GALLERY_HERO_IMAGE &&
+          !highlightImages.has(item.image) &&
+          !duplicateImages.has(item.image),
       ),
   );
 
