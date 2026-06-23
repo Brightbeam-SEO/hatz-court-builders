@@ -155,7 +155,7 @@ export const DEFAULT_SOCIAL_LINKS: SocialLink[] = [
   },
   {
     label: "Instagram",
-    href: "https://www.instagram.com/hatz_sports_construction",
+    href: "https://www.instagram.com/hatz_court_builders/",
   },
 ];
 

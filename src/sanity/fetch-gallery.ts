@@ -1,5 +1,6 @@
 import type { GalleryContent, GalleryImageItem, GalleryStatItem } from "@/lib/gallery-content";
 import { getStaticGalleryContent } from "@/components/gallery/site-data";
+import { finalizeGalleryContent } from "@/lib/gallery-items";
 import { normalizeHcbImagePath } from "@/lib/hcb-image-path";
 import { getSanityClient } from "./client";
 import { galleryPageQuery } from "./queries";
@@ -54,10 +55,10 @@ export function mergeGalleryContent(
   if (remote.highlightsTitle) next.highlightsTitle = remote.highlightsTitle;
   if (remote.highlightsIntro) next.highlightsIntro = remote.highlightsIntro;
   if (isNonEmpty(remote.overviewStats)) next.overviewStats = remote.overviewStats;
-  if (isNonEmpty(remote.highlightItems)) next.highlightItems = remote.highlightItems;
-  if (isNonEmpty(remote.items)) next.items = remote.items;
+  // Gallery images stay canonical from code so stale Sanity rows never replace
+  // the deduped collage order or reintroduce hero/highlight duplicates.
   if (remote.seo) next.seo = remote.seo;
-  return next;
+  return finalizeGalleryContent(next);
 }
 
 export function sanityDocToGalleryPartial(doc: SanityGalleryDoc | null): Partial<GalleryContent> | null {
@@ -108,5 +109,5 @@ export async function getGalleryContentForPage(): Promise<GalleryContent> {
       "Sanity gallery content is required. Configure env vars and publish a galleryPage document.",
     );
   }
-  return staticContent;
+  return finalizeGalleryContent(staticContent);
 }

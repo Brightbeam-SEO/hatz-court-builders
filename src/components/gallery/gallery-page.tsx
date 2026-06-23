@@ -9,11 +9,10 @@ import type { SocialLink } from "@/lib/home-content";
 import { PageHeroCtaButtons } from "@/components/layout/page-hero-cta-buttons";
 import { SiteFooterRegion } from "@/components/layout/site-footer-region";
 import { BUSINESS } from "@/lib/business";
+import { GALLERY_HERO_IMAGE } from "@/lib/gallery-items";
 import { gpmImageAlt } from "@/lib/gpm-gallery-images";
-import { gpmPick } from "@/lib/gpm-pick-gallery";
 
-const galleryHeroImage = gpmPick("outdoor multi court pickleball basketball tennis");
-const galleryHeroAlt = gpmImageAlt(galleryHeroImage);
+const galleryHeroAlt = gpmImageAlt(GALLERY_HERO_IMAGE);
 
 const collageSpanClasses = [
   "sm:row-span-24",
@@ -41,7 +40,7 @@ export function GalleryPage({
   return (
     <div className="min-h-screen bg-zen-espresso text-white light:bg-transparent light:text-zen-espresso">
       <main className="bg-zen-espresso pb-16 light:bg-transparent">
-        <BlogHeroBand imageSrc={galleryHeroImage} imageAlt={galleryHeroAlt}>
+        <BlogHeroBand imageSrc={GALLERY_HERO_IMAGE} imageAlt={galleryHeroAlt}>
           <div className="min-w-0 w-full max-w-3xl">
             <h1 className="font-heading text-4xl font-bold leading-tight text-white sm:text-5xl md:text-6xl">
               {content.title}
