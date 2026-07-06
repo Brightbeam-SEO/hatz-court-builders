@@ -8,9 +8,9 @@ export const GPM_SITEMAP_SEO: Record<
   { title: string; description: string; openGraphTitle?: string }
 > = {
   "/": {
-    title: "Best Court Builders in Boise & Scottsdale | Hatz Court Builders",
+    title: "Court Builders Boise & Scottsdale | Hatz Court Builders",
     description:
-      "Custom tennis, basketball, pickleball, and multi-use courts in Idaho and Arizona. Acrylic, modular, hardwood, turf, resurfacing, and design-build.",
+      "Hatz Court Builders designs and builds custom pickleball, tennis, basketball, and multi-use courts in Boise and Scottsdale. Get started today.",
     openGraphTitle: "Hatz Court Builders",
   },
   "/about/": {

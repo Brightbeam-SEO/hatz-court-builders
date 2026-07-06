@@ -13,9 +13,9 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "Best Court Builders in Boise & Scottsdale | Hatz Court Builders",
+  title: "Court Builders Boise & Scottsdale | Hatz Court Builders",
   description:
-    "Custom tennis, basketball, pickleball, and multi-use courts in Idaho and Arizona. Acrylic, modular, hardwood, turf, resurfacing, and design-build. Call (208) 979-0002.",
+    "Hatz Court Builders designs and builds custom pickleball, tennis, basketball, and multi-use courts in Boise and Scottsdale. Get started today.",
   icons: {
     icon: [
       { url: "/favicon.ico", sizes: "48x48" },
