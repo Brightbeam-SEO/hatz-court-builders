@@ -45,57 +45,57 @@ export const GPM_SITEMAP_SEO: Record<
   "/basketball-court-construction/": {
     title: "Basketball Court Construction | Custom Courts | Hatz",
     description:
-      "Custom basketball court construction for homes, schools, HOAs, parks, gyms, and commercial properties. Call us today!",
+      "Expert basketball court construction for residential and commercial spaces. Built for performance and longevity. Contact us for a quote.",
   },
   "/pickleball-court-construction/": {
-    title: "Pickleball Court Construction | One-Stop Shop | Hatz",
+    title: "Pickleball Court Construction | Custom Courts | Hatz",
     description:
-      "Professional pickleball court construction for homes, schools, HOAs, parks, clubs, and commercial properties. Call us today.",
+      "Professional pickleball court construction built for durability and performance. Custom layouts and surfaces available. Contact us to get started.",
   },
   "/volleyball-court-construction/": {
-    title: "Volleyball Court Construction | Custom Courts | Hatz",
+    title: "Volleyball Court Construction | All Court Types | Hatz",
     description:
-      "Custom volleyball court construction for homes, schools, parks, HOAs, clubs, recreation centers, and commercial properties. Call us today!",
+      "Durable volleyball court construction for indoor and outdoor use. Built to match your space and needs. Contact us for details.",
   },
   "/futsal-soccer-court-construction/": {
-    title: "Futsal / Soccer Court Construction | Custom Courts | Hatz",
+    title: "Soccer Court Construction | All Court Types | Hatz",
     description:
-      "Custom futsal and soccer court construction for schools, parks, clubs, training facilities, HOAs, gyms, and commercial properties. Call us today!",
+      "Custom soccer court construction for training or recreation. Designed for performance and safety. Contact us to learn more.",
   },
   "/tennis-court-construction/": {
     title: "Tennis Court Construction | Custom Courts | Hatz",
     description:
-      "Custom tennis court construction for homes, schools, clubs, HOAs, parks, and commercial properties. Call us today!",
+      "High-quality tennis court construction with premium materials and precision builds. Designed for long-term play. Contact us today.",
   },
   "/bocce-court-construction/": {
     title: "Bocce Court Construction | Custom Courts | Hatz",
     description:
-      "Professional bocce court construction for homes, HOAs, resorts, parks, and commercial properties. Call us today!",
+      "Precision bocce court construction with proper base and surface systems. Built for smooth, consistent play. Contact us today.",
   },
   "/multi-court-construction/": {
-    title: "Multi-Court Construction | Custom Courts | Hatz",
+    title: "Multi Court Construction | All Court Types | Hatz",
     description:
-      "Multi-court construction for homes, schools, HOAs, parks, and commercial facilities. Combine sports in one space. Call us today!",
+      "Multi court construction for parks, schools, and facilities. Build multiple courts in one space. Contact us to plan your project.",
   },
   "/custom-court-construction/": {
-    title: "Custom Court Construction | Design-Build | Hatz",
+    title: "Custom Court Construction | Custom Courts | Hatz",
     description:
-      "Custom court construction for residential and commercial projects — layouts, colors, surfaces, and full design-build. Call us today!",
+      "Fully custom court construction tailored to your space, sport, and design preferences. Built your way. Contact us now.",
   },
   "/commercial-court-construction/": {
-    title: "Commercial Court Construction | Custom Courts | Hatz",
+    title: "Commercial Court Construction | All Court Types | Hatz",
     description:
-      "Commercial court construction for schools, parks, HOAs, clubs, resorts, and recreation facilities. Call us today!",
+      "Commercial court construction for schools, HOAs, and facilities. Built for durability and heavy use. Contact us for more info.",
   },
   "/court-expansion/": {
-    title: "Court Expansion | Expand Your Facility | Hatz",
+    title: "Court Expansion | All Court Types | Hatz",
     description:
-      "Court expansion services for adding courts, enlarging recreation areas, and upgrading athletic facilities. Call us today!",
+      "Court expansion services to upgrade or extend your existing sports court space. Seamless additions. Contact us today.",
   },
   "/custom-court-design/": {
-    title: "Custom Court Design | Planning & Layout | Hatz",
+    title: "Custom Court Design | Custom Courts | Hatz",
     description:
-      "Custom court design for layout, surfacing, striping, lighting, fencing, and multi-sport planning. Call us today!",
+      "Custom court design services to plan layout, materials, and functionality for your project. Start your build right. Contact us.",
   },
 };
 

@@ -213,7 +213,7 @@ export const PM_BASKETBALL_COURT_CONSTRUCTION_CONFIG = courtConstructionServiceC
   serviceName: "Basketball Court Construction",
   metaTitle: "Basketball Court Construction | Custom Courts | Hatz",
   metaDescription:
-    "Custom basketball court construction for homes, schools, HOAs, parks, gyms, and commercial properties. Call us today!",
+    "Expert basketball court construction for residential and commercial spaces. Built for performance and longevity. Contact us for a quote.",
   heroTitle: "Basketball Court Construction",
   heroSubtitle:
     "Professional basketball court construction for residential and commercial projects — backyard courts, half courts, full courts, schools, parks, and multi-use facilities.",
@@ -276,9 +276,9 @@ export const PM_BASKETBALL_COURT_CONSTRUCTION_CONFIG = courtConstructionServiceC
 export const PM_PICKLEBALL_COURT_CONSTRUCTION_CONFIG = courtConstructionServiceConfig({
   slug: "pickleball-court-construction",
   serviceName: "Pickleball Court Construction",
-  metaTitle: "Pickleball Court Construction | One-Stop Shop | Hatz",
+  metaTitle: "Pickleball Court Construction | Custom Courts | Hatz",
   metaDescription:
-    "Professional pickleball court construction for homes, schools, HOAs, parks, clubs, and commercial properties. Call us today.",
+    "Professional pickleball court construction built for durability and performance. Custom layouts and surfaces available. Contact us to get started.",
   heroTitle: "Pickleball Court Construction",
   heroSubtitle:
     "Pickleball court construction for homes, schools, HOAs, parks, clubs, and businesses — dedicated courts, conversions, and multi-sport recreation areas.",
@@ -321,9 +321,9 @@ export const PM_PICKLEBALL_COURT_CONSTRUCTION_CONFIG = courtConstructionServiceC
 export const PM_VOLLEYBALL_COURT_CONSTRUCTION_CONFIG = courtConstructionServiceConfig({
   slug: "volleyball-court-construction",
   serviceName: "Volleyball Court Construction",
-  metaTitle: "Volleyball Court Construction | Custom Courts | Hatz",
+  metaTitle: "Volleyball Court Construction | All Court Types | Hatz",
   metaDescription:
-    "Custom volleyball court construction for homes, schools, parks, HOAs, clubs, recreation centers, and commercial properties. Call us today!",
+    "Durable volleyball court construction for indoor and outdoor use. Built to match your space and needs. Contact us for details.",
   heroTitle: "Volleyball Court Construction",
   heroSubtitle:
     "Professional volleyball court construction for residential and commercial projects — backyard courts, school courts, park courts, resort amenities, and multi-use facilities.",
@@ -386,9 +386,9 @@ export const PM_VOLLEYBALL_COURT_CONSTRUCTION_CONFIG = courtConstructionServiceC
 export const PM_FUTSAL_SOCCER_COURT_CONSTRUCTION_CONFIG = courtConstructionServiceConfig({
   slug: "futsal-soccer-court-construction",
   serviceName: "Futsal / Soccer Court Construction",
-  metaTitle: "Futsal / Soccer Court Construction | Custom Courts | Hatz",
+  metaTitle: "Soccer Court Construction | All Court Types | Hatz",
   metaDescription:
-    "Custom futsal and soccer court construction for schools, parks, clubs, training facilities, HOAs, gyms, and commercial properties. Call us today!",
+    "Custom soccer court construction for training or recreation. Designed for performance and safety. Contact us to learn more.",
   heroTitle: "Futsal / Soccer Court Construction",
   heroSubtitle:
     "Professional futsal and soccer court construction for residential and commercial projects — futsal courts, mini soccer courts, training courts, school courts, and multi-use facilities.",
@@ -453,7 +453,7 @@ export const PM_TENNIS_COURT_CONSTRUCTION_CONFIG = courtConstructionServiceConfi
   serviceName: "Tennis Court Construction",
   metaTitle: "Tennis Court Construction | Custom Courts | Hatz",
   metaDescription:
-    "Custom tennis court construction for homes, schools, clubs, HOAs, parks, and commercial properties. Call us today!",
+    "High-quality tennis court construction with premium materials and precision builds. Designed for long-term play. Contact us today.",
   heroTitle: "Tennis Court Construction",
   heroSubtitle:
     "Professional tennis court construction for residential and commercial projects — private courts, school courts, club courts, park courts, and multi-use facilities.",
@@ -518,7 +518,7 @@ export const PM_BOCCE_COURT_CONSTRUCTION_CONFIG = courtConstructionServiceConfig
   serviceName: "Bocce Court Construction",
   metaTitle: "Bocce Court Construction | Custom Courts | Hatz",
   metaDescription:
-    "Professional bocce court construction for homes, HOAs, resorts, parks, and commercial properties. Call us today!",
+    "Precision bocce court construction with proper base and surface systems. Built for smooth, consistent play. Contact us today.",
   heroTitle: "Bocce Court Construction",
   heroSubtitle:
     "Bocce court construction for residential and commercial outdoor spaces — backyard courts, HOA amenities, resort recreation areas, and park facilities.",
@@ -561,9 +561,9 @@ export const PM_BOCCE_COURT_CONSTRUCTION_CONFIG = courtConstructionServiceConfig
 export const PM_MULTI_COURT_CONSTRUCTION_CONFIG = courtConstructionServiceConfig({
   slug: "multi-court-construction",
   serviceName: "Multi-Court Construction",
-  metaTitle: "Multi-Court Construction | Custom Courts | Hatz",
+  metaTitle: "Multi Court Construction | All Court Types | Hatz",
   metaDescription:
-    "Multi-court construction for homes, schools, HOAs, parks, and commercial facilities. Combine sports in one space. Call us today!",
+    "Multi court construction for parks, schools, and facilities. Build multiple courts in one space. Contact us to plan your project.",
   heroTitle: "Multi-Court Construction",
   heroSubtitle:
     "Multi-court construction that combines pickleball, basketball, tennis, volleyball, futsal, and more into one efficient recreation space.",
@@ -606,9 +606,9 @@ export const PM_MULTI_COURT_CONSTRUCTION_CONFIG = courtConstructionServiceConfig
 export const PM_CUSTOM_COURT_CONSTRUCTION_CONFIG = courtConstructionServiceConfig({
   slug: "custom-court-construction",
   serviceName: "Custom Court Construction",
-  metaTitle: "Custom Court Construction | Design-Build | Hatz",
+  metaTitle: "Custom Court Construction | Custom Courts | Hatz",
   metaDescription:
-    "Custom court construction for residential and commercial projects — layouts, colors, surfaces, and full design-build. Call us today!",
+    "Fully custom court construction tailored to your space, sport, and design preferences. Built your way. Contact us now.",
   heroTitle: "Custom Court Construction",
   heroSubtitle:
     "Custom court construction built around your property, sport mix, colors, surface system, and long-term use goals.",
@@ -651,9 +651,9 @@ export const PM_CUSTOM_COURT_CONSTRUCTION_CONFIG = courtConstructionServiceConfi
 export const PM_COMMERCIAL_COURT_CONSTRUCTION_CONFIG = courtConstructionServiceConfig({
   slug: "commercial-court-construction",
   serviceName: "Commercial Court Construction",
-  metaTitle: "Commercial Court Construction | Custom Courts | Hatz",
+  metaTitle: "Commercial Court Construction | All Court Types | Hatz",
   metaDescription:
-    "Commercial court construction for schools, parks, HOAs, clubs, resorts, and recreation facilities. Call us today!",
+    "Commercial court construction for schools, HOAs, and facilities. Built for durability and heavy use. Contact us for more info.",
   heroTitle: "Commercial Court Construction",
   heroSubtitle:
     "Commercial court construction for schools, parks, HOAs, clubs, resorts, apartment communities, and high-use recreation facilities.",
@@ -696,9 +696,9 @@ export const PM_COMMERCIAL_COURT_CONSTRUCTION_CONFIG = courtConstructionServiceC
 export const PM_COURT_EXPANSION_CONFIG = courtConstructionServiceConfig({
   slug: "court-expansion",
   serviceName: "Court Expansion",
-  metaTitle: "Court Expansion | Expand Your Facility | Hatz",
+  metaTitle: "Court Expansion | All Court Types | Hatz",
   metaDescription:
-    "Court expansion services for adding courts, enlarging recreation areas, and upgrading athletic facilities. Call us today!",
+    "Court expansion services to upgrade or extend your existing sports court space. Seamless additions. Contact us today.",
   heroTitle: "Court Expansion",
   heroSubtitle:
     "Court expansion for facilities that need more playing space, additional courts, multi-sport upgrades, or larger recreation areas.",
@@ -741,9 +741,9 @@ export const PM_COURT_EXPANSION_CONFIG = courtConstructionServiceConfig({
 export const PM_CUSTOM_COURT_DESIGN_CONFIG = courtConstructionServiceConfig({
   slug: "custom-court-design",
   serviceName: "Court Design",
-  metaTitle: "Custom Court Design | Planning & Layout | Hatz",
+  metaTitle: "Custom Court Design | Custom Courts | Hatz",
   metaDescription:
-    "Custom court design for layout, surfacing, striping, lighting, fencing, and multi-sport planning. Call us today!",
+    "Custom court design services to plan layout, materials, and functionality for your project. Start your build right. Contact us.",
   heroTitle: "Custom Court Design",
   heroSubtitle:
     "Custom court design that plans layout, drainage, surfacing, striping, fencing, lighting, and equipment before construction begins.",
