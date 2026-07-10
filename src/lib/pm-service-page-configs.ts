@@ -513,6 +513,276 @@ export const PM_TENNIS_COURT_CONSTRUCTION_CONFIG = courtConstructionServiceConfi
   ],
 });
 
+export const PM_BOCCE_COURT_CONSTRUCTION_CONFIG = courtConstructionServiceConfig({
+  slug: "bocce-court-construction",
+  serviceName: "Bocce Court Construction",
+  metaTitle: "Bocce Court Construction | Custom Courts | Hatz",
+  metaDescription:
+    "Professional bocce court construction for homes, HOAs, resorts, parks, and commercial properties. Call us today!",
+  heroTitle: "Bocce Court Construction",
+  heroSubtitle:
+    "Bocce court construction for residential and commercial outdoor spaces — backyard courts, HOA amenities, resort recreation areas, and park facilities.",
+  heroImageFragment: "modular court tile custom logo branding",
+  faqHeading: "Bocce Court Construction Questions",
+  faqItems: [
+    {
+      question: "What types of bocce courts do you build?",
+      answer:
+        "We build backyard bocce courts, HOA bocce courts, resort bocce courts, park bocce courts, retirement community courts, and commercial bocce recreation areas.",
+    },
+    {
+      question: "How much space do I need for a bocce court?",
+      answer:
+        "A regulation bocce court needs a long, narrow playing area plus side and end space. We can also design scaled residential courts when the property cannot fit a full-size layout.",
+    },
+    {
+      question: "What surface works best for bocce?",
+      answer:
+        "The best surface depends on the project. Options may include crushed stone, specialty bocce surfaces, synthetic systems, or other finishes planned for drainage and consistent roll.",
+    },
+    {
+      question: "Can a bocce court be added near a patio or pool?",
+      answer:
+        "Yes. Many homeowners and resorts place bocce courts near outdoor living areas. Site grading, drainage, and access still need careful planning.",
+    },
+    {
+      question: "Do you build bocce courts for commercial properties?",
+      answer:
+        "Yes. We provide Bocce Court Construction for HOAs, resorts, parks, clubs, apartment communities, and other commercial recreation spaces.",
+    },
+    {
+      question: "Can you include fencing, lighting, or seating?",
+      answer:
+        "Yes. Fencing, lighting, seating, walkways, and surrounding landscape coordination can be included depending on the property and project goals.",
+    },
+  ],
+});
+
+export const PM_MULTI_COURT_CONSTRUCTION_CONFIG = courtConstructionServiceConfig({
+  slug: "multi-court-construction",
+  serviceName: "Multi-Court Construction",
+  metaTitle: "Multi-Court Construction | Custom Courts | Hatz",
+  metaDescription:
+    "Multi-court construction for homes, schools, HOAs, parks, and commercial facilities. Combine sports in one space. Call us today!",
+  heroTitle: "Multi-Court Construction",
+  heroSubtitle:
+    "Multi-court construction that combines pickleball, basketball, tennis, volleyball, futsal, and more into one efficient recreation space.",
+  heroImageFragment: "outdoor multi court pickleball basketball tennis",
+  faqHeading: "Multi-Court Construction Questions",
+  faqItems: [
+    {
+      question: "What is multi-court construction?",
+      answer:
+        "Multi-Court Construction creates one court area that supports more than one sport through shared surfacing, striping, equipment planning, and layout design.",
+    },
+    {
+      question: "What sport combinations work best?",
+      answer:
+        "Popular combinations include pickleball and basketball, tennis and pickleball, basketball and volleyball, futsal and basketball, and larger multi-sport recreation complexes.",
+    },
+    {
+      question: "Can one surface support multiple sports?",
+      answer:
+        "Yes, when the layout, striping colors, equipment placement, and safety zones are planned correctly. We help choose a surface that works for the sports you want most.",
+    },
+    {
+      question: "Is a multi-court cheaper than separate courts?",
+      answer:
+        "Often yes, because one base, surface, and site prep package can support multiple activities. The final cost still depends on size, surface, fencing, lighting, and equipment.",
+    },
+    {
+      question: "Do you build multi-court facilities for schools and HOAs?",
+      answer:
+        "Yes. Multi-Court Construction is a strong fit for schools, HOAs, parks, apartment communities, clubs, and commercial recreation facilities.",
+    },
+    {
+      question: "Can an existing court become a multi-court?",
+      answer:
+        "In many cases, yes. Existing tennis, basketball, or recreation courts can often be restriped, expanded, or upgraded to support additional sports.",
+    },
+  ],
+});
+
+export const PM_CUSTOM_COURT_CONSTRUCTION_CONFIG = courtConstructionServiceConfig({
+  slug: "custom-court-construction",
+  serviceName: "Custom Court Construction",
+  metaTitle: "Custom Court Construction | Design-Build | Hatz",
+  metaDescription:
+    "Custom court construction for residential and commercial projects — layouts, colors, surfaces, and full design-build. Call us today!",
+  heroTitle: "Custom Court Construction",
+  heroSubtitle:
+    "Custom court construction built around your property, sport mix, colors, surface system, and long-term use goals.",
+  heroImageFragment: "backyard modular tile sport court custom logo",
+  faqHeading: "Custom Court Construction Questions",
+  faqItems: [
+    {
+      question: "What makes a court project custom?",
+      answer:
+        "Custom Court Construction covers unique layouts, color schemes, logos, multi-sport striping, specialty surfaces, fencing, lighting, and design details tailored to the property.",
+    },
+    {
+      question: "What sports can you build custom courts for?",
+      answer:
+        "We build custom pickleball, basketball, tennis, volleyball, futsal, bocce, and multi-use courts for homes, schools, parks, clubs, and commercial properties.",
+    },
+    {
+      question: "Can I choose custom colors and logos?",
+      answer:
+        "Yes. Custom colors, branded logos, specialty striping, and unique court graphics are available on many projects.",
+    },
+    {
+      question: "Do you handle design and construction together?",
+      answer:
+        "Yes. Our design-build approach covers site planning, surface selection, layout, construction, striping, and finish details in one process.",
+    },
+    {
+      question: "Are custom courts only for commercial clients?",
+      answer:
+        "No. Homeowners, HOAs, schools, clubs, resorts, and commercial facilities all use Custom Court Construction when they want a court built around specific goals.",
+    },
+    {
+      question: "What surfaces can you use on a custom court?",
+      answer:
+        "We work with acrylic, cushioned acrylic, modular tile, hardwood, synthetic turf, asphalt, concrete, and other specialty court systems.",
+    },
+  ],
+});
+
+export const PM_COMMERCIAL_COURT_CONSTRUCTION_CONFIG = courtConstructionServiceConfig({
+  slug: "commercial-court-construction",
+  serviceName: "Commercial Court Construction",
+  metaTitle: "Commercial Court Construction | Custom Courts | Hatz",
+  metaDescription:
+    "Commercial court construction for schools, parks, HOAs, clubs, resorts, and recreation facilities. Call us today!",
+  heroTitle: "Commercial Court Construction",
+  heroSubtitle:
+    "Commercial court construction for schools, parks, HOAs, clubs, resorts, apartment communities, and high-use recreation facilities.",
+  heroImageFragment: "pickleball post tension concrete commercial court",
+  faqHeading: "Commercial Court Construction Questions",
+  faqItems: [
+    {
+      question: "Who do you build commercial courts for?",
+      answer:
+        "We build commercial courts for schools, universities, parks, recreation centers, HOAs, athletic clubs, resorts, apartment communities, churches, and municipal facilities.",
+    },
+    {
+      question: "How is commercial court construction different?",
+      answer:
+        "Commercial courts usually need stronger planning for daily traffic, safety, access, durability, multi-user schedules, equipment, and long-term maintenance.",
+    },
+    {
+      question: "Can you build multi-court commercial facilities?",
+      answer:
+        "Yes. Many commercial projects include multiple courts, shared recreation areas, lighting, fencing, seating, and multi-sport layouts.",
+    },
+    {
+      question: "Do you work with schools and municipalities?",
+      answer:
+        "Yes. Hatz Court Builders provides Commercial Court Construction for school campuses, parks, public recreation spaces, and municipal athletic facilities.",
+    },
+    {
+      question: "Can commercial courts include branding or logos?",
+      answer:
+        "Yes. Custom colors, logos, and branded striping are popular for schools, clubs, resorts, and commercial recreation centers.",
+    },
+    {
+      question: "Do you offer resurfacing for commercial courts?",
+      answer:
+        "Yes. We help with commercial court resurfacing, repairs, restriping, renovations, equipment upgrades, and facility expansions.",
+    },
+  ],
+});
+
+export const PM_COURT_EXPANSION_CONFIG = courtConstructionServiceConfig({
+  slug: "court-expansion",
+  serviceName: "Court Expansion",
+  metaTitle: "Court Expansion | Expand Your Facility | Hatz",
+  metaDescription:
+    "Court expansion services for adding courts, enlarging recreation areas, and upgrading athletic facilities. Call us today!",
+  heroTitle: "Court Expansion",
+  heroSubtitle:
+    "Court expansion for facilities that need more playing space, additional courts, multi-sport upgrades, or larger recreation areas.",
+  heroImageFragment: "double pickleball court blue green surface",
+  faqHeading: "Court Expansion Questions",
+  faqItems: [
+    {
+      question: "What is court expansion?",
+      answer:
+        "Court Expansion adds playing space to an existing facility — new courts, larger layouts, multi-sport additions, or upgraded recreation areas connected to what you already have.",
+    },
+    {
+      question: "Can you expand a backyard court?",
+      answer:
+        "Yes. Homeowners often expand a half court into a larger court, add pickleball lines, or create a multi-use recreation area beside an existing court.",
+    },
+    {
+      question: "Can schools and HOAs expand existing courts?",
+      answer:
+        "Yes. Schools, HOAs, parks, and clubs commonly add courts, convert unused space, or enlarge recreation areas to support more players.",
+    },
+    {
+      question: "Do you evaluate the existing court first?",
+      answer:
+        "Yes. We review the current surface, base, drainage, fencing, lighting, and available space before recommending expansion, resurfacing, or a rebuild.",
+    },
+    {
+      question: "Can expansion include a different sport?",
+      answer:
+        "Yes. Many Court Expansion projects add pickleball, basketball, volleyball, futsal, bocce, or multi-court layouts next to an existing sport court.",
+    },
+    {
+      question: "Is expansion always better than building new?",
+      answer:
+        "Not always. Expansion works well when the site and existing court are in good condition. If the base or drainage is failing, a rebuild or new court may be the better option.",
+    },
+  ],
+});
+
+export const PM_CUSTOM_COURT_DESIGN_CONFIG = courtConstructionServiceConfig({
+  slug: "custom-court-design",
+  serviceName: "Court Design",
+  metaTitle: "Custom Court Design | Planning & Layout | Hatz",
+  metaDescription:
+    "Custom court design for layout, surfacing, striping, lighting, fencing, and multi-sport planning. Call us today!",
+  heroTitle: "Custom Court Design",
+  heroSubtitle:
+    "Custom court design that plans layout, drainage, surfacing, striping, fencing, lighting, and equipment before construction begins.",
+  heroImageFragment: "basketball tile court custom logo branding",
+  faqHeading: "Custom Court Design Questions",
+  faqItems: [
+    {
+      question: "What is included in court design?",
+      answer:
+        "Court Design includes site planning, court layout, surface recommendations, color selection, striping plans, lighting design, fencing design, equipment placement, and multi-court planning.",
+    },
+    {
+      question: "Why does court design matter before construction?",
+      answer:
+        "Good design prevents drainage problems, tight playing space, poor orientation, incorrect striping, and equipment placement issues that are expensive to fix later.",
+    },
+    {
+      question: "Can you design multi-sport courts?",
+      answer:
+        "Yes. We design multi-court layouts with clear striping plans, shared equipment zones, and safety space for each sport.",
+    },
+    {
+      question: "Do you design residential and commercial courts?",
+      answer:
+        "Yes. We provide Custom Court Design for backyard courts, school facilities, HOA amenities, parks, clubs, resorts, and commercial recreation spaces.",
+    },
+    {
+      question: "Can design include custom colors and logos?",
+      answer:
+        "Yes. Color schemes, branded logos, specialty graphics, and unique striping layouts can be planned during the design phase.",
+    },
+    {
+      question: "Do you handle construction after design?",
+      answer:
+        "Yes. Hatz Court Builders can take a project from Custom Court Design through full construction, surfacing, striping, and final walkthrough.",
+    },
+  ],
+});
+
 export const PM_COURT_BUILDERS_BOISE_CONFIG = courtBuilderCityConfig({
   slug: "court-builders-boise-id",
   cityName: "Boise",

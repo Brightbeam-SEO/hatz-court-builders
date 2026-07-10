@@ -1,10 +1,10 @@
-A futsal or small-sided soccer court gives players a fast, focused space to train, compete, and build better footwork. These courts are a great fit for schools, clubs, parks, recreation centers, gyms, apartment communities, HOAs, and commercial athletic facilities.
+﻿A futsal or small-sided soccer court gives players a fast, focused space to train, compete, and build better footwork. These courts are a great fit for schools, clubs, parks, recreation centers, gyms, apartment communities, HOAs, and commercial athletic facilities.
 
 Unlike a full-size soccer field, a futsal or mini soccer court is designed for compact play. Players get more touches, faster passes, quick movement, and tighter control. That means the court surface, layout, fencing, goals, drainage, and safety space all need to be planned the right way.
 
 Hatz Court Builders provides professional Futsal / Soccer Court Construction for residential and commercial projects. We build futsal courts, mini soccer courts, training courts, school soccer courts, park courts, club courts, indoor courts, outdoor courts, and multi-use soccer courts.
 
-Our team also handles [Basketball Court Construction](/basketball-court-construction/), [Pickleball Court Construction](/pickleball-court-construction/), [Tennis Court Construction](/tennis-court-construction/), [Volleyball Court Construction](/volleyball-court-construction/), Bocce Court Construction, Multi-Court Construction, Custom Court Construction, Commercial Court Construction, Court Expansion, resurfacing, repairs, striping, and Court Design.
+Our team also handles [Basketball Court Construction](/basketball-court-construction/), [Pickleball Court Construction](/pickleball-court-construction/), [Tennis Court Construction](/tennis-court-construction/), [Volleyball Court Construction](/volleyball-court-construction/), [Bocce Court Construction](/bocce-court-construction/), [Multi-Court Construction](/multi-court-construction/), [Custom Court Construction](/custom-court-construction/), [Commercial Court Construction](/commercial-court-construction/), [Court Expansion](/court-expansion/), resurfacing, repairs, striping, and [Court Design](/custom-court-design/).
 
 ## Court Builder
 
@@ -60,7 +60,7 @@ When choosing a futsal or soccer court surface, we look at ball roll, player tra
 
 ## Multi-Court Construction
 
-Popular futsal and soccer court combinations include futsal and basketball, futsal and volleyball, soccer and pickleball, soccer and basketball, mini soccer and training layouts, and multi-use recreation courts.
+[Multi-Court Construction](/multi-court-construction/) combinations for futsal and soccer often include futsal and basketball, futsal and volleyball, soccer and pickleball, soccer and basketball, mini soccer and training layouts, and multi-use recreation courts.
 
 ## Basketball Court Construction
 
@@ -80,19 +80,19 @@ Popular futsal and soccer court combinations include futsal and basketball, futs
 
 ## Custom Court Construction
 
-Custom futsal and soccer court projects may include custom court colors, specialty line striping, branded court designs, custom logos, lighting, fencing, seating areas, multi-sport lines, training areas, and unique court layouts.
+[Custom Court Construction](/custom-court-construction/) for futsal and soccer may include custom court colors, specialty line striping, branded court designs, custom logos, lighting, fencing, seating areas, multi-sport lines, training areas, and unique court layouts.
 
 ## Commercial Court Construction
 
-Hatz Court Builders builds futsal, soccer, and multi-sport courts for schools, universities, parks, recreation centers, athletic clubs, gyms, churches, resorts, apartment communities, HOAs, municipal facilities, and commercial property owners.
+[Commercial Court Construction](/commercial-court-construction/) covers futsal, soccer, and multi-sport courts for schools, universities, parks, recreation centers, athletic clubs, gyms, churches, resorts, apartment communities, HOAs, municipal facilities, and commercial property owners.
 
 ## Court Expansion
 
-Court expansion projects may include adding futsal courts, adding mini soccer courts, expanding existing recreation areas, adding pickleball courts, creating multi-sport layouts, adding fencing or lighting, updating surface systems, restriping existing courts, and improving player flow.
+[Court Expansion](/court-expansion/) projects may include adding futsal courts, adding mini soccer courts, expanding existing recreation areas, adding pickleball courts, creating multi-sport layouts, adding fencing or lighting, updating surface systems, restriping existing courts, and improving player flow.
 
 ## Court Design
 
-A strong futsal or soccer court design considers court size, goal placement, player safety space, surface type, drainage, sun exposure, fencing, lighting, access points, multi-sport striping, and long-term use.
+[Court Design](/custom-court-design/) for futsal or soccer considers court size, goal placement, player safety space, surface type, drainage, sun exposure, fencing, lighting, access points, multi-sport striping, and long-term use.
 
 ## Common Futsal / Soccer Court Problems
 
@@ -104,8 +104,15 @@ Hatz Court Builders serves homeowners, schools, universities, soccer clubs, trai
 
 ## Other Court Construction Services
 
-- [Basketball Court Construction](/basketball-court-construction/)
 - [Pickleball Court Construction](/pickleball-court-construction/)
-- [Volleyball Court Construction](/volleyball-court-construction/)
+- [Basketball Court Construction](/basketball-court-construction/)
 - [Tennis Court Construction](/tennis-court-construction/)
+- [Volleyball Court Construction](/volleyball-court-construction/)
+- [Futsal / Soccer Court Construction](/futsal-soccer-court-construction/)
+- [Bocce Court Construction](/bocce-court-construction/)
+- [Multi-Court Construction](/multi-court-construction/)
+- [Custom Court Construction](/custom-court-construction/)
+- [Commercial Court Construction](/commercial-court-construction/)
+- [Court Expansion](/court-expansion/)
+- [Court Design](/custom-court-design/)
 - [Court Builders Boise, ID](/court-builders-boise-id/)

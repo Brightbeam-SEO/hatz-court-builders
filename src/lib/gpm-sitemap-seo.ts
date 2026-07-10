@@ -67,6 +67,36 @@ export const GPM_SITEMAP_SEO: Record<
     description:
       "Custom tennis court construction for homes, schools, clubs, HOAs, parks, and commercial properties. Call us today!",
   },
+  "/bocce-court-construction/": {
+    title: "Bocce Court Construction | Custom Courts | Hatz",
+    description:
+      "Professional bocce court construction for homes, HOAs, resorts, parks, and commercial properties. Call us today!",
+  },
+  "/multi-court-construction/": {
+    title: "Multi-Court Construction | Custom Courts | Hatz",
+    description:
+      "Multi-court construction for homes, schools, HOAs, parks, and commercial facilities. Combine sports in one space. Call us today!",
+  },
+  "/custom-court-construction/": {
+    title: "Custom Court Construction | Design-Build | Hatz",
+    description:
+      "Custom court construction for residential and commercial projects — layouts, colors, surfaces, and full design-build. Call us today!",
+  },
+  "/commercial-court-construction/": {
+    title: "Commercial Court Construction | Custom Courts | Hatz",
+    description:
+      "Commercial court construction for schools, parks, HOAs, clubs, resorts, and recreation facilities. Call us today!",
+  },
+  "/court-expansion/": {
+    title: "Court Expansion | Expand Your Facility | Hatz",
+    description:
+      "Court expansion services for adding courts, enlarging recreation areas, and upgrading athletic facilities. Call us today!",
+  },
+  "/custom-court-design/": {
+    title: "Custom Court Design | Planning & Layout | Hatz",
+    description:
+      "Custom court design for layout, surfacing, striping, lighting, fencing, and multi-sport planning. Call us today!",
+  },
 };
 
 export function getGpmSitemapSeo(path: string): (typeof GPM_SITEMAP_SEO)[string] | undefined {

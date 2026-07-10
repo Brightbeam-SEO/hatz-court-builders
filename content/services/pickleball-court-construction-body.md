@@ -1,8 +1,8 @@
-Pickleball continues to be one of the fastest-growing sports in the country. Homeowners, schools, HOAs, parks, clubs, and commercial facilities are investing in professionally built courts that provide a better playing experience and long-term durability.
+﻿Pickleball continues to be one of the fastest-growing sports in the country. Homeowners, schools, HOAs, parks, clubs, and commercial facilities are investing in professionally built courts that provide a better playing experience and long-term durability.
 
 A quality court requires more than painted lines on pavement. Proper grading, drainage, surfacing, fencing, lighting, and court design all play a role in how the court performs over time. When these elements are overlooked, courts can develop cracks, drainage issues, fading surfaces, and inconsistent play conditions.
 
-Hatz Court Builders specializes in Pickleball Court Construction, [Basketball Court Construction](/basketball-court-construction/), [Tennis Court Construction](/tennis-court-construction/), [Volleyball Court Construction](/volleyball-court-construction/), [Futsal / Soccer Court Construction](/futsal-soccer-court-construction/), Bocce Court Construction, Multi-Court Construction, Custom Court Construction, Commercial Court Construction, Court Expansion, and Court Design.
+Hatz Court Builders specializes in Pickleball Court Construction, [Basketball Court Construction](/basketball-court-construction/), [Tennis Court Construction](/tennis-court-construction/), [Volleyball Court Construction](/volleyball-court-construction/), [Futsal / Soccer Court Construction](/futsal-soccer-court-construction/), [Bocce Court Construction](/bocce-court-construction/), [Multi-Court Construction](/multi-court-construction/), [Custom Court Construction](/custom-court-construction/), [Commercial Court Construction](/commercial-court-construction/), [Court Expansion](/court-expansion/), and [Court Design](/custom-court-design/).
 
 Whether you need a backyard pickleball court, a multi-sport recreation area, a school athletic facility, or a commercial sports complex, we help create courts designed around your space, goals, and budget.
 
@@ -49,7 +49,7 @@ Basketball courts experience constant impact from running, jumping, and quick di
 
 We build backyard basketball courts, half-court basketball systems, full basketball courts, school basketball courts, HOA basketball courts, church and community basketball courts, and commercial basketball facilities.
 
-Many clients choose Multi-Court Construction that combines basketball and pickleball into a single recreation area.
+Many clients choose [Multi-Court Construction](/multi-court-construction/) that combines basketball and pickleball into a single recreation area.
 
 ## Tennis Court Construction
 
@@ -73,27 +73,27 @@ Projects may include futsal courts, mini soccer courts, training facilities, sch
 
 ## Bocce Court Construction
 
-Bocce Court Construction provides a unique recreational feature for residential communities, resorts, retirement communities, parks, and private properties.
+[Bocce Court Construction](/bocce-court-construction/) provides a unique recreational feature for residential communities, resorts, retirement communities, parks, and private properties.
 
 ## Multi-Court Construction
 
-Many clients want more than one sport available within the same area. Popular combinations include pickleball and basketball, pickleball and tennis, basketball and volleyball, tennis and pickleball, futsal and basketball, and multi-sport recreation complexes.
+[Multi-Court Construction](/multi-court-construction/) helps when clients want more than one sport available within the same area. Popular combinations include pickleball and basketball, pickleball and tennis, basketball and volleyball, tennis and pickleball, futsal and basketball, and multi-sport recreation complexes.
 
 ## Custom Court Construction
 
-Custom projects may include specialty court layouts, unique color schemes, custom striping, branded commercial courts, multi-sport facilities, and integrated recreation spaces.
+[Custom Court Construction](/custom-court-construction/) projects may include specialty court layouts, unique color schemes, custom striping, branded commercial courts, multi-sport facilities, and integrated recreation spaces.
 
 ## Commercial Court Construction
 
-We build courts for schools, universities, athletic clubs, recreation centers, parks, resorts, apartment communities, HOAs, and municipal facilities.
+[Commercial Court Construction](/commercial-court-construction/) covers courts for schools, universities, athletic clubs, recreation centers, parks, resorts, apartment communities, HOAs, and municipal facilities.
 
 ## Court Expansion
 
-Court expansion projects may include additional pickleball courts, expanded basketball facilities, tennis court additions, multi-court expansions, and recreation facility upgrades.
+[Court Expansion](/court-expansion/) projects may include additional pickleball courts, expanded basketball facilities, tennis court additions, multi-court expansions, and recreation facility upgrades.
 
 ## Court Design
 
-Court Design is one of the most important phases of any project. Our Court Design services include site planning, court layout development, surface recommendations, color selection, striping plans, lighting design, fencing design, equipment placement, and multi-court planning.
+[Court Design](/custom-court-design/) is one of the most important phases of any project. Our Court Design services include site planning, court layout development, surface recommendations, color selection, striping plans, lighting design, fencing design, equipment placement, and multi-court planning.
 
 ## Common Problems With Poor Court Construction
 
@@ -105,8 +105,15 @@ Hatz Court Builders serves homeowners, schools, universities, HOAs, parks, recre
 
 ## Other Court Construction Services
 
+- [Pickleball Court Construction](/pickleball-court-construction/)
 - [Basketball Court Construction](/basketball-court-construction/)
+- [Tennis Court Construction](/tennis-court-construction/)
 - [Volleyball Court Construction](/volleyball-court-construction/)
 - [Futsal / Soccer Court Construction](/futsal-soccer-court-construction/)
-- [Tennis Court Construction](/tennis-court-construction/)
+- [Bocce Court Construction](/bocce-court-construction/)
+- [Multi-Court Construction](/multi-court-construction/)
+- [Custom Court Construction](/custom-court-construction/)
+- [Commercial Court Construction](/commercial-court-construction/)
+- [Court Expansion](/court-expansion/)
+- [Court Design](/custom-court-design/)
 - [Court Builders Boise, ID](/court-builders-boise-id/)

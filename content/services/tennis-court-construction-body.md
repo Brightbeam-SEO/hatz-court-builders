@@ -1,10 +1,10 @@
-A tennis court is a long-term investment in recreation, training, property value, and outdoor use. For homeowners, it can turn an open space into a private place to play. For schools, clubs, parks, and commercial properties, it can create a dependable athletic area that serves players for years.
+﻿A tennis court is a long-term investment in recreation, training, property value, and outdoor use. For homeowners, it can turn an open space into a private place to play. For schools, clubs, parks, and commercial properties, it can create a dependable athletic area that serves players for years.
 
 But a tennis court needs more than a large paved surface and painted lines. The court must have the right base, slope, drainage, surfacing, fencing, net system, court orientation, and safety space. If the court is not planned correctly, it can crack, hold water, fade too quickly, or feel uneven during play.
 
 Hatz Court Builders provides professional Tennis Court Construction for residential and commercial projects. We build private tennis courts, school tennis courts, club tennis courts, HOA tennis courts, park tennis courts, commercial tennis courts, and multi-use tennis courts.
 
-Our team also handles [Pickleball Court Construction](/pickleball-court-construction/), [Basketball Court Construction](/basketball-court-construction/), [Volleyball Court Construction](/volleyball-court-construction/), [Futsal / Soccer Court Construction](/futsal-soccer-court-construction/), Bocce Court Construction, Multi-Court Construction, Custom Court Construction, Commercial Court Construction, Court Expansion, resurfacing, repairs, striping, and Court Design.
+Our team also handles [Pickleball Court Construction](/pickleball-court-construction/), [Basketball Court Construction](/basketball-court-construction/), [Volleyball Court Construction](/volleyball-court-construction/), [Futsal / Soccer Court Construction](/futsal-soccer-court-construction/), [Bocce Court Construction](/bocce-court-construction/), [Multi-Court Construction](/multi-court-construction/), [Custom Court Construction](/custom-court-construction/), [Commercial Court Construction](/commercial-court-construction/), [Court Expansion](/court-expansion/), resurfacing, repairs, striping, and [Court Design](/custom-court-design/).
 
 ## Court Builder
 
@@ -72,23 +72,23 @@ Hatz Court Builders can help with tennis court resurfacing, crack repair, surfac
 
 ## Multi-Court Construction
 
-Popular multi-court combinations include tennis and pickleball, tennis and basketball, tennis and volleyball, pickleball and basketball, futsal and basketball, and multi-sport recreation layouts.
+[Multi-Court Construction](/multi-court-construction/) combinations often include tennis and pickleball, tennis and basketball, tennis and volleyball, pickleball and basketball, futsal and basketball, and multi-sport recreation layouts.
 
 ## Custom Court Construction
 
-Custom tennis court projects may include custom court colors, branded court layouts, custom logos, specialty striping, lighting, fencing, seating areas, multi-sport lines, training areas, and unique court layouts.
+[Custom Court Construction](/custom-court-construction/) for tennis may include custom court colors, branded court layouts, custom logos, specialty striping, lighting, fencing, seating areas, multi-sport lines, training areas, and unique court layouts.
 
 ## Commercial Court Construction
 
-Commercial tennis courts may need multiple court layouts, fencing, lighting, seating, access paths, ADA accessibility considerations, and long-term maintenance plans.
+[Commercial Court Construction](/commercial-court-construction/) for tennis may need multiple court layouts, fencing, lighting, seating, access paths, ADA accessibility considerations, and long-term maintenance plans.
 
 ## Court Expansion
 
-Court expansion projects may include adding tennis courts, expanding existing tennis facilities, adding pickleball courts, creating multi-court layouts, updating fencing or lighting, restriping existing courts, improving access and player flow, and upgrading surface systems.
+[Court Expansion](/court-expansion/) projects may include adding tennis courts, expanding existing tennis facilities, adding pickleball courts, creating multi-court layouts, updating fencing or lighting, restriping existing courts, improving access and player flow, and upgrading surface systems.
 
 ## Court Design
 
-A strong tennis court design considers court size, court orientation, player safety space, net placement, surface type, drainage, sun exposure, fencing, lighting, access points, multi-sport striping, and long-term use.
+[Court Design](/custom-court-design/) for tennis considers court size, court orientation, player safety space, net placement, surface type, drainage, sun exposure, fencing, lighting, access points, multi-sport striping, and long-term use.
 
 ## Common Tennis Court Problems
 
@@ -100,8 +100,15 @@ Hatz Court Builders serves homeowners, private estates, schools, universities, H
 
 ## Other Court Construction Services
 
-- [Basketball Court Construction](/basketball-court-construction/)
 - [Pickleball Court Construction](/pickleball-court-construction/)
+- [Basketball Court Construction](/basketball-court-construction/)
+- [Tennis Court Construction](/tennis-court-construction/)
 - [Volleyball Court Construction](/volleyball-court-construction/)
 - [Futsal / Soccer Court Construction](/futsal-soccer-court-construction/)
+- [Bocce Court Construction](/bocce-court-construction/)
+- [Multi-Court Construction](/multi-court-construction/)
+- [Custom Court Construction](/custom-court-construction/)
+- [Commercial Court Construction](/commercial-court-construction/)
+- [Court Expansion](/court-expansion/)
+- [Court Design](/custom-court-design/)
 - [Court Builders Boise, ID](/court-builders-boise-id/)

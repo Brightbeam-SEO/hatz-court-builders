@@ -1,10 +1,10 @@
-A volleyball court gives people a place to play, train, compete, and gather. It works well for schools, parks, recreation centers, resorts, HOAs, churches, athletic clubs, and private properties.
+﻿A volleyball court gives people a place to play, train, compete, and gather. It works well for schools, parks, recreation centers, resorts, HOAs, churches, athletic clubs, and private properties.
 
 But a good volleyball court is not just lines, posts, and a net. The court needs the right layout, surface, drainage, safety space, equipment placement, and long-term plan. If the court is not built correctly, players may deal with uneven footing, standing water, poor traction, worn lines, or tight playing space.
 
 Hatz Court Builders provides professional Volleyball Court Construction for residential and commercial projects. We build outdoor volleyball courts, school volleyball courts, club volleyball courts, park volleyball courts, HOA volleyball courts, resort volleyball courts, and multi-use volleyball courts.
 
-Our team also handles [Basketball Court Construction](/basketball-court-construction/), [Pickleball Court Construction](/pickleball-court-construction/), [Tennis Court Construction](/tennis-court-construction/), [Futsal / Soccer Court Construction](/futsal-soccer-court-construction/), Bocce Court Construction, Multi-Court Construction, Custom Court Construction, Commercial Court Construction, Court Expansion, resurfacing, repairs, striping, and Court Design.
+Our team also handles [Basketball Court Construction](/basketball-court-construction/), [Pickleball Court Construction](/pickleball-court-construction/), [Tennis Court Construction](/tennis-court-construction/), [Futsal / Soccer Court Construction](/futsal-soccer-court-construction/), [Bocce Court Construction](/bocce-court-construction/), [Multi-Court Construction](/multi-court-construction/), [Custom Court Construction](/custom-court-construction/), [Commercial Court Construction](/commercial-court-construction/), [Court Expansion](/court-expansion/), resurfacing, repairs, striping, and [Court Design](/custom-court-design/).
 
 ## Court Builder
 
@@ -54,7 +54,7 @@ The surface affects how the court feels during movement, jumping, landing, and q
 
 ## Multi-Court Construction
 
-Popular volleyball court combinations include volleyball and basketball, volleyball and pickleball, volleyball and tennis, volleyball and futsal, and volleyball and multi-use recreation layouts.
+[Multi-Court Construction](/multi-court-construction/) combinations for volleyball often include volleyball and basketball, volleyball and pickleball, volleyball and tennis, volleyball and futsal, and volleyball and multi-use recreation layouts.
 
 ## Basketball Court Construction
 
@@ -74,19 +74,19 @@ Popular volleyball court combinations include volleyball and basketball, volleyb
 
 ## Custom Court Construction
 
-Custom volleyball court projects may include custom court colors, specialty line striping, branded court designs, custom logos, lighting, fencing, seating areas, multi-sport lines, training areas, and unique court layouts.
+[Custom Court Construction](/custom-court-construction/) for volleyball may include custom court colors, specialty line striping, branded court designs, custom logos, lighting, fencing, seating areas, multi-sport lines, training areas, and unique court layouts.
 
 ## Commercial Court Construction
 
-Hatz Court Builders builds volleyball courts and multi-sport courts for schools, universities, parks, recreation centers, athletic clubs, gyms, churches, resorts, apartment communities, HOAs, municipal facilities, and commercial property owners.
+[Commercial Court Construction](/commercial-court-construction/) covers volleyball courts and multi-sport courts for schools, universities, parks, recreation centers, athletic clubs, gyms, churches, resorts, apartment communities, HOAs, municipal facilities, and commercial property owners.
 
 ## Court Expansion
 
-Court expansion projects may include adding volleyball courts, expanding existing recreation areas, adding pickleball courts, creating multi-sport layouts, adding fencing or lighting, updating surface systems, restriping existing courts, and improving player flow.
+[Court Expansion](/court-expansion/) projects may include adding volleyball courts, expanding existing recreation areas, adding pickleball courts, creating multi-sport layouts, adding fencing or lighting, updating surface systems, restriping existing courts, and improving player flow.
 
 ## Court Design
 
-A strong volleyball court design considers court size, net placement, player safety space, surface type, drainage, sun exposure, fencing, lighting, access points, multi-sport striping, and long-term use.
+[Court Design](/custom-court-design/) for volleyball considers court size, net placement, player safety space, surface type, drainage, sun exposure, fencing, lighting, access points, multi-sport striping, and long-term use.
 
 ## Common Volleyball Court Problems
 
@@ -98,8 +98,15 @@ Hatz Court Builders serves homeowners, schools, universities, HOAs, parks, recre
 
 ## Other Court Construction Services
 
-- [Basketball Court Construction](/basketball-court-construction/)
 - [Pickleball Court Construction](/pickleball-court-construction/)
-- [Futsal / Soccer Court Construction](/futsal-soccer-court-construction/)
+- [Basketball Court Construction](/basketball-court-construction/)
 - [Tennis Court Construction](/tennis-court-construction/)
+- [Volleyball Court Construction](/volleyball-court-construction/)
+- [Futsal / Soccer Court Construction](/futsal-soccer-court-construction/)
+- [Bocce Court Construction](/bocce-court-construction/)
+- [Multi-Court Construction](/multi-court-construction/)
+- [Custom Court Construction](/custom-court-construction/)
+- [Commercial Court Construction](/commercial-court-construction/)
+- [Court Expansion](/court-expansion/)
+- [Court Design](/custom-court-design/)
 - [Court Builders Boise, ID](/court-builders-boise-id/)

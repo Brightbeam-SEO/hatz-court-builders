@@ -1,10 +1,10 @@
-A basketball court adds more than a place to shoot hoops. It gives families, students, athletes, residents, and guests a space to move, train, compete, and spend time together.
+﻿A basketball court adds more than a place to shoot hoops. It gives families, students, athletes, residents, and guests a space to move, train, compete, and spend time together.
 
 But a good basketball court is not just concrete, paint, and a hoop. The court needs the right foundation, surface, slope, drainage, striping, safety space, and equipment layout. If those details are missed, the court may crack, hold water, feel uneven, or wear down faster than expected.
 
 Hatz Court Builders provides professional Basketball Court Construction for residential and commercial projects. We build backyard basketball courts, half courts, full courts, school courts, HOA courts, park courts, indoor courts, outdoor courts, and multi-use courts.
 
-Our team also handles [Pickleball Court Construction](/pickleball-court-construction/), [Tennis Court Construction](/tennis-court-construction/), [Volleyball Court Construction](/volleyball-court-construction/), [Futsal / Soccer Court Construction](/futsal-soccer-court-construction/), Bocce Court Construction, Multi-Court Construction, Custom Court Construction, Commercial Court Construction, Court Expansion, and Court Design.
+Our team also handles [Pickleball Court Construction](/pickleball-court-construction/), [Tennis Court Construction](/tennis-court-construction/), [Volleyball Court Construction](/volleyball-court-construction/), [Futsal / Soccer Court Construction](/futsal-soccer-court-construction/), [Bocce Court Construction](/bocce-court-construction/), [Multi-Court Construction](/multi-court-construction/), [Custom Court Construction](/custom-court-construction/), [Commercial Court Construction](/commercial-court-construction/), [Court Expansion](/court-expansion/), and [Court Design](/custom-court-design/).
 
 From the first layout idea to the final court lines, we help build basketball courts that are made for real play.
 
@@ -86,7 +86,7 @@ The court surface affects traction, bounce, comfort, maintenance, and long-term 
 
 ## Multi-Court Construction
 
-Many clients want a basketball court that can do more than one thing. Multi-Court Construction allows one space to support different sports and activities.
+Many clients want a basketball court that can do more than one thing. [Multi-Court Construction](/multi-court-construction/) allows one space to support different sports and activities.
 
 Popular basketball court combinations include basketball and pickleball, basketball and volleyball, basketball and futsal, basketball and tennis, and basketball and multi-use training layouts.
 
@@ -108,19 +108,19 @@ Popular basketball court combinations include basketball and pickleball, basketb
 
 ## Custom Court Construction
 
-Custom basketball court projects may include custom court colors, branded court designs, custom logos, specialty striping, multi-sport lines, lighting, fencing, seating areas, training areas, and unique court layouts.
+[Custom Court Construction](/custom-court-construction/) for basketball may include custom court colors, branded court designs, custom logos, specialty striping, multi-sport lines, lighting, fencing, seating areas, training areas, and unique court layouts.
 
 ## Commercial Court Construction
 
-Commercial Court Construction requires planning for heavier traffic, longer daily use, and a wider range of players. Hatz Court Builders builds basketball courts and multi-sport courts for schools, universities, parks, recreation centers, athletic clubs, gyms, churches, resorts, apartment communities, HOAs, municipal facilities, and commercial property owners.
+[Commercial Court Construction](/commercial-court-construction/) requires planning for heavier traffic, longer daily use, and a wider range of players. Hatz Court Builders builds basketball courts and multi-sport courts for schools, universities, parks, recreation centers, athletic clubs, gyms, churches, resorts, apartment communities, HOAs, municipal facilities, and commercial property owners.
 
 ## Court Expansion
 
-Court Expansion may include adding new basketball space, extending an existing court, creating a multi-court layout, adding pickleball courts, or updating a recreation area.
+[Court Expansion](/court-expansion/) may include adding new basketball space, extending an existing court, creating a multi-court layout, adding pickleball courts, or updating a recreation area.
 
 ## Court Design
 
-Court Design is where the project becomes clear. A strong basketball court design considers court size, hoop placement, player safety space, surface type, drainage, sun exposure, fencing, lighting, access points, multi-sport striping, and long-term use.
+[Court Design](/custom-court-design/) is where the project becomes clear. A strong basketball court design considers court size, hoop placement, player safety space, surface type, drainage, sun exposure, fencing, lighting, access points, multi-sport striping, and long-term use.
 
 ## Common Basketball Court Problems
 
@@ -135,7 +135,14 @@ Hatz Court Builders serves homeowners, schools, universities, HOAs, parks, recre
 ## Other Court Construction Services
 
 - [Pickleball Court Construction](/pickleball-court-construction/)
+- [Basketball Court Construction](/basketball-court-construction/)
+- [Tennis Court Construction](/tennis-court-construction/)
 - [Volleyball Court Construction](/volleyball-court-construction/)
 - [Futsal / Soccer Court Construction](/futsal-soccer-court-construction/)
-- [Tennis Court Construction](/tennis-court-construction/)
+- [Bocce Court Construction](/bocce-court-construction/)
+- [Multi-Court Construction](/multi-court-construction/)
+- [Custom Court Construction](/custom-court-construction/)
+- [Commercial Court Construction](/commercial-court-construction/)
+- [Court Expansion](/court-expansion/)
+- [Court Design](/custom-court-design/)
 - [Court Builders Boise, ID](/court-builders-boise-id/)
