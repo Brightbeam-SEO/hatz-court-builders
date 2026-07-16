@@ -3,7 +3,7 @@ import { StructuredData } from "@/components/seo/structured-data";
 import { BUSINESS, DEFAULT_SOCIAL_LINKS } from "@/lib/business";
 import { buildGpmPageMetadata } from "@/lib/gpm-sitemap-seo";
 import { HOME_FAQ_CATEGORIES } from "@/lib/home-faq-section-data";
-import { buildFaqPageSchema, buildLocalBusinessSchema } from "@/lib/local-business-schema";
+import { buildFaqPageSchema } from "@/lib/local-business-schema";
 import { buildCanonicalUrl } from "@/lib/site-url";
 import { getHomeContentForPage } from "@/sanity/fetch-home";
 
@@ -19,41 +19,24 @@ export default async function Home() {
   const sameAs = DEFAULT_SOCIAL_LINKS.map((link) => link.href);
   const faqItems = HOME_FAQ_CATEGORIES.flatMap((category) => category.faqs);
 
-  const organizationGraph = {
+  const organizationSchema = {
     "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "Organization",
-        "@id": `${homepageUrl}#organization`,
-        name: BUSINESS.nameFull,
-        url: homepageUrl,
-        email: BUSINESS.email,
-        description: BUSINESS.description,
-        logo: logoUrl,
-        areaServed: [{ "@type": "State", name: "Idaho" }, { "@type": "State", name: "Arizona" }],
-        sameAs,
-      },
-      {
-        "@type": "WebSite",
-        "@id": `${homepageUrl}#website`,
-        url: homepageUrl,
-        name: BUSINESS.nameFull,
-        publisher: { "@id": `${homepageUrl}#organization` },
-      },
-      {
-        "@type": "WebPage",
-        "@id": `${homepageUrl}#webpage`,
-        url: homepageUrl,
-        name: BUSINESS.nameFull,
-        isPartOf: { "@id": `${homepageUrl}#website` },
-      },
-    ],
+    "@type": "Organization",
+    "@id": `${homepageUrl}#organization`,
+    name: BUSINESS.nameFull,
+    url: homepageUrl,
+    telephone: BUSINESS.phoneTel.replace("tel:", ""),
+    email: BUSINESS.email,
+    description: BUSINESS.description,
+    logo: logoUrl,
+    image: logoUrl,
+    areaServed: [{ "@type": "State", name: "Idaho" }, { "@type": "State", name: "Arizona" }],
+    sameAs,
   };
 
   return (
     <>
-      <StructuredData data={organizationGraph} />
-      <StructuredData data={buildLocalBusinessSchema({ pagePath: "/", area: "home" })} />
+      <StructuredData data={organizationSchema} />
       <StructuredData data={buildFaqPageSchema("/", faqItems)} />
       <HomePageWithContent value={home} />
     </>

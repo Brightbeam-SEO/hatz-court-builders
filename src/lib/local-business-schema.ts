@@ -1,7 +1,7 @@
 import { BUSINESS, DEFAULT_SOCIAL_LINKS } from "@/lib/business";
 import { buildCanonicalUrl } from "@/lib/site-url";
 
-type LocalBusinessArea = "home" | "idaho" | "arizona";
+type LocalBusinessArea = "idaho" | "arizona";
 
 function dayOfWeekUrls() {
   return [
@@ -32,14 +32,6 @@ function postalAddressForArea(area: LocalBusinessArea) {
       addressCountry: "US",
     };
   }
-  if (area === "idaho") {
-    return {
-      "@type": "PostalAddress",
-      addressLocality: "Boise",
-      addressRegion: "ID",
-      addressCountry: "US",
-    };
-  }
   return {
     "@type": "PostalAddress",
     addressLocality: "Boise",
@@ -67,12 +59,7 @@ export function buildLocalBusinessSchema(input: {
   const areaServed =
     input.area === "arizona"
       ? citiesAsAreaServed(BUSINESS.serviceCitiesArizona, "Arizona")
-      : input.area === "idaho"
-        ? citiesAsAreaServed(BUSINESS.serviceCitiesIdaho, "Idaho")
-        : [
-            { "@type": "State", name: "Idaho" },
-            { "@type": "State", name: "Arizona" },
-          ];
+      : citiesAsAreaServed(BUSINESS.serviceCitiesIdaho, "Idaho");
 
   const sameAs = [
     mapUrl,
