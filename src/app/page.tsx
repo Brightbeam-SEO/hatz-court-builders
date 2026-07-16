@@ -46,7 +46,6 @@ export default async function Home() {
         url: homepageUrl,
         name: BUSINESS.nameFull,
         isPartOf: { "@id": `${homepageUrl}#website` },
-        about: { "@id": `${homepageUrl}#organization` },
       },
     ],
   };

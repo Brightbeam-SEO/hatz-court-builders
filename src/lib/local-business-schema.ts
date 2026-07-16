@@ -23,14 +23,43 @@ function citiesAsAreaServed(cities: readonly string[], state: string) {
   }));
 }
 
-/** Standalone LocalBusiness JSON-LD (not merged into Organization/WebSite). */
+function postalAddressForArea(area: LocalBusinessArea) {
+  if (area === "arizona") {
+    return {
+      "@type": "PostalAddress",
+      addressLocality: "Scottsdale",
+      addressRegion: "AZ",
+      addressCountry: "US",
+    };
+  }
+  if (area === "idaho") {
+    return {
+      "@type": "PostalAddress",
+      addressLocality: "Boise",
+      addressRegion: "ID",
+      addressCountry: "US",
+    };
+  }
+  return {
+    "@type": "PostalAddress",
+    addressLocality: "Boise",
+    addressRegion: "ID",
+    addressCountry: "US",
+  };
+}
+
+/**
+ * Standalone LocalBusiness JSON-LD.
+ * Do not reference this node from WebPage.about / mainEntity — schema.org's
+ * validator nests linked nodes under the parent and hides LocalBusiness as a
+ * top-level detected type.
+ */
 export function buildLocalBusinessSchema(input: {
   pagePath: string;
   area: LocalBusinessArea;
   name?: string;
 }) {
   const pageUrl = buildCanonicalUrl(input.pagePath);
-  const homepageUrl = buildCanonicalUrl("/");
   const logoUrl = buildCanonicalUrl(BUSINESS.logoSrc);
   const mapUrl =
     input.area === "arizona" ? BUSINESS.mapsGoogleUrlScottsdale : BUSINESS.mapsGoogleUrl;
@@ -62,7 +91,7 @@ export function buildLocalBusinessSchema(input: {
     description: BUSINESS.description,
     image: logoUrl,
     logo: logoUrl,
-    parentOrganization: { "@id": `${homepageUrl}#organization` },
+    address: postalAddressForArea(input.area),
     openingHoursSpecification: [
       {
         "@type": "OpeningHoursSpecification",
@@ -74,6 +103,20 @@ export function buildLocalBusinessSchema(input: {
     areaServed,
     sameAs,
     hasMap: mapUrl,
+  };
+}
+
+export function buildWebPageSchema(input: {
+  pagePath: string;
+  name: string;
+}) {
+  const pageUrl = buildCanonicalUrl(input.pagePath);
+  return {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": `${pageUrl}#webpage`,
+    url: pageUrl,
+    name: input.name,
   };
 }
 
