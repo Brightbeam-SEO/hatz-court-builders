@@ -75,7 +75,7 @@ export function ServicesSection({ layout = "home" }: { layout?: "home" | "about"
                 fill
                 sizes="(min-width: 1280px) 32rem, (min-width: 1024px) 38vw, (min-width: 640px) 28rem, 90vw"
                 className="object-cover"
-                priority={false}
+                loading="lazy"
               />
             </div>
           </div>

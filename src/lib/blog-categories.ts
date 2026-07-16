@@ -57,7 +57,7 @@ export function getBlogIndexHref(options?: { page?: number }): string {
   const params = new URLSearchParams();
   if (options?.page && options.page > 1) params.set("page", String(options.page));
   const query = params.toString();
-  return query ? `/blog?${query}` : "/blog";
+  return query ? `/blog/?${query}` : "/blog/";
 }
 
 /** Legacy path before category segments were removed from URLs. */

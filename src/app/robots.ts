@@ -1,6 +1,5 @@
 import type { MetadataRoute } from "next";
-
-const SITE_ORIGIN = "https://hatzcourtbuilders.com";
+import { buildCanonicalUrl } from "@/lib/site-url";
 
 export default function robots(): MetadataRoute.Robots {
   return {
@@ -8,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: `${SITE_ORIGIN}/sitemap.xml`,
+    sitemap: buildCanonicalUrl("/sitemap.xml"),
   };
 }

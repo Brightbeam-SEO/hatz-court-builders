@@ -1,11 +1,9 @@
 import type { Metadata, Viewport } from "next";
-import Script from "next/script";
 import { GoogleTagManager } from "@/components/analytics/google-tag-manager";
 import { SiteChrome } from "@/components/layout/site-chrome";
 import { archivo, bigShoulders } from "@/lib/fonts";
+import { SITE_ORIGIN } from "@/lib/site-url";
 import "./globals.css";
-
-const recaptchaSiteKey = process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY;
 
 export const viewport: Viewport = {
   width: "device-width",
@@ -14,6 +12,7 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
+  metadataBase: new URL(SITE_ORIGIN),
   title: "Court Builders Boise & Scottsdale | Hatz Court Builders",
   description:
     "Hatz Court Builders designs and builds custom pickleball, tennis, basketball, and multi-use courts in Boise and Scottsdale. Get started today.",
@@ -42,12 +41,6 @@ export default function RootLayout({
     >
       <body className={`${archivo.className} flex min-h-full min-w-0 flex-col overflow-x-clip`}>
         <GoogleTagManager />
-        {recaptchaSiteKey ? (
-          <Script
-            src={`https://www.google.com/recaptcha/api.js?render=${recaptchaSiteKey}`}
-            strategy="afterInteractive"
-          />
-        ) : null}
         <SiteChrome>{children}</SiteChrome>
       </body>
     </html>

@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
-
-const SITE_ORIGIN = "https://hatzcourtbuilders.com";
+import { buildCanonicalUrl, normalizeSitePath } from "@/lib/site-url";
 
 /** SEO metadata for active site routes. */
 export const GPM_SITEMAP_SEO: Record<
@@ -100,47 +99,59 @@ export const GPM_SITEMAP_SEO: Record<
 };
 
 export function getGpmSitemapSeo(path: string): (typeof GPM_SITEMAP_SEO)[string] | undefined {
-  const normalized = path.startsWith("/") ? path : `/${path}`;
-  const withSlash = normalized.endsWith("/") ? normalized : `${normalized}/`;
-  return GPM_SITEMAP_SEO[withSlash];
+  return GPM_SITEMAP_SEO[normalizeSitePath(path)];
 }
 
 export const GPM_BLOG_SEO: Record<string, { title: string; description: string }> = {};
+
+type CanonicalPageMetadataInput = {
+  path: string;
+  title: string;
+  description: string;
+  openGraphTitle?: string;
+};
+
+/** One self-referencing canonical, matching Open Graph URL, for an indexable page. */
+export function buildCanonicalPageMetadata({
+  path,
+  title,
+  description,
+  openGraphTitle,
+}: CanonicalPageMetadataInput): Metadata {
+  const canonical = buildCanonicalUrl(path);
+  const ogTitle = openGraphTitle ?? title;
+
+  return {
+    title,
+    description,
+    alternates: { canonical },
+    openGraph: {
+      title: ogTitle,
+      description,
+      url: canonical,
+    },
+  };
+}
 
 export function buildGpmBlogPageMetadata(slug: string): Metadata {
   const entry = GPM_BLOG_SEO[slug];
   if (!entry) return {};
 
-  const canonical = `${SITE_ORIGIN}/blog/${slug}/`;
-
-  return {
+  return buildCanonicalPageMetadata({
+    path: `/blog/${slug}/`,
     title: entry.title,
     description: entry.description,
-    alternates: { canonical },
-    openGraph: {
-      title: entry.title,
-      description: entry.description,
-      url: canonical,
-    },
-  };
+  });
 }
 
 export function buildGpmPageMetadata(path: string): Metadata {
   const entry = getGpmSitemapSeo(path);
   if (!entry) return {};
 
-  const normalized = path.endsWith("/") ? path : `${path}/`;
-  const canonical = `${SITE_ORIGIN}${normalized}`;
-  const ogTitle = entry.openGraphTitle ?? entry.title;
-
-  return {
+  return buildCanonicalPageMetadata({
+    path,
     title: entry.title,
     description: entry.description,
-    alternates: { canonical },
-    openGraph: {
-      title: ogTitle,
-      description: entry.description,
-      url: canonical,
-    },
-  };
+    openGraphTitle: entry.openGraphTitle,
+  });
 }

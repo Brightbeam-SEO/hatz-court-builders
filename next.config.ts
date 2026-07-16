@@ -42,6 +42,9 @@ const nextConfig: NextConfig = {
   /** Hides the route dev badge; `<nextjs-portal>` may still exist for the error overlay (dev-only, not a layout bug). */
   devIndicators: false,
   trailingSlash: true,
+  experimental: {
+    optimizePackageImports: ["lucide-react", "framer-motion"],
+  },
   async redirects() {
     const serviceRedirects = REMOVED_SERVICE_REDIRECTS.flatMap((slug) => [
       {
@@ -78,6 +81,12 @@ const nextConfig: NextConfig = {
     ]);
 
     return [
+      {
+        source: "/:path*",
+        has: [{ type: "host", value: "www.hatzcourtbuilders.com" }],
+        destination: "https://hatzcourtbuilders.com/:path*",
+        permanent: true,
+      },
       { source: "/about-us", destination: "/about/", permanent: true },
       { source: "/about-us/:path*", destination: "/about/:path*", permanent: true },
       { source: "/contact-us", destination: "/contact/", permanent: true },
@@ -149,7 +158,9 @@ const nextConfig: NextConfig = {
     ];
   },
   images: {
-    qualities: [75, 90, 95],
+    formats: ["image/avif", "image/webp"],
+    minimumCacheTTL: 60 * 60 * 24 * 30,
+    qualities: [75, 85, 90, 95],
     remotePatterns: [
       {
         protocol: "https",

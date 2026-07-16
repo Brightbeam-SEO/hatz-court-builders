@@ -18,6 +18,7 @@ import remarkGfm from "remark-gfm";
 import type { Components } from "react-markdown";
 import { SunsetCheckBullet } from "@/components/sunset-check-bullet";
 import { BUSINESS, SITE_INTERNAL_HOSTNAMES } from "@/lib/business";
+import { SITE_CANONICAL_HOSTS } from "@/lib/site-url";
 
 const businessNameHomeLinkClass =
   "font-semibold text-white underline decoration-white/40 underline-offset-2 transition hover:text-zen-sage light:text-zen-espresso light:decoration-zen-crimson/45 light:hover:text-zen-crimson";
@@ -70,6 +71,7 @@ const INTERNAL_HOSTS = new Set<string>([
   "solpressurewash.com",
   "www.solpressurewash.com",
   ...SITE_INTERNAL_HOSTNAMES,
+  ...SITE_CANONICAL_HOSTS,
 ]);
 
 function configuredSiteHost(): string | null {

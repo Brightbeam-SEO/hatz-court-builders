@@ -3,7 +3,11 @@ import { readFile } from "node:fs/promises";
 import path from "node:path";
 import { notFound } from "next/navigation";
 import { PressureWashingBoiseLanding } from "@/components/landing/pressure-washing-boise-landing";
-import { buildGpmPageMetadata, getGpmSitemapSeo } from "@/lib/gpm-sitemap-seo";
+import {
+  buildCanonicalPageMetadata,
+  buildGpmPageMetadata,
+  getGpmSitemapSeo,
+} from "@/lib/gpm-sitemap-seo";
 import { getPmServicePage, pmServicePagePath } from "@/lib/pm-service-pages";
 import { additionalReviewsPageTestimonials } from "@/lib/reviews-testimonials";
 import { getHomeContentForPage } from "@/sanity/fetch-home";
@@ -11,7 +15,7 @@ import { getLocationPageBySlug } from "@/sanity/fetch-location-page";
 
 export async function generatePmServiceMetadata(slug: string): Promise<Metadata> {
   const entry = getPmServicePage(slug);
-  if (!entry) return { title: "Services | Greenbelt Property Management" };
+  if (!entry) return { title: "Services | Hatz Court Builders" };
 
   const pagePath = pmServicePagePath(slug);
   if (getGpmSitemapSeo(pagePath)) return buildGpmPageMetadata(pagePath);
@@ -19,7 +23,12 @@ export async function generatePmServiceMetadata(slug: string): Promise<Metadata>
   const doc = await getLocationPageBySlug(entry.sanitySlug);
   const title = doc?.seo?.metaTitle?.trim() || entry.config.metaTitle;
   const description = doc?.seo?.metaDescription?.trim() || entry.config.metaDescription;
-  return { title, description };
+
+  return buildCanonicalPageMetadata({
+    path: pagePath,
+    title,
+    description,
+  });
 }
 
 export async function PmServicePage({ slug }: { slug: string }) {

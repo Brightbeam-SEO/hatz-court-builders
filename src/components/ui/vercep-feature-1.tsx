@@ -104,6 +104,7 @@ export function VercepFeatureSection({ className }: { className?: string }) {
                     alt={gpmImageAlt(photo)}
                     fill
                     sizes="88px"
+                    loading="lazy"
                     className="object-cover"
                   />
                 </div>

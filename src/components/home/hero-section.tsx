@@ -1,11 +1,13 @@
 "use client";
 
 import Image from "next/image";
+import { useEffect, useState } from "react";
 import { useHomeScrollReveal } from "@/hooks/use-home-scroll-reveal";
 import { SiteHeader } from "@/components/layout/site-header";
+import { HcbImage } from "@/components/ui/hcb-image";
 import { BUSINESS } from "@/lib/business";
 import { homeHeroContactFormHref, HOME_HERO_CONTACT_FORM_ID } from "@/lib/home-anchors";
-import { HOME_HERO_VIDEO_SRC } from "@/lib/home-hero-video";
+import { HOME_HERO_POSTER_SRC, HOME_HERO_VIDEO_SRC } from "@/lib/home-hero-video";
 import { ContactForm } from "./contact-form";
 import { HeroTrustLogoMarquee } from "./hero-trust-logo-marquee";
 import { useHomeContent } from "./home-content-context";
@@ -54,18 +56,56 @@ function HeroBottomBar() {
 }
 
 function HomeHeroVideoBackdrop() {
+  const [loadVideo, setLoadVideo] = useState(false);
+  const [videoVisible, setVideoVisible] = useState(false);
+
+  useEffect(() => {
+    const desktop = window.matchMedia("(min-width: 1024px)").matches;
+    if (!desktop) return;
+
+    const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    if (reducedMotion) return;
+
+    const schedule = () => setLoadVideo(true);
+
+    if (typeof window.requestIdleCallback === "function") {
+      const id = window.requestIdleCallback(schedule, { timeout: 2500 });
+      return () => window.cancelIdleCallback(id);
+    }
+
+    const timer = window.setTimeout(schedule, 2000);
+    return () => window.clearTimeout(timer);
+  }, []);
+
   return (
     <div className="pointer-events-none absolute inset-0 z-0 overflow-hidden" aria-hidden>
-      <video
-        key={HOME_HERO_VIDEO_SRC}
-        className="absolute inset-0 h-full w-full object-cover"
-        src={HOME_HERO_VIDEO_SRC}
-        autoPlay
-        muted
-        loop
-        playsInline
-        preload="auto"
+      {/* Optimized still for LCP on all viewports — video loads after idle on desktop only. */}
+      <HcbImage
+        src={HOME_HERO_POSTER_SRC}
+        alt=""
+        fill
+        priority
+        fetchPriority="high"
+        sizes="100vw"
+        className="object-cover"
+        aria-hidden
       />
+
+      {loadVideo ? (
+        <video
+          key={HOME_HERO_VIDEO_SRC}
+          className={`absolute inset-0 hidden h-full w-full object-cover transition-opacity duration-700 lg:block ${
+            videoVisible ? "opacity-100" : "opacity-0"
+          }`}
+          src={HOME_HERO_VIDEO_SRC}
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="auto"
+          onCanPlay={() => setVideoVisible(true)}
+        />
+      ) : null}
       <div className="absolute inset-0 bg-black/30" />
     </div>
   );

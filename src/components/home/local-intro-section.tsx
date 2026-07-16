@@ -43,23 +43,21 @@ function LocalIntroDesktopImageCarousel({ images }: { images: readonly string[] 
     return () => window.clearInterval(timer);
   }, [images, mounted]);
 
+  const activeSrc = carouselImages[activeIndex] ?? carouselImages[0]!;
+
   return (
     <div className="flex w-full items-center gap-3 xl:gap-4">
       <div className={`relative aspect-[4/3] min-w-0 flex-1 ${introImageClass}`}>
-        {carouselImages.map((src, index) => (
-          <HcbImage
-            key={src}
-            src={src}
-            alt={index === activeIndex ? gpmImageAlt(src) : ""}
-            fill
-            sizes="(min-width: 1280px) 42rem, (min-width: 1024px) 50vw, 100vw"
-            className={`object-cover transition-opacity duration-700 ease-in-out ${
-              !mounted || index === activeIndex ? "opacity-100" : "opacity-0"
-            }`}
-            priority={index === 0}
-            aria-hidden={mounted ? index !== activeIndex : false}
-          />
-        ))}
+        <HcbImage
+          key={activeSrc}
+          src={activeSrc}
+          alt={gpmImageAlt(activeSrc)}
+          fill
+          sizes="(min-width: 1280px) 42rem, (min-width: 1024px) 50vw, 100vw"
+          className="object-cover transition-opacity duration-700 ease-in-out"
+          priority={activeIndex === 0}
+          loading={activeIndex === 0 ? undefined : "lazy"}
+        />
       </div>
 
       {mounted ? (
@@ -110,6 +108,7 @@ function LocalIntroMobileImageCollage({
             src={leftImageSrc}
             alt={leftImageAlt}
             fill
+            priority
             sizes="(min-width: 768px) 320px, (min-width: 640px) 280px, 70vw"
             className="object-cover"
           />

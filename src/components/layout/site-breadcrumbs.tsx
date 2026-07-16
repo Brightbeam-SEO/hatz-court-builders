@@ -2,6 +2,8 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { StructuredData } from "@/components/seo/structured-data";
+import { buildCanonicalUrl, normalizeSitePath } from "@/lib/site-url";
 
 /** Human labels for top-level routes (pathname segments). */
 const SEGMENT_LABELS: Record<string, string> = {
@@ -98,54 +100,68 @@ export function SiteBreadcrumbs({ onHero = false }: { onHero?: boolean }) {
   let pathAcc = "";
   for (const segment of segments) {
     pathAcc += `/${segment}`;
-    crumbs.push({ href: pathAcc, label: labelForSegment(segment) });
+    crumbs.push({ href: normalizeSitePath(pathAcc), label: labelForSegment(segment) });
   }
 
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: crumbs.map((crumb, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      name: crumb.label,
+      item: buildCanonicalUrl(crumb.href),
+    })),
+  };
+
   return (
-    <nav
-      aria-label="Breadcrumb"
-      className="mx-auto w-full max-w-[95vw] sm:max-w-[min(80vw,100%)] px-2 sm:px-3 md:px-4 pb-2 pt-1 sm:pb-2.5 sm:pt-1.5"
-    >
-      <ol
-        className={`flex flex-wrap items-center gap-x-1 gap-y-0.5 text-[10px] font-normal leading-snug tracking-wide sm:text-[11px] ${
-          onHero ? "text-white/90" : "text-white/38 light:text-zen-taupe"
-        }`}
+    <>
+      <StructuredData data={breadcrumbSchema} />
+      <nav
+        aria-label="Breadcrumb"
+        className="mx-auto w-full max-w-[95vw] sm:max-w-[min(80vw,100%)] px-2 pb-2 pt-1 sm:px-3 sm:pb-2.5 sm:pt-1.5 md:px-4"
       >
-        {crumbs.map((crumb, index) => {
-          const isLast = index === crumbs.length - 1;
-          return (
-            <li key={crumb.href} className="inline-flex max-w-full items-center gap-x-1">
-              {index > 0 ? (
-                <span
-                  className={`shrink-0 ${onHero ? "text-white/55" : "text-white/25 light:text-slate-400/80"}`}
-                  aria-hidden
-                >
-                  /
-                </span>
-              ) : null}
-              {isLast ? (
-                <span
-                  className={`min-w-0 truncate ${onHero ? "text-white" : "text-white/48 light:text-zen-taupe"}`}
-                  aria-current="page"
-                >
-                  {crumb.label}
-                </span>
-              ) : (
-                <Link
-                  href={crumb.href}
-                  className={`shrink-0 transition ${
-                    onHero
-                      ? "text-white/85 hover:text-white"
-                      : "text-white/42 hover:text-white/65 light:text-zen-taupe light:hover:text-zen-taupe"
-                  }`}
-                >
-                  {crumb.label}
-                </Link>
-              )}
-            </li>
-          );
-        })}
-      </ol>
-    </nav>
+        <ol
+          className={`flex flex-wrap items-center gap-x-1 gap-y-0.5 text-[10px] font-normal leading-snug tracking-wide sm:text-[11px] ${
+            onHero ? "text-white/90" : "text-white/38 light:text-zen-taupe"
+          }`}
+        >
+          {crumbs.map((crumb, index) => {
+            const isLast = index === crumbs.length - 1;
+            return (
+              <li key={crumb.href} className="inline-flex max-w-full items-center gap-x-1">
+                {index > 0 ? (
+                  <span
+                    className={`shrink-0 ${onHero ? "text-white/55" : "text-white/25 light:text-slate-400/80"}`}
+                    aria-hidden
+                  >
+                    /
+                  </span>
+                ) : null}
+                {isLast ? (
+                  <span
+                    className={`min-w-0 truncate ${onHero ? "text-white" : "text-white/48 light:text-zen-taupe"}`}
+                    aria-current="page"
+                  >
+                    {crumb.label}
+                  </span>
+                ) : (
+                  <Link
+                    href={crumb.href}
+                    className={`shrink-0 transition ${
+                      onHero
+                        ? "text-white/85 hover:text-white"
+                        : "text-white/42 hover:text-white/65 light:text-zen-taupe light:hover:text-zen-taupe"
+                    }`}
+                  >
+                    {crumb.label}
+                  </Link>
+                )}
+              </li>
+            );
+          })}
+        </ol>
+      </nav>
+    </>
   );
 }

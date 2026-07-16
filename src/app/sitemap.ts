@@ -2,13 +2,10 @@ import type { MetadataRoute } from "next";
 import { BLOG_FEATURED_LEAD_SLUG, getBlogPostsForPage } from "@/lib/blog";
 import { GPM_SITEMAP_SEO } from "@/lib/gpm-sitemap-seo";
 import { PM_SERVICE_PAGES, pmServicePagePath } from "@/lib/pm-service-pages";
-
-const SITE_ORIGIN = "https://hatzcourtbuilders.com";
+import { buildCanonicalUrl } from "@/lib/site-url";
 
 function toAbsoluteUrl(path: string): string {
-  const normalized = path.startsWith("/") ? path : `/${path}`;
-  const withSlash = normalized.endsWith("/") ? normalized : `${normalized}/`;
-  return `${SITE_ORIGIN}${withSlash === "//" ? "/" : withSlash}`;
+  return buildCanonicalUrl(path);
 }
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
@@ -41,7 +38,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   return [...urls].sort().map((url) => ({
     url,
     lastModified: now,
-    changeFrequency: url === `${SITE_ORIGIN}/` ? "weekly" : "monthly",
-    priority: url === `${SITE_ORIGIN}/` ? 1 : url.includes("/blog/") ? 0.6 : 0.8,
+    changeFrequency: url === buildCanonicalUrl("/") ? "weekly" : "monthly",
+    priority: url === buildCanonicalUrl("/") ? 1 : url.includes("/blog/") ? 0.6 : 0.8,
   }));
 }

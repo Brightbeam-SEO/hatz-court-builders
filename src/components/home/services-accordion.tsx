@@ -76,13 +76,15 @@ function ServiceAccordionRow({
               </Link>
             </div>
             <div className="relative h-24 w-28 shrink-0 overflow-hidden rounded-xl bg-white/10 ring-1 ring-white/10 sm:h-32 sm:w-40 lg:h-36 lg:w-48">
-              <HcbImage
-                src={service.image}
-                alt={gpmImageAlt(service.image)}
-                fill
-                sizes="(min-width: 1024px) 240px, (min-width: 640px) 200px, 180px"
-                className="object-cover"
-              />
+              {isOpen ? (
+                <HcbImage
+                  src={service.image}
+                  alt={gpmImageAlt(service.image)}
+                  fill
+                  sizes="(min-width: 1024px) 240px, (min-width: 640px) 200px, 180px"
+                  className="object-cover"
+                />
+              ) : null}
             </div>
           </div>
         </div>

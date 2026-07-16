@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { RECAPTCHA_CONTACT_ACTION } from "@/lib/recaptcha-contact";
+import { fetchRecaptchaToken } from "@/lib/recaptcha-loader";
 
 const PHONE_ERROR = "Please enter a complete 10-digit phone number.";
 
@@ -11,33 +11,6 @@ const fieldDark =
   "rounded-xl border border-white/40 bg-white/10 px-3 py-2.5 text-sm text-white placeholder:text-white/80 outline-none transition focus:border-zen-crimson focus:ring-2 focus:ring-zen-crimson/25";
 const fieldLight =
   "hero-form-field-glass rounded-xl border px-3 py-2.5 text-sm outline-none transition focus:border-zen-crimson focus:ring-2 focus:ring-zen-crimson/25";
-
-type GrecaptchaV3 = {
-  ready: (callback: () => void) => void;
-  execute: (siteKey: string, options: { action: string }) => Promise<string>;
-};
-
-function getGrecaptcha(): GrecaptchaV3 | undefined {
-  if (typeof window === "undefined") return undefined;
-  return (window as unknown as { grecaptcha?: GrecaptchaV3 }).grecaptcha;
-}
-
-async function fetchRecaptchaToken(siteKey: string): Promise<string> {
-  const grecaptcha = getGrecaptcha();
-  if (!grecaptcha?.execute) {
-    throw new Error("reCAPTCHA is still loading. Please wait a moment and try again.");
-  }
-  return new Promise((resolve, reject) => {
-    grecaptcha.ready(async () => {
-      try {
-        const token = await grecaptcha.execute(siteKey, { action: RECAPTCHA_CONTACT_ACTION });
-        resolve(token);
-      } catch {
-        reject(new Error("Could not verify the form. Please try again."));
-      }
-    });
-  });
-}
 
 export function ContactForm({
   variant = "dark",

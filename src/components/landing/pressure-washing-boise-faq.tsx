@@ -1,6 +1,9 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { usePathname } from "next/navigation";
+import { StructuredData } from "@/components/seo/structured-data";
+import { buildCanonicalUrl, normalizeSitePath } from "@/lib/site-url";
 
 const defaultSpaFaqItems = [
   {
@@ -46,9 +49,23 @@ export function PressureWashingBoiseFaq({
   idPrefix?: string;
 }) {
   const faqItems = items ?? defaultSpaFaqItems;
+  const pathname = usePathname() ?? "/";
   const rootRef = useRef<HTMLDivElement | null>(null);
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
   const [revealed, setRevealed] = useState(false);
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "@id": `${buildCanonicalUrl(normalizeSitePath(pathname))}#faq`,
+    mainEntity: faqItems.map((item) => ({
+      "@type": "Question",
+      name: item.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: item.answer,
+      },
+    })),
+  };
 
   useEffect(() => {
     if (revealed) return;
@@ -80,6 +97,7 @@ export function PressureWashingBoiseFaq({
       ref={rootRef}
       className={`faq-scroll-animate ${revealed ? "faq-revealed" : ""} ${className}`.trim()}
     >
+      <StructuredData data={faqSchema} />
       <div className="faq-intro-reveal w-full max-w-3xl text-left">
         <h2 className="font-heading scroll-mt-28 text-2xl font-bold text-white light:text-zen-espresso md:text-3xl">
           {heading}

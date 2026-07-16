@@ -4,7 +4,7 @@ import { notFound, redirect } from "next/navigation";
 import { BlogArticlePage } from "@/components/blog/blog-article-page";
 import { BlogHeroBand } from "@/components/blog/blog-hero-band";
 import { getBlogPostPath } from "@/lib/blog-categories";
-import { buildGpmBlogPageMetadata, GPM_BLOG_SEO } from "@/lib/gpm-sitemap-seo";
+import { buildGpmBlogPageMetadata, buildCanonicalPageMetadata, GPM_BLOG_SEO } from "@/lib/gpm-sitemap-seo";
 import {
   BLOG_SLUG_ALIASES,
   getBlogPostBySlug,
@@ -31,10 +31,16 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (GPM_BLOG_SEO[slug]) return fromLive;
 
   const post = await getBlogPostBySlug(slug);
-  if (!post) return { title: "Article | Greenbelt Property Management" };
-  const title = post.metaTitle ?? `${post.title} | Greenbelt Property Management`;
+  if (!post) return { title: "Article | Hatz Court Builders" };
+
+  const title = post.metaTitle ?? `${post.title} | Hatz Court Builders`;
   const description = post.metaDescription ?? post.excerpt;
-  return { title, description };
+
+  return buildCanonicalPageMetadata({
+    path: getBlogPostPath(slug),
+    title,
+    description,
+  });
 }
 
 export default async function BlogArticleRoute({ params }: Props) {

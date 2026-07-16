@@ -8,6 +8,7 @@ import type { BlogArticleTocItem } from "@/components/blog/blog-article-types";
 import { PAGE_HERO_CTA_SECONDARY_LABEL } from "@/components/layout/page-hero-cta-buttons";
 import { SiteSocialIcon } from "@/components/layout/site-social-icon";
 import { BUSINESS } from "@/lib/business";
+import { buildCanonicalUrl } from "@/lib/site-url";
 import { gpmPick } from "@/lib/gpm-pick-gallery";
 
 const HERO_WORDMARK_SRC = BUSINESS.wordmarkSrc;
@@ -19,8 +20,7 @@ const shareIconButtonClass =
 
 /** Stable for SSR + client (never use `window` in render — avoids hydration mismatch on share hrefs). */
 function canonicalArticleOrigin() {
-  const raw = process.env.NEXT_PUBLIC_SITE_URL ?? BUSINESS.website;
-  return raw.replace(/\/$/, "");
+  return buildCanonicalUrl("/").replace(/\/$/, "");
 }
 
 function shareUrl(path: string) {

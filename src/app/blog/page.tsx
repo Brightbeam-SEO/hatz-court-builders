@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Suspense } from "react";
 import { BlogPage } from "@/components/blog/blog-page";
+import { buildGpmPageMetadata } from "@/lib/gpm-sitemap-seo";
 import {
   BLOG_FEATURED_LEAD_SLUG,
   BLOG_FEATURED_SECTION_MAX,
@@ -10,11 +11,7 @@ import {
 } from "@/lib/blog";
 import { getHomeContentForPage } from "@/sanity/fetch-home";
 
-export const metadata: Metadata = {
-  title: "Court Builder Blog | Hatz Court Builders",
-  description:
-    "Tips and guides about court construction, surfacing options, and multi-use court design from Hatz Court Builders.",
-};
+export const metadata: Metadata = buildGpmPageMetadata("/blog/");
 
 function sortByDateDesc<T extends { publishedAt: string }>(a: T, b: T) {
   return new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime();
