@@ -3,43 +3,16 @@
 import { useEffect, useRef, useState } from "react";
 import { usePathname } from "next/navigation";
 import { StructuredData } from "@/components/seo/structured-data";
-import { buildCanonicalUrl, normalizeSitePath } from "@/lib/site-url";
-
-const defaultSpaFaqItems = [
-  {
-    question: "Do you accept walk-ins for massage in Eagle?",
-    answer:
-      "Yes—walk-ins are welcome when we have availability. Calling ahead is the best way to secure your preferred time, especially on weekends and evenings.",
-  },
-  {
-    question: "What types of massage do you offer?",
-    answer:
-      "We offer foot massage, reflexology, scalp treatments, Swedish and deep tissue massage, Thai massage, couples massage, pregnancy massage, and more in our Eagle studio.",
-  },
-  {
-    question: "How long are massage sessions?",
-    answer:
-      "Session lengths vary by service—common options include 30, 60, and 90 minutes. See our pricing page for current rates and durations.",
-  },
-  {
-    question: "Is reflexology different from a foot massage?",
-    answer:
-      "Foot massage focuses on relaxing muscles and improving circulation in the feet. Reflexology applies targeted pressure to reflex points believed to support overall wellness.",
-  },
-  {
-    question: "Where is Zen Day Spa located?",
-    answer:
-      "We are at 3210 W Chinden Blvd #114, Eagle, ID 83616—serving Eagle, Boise, Meridian, and the Treasure Valley.",
-  },
-] as const;
+import { buildFaqPageSchema } from "@/lib/local-business-schema";
+import { normalizeSitePath } from "@/lib/site-url";
 
 /** Service landing FAQs — accordion matches home `FaqSection`; intro is left-aligned, no gradient title. */
 export function PressureWashingBoiseFaq({
   className = "",
-  heading = "Frequently Asked Questions About Zen Day Spa",
+  heading = "Frequently Asked Questions",
   intro = "Straight answers—call if yours isn't listed.",
   items,
-  idPrefix = "spa-landing-faq",
+  idPrefix = "landing-faq",
 }: {
   className?: string;
   heading?: string;
@@ -48,24 +21,13 @@ export function PressureWashingBoiseFaq({
   /** Prefix for accordion button/region ids (must be unique per page). */
   idPrefix?: string;
 }) {
-  const faqItems = items ?? defaultSpaFaqItems;
+  const faqItems = items ?? [];
   const pathname = usePathname() ?? "/";
   const rootRef = useRef<HTMLDivElement | null>(null);
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
   const [revealed, setRevealed] = useState(false);
-  const faqSchema = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "@id": `${buildCanonicalUrl(normalizeSitePath(pathname))}#faq`,
-    mainEntity: faqItems.map((item) => ({
-      "@type": "Question",
-      name: item.question,
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: item.answer,
-      },
-    })),
-  };
+  const faqSchema =
+    faqItems.length > 0 ? buildFaqPageSchema(normalizeSitePath(pathname), faqItems) : null;
 
   useEffect(() => {
     if (revealed) return;
@@ -92,12 +54,14 @@ export function PressureWashingBoiseFaq({
     return () => observer.disconnect();
   }, [revealed]);
 
+  if (faqItems.length === 0) return null;
+
   return (
     <div
       ref={rootRef}
       className={`faq-scroll-animate ${revealed ? "faq-revealed" : ""} ${className}`.trim()}
     >
-      <StructuredData data={faqSchema} />
+      {faqSchema ? <StructuredData data={faqSchema} /> : null}
       <div className="faq-intro-reveal w-full max-w-3xl text-left">
         <h2 className="font-heading scroll-mt-28 text-2xl font-bold text-white light:text-zen-espresso md:text-3xl">
           {heading}

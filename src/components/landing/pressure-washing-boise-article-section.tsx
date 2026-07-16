@@ -206,9 +206,8 @@ export function PressureWashingBoiseArticleSection({
     cityPage?.articleListBulletStyle ?? "sunset-check";
   const stepBadgeVariant = cityPage?.timelineStepBadgeVariant ?? "gradient";
   const faqParts = body.split(FAQ_MARKER);
-  const hasFaqBlock = faqParts.length > 1;
   const hasFaqItems = (cityPage?.faqItems?.length ?? 0) > 0;
-  const showFaq = hasFaqBlock || hasFaqItems;
+  const showFaq = hasFaqItems;
   const articleCore = (faqParts[0] ?? "").trim();
 
   const whatParts = articleCore.split(WHAT_WE_OPTIMIZE_MARKER);

@@ -3,6 +3,7 @@ import { StructuredData } from "@/components/seo/structured-data";
 import { BUSINESS, DEFAULT_SOCIAL_LINKS } from "@/lib/business";
 import { buildGpmPageMetadata } from "@/lib/gpm-sitemap-seo";
 import { HOME_FAQ_CATEGORIES } from "@/lib/home-faq-section-data";
+import { buildFaqPageSchema, buildLocalBusinessSchema } from "@/lib/local-business-schema";
 import { buildCanonicalUrl } from "@/lib/site-url";
 import { getHomeContentForPage } from "@/sanity/fetch-home";
 
@@ -15,12 +16,6 @@ export default async function Home() {
   const home = await getHomeContentForPage();
   const homepageUrl = buildCanonicalUrl("/");
   const logoUrl = buildCanonicalUrl(BUSINESS.logoSrc);
-  const imageUrls = [
-    buildCanonicalUrl("/images/hcb/indoor-hardwood-pickleball-basketball-multi-sport-court-boise-id-hatz-court-builders.jpg"),
-    buildCanonicalUrl("/images/hcb/multi-sport-outdoor-backyard-court-boise-id-hatz-court-builders.jpg"),
-    buildCanonicalUrl("/images/hcb/tennis-court-resurface-crack-repair-boise-id-hatz-court-builders.jpg"),
-    buildCanonicalUrl("/images/hcb/backyard-modular-tile-sport-court-custom-logo-boise-id-hatz-court-builders.jpg"),
-  ];
   const sameAs = DEFAULT_SOCIAL_LINKS.map((link) => link.href);
   const faqItems = HOME_FAQ_CATEGORIES.flatMap((category) => category.faqs);
 
@@ -56,38 +51,11 @@ export default async function Home() {
     ],
   };
 
-  const localBusinessSchema = {
-    "@context": "https://schema.org",
-    "@type": "GeneralContractor",
-    "@id": `${homepageUrl}#localbusiness`,
-    name: BUSINESS.nameFull,
-    url: homepageUrl,
-    telephone: BUSINESS.phoneTel.replace("tel:", ""),
-    email: BUSINESS.email,
-    description: BUSINESS.description,
-    image: imageUrls,
-    logo: logoUrl,
-    parentOrganization: { "@id": `${homepageUrl}#organization` },
-    areaServed: [{ "@type": "State", name: "Idaho" }, { "@type": "State", name: "Arizona" }],
-    sameAs,
-  };
-
-  const faqSchema = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "@id": `${homepageUrl}#faq`,
-    mainEntity: faqItems.map((item) => ({
-      "@type": "Question",
-      name: item.question,
-      acceptedAnswer: { "@type": "Answer", text: item.answer },
-    })),
-  };
-
   return (
     <>
       <StructuredData data={organizationGraph} />
-      <StructuredData data={localBusinessSchema} />
-      <StructuredData data={faqSchema} />
+      <StructuredData data={buildLocalBusinessSchema({ pagePath: "/", area: "home" })} />
+      <StructuredData data={buildFaqPageSchema("/", faqItems)} />
       <HomePageWithContent value={home} />
     </>
   );

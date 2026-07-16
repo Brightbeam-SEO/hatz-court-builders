@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { StructuredData } from "@/components/seo/structured-data";
 import { FaqPage } from "@/components/faq/faq-page";
 import { buildCanonicalPageMetadata, buildGpmPageMetadata } from "@/lib/gpm-sitemap-seo";
-import { buildCanonicalUrl } from "@/lib/site-url";
+import { buildFaqPageSchema } from "@/lib/local-business-schema";
 import { getFaqContentForPage } from "@/sanity/fetch-faq";
 import { getHomeContentForPage } from "@/sanity/fetch-home";
 
@@ -27,21 +27,8 @@ export async function generateMetadata(): Promise<Metadata> {
 
 export default async function FaqPageRoute() {
   const [home, faq] = await Promise.all([getHomeContentForPage(), getFaqContentForPage()]);
-  const faqSchema = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "@id": `${buildCanonicalUrl("/faq/")}#faq`,
-    mainEntity: faq.categories.flatMap((category) =>
-      category.faqs.map((item) => ({
-        "@type": "Question",
-        name: item.question,
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: item.answer,
-        },
-      })),
-    ),
-  };
+  const faqItems = faq.categories.flatMap((category) => category.faqs);
+  const faqSchema = buildFaqPageSchema("/faq/", faqItems);
 
   return (
     <>
