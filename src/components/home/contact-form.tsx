@@ -3,6 +3,8 @@
 import { useState } from "react";
 import { RECAPTCHA_CONTACT_ACTION } from "@/lib/recaptcha-contact";
 
+const PHONE_ERROR = "Please enter a complete 10-digit phone number.";
+
 const labelDark = "flex flex-col gap-1.5 text-sm font-medium text-white";
 const labelLight = "flex flex-col gap-1.5 text-sm font-medium text-black";
 const fieldDark =
@@ -57,6 +59,7 @@ export function ContactForm({
   submitLabel?: string;
 }) {
   const [phone, setPhone] = useState("");
+  const [phoneError, setPhoneError] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [statusMessage, setStatusMessage] = useState("");
   const [statusError, setStatusError] = useState(false);
@@ -129,8 +132,16 @@ export function ContactForm({
     return `(${digits.slice(0, 3)}) ${digits.slice(3, 6)}-${digits.slice(6)}`;
   };
 
+  const getPhoneDigits = (value: string) => value.replace(/\D/g, "");
+
+  const handlePhoneChange = (value: string) => {
+    setPhone(formatPhone(value));
+    if (phoneError) setPhoneError("");
+  };
+
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
+    setPhoneError("");
     setStatusMessage("");
     setStatusError(false);
 
@@ -141,7 +152,7 @@ export function ContactForm({
     const payload = {
       name: String(formData.get("name") ?? "").trim(),
       email: String(formData.get("email") ?? "").trim(),
-      phone: String(formData.get("phone") ?? "").trim(),
+      phone: phone.trim(),
       city: String(formData.get("city") ?? "").trim(),
       message: String(formData.get("message") ?? "").trim() || fallbackMessage,
     };
@@ -149,6 +160,11 @@ export function ContactForm({
     if (!payload.name || !payload.email || !payload.message) {
       setStatusError(true);
       setStatusMessage("Please fill in name, email, and message.");
+      return;
+    }
+
+    if (getPhoneDigits(phone).length !== 10) {
+      setPhoneError(PHONE_ERROR);
       return;
     }
 
@@ -180,6 +196,7 @@ export function ContactForm({
       setStatusMessage("Thanks! Your request has been sent.");
       form.reset();
       setPhone("");
+      setPhoneError("");
     } catch (error) {
       setStatusError(true);
       setStatusMessage(
@@ -255,7 +272,8 @@ export function ContactForm({
               placeholder="(208) 555-1234"
               inputMode="numeric"
               value={phone}
-              onChange={(e) => setPhone(formatPhone(e.target.value))}
+              onChange={(e) => handlePhoneChange(e.target.value)}
+              aria-invalid={phoneError ? true : undefined}
             />
           </label>
           <label className={labelClass}>
@@ -281,7 +299,8 @@ export function ContactForm({
               placeholder="(208) 555-1234"
               inputMode="numeric"
               value={phone}
-              onChange={(e) => setPhone(formatPhone(e.target.value))}
+              onChange={(e) => handlePhoneChange(e.target.value)}
+              aria-invalid={phoneError ? true : undefined}
             />
           </label>
           <label className={labelClass}>
@@ -350,21 +369,32 @@ export function ContactForm({
         </p>
       )}
       {statusMessage ? (
-        <p className={[fullWidthClass, "text-sm", statusError ? "text-red-500" : "text-emerald-600"].filter(Boolean).join(" ")}>
+        <p
+          className={[
+            fullWidthClass,
+            "text-center text-sm",
+            statusError ? "text-red-500" : "text-emerald-600",
+          ]
+            .filter(Boolean)
+            .join(" ")}
+        >
           {statusMessage}
         </p>
       ) : null}
       <div
         className={
           contactPage
-            ? "flex w-full justify-center"
+            ? "flex w-full flex-col items-center gap-2"
             : compactStack
-              ? "flex w-full justify-center"
+              ? "flex w-full flex-col items-center gap-2"
               : compactInline
-                ? "flex w-full justify-center md:col-span-2"
-                : "flex w-full justify-center sm:col-span-2"
+                ? "flex w-full flex-col items-center gap-2 md:col-span-2"
+                : "flex w-full flex-col items-center gap-2 sm:col-span-2"
         }
       >
+        {phoneError ? (
+          <p className="text-center text-sm text-red-500">{phoneError}</p>
+        ) : null}
         <button
           type="submit"
           className="btn-submit"

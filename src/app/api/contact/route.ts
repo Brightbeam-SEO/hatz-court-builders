@@ -55,6 +55,14 @@ export async function POST(request: NextRequest) {
     );
   }
 
+  const phoneDigits = phone.replace(/\D/g, "");
+  if (phoneDigits.length !== 10) {
+    return Response.json(
+      { ok: false, message: "Please enter a complete 10-digit phone number." },
+      { status: 400 },
+    );
+  }
+
   const verificationBody = new URLSearchParams({
     secret: recaptchaSecret,
     response: recaptchaToken,

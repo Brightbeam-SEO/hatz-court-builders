@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import Script from "next/script";
+import { GoogleTagManager } from "@/components/analytics/google-tag-manager";
 import { SiteChrome } from "@/components/layout/site-chrome";
 import { archivo, bigShoulders } from "@/lib/fonts";
 import "./globals.css";
@@ -40,6 +41,7 @@ export default function RootLayout({
       className={`min-h-full antialiased ${archivo.variable} ${bigShoulders.variable}`}
     >
       <body className={`${archivo.className} flex min-h-full min-w-0 flex-col overflow-x-clip`}>
+        <GoogleTagManager />
         {recaptchaSiteKey ? (
           <Script
             src={`https://www.google.com/recaptcha/api.js?render=${recaptchaSiteKey}`}
