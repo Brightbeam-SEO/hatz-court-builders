@@ -2,7 +2,7 @@
 
 But a tennis court needs more than a large paved surface and painted lines. The court must have the right base, slope, drainage, surfacing, fencing, net system, court orientation, and safety space. If the court is not planned correctly, it can crack, hold water, fade too quickly, or feel uneven during play.
 
-Hatz Court Builders provides professional Tennis Court Construction for residential and commercial projects. We build private tennis courts, school tennis courts, club tennis courts, HOA tennis courts, park tennis courts, commercial tennis courts, and multi-use tennis courts.
+[Hatz Court Builders in Boise and Scottsdale](/) provides professional Tennis Court Construction for residential and commercial projects. We build private tennis courts, school tennis courts, club tennis courts, HOA tennis courts, park tennis courts, commercial tennis courts, and multi-use tennis courts.
 
 Our team also handles [Pickleball Court Construction](/pickleball-court-construction/), [Basketball Court Construction](/basketball-court-construction/), [Volleyball Court Construction](/volleyball-court-construction/), [Futsal / Soccer Court Construction](/futsal-soccer-court-construction/), [Bocce Court Construction](/bocce-court-construction/), [Multi-Court Construction](/multi-court-construction/), [Custom Court Construction](/custom-court-construction/), [Commercial Court Construction](/commercial-court-construction/), [Court Expansion](/court-expansion/), resurfacing, repairs, striping, and [Court Design](/custom-court-design/).
 

@@ -2,7 +2,7 @@ Court Builder Eagle, Idaho for custom court design, construction, resurfacing, a
 
 ## Court Builder Eagle Property Owners Should Choose With Care
 
-Wrong planning can create drainage problems, early cracking, uneven play, and faster wear. Eagle properties vary from large foothill lots to compact backyards, so layout, access, and surface selection need to be planned before construction starts.
+Wrong planning can create drainage problems, early cracking, uneven play, and faster wear. Eagle properties vary from large foothill lots to compact backyards, so layout, access, and surface selection need to be planned before construction starts. [Hatz Court Builders, Boise](/) plans Eagle courts around those lot-specific details so the finished surface plays well for years.
 
 ## Court Builders That Eagle Clients Can Rely On for Long-Term Play
 
@@ -34,6 +34,12 @@ We produce a full plan with layout, materials, pricing, and construction details
 
 ### Build and Play Review
 We complete installation, component placement, cleanup, and final walkthrough.
+
+## Areas We Serve in Eagle
+
+Eagle Island State Park and the Boise River set the tone for a lot of Eagle builds, especially in Banbury, Island Woods, and Brookside where access, trees, and runoff shape the court footprint. We also work in Foxtail, Eagle Hills, and Shadow Valley, plus properties along Eagle Road, Highway 44, Beacon Light Road, and Hill Road.
+
+Downtown Eagle homeowners near Heritage Park or the Arboretum often need quieter staging and tighter lot fits, while foothill parcels ask for more drainage and orientation planning before surfacing starts.
 
 ## Other Services
 

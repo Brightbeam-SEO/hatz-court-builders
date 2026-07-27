@@ -2,7 +2,7 @@ Top-rated court builder in Nampa, ID serving residential and commercial properti
 
 ## Why Your Nampa Court Builder Choice Matters
 
-Nampa court projects must account for uneven lots, summer sun, wind, drainage, and seasonal freeze-thaw changes. Without proper planning, courts can crack, hold water, and wear down fast.
+Nampa court projects must account for uneven lots, summer sun, wind, drainage, and seasonal freeze-thaw changes. Without proper planning, courts can crack, hold water, and wear down fast. [Hatz Court Builders](/) brings that planning discipline to Nampa residential and commercial court projects.
 
 ## Court Builder Nampa Services Made for Long-Term Play
 
@@ -34,6 +34,12 @@ We prepare specs, render details, game lines, site prep requirements, and materi
 
 ### Buildout and Play Review
 Our crew handles construction, installation, cleanup, and final review before handoff.
+
+## Areas We Serve in Nampa
+
+Nampa court projects show up near Downtown Nampa, Midway, and the South Nampa neighborhoods that drain toward Lake Lowell. Access and staging look different along Garrity Boulevard or Franklin Boulevard than they do on quieter streets off Happy Valley Road or Amity Road.
+
+We also plan residential and facility courts near Lakeview Park, the Ford Idaho Center, Northwest Nazarene University, and everyday stops like WinCo or Costco on the east side—always matching base prep and drainage to the lot, not just the zip code.
 
 ## Other Services
 

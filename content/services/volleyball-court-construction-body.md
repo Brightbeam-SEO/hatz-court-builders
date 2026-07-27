@@ -2,7 +2,7 @@
 
 But a good volleyball court is not just lines, posts, and a net. The court needs the right layout, surface, drainage, safety space, equipment placement, and long-term plan. If the court is not built correctly, players may deal with uneven footing, standing water, poor traction, worn lines, or tight playing space.
 
-Hatz Court Builders provides professional Volleyball Court Construction for residential and commercial projects. We build outdoor volleyball courts, school volleyball courts, club volleyball courts, park volleyball courts, HOA volleyball courts, resort volleyball courts, and multi-use volleyball courts.
+Experienced [best court builders in Boise and Scottsdale](/) provide professional Volleyball Court Construction for residential and commercial projects. We build outdoor volleyball courts, school volleyball courts, club volleyball courts, park volleyball courts, HOA volleyball courts, resort volleyball courts, and multi-use volleyball courts.
 
 Our team also handles [Basketball Court Construction](/basketball-court-construction/), [Pickleball Court Construction](/pickleball-court-construction/), [Tennis Court Construction](/tennis-court-construction/), [Futsal / Soccer Court Construction](/futsal-soccer-court-construction/), [Bocce Court Construction](/bocce-court-construction/), [Multi-Court Construction](/multi-court-construction/), [Custom Court Construction](/custom-court-construction/), [Commercial Court Construction](/commercial-court-construction/), [Court Expansion](/court-expansion/), resurfacing, repairs, striping, and [Court Design](/custom-court-design/).
 

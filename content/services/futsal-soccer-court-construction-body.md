@@ -2,7 +2,7 @@
 
 Unlike a full-size soccer field, a futsal or mini soccer court is designed for compact play. Players get more touches, faster passes, quick movement, and tighter control. That means the court surface, layout, fencing, goals, drainage, and safety space all need to be planned the right way.
 
-Hatz Court Builders provides professional Futsal / Soccer Court Construction for residential and commercial projects. We build futsal courts, mini soccer courts, training courts, school soccer courts, park courts, club courts, indoor courts, outdoor courts, and multi-use soccer courts.
+[Hatz Court Builders, Boise and Scottsdale](/) provides professional Futsal / Soccer Court Construction for residential and commercial projects. We build futsal courts, mini soccer courts, training courts, school soccer courts, park courts, club courts, indoor courts, outdoor courts, and multi-use soccer courts.
 
 Our team also handles [Basketball Court Construction](/basketball-court-construction/), [Pickleball Court Construction](/pickleball-court-construction/), [Tennis Court Construction](/tennis-court-construction/), [Volleyball Court Construction](/volleyball-court-construction/), [Bocce Court Construction](/bocce-court-construction/), [Multi-Court Construction](/multi-court-construction/), [Custom Court Construction](/custom-court-construction/), [Commercial Court Construction](/commercial-court-construction/), [Court Expansion](/court-expansion/), resurfacing, repairs, striping, and [Court Design](/custom-court-design/).
 

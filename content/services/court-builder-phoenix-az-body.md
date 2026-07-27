@@ -2,7 +2,7 @@ Best Court Builder Phoenix, AZ.
 
 ![Phoenix outdoor multi-sport court](/images/hcb/outdoor-multi-court-pickleball-basketball-tennis-boise-id-hatz-court-builders.jpg)
 
-Phoenix court projects must account for heat, UV exposure, drainage, and site prep. We build custom tennis, basketball, pickleball, bocce, padel, and multi-use courts for homes and facilities across the Valley.
+Phoenix court projects must account for heat, UV exposure, drainage, and site prep. We build custom tennis, basketball, pickleball, bocce, padel, and multi-use courts for homes and facilities across the Valley—using the same desert-ready approach as [court builders in Scottsdale](/).
 
 ## Court Builder Phoenix Services
 
@@ -12,6 +12,12 @@ Phoenix court projects must account for heat, UV exposure, drainage, and site pr
 - Court surface renewal
 - Nets, hoops, and hardware
 - Acrylic, hardwood, and modular surfaces
+
+## Areas We Serve in Phoenix
+
+Phoenix court work spans Arcadia and Biltmore estates, Downtown and Roosevelt Row lofts with tighter footprints, and larger Ahwatukee or Desert Ridge lots where sun exposure and monsoon drainage dominate the plan. Encanto and Central Corridor properties often need careful access planning around denser streets.
+
+Camelback Road, Central Avenue, Indian School Road, and the Loop 101 / Loop 202 corridors are common approach routes for our crews. We also build near Papago Park, Encanto Park, Chase Field, and retail hubs like Biltmore Fashion Park and Desert Ridge Marketplace when homeowners or facilities want courts that match daily neighborhood use.
 
 ## Other Services
 

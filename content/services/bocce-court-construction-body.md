@@ -2,7 +2,7 @@ A bocce court brings a social, low-impact recreation option to homes, HOAs, reso
 
 A quality bocce court is more than a flat strip of ground. The court needs the right length, width, side boards or borders, surface material, grading, and drainage so balls roll consistently and the playing area stays usable through the seasons.
 
-Hatz Court Builders provides professional Bocce Court Construction for residential and commercial projects. We build backyard bocce courts, HOA amenity courts, resort recreation courts, park courts, retirement community courts, and commercial outdoor bocce areas.
+Working with [court builders in Boise ID and Scottsdale AZ](/) means professional Bocce Court Construction for residential and commercial projects. We build backyard bocce courts, HOA amenity courts, resort recreation courts, park courts, retirement community courts, and commercial outdoor bocce areas.
 
 Our team also handles [Pickleball Court Construction](/pickleball-court-construction/), [Basketball Court Construction](/basketball-court-construction/), [Tennis Court Construction](/tennis-court-construction/), [Volleyball Court Construction](/volleyball-court-construction/), [Futsal / Soccer Court Construction](/futsal-soccer-court-construction/), [Multi-Court Construction](/multi-court-construction/), [Custom Court Construction](/custom-court-construction/), [Commercial Court Construction](/commercial-court-construction/), [Court Expansion](/court-expansion/), and [Court Design](/custom-court-design/).
 

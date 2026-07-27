@@ -2,7 +2,7 @@ Best Court Builder in Mesa, AZ.
 
 ![Mesa custom court layout and finish](/images/hcb/pickleball-court-green-and-red-surface-boise-id-hatz-court-builders.jpg)
 
-Mesa court projects need desert-ready planning for grade, drainage, and surface durability. Hatz Court Builders provides full-service design and construction for residential and commercial courts throughout Mesa and nearby communities.
+Mesa court projects need desert-ready planning for grade, drainage, and surface durability. [Hatz Court Builders in Scottsdale](/) provides full-service design and construction for residential and commercial courts throughout Mesa and nearby communities.
 
 ## Court Builder Mesa Services
 
@@ -12,6 +12,12 @@ Mesa court projects need desert-ready planning for grade, drainage, and surface 
 - Court surface renewal
 - Game equipment setup
 - Acrylic, hardwood, and modular surfaces
+
+## Areas We Serve in Mesa
+
+East Mesa and Las Sendas foothill lots play differently than Downtown Mesa or Dobson Ranch, where denser streets and older irrigation patterns change staging and drainage. Red Mountain neighborhoods and the Superstition Springs area often need UV-tough coatings and clear runoff paths before striping.
+
+Main Street, Baseline Road, Power Road, and Val Vista Drive are frequent service routes, with projects landing near Mesa Arts Center, Red Mountain Park, Usery Mountain Regional Park, Sloan Park, and shopping areas like Superstition Springs Center or Mesa Riverview.
 
 ## Other Services
 

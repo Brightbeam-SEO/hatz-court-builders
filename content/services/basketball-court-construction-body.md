@@ -2,7 +2,7 @@
 
 But a good basketball court is not just concrete, paint, and a hoop. The court needs the right foundation, surface, slope, drainage, striping, safety space, and equipment layout. If those details are missed, the court may crack, hold water, feel uneven, or wear down faster than expected.
 
-Hatz Court Builders provides professional Basketball Court Construction for residential and commercial projects. We build backyard basketball courts, half courts, full courts, school courts, HOA courts, park courts, indoor courts, outdoor courts, and multi-use courts.
+Professional Basketball Court Construction from experienced [court builders Boise and Scottsdale](/) covers residential and commercial projects. We build backyard basketball courts, half courts, full courts, school courts, HOA courts, park courts, indoor courts, outdoor courts, and multi-use courts.
 
 Our team also handles [Pickleball Court Construction](/pickleball-court-construction/), [Tennis Court Construction](/tennis-court-construction/), [Volleyball Court Construction](/volleyball-court-construction/), [Futsal / Soccer Court Construction](/futsal-soccer-court-construction/), [Bocce Court Construction](/bocce-court-construction/), [Multi-Court Construction](/multi-court-construction/), [Custom Court Construction](/custom-court-construction/), [Commercial Court Construction](/commercial-court-construction/), [Court Expansion](/court-expansion/), and [Court Design](/custom-court-design/).
 

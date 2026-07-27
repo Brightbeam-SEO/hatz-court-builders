@@ -2,7 +2,7 @@ Best court builder in Star, Idaho with honest work, durable materials, and custo
 
 ## The Court Builder Star Property Owners Choose for Better Planning
 
-Star properties can have grading shifts, irrigation flow, and clay-heavy soil that require real planning before court construction begins. Skipping these details can lead to settling, cracking, drainage issues, and poor play.
+Star properties can have grading shifts, irrigation flow, and clay-heavy soil that require real planning before court construction begins. Skipping these details can lead to settling, cracking, drainage issues, and poor play. Homeowners who research [court builders in Boise, Idaho](/) often want that same level of site planning for Star properties.
 
 ## Court Builder Star Projects Built With a Clear Plan
 
@@ -34,6 +34,12 @@ We finalize design, dimensions, striping, material selections, and install appro
 
 ### Build and Play Review
 Our team completes installation, cleanup, and final walkthrough before handoff.
+
+## Areas We Serve in Star
+
+Star projects range from compact Downtown Star yards to larger parcels off Floating Feather Road, Can-Ada Road, and Joplin Road. Highway 44 and Star Road remain the main approaches, but once you leave those corridors the grading and irrigation patterns change quickly.
+
+We plan courts near Hero's Park and the Star Riverwalk as carefully as we do for neighborhoods farther south toward Can-Ada—because clay-heavy soil and seasonal runoff do not care which side of town you live on.
 
 ## Other Services
 

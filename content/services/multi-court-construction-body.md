@@ -2,7 +2,7 @@ Many properties do not need a separate court for every sport. They need one well
 
 A multi-court project combines shared surfacing, smart striping, equipment planning, and safety space so pickleball, basketball, tennis practice, volleyball, futsal, or other sports can share the same area without feeling crowded or confusing.
 
-Hatz Court Builders specializes in Multi-Court Construction for homes, schools, HOAs, parks, clubs, and commercial facilities. We design and build multi-sport courts that make better use of available space and budget.
+[Hatz Court Builders Boise and Scottsdale](/) specializes in Multi-Court Construction for homes, schools, HOAs, parks, clubs, and commercial facilities. We design and build multi-sport courts that make better use of available space and budget.
 
 Our team also handles [Pickleball Court Construction](/pickleball-court-construction/), [Basketball Court Construction](/basketball-court-construction/), [Tennis Court Construction](/tennis-court-construction/), [Volleyball Court Construction](/volleyball-court-construction/), [Futsal / Soccer Court Construction](/futsal-soccer-court-construction/), [Bocce Court Construction](/bocce-court-construction/), [Custom Court Construction](/custom-court-construction/), [Commercial Court Construction](/commercial-court-construction/), [Court Expansion](/court-expansion/), and [Court Design](/custom-court-design/).
 

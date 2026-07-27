@@ -2,7 +2,7 @@ Trusted court builder in Middleton, ID for custom court design, construction, re
 
 ## Every Middleton Court Project Starts With the Right Plan
 
-Middleton properties can include open lots, slope variation, irrigation runoff, and soils that require careful grading and base prep before any surfacing is installed.
+Middleton properties can include open lots, slope variation, irrigation runoff, and soils that require careful grading and base prep before any surfacing is installed. [Hatz Court Builders in Boise](/) applies that same grading-first approach on Middleton court builds.
 
 ## Middleton Court Builders Focused on Lasting Play
 
@@ -34,6 +34,12 @@ We finalize court size, colors, striping, surface type, and materials.
 
 ### Buildout and Play Review
 We complete construction, cleanup, and final walkthrough to deliver a play-ready court.
+
+## Areas We Serve in Middleton
+
+Middleton builds often sit on open lots near Purple Sage, Canyon Creek, or the quieter streets west of Downtown Middleton, where irrigation lines and long grades matter as much as court size. Highway 44 and Middleton Road make for easy crew access, while Emmett Road and Purple Sage Road properties can need extra attention to slope and water flow.
+
+Whether you are near Middleton Place Park or closer to the small downtown corridor with its local shops and cafes, we size the court plan to the yard—not a generic Treasure Valley template.
 
 ## Other Services
 

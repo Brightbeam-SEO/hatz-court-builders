@@ -2,7 +2,7 @@ Best Boise court builders delivering custom athletic court construction across t
 
 ## What Can Go Wrong Without the Right Court Builder Boise
 
-Building an athletic court in Boise comes with challenges many property owners do not expect. Uneven ground, poor drainage, and extreme seasonal shifts can lead to cracking, surface wear, and expensive repairs when planning is skipped.
+Building an athletic court in Boise comes with challenges many property owners do not expect. Uneven ground, poor drainage, and extreme seasonal shifts can lead to cracking, surface wear, and expensive repairs when planning is skipped. [Hatz Court Builders](/) starts every Boise project by addressing those site conditions before construction begins.
 
 ## Court Builder Boise Solutions That Last
 
@@ -10,7 +10,7 @@ Building an athletic court in Boise comes with challenges many property owners d
 We design and build basketball, pickleball, tennis, and multi-sport courts around your space and how you want to play.
 
 ### Premium Materials and Craftsmanship
-Our Boise court systems use durable materials and precise installation for long-term safety and performance.
+Our Boise court systems use durable materials and precise installation for long-term safety and performance—the same standard homeowners expect from the [best court builders in Boise](/).
 
 ### Residential and Commercial Solutions
 From backyard projects to facilities, schools, and HOAs, we build clean layouts with dependable playability.
@@ -34,6 +34,12 @@ We finalize your design and complete site prep, surfacing, striping, and compone
 
 ### Execution and Walkthrough
 After installation, we complete a final walkthrough and leave your court clean and ready for play.
+
+## Areas We Serve in Boise
+
+Court builds around the North End and Hyde Park often need tighter lot planning than projects near Warm Springs Mesa or Barber Valley, where larger setbacks change drainage and orientation. We also work along the State Street and Broadway corridors, near the Boise River Greenbelt and Camel's Back Park, and with homeowners close to everyday spots like the Boise Co-op and BoDo.
+
+Southwest Boise and Collister properties near Overland Road or Vista Avenue get the same site-first approach—grading, surface choice, and access planned around how the lot actually sits.
 
 ## Other Services
 

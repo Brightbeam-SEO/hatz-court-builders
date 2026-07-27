@@ -2,7 +2,7 @@ Best court builder in Meridian, ID with licensed and insured custom court constr
 
 ## A Court Builder Meridian Property Owners Can Trust
 
-Meridian projects need proper grading, drainage planning, and surface selection to avoid cracking, settling, puddling, and early wear from Idaho heat and freeze-thaw cycles.
+Meridian projects need proper grading, drainage planning, and surface selection to avoid cracking, settling, puddling, and early wear from Idaho heat and freeze-thaw cycles. That is why many Meridian homeowners look for the same planning standards used by [court builders in Boise](/) across the Treasure Valley.
 
 ## Meridian Court Construction Built Around Long-Term Play
 
@@ -36,6 +36,12 @@ We build your layout, specs, render, material package, and installation plan.
 
 ### Buildout and Final Walkthrough
 Our team completes construction, surfacing, and cleanup so your court is play-ready.
+
+## Areas We Serve in Meridian
+
+From Paramount and Tuscany to Bridgetower and the neighborhoods around Lochsa Falls, Meridian lots vary enough that court layout has to follow the site—not a one-size template. Crews regularly plan projects near Eagle Road and Fairview Avenue, west toward Ten Mile Road, and around landmarks like Settlers Park, Kleiner Park, and The Village at Meridian.
+
+If your property sits closer to Downtown Meridian, SpurWing, or the Ustick Road corridor, we still start with slope, irrigation runoff, and surface selection before any striping goes down.
 
 ## Other Services
 

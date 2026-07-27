@@ -2,7 +2,7 @@ Best Court Builder Scottsdale, AZ.
 
 ![Scottsdale custom court project](/images/hcb/outdoor-multi-court-acrylic-surfacing-boise-id-hatz-court-builders.jpg)
 
-Scottsdale properties need court plans built around heat, drainage, and space. Hatz Court Builders handles full-service design and construction with sport-specific layouts, desert-ready prep, and clean game lines for long-term play.
+Scottsdale properties need court plans built around heat, drainage, and space. [Hatz Court Builders](/) handles full-service design and construction with sport-specific layouts, desert-ready prep, and clean game lines for long-term play.
 
 ## Court Builder Scottsdale Services
 
@@ -12,6 +12,12 @@ Scottsdale properties need court plans built around heat, drainage, and space. H
 - Resurface and restore
 - Court equipment setup
 - Acrylic, hardwood, and modular surfaces
+
+## Areas We Serve in Scottsdale
+
+Old Town Scottsdale and the Waterfront ask for compact layouts, while McCormick Ranch, Gainey Ranch, and DC Ranch usually offer more room for multi-sport striping and equipment. North Scottsdale projects near Pinnacle Peak or Desert Mountain also need heat-ready surfacing and smart drainage for monsoon runoff.
+
+We regularly plan courts along Scottsdale Road, Shea Boulevard, Frank Lloyd Wright Boulevard, and Pima Road—near landmarks like Scottsdale Fashion Square, the McDowell Sonoran Preserve, and Taliesin West, and close to everyday spots from Mayo Clinic Scottsdale to neighborhood cafes around Old Town.
 
 ## Other Services
 

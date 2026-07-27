@@ -2,7 +2,7 @@
 
 A quality court requires more than painted lines on pavement. Proper grading, drainage, surfacing, fencing, lighting, and court design all play a role in how the court performs over time. When these elements are overlooked, courts can develop cracks, drainage issues, fading surfaces, and inconsistent play conditions.
 
-Hatz Court Builders specializes in Pickleball Court Construction, [Basketball Court Construction](/basketball-court-construction/), [Tennis Court Construction](/tennis-court-construction/), [Volleyball Court Construction](/volleyball-court-construction/), [Futsal / Soccer Court Construction](/futsal-soccer-court-construction/), [Bocce Court Construction](/bocce-court-construction/), [Multi-Court Construction](/multi-court-construction/), [Custom Court Construction](/custom-court-construction/), [Commercial Court Construction](/commercial-court-construction/), [Court Expansion](/court-expansion/), and [Court Design](/custom-court-design/).
+[Hatz Court Builders](/) specializes in Pickleball Court Construction, [Basketball Court Construction](/basketball-court-construction/), [Tennis Court Construction](/tennis-court-construction/), [Volleyball Court Construction](/volleyball-court-construction/), [Futsal / Soccer Court Construction](/futsal-soccer-court-construction/), [Bocce Court Construction](/bocce-court-construction/), [Multi-Court Construction](/multi-court-construction/), [Custom Court Construction](/custom-court-construction/), [Commercial Court Construction](/commercial-court-construction/), [Court Expansion](/court-expansion/), and [Court Design](/custom-court-design/).
 
 Whether you need a backyard pickleball court, a multi-sport recreation area, a school athletic facility, or a commercial sports complex, we help create courts designed around your space, goals, and budget.
 
@@ -10,7 +10,7 @@ Whether you need a backyard pickleball court, a multi-sport recreation area, a s
 
 Choosing the right court builder is one of the most important decisions in any sports court project. A court is a complete system that includes site preparation, drainage, surfacing, striping, fencing, lighting, and equipment.
 
-Hatz Court Builders works with residential and commercial clients to create courts that are built for performance and longevity. We construct courts for homeowners, schools, HOAs, parks, athletic clubs, recreation centers, and commercial properties.
+Homeowners comparing [court builders in Boise and Scottsdale](/) often want a team that works with residential and commercial clients to create courts built for performance and longevity. We construct courts for homeowners, schools, HOAs, parks, athletic clubs, recreation centers, and commercial properties.
 
 A professional court builder helps answer important questions such as:
 
