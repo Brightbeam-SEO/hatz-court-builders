@@ -6,9 +6,11 @@ import fs from "node:fs";
 import path from "node:path";
 import sharp from "sharp";
 
-const SOURCE_DIR = path.resolve("c:/Users/Lenovo/Downloads/HCB Photos");
+const SOURCE_DIR = path.resolve(
+  "c:/Users/Admin/Downloads/drive-download-20260730T020142Z-1-001",
+);
 const OUT_DIR = path.resolve("public/images/hcb");
-const SUFFIX = "Boise ID - Hatz Court Builders";
+const SUFFIX = "Hatz Court Builders";
 const MAX_BYTES = 3 * 1024 * 1024;
 const MAX_WIDTH = 4000;
 const JPEG_QUALITY = 92;
@@ -29,6 +31,7 @@ function extractDescriptionFromFilename(name) {
   const normalizedName = normalizeDashes(name);
   const base = normalizeDashes(path.parse(normalizedName).name);
   const suffixPatterns = [
+    /\s*-\s*Hatz Court Builders\s*$/i,
     /\s*-\s*Boise ID\s*-\s*Hatz Court Builders\s*$/i,
     /\s*-\s*Boise, Idaho\s*-\s*Hatz Court Builders\s*$/i,
   ];

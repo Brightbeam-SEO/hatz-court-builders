@@ -9,9 +9,8 @@ export const GALLERY_HERO_IMAGE = gpmPick("outdoor multi court pickleball basket
 /** Visually redundant photos omitted from the gallery collage. */
 const GALLERY_DUPLICATE_FRAGMENTS = [
   "backyard-pickleball-basketball-court-blue-surfacing",
-  "indoor-acrylic-basketball-pickleball-court-wall-hoop",
-  "indoor-hardwood-basketball-court-wall-hoop",
-  "indoor-hardwood-pickleball-basketball-court-interior",
+  "indoor-hardwood-basketball-court-wall-hoop-mount",
+  "double-outdoor-pickleball-court-construction-blue-green",
 ] as const;
 
 function pathsMatchingFragments(fragments: readonly string[], pool: readonly string[]): string[] {
@@ -38,19 +37,19 @@ export function buildGalleryCollageItems(): GalleryImageItem[] {
   const paths = [...GPM_GALLERY_IMAGE_PATHS];
 
   const highlightPaths = [
-    paths.find((p) => p.includes("modular-court-tile-custom-logo"))!,
-    paths.find((p) => p.includes("backyard-pickleball-basketball-dual-sport"))!,
-    paths.find((p) => p.includes("outdoor-multi-court-acrylic"))!,
-    paths.find((p) => p.includes("tennis-court-resurface-blue-and-green"))!,
+    paths.find((p) => p.includes("modular-court-tile-custom-logo-branding"))!,
+    paths.find((p) => p.includes("backyard-pickleball-basketball-dual-sport-court"))!,
+    paths.find((p) => p.includes("outdoor-multi-court-acrylic-surfacing"))!,
+    paths.find((p) => p.includes("tennis-court-resurface-blue-and-green-acrylic"))!,
   ].filter(Boolean);
 
   const pinnedTop = [
-    paths.find((p) => p.includes("basketball-tile-court-custom-logo"))!,
+    paths.find((p) => p.includes("basketball-tile-court-custom-logo-branding"))!,
     paths.find((p) => p.includes("pickleball-court-backyard-modular-tile"))!,
     paths.find((p) => p.includes("indoor-hardwood-basketball-court-hoops-gym-interior"))!,
-    paths.find((p) => p.includes("tennis-court-side-by-side-before-after"))!,
+    paths.find((p) => p.includes("tennis-court-side-by-side-before-after-repair"))!,
     paths.find((p) => p.includes("backyard-gray-basketball-court-installation"))!,
-    paths.find((p) => p.includes("multicourt-modular-tile-backyard-installation"))!,
+    paths.find((p) => p.includes("aerial-commercial-pickleball-court-construction-six-court-blue-green"))!,
   ].filter(Boolean);
 
   const duplicatePaths = pathsMatchingFragments(GALLERY_DUPLICATE_FRAGMENTS, paths);
@@ -73,10 +72,10 @@ export function buildGalleryCollageItems(): GalleryImageItem[] {
 export function buildGalleryHighlightItems(): GalleryImageItem[] {
   const paths = [...GPM_GALLERY_IMAGE_PATHS];
   const highlightPaths = [
-    paths.find((p) => p.includes("modular-court-tile-custom-logo"))!,
-    paths.find((p) => p.includes("backyard-pickleball-basketball-dual-sport"))!,
-    paths.find((p) => p.includes("outdoor-multi-court-acrylic"))!,
-    paths.find((p) => p.includes("tennis-court-resurface-blue-and-green"))!,
+    paths.find((p) => p.includes("modular-court-tile-custom-logo-branding"))!,
+    paths.find((p) => p.includes("backyard-pickleball-basketball-dual-sport-court"))!,
+    paths.find((p) => p.includes("outdoor-multi-court-acrylic-surfacing"))!,
+    paths.find((p) => p.includes("tennis-court-resurface-blue-and-green-acrylic"))!,
   ].filter(Boolean);
 
   return highlightPaths.map(toGalleryItem);
