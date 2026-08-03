@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { BUSINESS } from "@/lib/business";
 import { COURT_CONSTRUCTION_NAV_LINKS } from "@/lib/court-construction-nav";
+import { COURT_SURFACES_NAV_LINKS } from "@/lib/court-surfaces-nav";
 import { SERVICE_AREA_NAV_GROUPS } from "@/lib/service-area-nav";
 import {
   headerMobileAccordionPanelClass,
@@ -130,6 +131,10 @@ export function MobileNavMenu({ open, onClose }: MobileNavMenuProps) {
               {
                 label: "Court Construction",
                 links: COURT_CONSTRUCTION_NAV_LINKS.map(({ label, href }) => ({ label, href })),
+              },
+              {
+                label: "Court Surfaces & Systems",
+                links: COURT_SURFACES_NAV_LINKS.map(({ label, href }) => ({ label, href })),
               },
             ]}
             isOpen={openSections.has("services")}

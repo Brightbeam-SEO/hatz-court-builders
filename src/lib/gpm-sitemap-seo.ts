@@ -96,6 +96,41 @@ export const GPM_SITEMAP_SEO: Record<
     description:
       "Custom court design services to plan layout, materials, and functionality for your project. Start your build right. Contact us.",
   },
+  "/asphalt-court-installation/": {
+    title: "Asphalt Court Installation | Durable Bases | Hatz",
+    description:
+      "Professional asphalt court installation for tennis, pickleball, basketball, and multi-use courts. Built for drainage and longevity. Get a free quote.",
+  },
+  "/concrete-court-installation/": {
+    title: "Concrete Court Installation | Stable Slabs | Hatz",
+    description:
+      "Concrete court installation for backyard and commercial sports courts. Precision slabs built for coatings, modular systems, and heavy use. Contact us today.",
+  },
+  "/acrylic-court-systems/": {
+    title: "Acrylic Court Systems | Color & Performance | Hatz",
+    description:
+      "Acrylic court systems for tennis, pickleball, and multi-use courts. Professional coatings for color, grip, and weather resistance. Request a quote.",
+  },
+  "/synthetic-courts/": {
+    title: "Synthetic Courts | Turf & Specialty Surfaces | Hatz",
+    description:
+      "Synthetic court installation for training, multi-sport, and specialty play areas. Durable turf and synthetic systems for homes and facilities. Contact us.",
+  },
+  "/modular-court-surfaces/": {
+    title: "Modular Court Surfaces | Tile Systems | Hatz",
+    description:
+      "Modular court surfaces and interlocking tile systems for backyard and commercial courts. Fast install, great drainage, multi-sport ready. Get a quote.",
+  },
+  "/cushioned-court-systems/": {
+    title: "Cushioned Court Systems | Player Comfort | Hatz",
+    description:
+      "Cushioned court systems that reduce joint impact for tennis, pickleball, and multi-use play. Comfort-focused acrylic layers. Contact Hatz today.",
+  },
+  "/indoor-sports-flooring/": {
+    title: "Indoor Sports Flooring | Gym & Court Floors | Hatz",
+    description:
+      "Indoor sports flooring for gyms, schools, and indoor courts. Durable flooring systems for basketball, multi-sport, and training spaces. Get a quote.",
+  },
 };
 
 export function getGpmSitemapSeo(path: string): (typeof GPM_SITEMAP_SEO)[string] | undefined {

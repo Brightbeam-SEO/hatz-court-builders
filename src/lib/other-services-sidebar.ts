@@ -2,6 +2,8 @@ import { getBoiseServiceSidebarGroups, isBoiseServiceSlug } from "@/lib/boise-se
 import type { OtherServicesNavGroup } from "@/lib/boise-service-nav";
 import { getCourtConstructionSidebarLinks } from "@/lib/court-construction-sidebar";
 import { isCourtConstructionSlug } from "@/lib/court-construction-nav";
+import { getCourtSurfacesSidebarLinks } from "@/lib/court-surfaces-sidebar";
+import { isCourtSurfacesSlug } from "@/lib/court-surfaces-nav";
 import { getCityPropertySidebarLinks } from "@/lib/city-massage-nav";
 import { getNampaServiceSidebarGroups, isNampaServiceSlug } from "@/lib/nampa-service-nav";
 import { getPropertyManagementServiceSidebarLinks } from "@/lib/property-management-service-sidebar";
@@ -28,6 +30,9 @@ export function getOtherServicesSidebarLinks(slug: string) {
   }
   if (isCourtConstructionSlug(slug)) {
     return getCourtConstructionSidebarLinks(slug);
+  }
+  if (isCourtSurfacesSlug(slug)) {
+    return getCourtSurfacesSidebarLinks(slug);
   }
   if (isPropertyManagementServiceSlug(slug)) {
     return getPropertyManagementServiceSidebarLinks(slug);

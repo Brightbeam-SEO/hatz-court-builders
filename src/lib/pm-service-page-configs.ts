@@ -208,6 +208,42 @@ function courtConstructionServiceConfig(input: {
   });
 }
 
+function courtSurfacesServiceConfig(input: {
+  slug: string;
+  serviceName: string;
+  metaTitle: string;
+  metaDescription: string;
+  heroTitle: string;
+  heroSubtitle: string;
+  heroImageFragment: string;
+  faqHeading: string;
+  faqItems: TreasureValleyFaqItem[];
+}): TreasureValleyPressurePageConfig {
+  return pmServiceConfig({
+    slug: input.slug,
+    serviceName: input.serviceName,
+    metaTitle: input.metaTitle,
+    metaDescription: input.metaDescription,
+    heroTitle: input.heroTitle,
+    heroSubtitle: input.heroSubtitle,
+    heroImageFragment: input.heroImageFragment,
+    bottomContactHeading: `Get a Quote for ${input.serviceName}`,
+    bottomContactSubtext:
+      "Tell us about your court, sport mix, and site conditions — we’ll recommend the right surface system and install plan for your property.",
+    faqHeading: input.faqHeading,
+    faqIntro: "Straight answers from our court surfaces team.",
+    timelineHeading: "How Our Court Surface Process Works",
+    timelineIntro: "From site review to play-ready finish — planned for performance and longevity.",
+    timelineSteps: [
+      { title: "Site & Surface Assessment", body: "We evaluate the base, drainage, existing pavement or slab, and how the court will be used." },
+      { title: "Surface System Plan", body: "We recommend materials, cushion layers, colors, and striping matched to your sport and climate." },
+      { title: "Prep & Installation", body: "Our crew handles repairs, leveling, installation, coatings, and finish details." },
+      { title: "Final Inspection", body: "We walk the finished surface with you and confirm the court is ready for play." },
+    ],
+    faqItems: input.faqItems,
+  });
+}
+
 export const PM_BASKETBALL_COURT_CONSTRUCTION_CONFIG = courtConstructionServiceConfig({
   slug: "basketball-court-construction",
   serviceName: "Basketball Court Construction",
@@ -779,6 +815,321 @@ export const PM_CUSTOM_COURT_DESIGN_CONFIG = courtConstructionServiceConfig({
       question: "Do you handle construction after design?",
       answer:
         "Yes. Hatz Court Builders can take a project from Custom Court Design through full construction, surfacing, striping, and final walkthrough.",
+    },
+  ],
+});
+
+export const PM_ASPHALT_COURT_INSTALLATION_CONFIG = courtSurfacesServiceConfig({
+  slug: "asphalt-court-installation",
+  serviceName: "Asphalt Court Installation",
+  metaTitle: "Asphalt Court Installation | Durable Bases | Hatz",
+  metaDescription:
+    "Professional asphalt court installation for tennis, pickleball, basketball, and multi-use courts. Built for drainage and longevity. Get a free quote.",
+  heroTitle: "Asphalt Court Installation in Boise & Scottsdale",
+  heroSubtitle:
+    "Asphalt court installation for residential and commercial projects — a durable paved base for acrylic coatings, multi-sport layouts, and long-term outdoor play.",
+  heroImageFragment: "tennis court resurface blue and green acrylic",
+  faqHeading: "Asphalt Court Installation Questions",
+  faqItems: [
+    {
+      question: "What sports work on an asphalt court?",
+      answer:
+        "Asphalt is a strong base for tennis, pickleball, basketball, volleyball, futsal, and multi-use recreation courts when paired with the right coating or surface system.",
+    },
+    {
+      question: "How long does asphalt court installation take?",
+      answer:
+        "Timelines vary with site prep, weather, and curing. Many residential projects move from prep to play-ready coating over several weeks; larger commercial builds can take longer.",
+    },
+    {
+      question: "Do you install asphalt only, or full court systems?",
+      answer:
+        "We can install the asphalt base and complete the court with acrylic coatings, cushion systems, striping, fencing, and equipment as needed.",
+    },
+    {
+      question: "Is asphalt better than concrete for outdoor courts?",
+      answer:
+        "Both can work well. Asphalt is often preferred for outdoor sport courts because it can be easier to slope for drainage and pair with acrylic surface systems. We recommend based on your site and sport.",
+    },
+    {
+      question: "What does asphalt court installation typically cost?",
+      answer:
+        "Cost depends on size, grade work, drainage, thickness, access, and whether coatings or fencing are included. We provide project-specific quotes after a site review.",
+    },
+    {
+      question: "Do you serve Idaho and Arizona?",
+      answer:
+        "Yes. Hatz Court Builders installs asphalt courts for homeowners, schools, HOAs, and commercial properties across the Boise and Scottsdale service areas.",
+    },
+  ],
+});
+
+export const PM_CONCRETE_COURT_INSTALLATION_CONFIG = courtSurfacesServiceConfig({
+  slug: "concrete-court-installation",
+  serviceName: "Concrete Court Installation",
+  metaTitle: "Concrete Court Installation | Stable Slabs | Hatz",
+  metaDescription:
+    "Concrete court installation for backyard and commercial sports courts. Precision slabs built for coatings, modular systems, and heavy use. Contact us today.",
+  heroTitle: "Concrete Court Installation in Boise & Scottsdale",
+  heroSubtitle:
+    "Concrete court installation for homes, schools, HOAs, and commercial facilities — stable slabs designed for acrylic systems, modular surfaces, and multi-sport play.",
+  heroImageFragment: "pickleball post tension concrete commercial court",
+  faqHeading: "Concrete Court Installation Questions",
+  faqItems: [
+    {
+      question: "When is concrete the right choice for a court?",
+      answer:
+        "Concrete is a strong option when you want a rigid slab, indoor-capable structure, or a base for modular tiles, acrylic coatings, or specialty indoor sports flooring.",
+    },
+    {
+      question: "Can concrete courts be used outdoors?",
+      answer:
+        "Yes. Outdoor concrete courts need proper slope, joints, drainage, and a suitable surface coating or overlay for safe, consistent play.",
+    },
+    {
+      question: "Do you pour post-tension concrete courts?",
+      answer:
+        "We plan concrete court slabs around your sport, climate, and site. Options may include reinforced or specialty slab systems when the project calls for them.",
+    },
+    {
+      question: "How long before I can play on a concrete court?",
+      answer:
+        "Concrete needs curing time before coatings or overlays are applied. Total timeline depends on slab size, weather, and the finish system you choose.",
+    },
+    {
+      question: "What is the typical price range?",
+      answer:
+        "Pricing depends on slab thickness, reinforcement, site grading, drainage, finish system, and accessories like fencing or lighting. We quote after evaluating the property.",
+    },
+    {
+      question: "Can you resurface an existing concrete court?",
+      answer:
+        "Often yes. We can repair cracks, level low spots, and apply acrylic, cushioned, modular, or indoor surface systems over a sound concrete base.",
+    },
+  ],
+});
+
+export const PM_ACRYLIC_COURT_SYSTEMS_CONFIG = courtSurfacesServiceConfig({
+  slug: "acrylic-court-systems",
+  serviceName: "Acrylic Court Systems",
+  metaTitle: "Acrylic Court Systems | Color & Performance | Hatz",
+  metaDescription:
+    "Acrylic court systems for tennis, pickleball, and multi-use courts. Professional coatings for color, grip, and weather resistance. Request a quote.",
+  heroTitle: "Acrylic Court Systems in Boise & Scottsdale",
+  heroSubtitle:
+    "Acrylic court systems that deliver color, traction, and weather-ready performance over asphalt or concrete bases for residential and commercial courts.",
+  heroImageFragment: "tennis court resurface blue and green acrylic",
+  faqHeading: "Acrylic Court Systems Questions",
+  faqItems: [
+    {
+      question: "What are acrylic court systems used for?",
+      answer:
+        "Acrylic systems are widely used on tennis, pickleball, basketball, and multi-use outdoor courts for color coating, texture, and consistent ball response.",
+    },
+    {
+      question: "Can acrylic be applied over existing courts?",
+      answer:
+        "Yes, when the asphalt or concrete base is structurally sound. We repair cracks and surface issues before applying new acrylic layers.",
+    },
+    {
+      question: "How long do acrylic court coatings last?",
+      answer:
+        "Lifespan depends on climate, usage, and maintenance. Many courts perform well for years before needing a refresh coat or full resurfacing.",
+    },
+    {
+      question: "Do acrylic systems include cushion layers?",
+      answer:
+        "Standard acrylic is a hard-court finish. For more shock absorption, we can pair acrylic coatings with cushioned court systems.",
+    },
+    {
+      question: "What colors and line options are available?",
+      answer:
+        "We offer a range of court colors and sport-specific striping, including multi-sport line layouts for shared recreation spaces.",
+    },
+    {
+      question: "How much do acrylic court systems cost?",
+      answer:
+        "Cost varies with court size, number of coats, prep work, cushion options, and striping complexity. We provide clear quotes after a site assessment.",
+    },
+  ],
+});
+
+export const PM_SYNTHETIC_COURTS_CONFIG = courtSurfacesServiceConfig({
+  slug: "synthetic-courts",
+  serviceName: "Synthetic Courts",
+  metaTitle: "Synthetic Courts | Turf & Specialty Surfaces | Hatz",
+  metaDescription:
+    "Synthetic court installation for training, multi-sport, and specialty play areas. Durable turf and synthetic systems for homes and facilities. Contact us.",
+  heroTitle: "Synthetic Courts in Boise & Scottsdale",
+  heroSubtitle:
+    "Synthetic court surfaces for training, multi-sport recreation, and specialty play — engineered for consistent footing, lower maintenance, and year-round use.",
+  heroImageFragment: "multicourt modular tile backyard installation",
+  faqHeading: "Synthetic Courts Questions",
+  faqItems: [
+    {
+      question: "What are synthetic courts best for?",
+      answer:
+        "Synthetic systems are a strong fit for soccer training areas, multi-sport pads, specialty recreation courts, and projects that need consistent footing with manageable upkeep.",
+    },
+    {
+      question: "Are synthetic courts only for outdoor use?",
+      answer:
+        "No. Some synthetic systems work indoors as well. For dedicated indoor athletic spaces, we also install indoor sports flooring systems.",
+    },
+    {
+      question: "How do synthetic courts compare to acrylic?",
+      answer:
+        "Acrylic is typically preferred for traditional hard-court tennis and pickleball. Synthetic surfaces shine when you want turf-like play, training versatility, or a different sport feel.",
+    },
+    {
+      question: "What maintenance do synthetic courts need?",
+      answer:
+        "Maintenance usually includes brushing, debris removal, and periodic inspections. Exact care depends on the product and how heavily the court is used.",
+    },
+    {
+      question: "Can synthetic courts include custom markings?",
+      answer:
+        "Yes. We can plan sport lines, logos, and multi-use layouts into the design so the court supports the activities you need most.",
+    },
+    {
+      question: "What is the typical project timeline?",
+      answer:
+        "Timelines depend on base prep, product selection, and weather. Many synthetic court installs complete faster than full pavement builds once the base is ready.",
+    },
+  ],
+});
+
+export const PM_MODULAR_COURT_SURFACES_CONFIG = courtSurfacesServiceConfig({
+  slug: "modular-court-surfaces",
+  serviceName: "Modular Court Surfaces",
+  metaTitle: "Modular Court Surfaces | Tile Systems | Hatz",
+  metaDescription:
+    "Modular court surfaces and interlocking tile systems for backyard and commercial courts. Fast install, great drainage, multi-sport ready. Get a quote.",
+  heroTitle: "Modular Court Surfaces in Boise & Scottsdale",
+  heroSubtitle:
+    "Modular court surfaces with interlocking tiles for backyard basketball, pickleball, multi-sport pads, and commercial recreation — fast to install and easy to refresh.",
+  heroImageFragment: "basketball tile court modular hoop goal",
+  faqHeading: "Modular Court Surfaces Questions",
+  faqItems: [
+    {
+      question: "What is a modular court surface?",
+      answer:
+        "Modular court surfaces use interlocking sport tiles installed over a prepared base. They create a playable court with built-in drainage and a sport-ready texture.",
+    },
+    {
+      question: "Can modular tiles go over existing concrete or asphalt?",
+      answer:
+        "Often yes. If the base is reasonably level and structurally sound, modular tiles can be a smart upgrade without a full rebuild.",
+    },
+    {
+      question: "Are modular courts good for basketball and pickleball?",
+      answer:
+        "Yes. Modular systems are popular for backyard basketball, pickleball, and multi-use recreation courts where flexibility and drainage matter.",
+    },
+    {
+      question: "How long does modular court installation take?",
+      answer:
+        "Once the base is ready, tile installation is often faster than poured or coated systems. Exact timing depends on court size and site access.",
+    },
+    {
+      question: "Can damaged tiles be replaced later?",
+      answer:
+        "Yes. One advantage of modular systems is that individual tiles can often be swapped without resurfacing the entire court.",
+    },
+    {
+      question: "What does a modular court typically cost?",
+      answer:
+        "Pricing depends on tile system, court size, base condition, borders, and striping. We quote after reviewing your site and sport goals.",
+    },
+  ],
+});
+
+export const PM_CUSHIONED_COURT_SYSTEMS_CONFIG = courtSurfacesServiceConfig({
+  slug: "cushioned-court-systems",
+  serviceName: "Cushioned Court Systems",
+  metaTitle: "Cushioned Court Systems | Player Comfort | Hatz",
+  metaDescription:
+    "Cushioned court systems that reduce joint impact for tennis, pickleball, and multi-use play. Comfort-focused acrylic layers. Contact Hatz today.",
+  heroTitle: "Cushioned Court Systems in Boise & Scottsdale",
+  heroSubtitle:
+    "Cushioned court systems that add shock absorption under acrylic color coats — built for player comfort on tennis, pickleball, and multi-use outdoor courts.",
+  heroImageFragment: "double pickleball court blue green surface",
+  faqHeading: "Cushioned Court Systems Questions",
+  faqItems: [
+    {
+      question: "What is a cushioned court system?",
+      answer:
+        "A cushioned court system adds resilient layers beneath acrylic color coats to absorb impact, improve comfort, and support longer play sessions.",
+    },
+    {
+      question: "Who benefits most from cushioned courts?",
+      answer:
+        "Players who want softer landings — recreational athletes, frequent tennis or pickleball players, clubs, and facilities focused on comfort and return play.",
+    },
+    {
+      question: "Can cushioning be added to an existing court?",
+      answer:
+        "Yes, when the asphalt or concrete base is in good condition. We repair the surface first, then install the cushion and acrylic finish layers.",
+    },
+    {
+      question: "Does cushioning change ball bounce?",
+      answer:
+        "Cushion layers can slightly soften the feel underfoot while still delivering a predictable hard-court response when installed correctly.",
+    },
+    {
+      question: "How much more does a cushioned system cost?",
+      answer:
+        "Cushioned systems cost more than standard acrylic because of the added layers and labor. The upgrade is often worth it for comfort and player retention.",
+    },
+    {
+      question: "Are cushioned courts only for tennis?",
+      answer:
+        "No. They are also popular for pickleball and multi-use outdoor courts where players want a more forgiving surface.",
+    },
+  ],
+});
+
+export const PM_INDOOR_SPORTS_FLOORING_CONFIG = courtSurfacesServiceConfig({
+  slug: "indoor-sports-flooring",
+  serviceName: "Indoor Sports Flooring",
+  metaTitle: "Indoor Sports Flooring | Gym & Court Floors | Hatz",
+  metaDescription:
+    "Indoor sports flooring for gyms, schools, and indoor courts. Durable flooring systems for basketball, multi-sport, and training spaces. Get a quote.",
+  heroTitle: "Indoor Sports Flooring in Boise & Scottsdale",
+  heroSubtitle:
+    "Indoor sports flooring for gyms, schools, clubs, and training facilities — performance floors built for basketball, multi-sport play, and heavy daily use.",
+  heroImageFragment: "outdoor multi court pickleball basketball",
+  faqHeading: "Indoor Sports Flooring Questions",
+  faqItems: [
+    {
+      question: "What types of indoor sports flooring do you install?",
+      answer:
+        "We install indoor systems suited to basketball, multi-sport gyms, training spaces, and recreation facilities — including modular and specialty athletic flooring options.",
+    },
+    {
+      question: "Can indoor flooring support multiple sports?",
+      answer:
+        "Yes. Many gym and recreation floors are designed for basketball, volleyball, futsal, and multi-sport striping in one space.",
+    },
+    {
+      question: "How long does indoor sports flooring installation take?",
+      answer:
+        "Indoor timelines depend on slab condition, product type, and facility access. Many projects are scheduled around school or club calendars to minimize downtime.",
+    },
+    {
+      question: "Do you work in existing gyms and new builds?",
+      answer:
+        "Yes. We install flooring in new construction and upgrade existing indoor athletic spaces when the slab and moisture conditions are suitable.",
+    },
+    {
+      question: "What maintenance does indoor sports flooring need?",
+      answer:
+        "Most systems need regular cleaning, periodic inspections, and care guidelines specific to the flooring product. We review maintenance expectations before install.",
+    },
+    {
+      question: "What affects indoor sports flooring cost?",
+      answer:
+        "Cost depends on square footage, flooring system, moisture mitigation, line striping, logos, and any required floor prep. We provide project-specific pricing.",
     },
   ],
 });

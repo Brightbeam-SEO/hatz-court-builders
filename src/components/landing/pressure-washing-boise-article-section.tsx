@@ -12,6 +12,7 @@ import { HeavyEquipmentFleetGallery } from "@/components/landing/heavy-equipment
 import { OtherServicesNav } from "@/components/landing/other-services-nav";
 import { cityPagePath, isCityPropertyPageSlug } from "@/lib/city-property-pages";
 import { isCourtConstructionSlug } from "@/lib/court-construction-nav";
+import { isCourtSurfacesSlug } from "@/lib/court-surfaces-nav";
 import {
   getOtherServicesSidebarGroups,
   getOtherServicesSidebarLinks,
@@ -269,7 +270,9 @@ export function PressureWashingBoiseArticleSection({
                       wrapperClassName={hasWhatWeOptimize ? "mt-8" : undefined}
                     />
                   ) : null}
-                  {cityPage && !isCourtConstructionSlug(cityPage.slug) ? (
+                  {cityPage &&
+                  !isCourtConstructionSlug(cityPage.slug) &&
+                  !isCourtSurfacesSlug(cityPage.slug) ? (
                     <BoiseMapEmbed className="mt-12" src={mapEmbedSrc} title={mapIframeTitle} />
                   ) : null}
                   {cityPage?.serviceHighlightCards?.length ? (
