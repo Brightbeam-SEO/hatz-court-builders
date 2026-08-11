@@ -49,9 +49,10 @@ export default defineConfig({
       },
       {
         id: "locationPage-service",
-        title: "Service page (court construction)",
+        title: "Service page (court construction / surfaces)",
         schemaType: "locationPage",
-        description: "Court construction service landing — slug e.g. basketball-court-construction",
+        description:
+          "Court construction or surfaces service landing — slug e.g. basketball-court-construction or acrylic-court-systems",
         value: () => ({
           layoutTemplate: "pressureWashingBoise",
           pageCategory: "service",

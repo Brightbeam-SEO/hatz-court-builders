@@ -2,19 +2,19 @@ Concrete court installation creates a rigid, long-lasting slab for outdoor and i
 
 [Hatz Court Builders](/) designs and installs concrete court slabs as part of complete court projects. A well-poured slab is only the start — the finish system matters just as much, whether you plan [color-coated acrylic systems](/acrylic-court-systems/), [cushioned hard-court layers](/cushioned-court-systems/), [modular sport tiles](/modular-court-surfaces/), or [indoor sports flooring](/indoor-sports-flooring/) in an enclosed gym.
 
-## Who Concrete Court Installation Is For
+## Concrete Court Slabs for Backyard & Facility Builds
 
 Concrete works for residential backyard courts, school athletic buildings and outdoor pads, HOA amenities, club facilities, and commercial recreation spaces. It is especially useful when you need a level, durable structure that can accept multiple finish systems over the life of the court.
 
 In colder Idaho winters and hot Arizona summers, slab design, joints, and drainage details help the court stay flatter and more reliable under changing temperatures.
 
-## When You Need Concrete Sooner Rather Than Later
+## When a Failing Pad Needs a New Concrete Court Slab
 
 Concrete court installation becomes urgent when an existing slab is badly cracked, heaved, or unsafe — or when a new facility cannot open without a playable floor. Soft spots, trip hazards at joints, and coatings that fail repeatedly often mean the underlying concrete needs repair or replacement.
 
 If your gym, recreation building, or outdoor court pad is delaying programming, we assess whether localized repair, overlay systems, or a new concrete court installation is the smarter path.
 
-## Common Problems Concrete Court Installation Addresses
+## Levelness, Joints & Finish Issues Concrete Courts Solve
 
 Clients typically come to us when they face:
 
@@ -27,7 +27,7 @@ Clients typically come to us when they face:
 
 Framing the fix around the court — not just general concrete work — keeps the project aligned with playability and long-term surface performance.
 
-## What’s Included in Concrete Court Installation
+## What’s Involved in Concrete Court Slab Installation
 
 Projects may include:
 
@@ -41,30 +41,30 @@ Projects may include:
 
 Not every property needs the same slab. Thickness, reinforcement, and finish plan are matched to sport mix and indoor vs outdoor use.
 
-## Why Professional Concrete Court Installation Matters
+## Why Court-Grade Concrete Outlasts Improvised Slabs
 
 A slab poured like a patio can look fine until players start cutting, jumping, and sliding. Incorrect pitch outdoors holds water. Indoor slabs with moisture problems destroy athletic flooring. DIY or non-specialist pours often skip the tolerances that coatings and sport tiles require.
 
 Hiring a court-focused installer protects the expensive finish layers that follow. Local experience with Idaho and Arizona site conditions also reduces surprises around soils, access, and climate-driven curing windows.
 
-## Our Concrete Court Process
+## Pouring and Finishing a Concrete Sports Court
 
 We evaluate the site, confirm indoor or outdoor use, and recommend a slab and surface package. After forming and placement, the concrete cures before coatings or flooring begin. Installation of acrylic, cushion, modular, synthetic, or indoor flooring systems follows the schedule for that product. We close with a walkthrough so you know how to care for the finished court.
 
 Emergency or schedule-driven facility work is planned around downtime. Standard residential projects follow a clear, staged timeline from pour to play-ready finish.
 
-## Who We Serve
+## Residential and Commercial Clients for Concrete Courts
 
 We provide concrete court installation for homeowners, schools, universities, HOAs, parks, clubs, resorts, churches, apartment communities, and commercial athletic facilities.
 
-## Local Trust & Credibility
+## Concrete Court Construction Across Idaho & Arizona
 
 Hatz Court Builders serves properties throughout our Idaho and Arizona markets, including [court builders in Boise](/court-builders-boise-id/) and [Scottsdale court projects](/court-builder-scottsdale-az/). Concrete work is integrated with our [custom court design](/custom-court-design/) and construction process so the slab supports the sports you actually play.
 
-## Compare Related Surface Options
+## Acrylic, Modular & Indoor Options After Concrete
 
 Concrete is one path. Some outdoor sites are better served by [asphalt court paving](/asphalt-court-installation/). Others need only a new [acrylic coating package](/acrylic-court-systems/) over a sound existing slab. We help you choose based on budget, sport, and site conditions.
 
-## Request Your Concrete Court Quote
+## Schedule Your Concrete Court Installation
 
 Call [(208) 979-0002](tel:+12089790002) or [contact our team](/contact/) to schedule a site review. We’ll outline concrete court installation options and the finish system that fits your property.

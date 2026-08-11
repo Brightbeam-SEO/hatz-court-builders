@@ -1,9 +1,13 @@
 import { getCliClient } from "sanity/cli";
 import { isCourtConstructionSlug } from "../src/lib/court-construction-nav";
-import { isCourtLocationPageSlug } from "../sanity/constants/locationPageFilters";
+import { isCourtSurfacesSlug } from "../src/lib/court-surfaces-nav";
 import { getGpmSitemapSeo } from "../src/lib/gpm-sitemap-seo";
 import { PM_SERVICE_PAGES } from "../src/lib/pm-service-pages";
 import { readMarkdown } from "./lib/sanity-seed-utils";
+
+function isServiceLandingSlug(slug: string): boolean {
+  return isCourtConstructionSlug(slug) || isCourtSurfacesSlug(slug);
+}
 
 type SeedTarget = {
   slug: string;
@@ -54,7 +58,7 @@ async function upsertLocationPage(client: ReturnType<typeof getCliClient>, targe
     _id: docId,
     _type: "locationPage",
     layoutTemplate: "pressureWashingBoise",
-    pageCategory: isCourtConstructionSlug(target.slug) ? "service" : "city",
+    pageCategory: isServiceLandingSlug(target.slug) ? "service" : "city",
     title: target.title,
     slug: { _type: "slug", current: target.slug },
     locationName: target.locationName,
@@ -66,7 +70,9 @@ async function upsertLocationPage(client: ReturnType<typeof getCliClient>, targe
     },
   });
 
-  console.log(`  ✓ ${docId} → ${target.publicPath} (${isCourtConstructionSlug(target.slug) ? "service" : "location"})`);
+  console.log(
+    `  ✓ ${docId} → ${target.publicPath} (${isServiceLandingSlug(target.slug) ? "service" : "location"})`,
+  );
 }
 
 async function main() {

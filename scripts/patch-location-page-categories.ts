@@ -1,9 +1,10 @@
 import { getCliClient } from "sanity/cli";
 import { isCourtConstructionSlug } from "../src/lib/court-construction-nav";
+import { isCourtSurfacesSlug } from "../src/lib/court-surfaces-nav";
 import { isCourtLocationPageSlug } from "../sanity/constants/locationPageFilters";
 
 function pageCategoryFor(slug: string): "city" | "service" {
-  if (isCourtConstructionSlug(slug)) return "service";
+  if (isCourtConstructionSlug(slug) || isCourtSurfacesSlug(slug)) return "service";
   if (isCourtLocationPageSlug(slug)) return "city";
   return "service";
 }

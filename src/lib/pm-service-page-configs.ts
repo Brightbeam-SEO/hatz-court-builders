@@ -829,7 +829,7 @@ export const PM_ASPHALT_COURT_INSTALLATION_CONFIG = courtSurfacesServiceConfig({
   heroSubtitle:
     "Asphalt court installation for residential and commercial projects — a durable paved base for acrylic coatings, multi-sport layouts, and long-term outdoor play.",
   heroImageFragment: "tennis court resurface blue and green acrylic",
-  faqHeading: "Asphalt Court Installation Questions",
+  faqHeading: "Asphalt Court Installation FAQs",
   faqItems: [
     {
       question: "What sports work on an asphalt court?",
@@ -874,7 +874,7 @@ export const PM_CONCRETE_COURT_INSTALLATION_CONFIG = courtSurfacesServiceConfig(
   heroSubtitle:
     "Concrete court installation for homes, schools, HOAs, and commercial facilities — stable slabs designed for acrylic systems, modular surfaces, and multi-sport play.",
   heroImageFragment: "pickleball post tension concrete commercial court",
-  faqHeading: "Concrete Court Installation Questions",
+  faqHeading: "Concrete Court Slab FAQs",
   faqItems: [
     {
       question: "When is concrete the right choice for a court?",
@@ -919,7 +919,7 @@ export const PM_ACRYLIC_COURT_SYSTEMS_CONFIG = courtSurfacesServiceConfig({
   heroSubtitle:
     "Acrylic court systems that deliver color, traction, and weather-ready performance over asphalt or concrete bases for residential and commercial courts.",
   heroImageFragment: "tennis court resurface blue and green acrylic",
-  faqHeading: "Acrylic Court Systems Questions",
+  faqHeading: "Acrylic Court Coating FAQs",
   faqItems: [
     {
       question: "What are acrylic court systems used for?",
@@ -964,7 +964,7 @@ export const PM_SYNTHETIC_COURTS_CONFIG = courtSurfacesServiceConfig({
   heroSubtitle:
     "Synthetic court surfaces for training, multi-sport recreation, and specialty play — engineered for consistent footing, lower maintenance, and year-round use.",
   heroImageFragment: "multicourt modular tile backyard installation",
-  faqHeading: "Synthetic Courts Questions",
+  faqHeading: "Synthetic Court Surface FAQs",
   faqItems: [
     {
       question: "What are synthetic courts best for?",
@@ -1009,7 +1009,7 @@ export const PM_MODULAR_COURT_SURFACES_CONFIG = courtSurfacesServiceConfig({
   heroSubtitle:
     "Modular court surfaces with interlocking tiles for backyard basketball, pickleball, multi-sport pads, and commercial recreation — fast to install and easy to refresh.",
   heroImageFragment: "basketball tile court modular hoop goal",
-  faqHeading: "Modular Court Surfaces Questions",
+  faqHeading: "Modular Court Tile FAQs",
   faqItems: [
     {
       question: "What is a modular court surface?",
@@ -1054,7 +1054,7 @@ export const PM_CUSHIONED_COURT_SYSTEMS_CONFIG = courtSurfacesServiceConfig({
   heroSubtitle:
     "Cushioned court systems that add shock absorption under acrylic color coats — built for player comfort on tennis, pickleball, and multi-use outdoor courts.",
   heroImageFragment: "double pickleball court blue green surface",
-  faqHeading: "Cushioned Court Systems Questions",
+  faqHeading: "Cushioned Court System FAQs",
   faqItems: [
     {
       question: "What is a cushioned court system?",
@@ -1099,7 +1099,7 @@ export const PM_INDOOR_SPORTS_FLOORING_CONFIG = courtSurfacesServiceConfig({
   heroSubtitle:
     "Indoor sports flooring for gyms, schools, clubs, and training facilities — performance floors built for basketball, multi-sport play, and heavy daily use.",
   heroImageFragment: "outdoor multi court pickleball basketball",
-  faqHeading: "Indoor Sports Flooring Questions",
+  faqHeading: "Indoor Athletic Flooring FAQs",
   faqItems: [
     {
       question: "What types of indoor sports flooring do you install?",
