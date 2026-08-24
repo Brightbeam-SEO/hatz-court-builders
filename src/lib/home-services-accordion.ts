@@ -9,8 +9,6 @@ export type HomeServiceAccordionItem = {
   href: string;
 };
 
-const SERVICE_HREF = pmServicePagePath("court-builders-boise-id");
-
 export const SERVICES_SECTION_FEATURED_IMAGE = gpmPick("tennis court resurface crack repair");
 
 export const HOME_SERVICES_ACCORDION: HomeServiceAccordionItem[] = [
@@ -20,7 +18,7 @@ export const HOME_SERVICES_ACCORDION: HomeServiceAccordionItem[] = [
     description:
       "Custom pickleball courts built for smooth play, clean lines, and long-term performance.",
     image: gpmPick("pickleball court backyard modular tile"),
-    href: SERVICE_HREF,
+    href: pmServicePagePath("pickleball-court-construction"),
   },
   {
     id: "basketball",
@@ -28,7 +26,7 @@ export const HOME_SERVICES_ACCORDION: HomeServiceAccordionItem[] = [
     description:
       "Backyard, school, and commercial basketball courts built for serious daily use.",
     image: gpmPick("basketball tile court modular hoop goal"),
-    href: SERVICE_HREF,
+    href: pmServicePagePath("basketball-court-construction"),
   },
   {
     id: "tennis",
@@ -36,7 +34,7 @@ export const HOME_SERVICES_ACCORDION: HomeServiceAccordionItem[] = [
     description:
       "Professional tennis court construction with durable surfaces and precise layout.",
     image: gpmPick("tennis court resurface blue green acrylic"),
-    href: SERVICE_HREF,
+    href: pmServicePagePath("tennis-court-construction"),
   },
   {
     id: "volleyball",
@@ -44,7 +42,7 @@ export const HOME_SERVICES_ACCORDION: HomeServiceAccordionItem[] = [
     description:
       "Custom volleyball courts designed for homes, schools, parks, and recreation spaces.",
     image: gpmPick("multi sport outdoor backyard court"),
-    href: SERVICE_HREF,
+    href: pmServicePagePath("volleyball-court-construction"),
   },
   {
     id: "futsal-soccer",
@@ -52,7 +50,7 @@ export const HOME_SERVICES_ACCORDION: HomeServiceAccordionItem[] = [
     description:
       "Compact soccer and futsal courts built for fast play and heavy use.",
     image: gpmPick("indoor batting cage turf installation"),
-    href: SERVICE_HREF,
+    href: pmServicePagePath("futsal-soccer-court-construction"),
   },
   {
     id: "bocce",
@@ -60,7 +58,7 @@ export const HOME_SERVICES_ACCORDION: HomeServiceAccordionItem[] = [
     description:
       "Clean, level bocce courts built for residential and commercial outdoor spaces.",
     image: gpmPick("tile shuffleboard court installation"),
-    href: SERVICE_HREF,
+    href: pmServicePagePath("bocce-court-construction"),
   },
   {
     id: "multi-court",
@@ -68,7 +66,7 @@ export const HOME_SERVICES_ACCORDION: HomeServiceAccordionItem[] = [
     description:
       "Flexible court layouts built for multiple sports on one custom surface.",
     image: gpmPick("outdoor multi court pickleball basketball tennis"),
-    href: SERVICE_HREF,
+    href: pmServicePagePath("multi-court-construction"),
   },
   {
     id: "custom-court",
@@ -76,7 +74,7 @@ export const HOME_SERVICES_ACCORDION: HomeServiceAccordionItem[] = [
     description:
       "Complete court design and construction tailored to your space, sport, and goals.",
     image: gpmPick("modular court tile custom logo branding"),
-    href: SERVICE_HREF,
+    href: pmServicePagePath("custom-court-construction"),
   },
   {
     id: "commercial",
@@ -84,6 +82,6 @@ export const HOME_SERVICES_ACCORDION: HomeServiceAccordionItem[] = [
     description:
       "Court construction for schools, parks, HOAs, recreation centers, and facilities.",
     image: gpmPick("pickleball post tension concrete commercial court"),
-    href: SERVICE_HREF,
+    href: pmServicePagePath("commercial-court-construction"),
   },
 ];

@@ -12,13 +12,27 @@ import { ContactForm } from "./contact-form";
 import { HeroTrustLogoMarquee } from "./hero-trust-logo-marquee";
 import { useHomeContent } from "./home-content-context";
 
-const HERO_COURT_LINK = "#services";
-
 const HERO_COURT_ITEMS = [
-  { label: "Basketball", icon: "/images/hero/basketball.png" },
-  { label: "Pickleball & Tennis", icon: "/images/hero/pickleball-tennis.png" },
-  { label: "Volleyball", icon: "/images/hero/volleyball.png" },
-  { label: "Custom Court", icon: "/images/hero/custom-court.png" },
+  {
+    label: "Basketball",
+    href: "/basketball-court-construction/",
+    icon: "/images/hero/basketball.png",
+  },
+  {
+    label: "Pickleball & Tennis",
+    href: "/pickleball-court-construction/",
+    icon: "/images/hero/pickleball-tennis.png",
+  },
+  {
+    label: "Volleyball",
+    href: "/volleyball-court-construction/",
+    icon: "/images/hero/volleyball.png",
+  },
+  {
+    label: "Custom Court",
+    href: "/custom-court-construction/",
+    icon: "/images/hero/custom-court.png",
+  },
 ] as const;
 
 const heroCourtIconClass =
@@ -28,10 +42,10 @@ function HeroBottomBar() {
   return (
     <div className="pointer-events-none absolute inset-x-0 bottom-0 z-20 hidden w-full px-[5%] pb-5 lg:block lg:pb-6">
       <div className="pointer-events-auto grid grid-cols-4 items-center gap-x-1 xl:gap-x-2">
-        {HERO_COURT_ITEMS.map(({ label, icon }) => (
+        {HERO_COURT_ITEMS.map(({ label, href, icon }) => (
           <a
             key={label}
-            href={HERO_COURT_LINK}
+            href={href}
             className="group flex min-w-0 items-center justify-center gap-2 rounded-xl px-2 py-1 transition-colors hover:bg-white/10 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white xl:gap-2.5 xl:px-3"
           >
             <div className={heroCourtIconClass}>
