@@ -1,16 +1,16 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
+import { useMemo, useState } from "react";
 import { BlogHeroBand } from "@/components/blog/blog-hero-band";
 import { BlogBookingStrip } from "@/components/blog/blog-article-lead-cta";
 import type { GalleryContent } from "@/lib/gallery-content";
 import type { SocialLink } from "@/lib/home-content";
 import { PageHeroCtaButtons } from "@/components/layout/page-hero-cta-buttons";
 import { SiteFooterRegion } from "@/components/layout/site-footer-region";
-import { BUSINESS } from "@/lib/business";
 import { GALLERY_HERO_IMAGE } from "@/lib/gallery-items";
 import { gpmImageAlt } from "@/lib/gpm-gallery-images";
+import { GalleryLightbox, type GalleryLightboxImage } from "./gallery-lightbox";
 
 const galleryHeroAlt = gpmImageAlt(GALLERY_HERO_IMAGE);
 
@@ -24,6 +24,7 @@ const collageSpanClasses = [
   "sm:row-span-20",
   "sm:row-span-24",
 ];
+
 export function GalleryPage({
   socialLinks,
   content,
@@ -36,6 +37,24 @@ export function GalleryPage({
     src: item.image,
     alt: item.alt,
   }));
+
+  const lightboxImages = useMemo<GalleryLightboxImage[]>(() => {
+    const seen = new Set<string>();
+    const merged: GalleryLightboxImage[] = [];
+    for (const img of [...projectHighlightImages, ...galleryImages]) {
+      if (seen.has(img.src)) continue;
+      seen.add(img.src);
+      merged.push(img);
+    }
+    return merged;
+  }, [galleryImages, projectHighlightImages]);
+
+  const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
+
+  const openLightbox = (src: string) => {
+    const index = lightboxImages.findIndex((img) => img.src === src);
+    if (index >= 0) setLightboxIndex(index);
+  };
 
   return (
     <div className="min-h-screen bg-zen-espresso text-white light:bg-transparent light:text-zen-espresso">
@@ -88,7 +107,13 @@ export function GalleryPage({
                 </p>
                 <div className="mt-6 grid grid-cols-2 gap-3">
                   {projectHighlightImages.map((img) => (
-                    <div key={img.src} className="overflow-hidden rounded-2xl border border-white/35 bg-white/20">
+                    <button
+                      key={img.src}
+                      type="button"
+                      onClick={() => openLightbox(img.src)}
+                      className="overflow-hidden rounded-2xl border border-white/35 bg-white/20 text-left transition hover:ring-2 hover:ring-white/60 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+                      aria-label={`View full size: ${img.alt}`}
+                    >
                       <Image
                         src={img.src}
                         alt={img.alt}
@@ -97,7 +122,7 @@ export function GalleryPage({
                         className="h-28 w-full object-cover sm:h-32"
                         unoptimized={img.src.startsWith("/api/")}
                       />
-                    </div>
+                    </button>
                   ))}
                 </div>
               </article>
@@ -105,15 +130,18 @@ export function GalleryPage({
           </div>
         </section>
 
-        <section className="mx-auto w-full max-w-[95vw] sm:max-w-[min(80vw,100%)] px-2 sm:px-3 md:px-4">
-          <div className="gallery-collage-grid grid grid-cols-1 gap-4 sm:grid-cols-2 sm:auto-rows-[10px] lg:grid-cols-3">
+        <section className="mx-auto w-full max-w-[95vw] px-2 sm:max-w-[min(80vw,100%)] sm:px-3 md:px-4">
+          <div className="gallery-collage-grid grid grid-cols-1 gap-4 sm:auto-rows-[10px] sm:grid-cols-2 lg:grid-cols-3">
             {galleryImages.map((img, idx) => (
-              <figure
+              <button
                 key={img.src + img.alt}
-                className={`gallery-collage-item hero-glass-light overflow-hidden rounded-[1.35rem] border border-white/20 bg-white/10 backdrop-blur-xl light:border-slate-200 light:bg-white ${
+                type="button"
+                onClick={() => openLightbox(img.src)}
+                className={`gallery-collage-item hero-glass-light overflow-hidden rounded-[1.35rem] border border-white/20 bg-white/10 text-left backdrop-blur-xl transition hover:ring-2 hover:ring-white/50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white light:border-slate-200 light:bg-white ${
                   collageSpanClasses[idx % collageSpanClasses.length]
                 }`}
                 style={{ animationDelay: `${idx * 65}ms` }}
+                aria-label={`View full size: ${img.alt}`}
               >
                 <Image
                   src={img.src}
@@ -123,7 +151,7 @@ export function GalleryPage({
                   className="h-60 w-full object-cover sm:h-full"
                   unoptimized={img.src.startsWith("/api/")}
                 />
-              </figure>
+              </button>
             ))}
           </div>
         </section>
@@ -132,7 +160,13 @@ export function GalleryPage({
       </main>
 
       <SiteFooterRegion socialLinks={socialLinks} />
+
+      <GalleryLightbox
+        images={lightboxImages}
+        index={lightboxIndex}
+        onClose={() => setLightboxIndex(null)}
+        onChangeIndex={setLightboxIndex}
+      />
     </div>
   );
 }
-

@@ -44,6 +44,10 @@ export function buildGalleryCollageItems(): GalleryImageItem[] {
   ].filter(Boolean);
 
   const pinnedTop = [
+    paths.find((p) => p.includes("vinyl-fence-residential"))!,
+    paths.find((p) => p.includes("green-tan-basketball-half-court"))!,
+    paths.find((p) => p.includes("mountain-view-outdoor-lighting"))!,
+    paths.find((p) => p.includes("gray-blue-pickleball-basketball-multi-court"))!,
     paths.find((p) => p.includes("basketball-tile-court-custom-logo-branding"))!,
     paths.find((p) => p.includes("pickleball-court-backyard-modular-tile"))!,
     paths.find((p) => p.includes("indoor-hardwood-basketball-court-hoops-gym-interior"))!,
