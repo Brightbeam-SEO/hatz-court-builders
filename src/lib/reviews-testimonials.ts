@@ -3,6 +3,41 @@ import type { GoogleReview } from "@/lib/home-content";
 /** Curated client reviews for Hatz Court Builders. */
 export const additionalReviewsPageTestimonials: GoogleReview[] = [
   {
+    id: "review-marisa",
+    name: "Marisa",
+    quote:
+      "We debated resurfacing our old tennis court for a while, and I'm so glad we did. Hatz Court Builders did an incredible job—the court looks amazing, plays great, and completely changed the feel of our backyard. I wouldn't hesitate to recommend them!",
+    image: "/images/testimonials/marisa.png",
+  },
+  {
+    id: "review-nikki-z",
+    name: "Nikki Z",
+    quote:
+      "We are so happy with our new pickleball court in our backyard in Gilbert, AZ! The finished product looks amazing and we love the colors we chose. The team was friendly, quick to respond, and easy to work with from start to finish. It's great to support a local company that takes pride in their work. Highly recommend Hatz Court Builders!",
+    image: "/images/testimonials/nikki-z.png",
+  },
+  {
+    id: "review-taylor-giberson",
+    name: "Taylor Giberson",
+    quote:
+      "I did a lot of research before choosing a contractor, and I'm glad I went with Hatz Court Builders. The process was smooth, the workmanship was excellent, and the pickleball court turned out even better than I expected. I highly recommend them!",
+    image: "/images/testimonials/taylor-giberson.png",
+  },
+  {
+    id: "review-brooke-redpath",
+    name: "Brooke Redpath",
+    quote:
+      "We absolutely love our new multi-game court from Hatz Court Builders! It’s perfect for both pickleball and basketball and has completely transformed our backyard into a space our whole family can enjoy. The court turned out amazing, and the crew was fantastic—professional, friendly, and did a great job from start to finish. We couldn’t be happier with how it turned out!",
+    image: "/images/testimonials/brooke-redpath.png",
+  },
+  {
+    id: "review-joe-iaboni",
+    name: "Joe Iaboni",
+    quote:
+      "We love our new multi-game court! My kids use it for basketball and I love having a dedicated space for pickleball. Being able to combine both sports into one beautiful court was exactly what our family wanted given the tight space we had. The finished product looks amazing, and the entire process was smooth and professional. Hatz Court Builders are the way to go!",
+    image: "/images/testimonials/joe-iaboni.png",
+  },
+  {
     id: "review-t-p",
     name: "T P",
     quote:
@@ -26,9 +61,11 @@ export const additionalReviewsPageTestimonials: GoogleReview[] = [
 ];
 
 const BLOG_SIDEBAR_FEATURED_REVIEW_IDS = [
-  "review-t-p",
-  "review-rj",
-  "review-liana-viterbo",
+  "review-marisa",
+  "review-nikki-z",
+  "review-taylor-giberson",
+  "review-brooke-redpath",
+  "review-joe-iaboni",
 ] as const;
 
 export function blogSidebarFeaturedReviews(): GoogleReview[] {

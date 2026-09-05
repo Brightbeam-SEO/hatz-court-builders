@@ -6,8 +6,7 @@ import type { GoogleReview } from "@/lib/home-content";
 import { blogSidebarFeaturedReviews } from "@/lib/reviews-testimonials";
 
 /**
- * Rotates through the same five reviews as selected `/reviews` masonry cards
- * (Sierra, Dawn, Randi, PM Larsen, Martha)—one card at a time.
+ * Rotates through featured client reviews for the blog sidebar.
  */
 export function BlogReviewsFeaturedCard() {
   const reviews = useMemo<GoogleReview[]>(() => blogSidebarFeaturedReviews(), []);
