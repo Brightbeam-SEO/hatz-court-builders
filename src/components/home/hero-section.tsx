@@ -74,26 +74,26 @@ function HomeHeroVideoBackdrop() {
   const [videoVisible, setVideoVisible] = useState(false);
 
   useEffect(() => {
-    const desktop = window.matchMedia("(min-width: 1024px)").matches;
-    if (!desktop) return;
-
     const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     if (reducedMotion) return;
 
     const schedule = () => setLoadVideo(true);
+    const isDesktop = window.matchMedia("(min-width: 1024px)").matches;
+    // Mobile: load sooner so the video appears while the hero is still in view.
+    const delayMs = isDesktop ? 2000 : 400;
 
-    if (typeof window.requestIdleCallback === "function") {
+    if (typeof window.requestIdleCallback === "function" && isDesktop) {
       const id = window.requestIdleCallback(schedule, { timeout: 2500 });
       return () => window.cancelIdleCallback(id);
     }
 
-    const timer = window.setTimeout(schedule, 2000);
+    const timer = window.setTimeout(schedule, delayMs);
     return () => window.clearTimeout(timer);
   }, []);
 
   return (
     <div className="pointer-events-none absolute inset-0 z-0 overflow-hidden" aria-hidden>
-      {/* Optimized still for LCP on all viewports — video loads after idle on desktop only. */}
+      {/* Poster covers LCP; video fades in once ready on all viewports. */}
       <HcbImage
         src={HOME_HERO_POSTER_SRC}
         alt=""
@@ -108,7 +108,7 @@ function HomeHeroVideoBackdrop() {
       {loadVideo ? (
         <video
           key={HOME_HERO_VIDEO_SRC}
-          className={`absolute inset-0 hidden h-full w-full object-cover transition-opacity duration-700 lg:block ${
+          className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-700 ${
             videoVisible ? "opacity-100" : "opacity-0"
           }`}
           src={HOME_HERO_VIDEO_SRC}
@@ -116,7 +116,7 @@ function HomeHeroVideoBackdrop() {
           muted
           loop
           playsInline
-          preload="auto"
+          preload="metadata"
           onCanPlay={() => setVideoVisible(true)}
         />
       ) : null}
@@ -177,17 +177,17 @@ export function HeroSection() {
   });
   return (
     <header className="relative isolate min-h-0 overflow-x-clip bg-zen-rice text-zen-espresso">
-      <div className="relative isolate min-h-[min(100vh,68rem)] sm:min-h-[min(100svh,68rem)] overflow-hidden">
+      <div className="relative isolate min-h-[min(82svh,36rem)] overflow-hidden sm:min-h-[min(90svh,48rem)] lg:min-h-[min(100svh,68rem)]">
         <HomeHeroVideoBackdrop />
         <HeroCourtLinesOverlay />
 
-        <div className="relative z-10 flex min-h-[min(100vh,68rem)] flex-col sm:min-h-[min(100svh,68rem)]">
+        <div className="relative z-10 flex min-h-[min(82svh,36rem)] flex-col sm:min-h-[min(90svh,48rem)] lg:min-h-[min(100svh,68rem)]">
           <SiteHeader blendWithBackground />
 
-          <div className="mx-auto flex w-full flex-1 flex-col items-center justify-center max-w-[95vw] px-2 sm:max-w-[min(80vw,100%)] sm:px-3 md:px-4">
+          <div className="mx-auto flex w-full max-w-[95vw] flex-1 flex-col items-center justify-center px-2 sm:max-w-[min(80vw,100%)] sm:px-3 md:px-4">
             <section
               id="top"
-              className="relative flex w-full flex-col items-center px-4 pb-20 sm:px-6 sm:pb-24 md:px-8 md:pb-28 lg:px-10 lg:pb-32"
+              className="relative flex w-full flex-col items-center px-4 pb-12 sm:px-6 sm:pb-20 md:px-8 md:pb-28 lg:px-10 lg:pb-32"
             >
               <HeroIntroCopy headingTag="h1" />
             </section>
