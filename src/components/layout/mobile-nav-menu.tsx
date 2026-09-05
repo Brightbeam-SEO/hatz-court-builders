@@ -119,7 +119,7 @@ export function MobileNavMenu({ open, onClose }: MobileNavMenuProps) {
 
   return (
     <nav
-      className="relative z-[240] mb-3 rounded-2xl border border-zen-gold/15 bg-white/92 p-4 text-sm text-zen-espresso shadow-sm backdrop-blur-md lg:hidden"
+      className="relative z-[240] mb-3 rounded-2xl border border-zen-gold/15 bg-white/92 p-4 text-sm text-zen-espresso shadow-sm backdrop-blur-md xl:hidden"
       aria-label="Mobile navigation"
     >
       <ul className="grid gap-2">

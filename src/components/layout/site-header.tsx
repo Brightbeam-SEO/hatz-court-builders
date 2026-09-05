@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { useCallback, useEffect, useId, useRef, useState } from "react";
 import { BUSINESS } from "@/lib/business";
 import { COURT_CONSTRUCTION_NAV_LINKS } from "@/lib/court-construction-nav";
 import { COURT_SURFACES_NAV_LINKS } from "@/lib/court-surfaces-nav";
@@ -24,16 +24,106 @@ const aboutLinks = [
   { label: "Blog", href: "/blog" },
 ] as const;
 
+type TopMenu = "services" | "areas" | "about";
+type NestedMenu = "court" | "surfaces" | `area-${string}`;
+
 type SiteHeaderProps = {
   anchorBase?: "" | "/";
   blendWithBackground?: boolean;
 };
 
+function useHoverCapable() {
+  const [hoverCapable, setHoverCapable] = useState(false);
+
+  useEffect(() => {
+    const mq = window.matchMedia("(hover: hover) and (pointer: fine)");
+    const sync = () => setHoverCapable(mq.matches);
+    sync();
+    mq.addEventListener("change", sync);
+    return () => mq.removeEventListener("change", sync);
+  }, []);
+
+  return hoverCapable;
+}
+
+function panelOpenClass(isOpen: boolean) {
+  return isOpen
+    ? "!visible !translate-y-0 !opacity-100 !delay-0 !duration-200 pointer-events-auto"
+    : "!invisible !opacity-0 pointer-events-none";
+}
+
 export function SiteHeader({ blendWithBackground = true }: SiteHeaderProps) {
   const [menuOpen, setMenuOpen] = useState(false);
-  const closeMenu = () => {
-    setMenuOpen(false);
+  const [openTop, setOpenTop] = useState<TopMenu | null>(null);
+  const [openNested, setOpenNested] = useState<NestedMenu | null>(null);
+  const hoverCapable = useHoverCapable();
+  const desktopNavRef = useRef<HTMLUListElement>(null);
+  const servicesPanelId = useId();
+  const areasPanelId = useId();
+  const aboutPanelId = useId();
+
+  const closeMenu = () => setMenuOpen(false);
+
+  const closeDesktopMenus = useCallback(() => {
+    setOpenTop(null);
+    setOpenNested(null);
+  }, []);
+
+  const toggleTop = (menu: TopMenu) => {
+    setOpenTop((prev) => {
+      const next = prev === menu ? null : menu;
+      if (next !== "services" && next !== "areas") setOpenNested(null);
+      return next;
+    });
   };
+
+  const toggleNested = (menu: NestedMenu) => {
+    setOpenNested((prev) => (prev === menu ? null : menu));
+  };
+
+  useEffect(() => {
+    if (!openTop) return;
+
+    const onPointerDown = (event: PointerEvent) => {
+      const target = event.target as Node | null;
+      if (target && desktopNavRef.current?.contains(target)) return;
+      closeDesktopMenus();
+    };
+
+    const onKeyDown = (event: KeyboardEvent) => {
+      if (event.key === "Escape") closeDesktopMenus();
+    };
+
+    document.addEventListener("pointerdown", onPointerDown);
+    document.addEventListener("keydown", onKeyDown);
+    return () => {
+      document.removeEventListener("pointerdown", onPointerDown);
+      document.removeEventListener("keydown", onKeyDown);
+    };
+  }, [closeDesktopMenus, openTop]);
+
+  const topHoverHandlers = (menu: TopMenu) =>
+    hoverCapable
+      ? {
+          onMouseEnter: () => {
+            setOpenTop(menu);
+            if (menu !== "services" && menu !== "areas") setOpenNested(null);
+          },
+          onMouseLeave: () => {
+            setOpenTop((prev) => (prev === menu ? null : prev));
+            setOpenNested(null);
+          },
+        }
+      : {};
+
+  const nestedHoverHandlers = (menu: NestedMenu) =>
+    hoverCapable
+      ? {
+          onMouseEnter: () => setOpenNested(menu),
+          onMouseLeave: () => setOpenNested((prev) => (prev === menu ? null : prev)),
+        }
+      : {};
+
   const wrapperClass = blendWithBackground
     ? "relative z-[220] w-full bg-transparent text-white light:bg-transparent light:text-zen-espresso"
     : "relative z-[220] w-full bg-zen-espresso text-white light:bg-zen-rice light:text-zen-espresso";
@@ -48,10 +138,10 @@ export function SiteHeader({ blendWithBackground = true }: SiteHeaderProps) {
     <div className={wrapperClass}>
       <div className={innerWrapClass}>
         <div className={shellClass}>
-          <nav className="relative z-[230] grid w-full max-w-full grid-cols-[minmax(0,1fr)_auto] items-center gap-2 py-3 sm:gap-3 lg:grid-cols-[auto_minmax(0,1fr)_auto] lg:gap-3 lg:px-0 lg:py-3 xl:gap-5">
+          <nav className="relative z-[230] grid w-full max-w-full grid-cols-[minmax(0,1fr)_auto] items-center gap-2 py-3 sm:gap-3 xl:grid-cols-[auto_minmax(0,1fr)_auto] xl:gap-5 xl:px-0 xl:py-3">
             <Link
               href="/"
-              className="min-w-0 justify-self-start rounded-sm bg-transparent focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-zen-crimson lg:col-start-1 lg:row-start-1"
+              className="min-w-0 justify-self-start rounded-sm bg-transparent focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-zen-crimson xl:col-start-1 xl:row-start-1"
             >
               <Image
                 key={BUSINESS.logoSrc}
@@ -67,49 +157,72 @@ export function SiteHeader({ blendWithBackground = true }: SiteHeaderProps) {
               />
             </Link>
 
-            <ul className="hidden min-w-0 flex-wrap items-center justify-center gap-x-2 gap-y-1 font-sans text-xs font-medium tracking-[0.0125em] text-zen-espresso/80 sm:gap-x-3 lg:col-start-2 lg:row-start-1 lg:flex lg:w-auto lg:gap-x-3 lg:gap-y-0 xl:gap-x-5 xl:text-sm">
-              <li className="group relative shrink-0 whitespace-nowrap after:absolute after:left-0 after:top-full after:h-3 after:w-full after:content-['']">
-                <button type="button" className={`inline-flex items-center gap-1 ${headerTopLinkClass}`}>
+            <ul
+              ref={desktopNavRef}
+              className="hidden min-w-0 flex-wrap items-center justify-center gap-x-2 gap-y-1 font-sans text-xs font-medium tracking-[0.0125em] text-zen-espresso/80 sm:gap-x-3 xl:col-start-2 xl:row-start-1 xl:flex xl:w-auto xl:gap-x-5 xl:gap-y-0 xl:text-sm"
+            >
+              <li
+                className="group relative shrink-0 whitespace-nowrap after:absolute after:left-0 after:top-full after:h-3 after:w-full after:content-['']"
+                {...topHoverHandlers("services")}
+              >
+                <button
+                  type="button"
+                  className={`inline-flex items-center gap-1 ${headerTopLinkClass}`}
+                  aria-expanded={openTop === "services"}
+                  aria-controls={servicesPanelId}
+                  onClick={() => toggleTop("services")}
+                >
                   Services
                   <svg className="h-4 w-4" viewBox="0 0 20 20" fill="currentColor" aria-hidden>
                     <path d="M5.75 7.5L10 11.75L14.25 7.5" />
                   </svg>
                 </button>
-                <ul className={`${headerDropdownPanelClass} left-0 top-full mt-1 w-56 translate-y-1`}>
-                  <li className="group/court relative">
+                <ul
+                  id={servicesPanelId}
+                  className={`${headerDropdownPanelClass} left-0 top-full mt-1 w-56 translate-y-1 ${panelOpenClass(openTop === "services")}`}
+                >
+                  <li className="group/court relative" {...nestedHoverHandlers("court")}>
                     <button
                       type="button"
                       className={`${headerNavSubLinkClass} inline-flex w-full items-center justify-between`}
+                      aria-expanded={openNested === "court"}
+                      onClick={() => toggleNested("court")}
                     >
                       Court Construction
                       <svg className="h-4 w-4" viewBox="0 0 20 20" fill="currentColor" aria-hidden>
                         <path d="M7.5 5.75L11.75 10L7.5 14.25" />
                       </svg>
                     </button>
-                    <ul className={`${headerDropdownPanelClass} left-full top-0 ml-1 hidden w-72 group-hover/court:block`}>
+                    <ul
+                      className={`${headerDropdownPanelClass} left-full top-0 ml-1 w-72 ${panelOpenClass(openNested === "court")}`}
+                    >
                       {COURT_CONSTRUCTION_NAV_LINKS.map(({ label, href }) => (
                         <li key={label}>
-                          <a className={headerNavSubLinkClass} href={href}>
+                          <a className={headerNavSubLinkClass} href={href} onClick={closeDesktopMenus}>
                             {label}
                           </a>
                         </li>
                       ))}
                     </ul>
                   </li>
-                  <li className="group/surfaces relative">
+                  <li className="group/surfaces relative" {...nestedHoverHandlers("surfaces")}>
                     <button
                       type="button"
                       className={`${headerNavSubLinkClass} inline-flex w-full items-center justify-between`}
+                      aria-expanded={openNested === "surfaces"}
+                      onClick={() => toggleNested("surfaces")}
                     >
                       Court Surfaces & Systems
                       <svg className="h-4 w-4" viewBox="0 0 20 20" fill="currentColor" aria-hidden>
                         <path d="M7.5 5.75L11.75 10L7.5 14.25" />
                       </svg>
                     </button>
-                    <ul className={`${headerDropdownPanelClass} left-full top-0 ml-1 hidden w-72 group-hover/surfaces:block`}>
+                    <ul
+                      className={`${headerDropdownPanelClass} left-full top-0 ml-1 w-72 ${panelOpenClass(openNested === "surfaces")}`}
+                    >
                       {COURT_SURFACES_NAV_LINKS.map(({ label, href }) => (
                         <li key={label}>
-                          <a className={headerNavSubLinkClass} href={href}>
+                          <a className={headerNavSubLinkClass} href={href} onClick={closeDesktopMenus}>
                             {label}
                           </a>
                         </li>
@@ -118,55 +231,89 @@ export function SiteHeader({ blendWithBackground = true }: SiteHeaderProps) {
                   </li>
                 </ul>
               </li>
-              <li className="group relative shrink-0 whitespace-nowrap after:absolute after:left-0 after:top-full after:h-3 after:w-full after:content-['']">
-                <button type="button" className={`inline-flex items-center gap-1 ${headerTopLinkClass}`}>
+
+              <li
+                className="group relative shrink-0 whitespace-nowrap after:absolute after:left-0 after:top-full after:h-3 after:w-full after:content-['']"
+                {...topHoverHandlers("areas")}
+              >
+                <button
+                  type="button"
+                  className={`inline-flex items-center gap-1 ${headerTopLinkClass}`}
+                  aria-expanded={openTop === "areas"}
+                  aria-controls={areasPanelId}
+                  onClick={() => toggleTop("areas")}
+                >
                   Service Areas
                   <svg className="h-4 w-4" viewBox="0 0 20 20" fill="currentColor" aria-hidden>
                     <path d="M5.75 7.5L10 11.75L14.25 7.5" />
                   </svg>
                 </button>
-                <ul className={`${headerDropdownPanelClass} left-0 top-full mt-1 w-56 translate-y-1`}>
-                  {SERVICE_AREA_NAV_GROUPS.map((group) => (
-                    <li key={group.label} className="group/area relative">
-                      <button
-                        type="button"
-                        className={`${headerNavSubLinkClass} inline-flex w-full items-center justify-between`}
-                      >
-                        {group.label}
-                        <svg className="h-4 w-4" viewBox="0 0 20 20" fill="currentColor" aria-hidden>
-                          <path d="M7.5 5.75L11.75 10L7.5 14.25" />
-                        </svg>
-                      </button>
-                      <ul className={`${headerDropdownPanelClass} left-full top-0 ml-1 hidden w-64 group-hover/area:block`}>
-                        {group.links.map(({ label, href }) => (
-                          <li key={label}>
-                            <a className={headerNavSubLinkClass} href={href}>
-                              {label}
-                            </a>
-                          </li>
-                        ))}
-                      </ul>
-                    </li>
-                  ))}
+                <ul
+                  id={areasPanelId}
+                  className={`${headerDropdownPanelClass} left-0 top-full mt-1 w-56 translate-y-1 ${panelOpenClass(openTop === "areas")}`}
+                >
+                  {SERVICE_AREA_NAV_GROUPS.map((group) => {
+                    const nestedId = `area-${group.label}` as NestedMenu;
+                    return (
+                      <li key={group.label} className="group/area relative" {...nestedHoverHandlers(nestedId)}>
+                        <button
+                          type="button"
+                          className={`${headerNavSubLinkClass} inline-flex w-full items-center justify-between`}
+                          aria-expanded={openNested === nestedId}
+                          onClick={() => toggleNested(nestedId)}
+                        >
+                          {group.label}
+                          <svg className="h-4 w-4" viewBox="0 0 20 20" fill="currentColor" aria-hidden>
+                            <path d="M7.5 5.75L11.75 10L7.5 14.25" />
+                          </svg>
+                        </button>
+                        <ul
+                          className={`${headerDropdownPanelClass} left-full top-0 ml-1 w-64 ${panelOpenClass(openNested === nestedId)}`}
+                        >
+                          {group.links.map(({ label, href }) => (
+                            <li key={label}>
+                              <a className={headerNavSubLinkClass} href={href} onClick={closeDesktopMenus}>
+                                {label}
+                              </a>
+                            </li>
+                          ))}
+                        </ul>
+                      </li>
+                    );
+                  })}
                 </ul>
               </li>
-              <li className="group relative shrink-0 whitespace-nowrap after:absolute after:left-0 after:top-full after:h-3 after:w-full after:content-['']">
-                <button type="button" className={`inline-flex items-center gap-1 ${headerTopLinkClass}`}>
+
+              <li
+                className="group relative shrink-0 whitespace-nowrap after:absolute after:left-0 after:top-full after:h-3 after:w-full after:content-['']"
+                {...topHoverHandlers("about")}
+              >
+                <button
+                  type="button"
+                  className={`inline-flex items-center gap-1 ${headerTopLinkClass}`}
+                  aria-expanded={openTop === "about"}
+                  aria-controls={aboutPanelId}
+                  onClick={() => toggleTop("about")}
+                >
                   About
                   <svg className="h-4 w-4" viewBox="0 0 20 20" fill="currentColor" aria-hidden>
                     <path d="M5.75 7.5L10 11.75L14.25 7.5" />
                   </svg>
                 </button>
-                <ul className={`${headerDropdownPanelClass} left-0 top-full mt-1 w-56 translate-y-1`}>
+                <ul
+                  id={aboutPanelId}
+                  className={`${headerDropdownPanelClass} left-0 top-full mt-1 w-56 translate-y-1 ${panelOpenClass(openTop === "about")}`}
+                >
                   {aboutLinks.map(({ label, href }) => (
                     <li key={label}>
-                      <a className={headerNavSubLinkClass} href={href}>
+                      <a className={headerNavSubLinkClass} href={href} onClick={closeDesktopMenus}>
                         {label}
                       </a>
                     </li>
                   ))}
                 </ul>
               </li>
+
               <li className="shrink-0 whitespace-nowrap">
                 <a className={headerTopLinkClass} href="/contact">
                   Contact
@@ -174,10 +321,10 @@ export function SiteHeader({ blendWithBackground = true }: SiteHeaderProps) {
               </li>
             </ul>
 
-            <div className="col-start-2 row-start-1 flex shrink-0 items-center justify-self-end gap-2 sm:gap-3 lg:col-start-3 lg:ml-0">
+            <div className="col-start-2 row-start-1 flex shrink-0 items-center justify-self-end gap-2 sm:gap-3 xl:col-start-3 xl:ml-0">
               <button
                 type="button"
-                className="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-lg border border-zen-gold/25 bg-white/85 text-zen-espresso backdrop-blur-sm lg:hidden"
+                className="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-lg border border-zen-gold/25 bg-white/85 text-zen-espresso backdrop-blur-sm xl:hidden"
                 onClick={() => setMenuOpen((prev) => !prev)}
                 aria-expanded={menuOpen}
                 aria-label={menuOpen ? "Close menu" : "Open menu"}
