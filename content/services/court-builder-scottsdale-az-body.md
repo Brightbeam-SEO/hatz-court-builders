@@ -22,11 +22,6 @@ We regularly plan courts along Scottsdale Road, Shea Boulevard, Frank Lloyd Wrig
 
 ## Other Services
 
-- [Scottsdale tennis court contractor](/tennis-court-contractor-scottsdale-az/)
-- [Scottsdale basketball court installation](/basketball-court-installation-scottsdale-az/)
-- [Outdoor pickleball court installation Scottsdale](/pickleball-court-installation-scottsdale-az/)
-- [Scottsdale bocce court builder](/bocce-court-builder-scottsdale-az/)
-- [Custom padel court builder Scottsdale](/padel-court-builder-scottsdale-az/)
 - [Court Builder Phoenix, AZ](/court-builder-phoenix-az/)
 - [Court Builder Mesa, AZ](/court-builder-mesa-az/)
 - [Court Builder Gilbert, AZ](/court-builder-gilbert-az/)
