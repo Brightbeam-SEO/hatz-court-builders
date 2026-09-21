@@ -137,22 +137,29 @@ function courtBuilderCityConfig(input: {
   metaTitle: string;
   metaDescription: string;
   heroImageFragment: string;
+  heroTitle?: string;
+  heroSubtitle?: string;
+  serviceName?: string;
+  faqHeading?: string;
   faqItems: TreasureValleyFaqItem[];
 }): TreasureValleyPressurePageConfig {
   const stateName = input.stateName ?? "Idaho";
+  const stateAbbr = stateName === "Arizona" ? "AZ" : "ID";
+  const defaultLabel = `Court Builder ${input.cityName}, ${stateAbbr}`;
   const baseConfig = pmServiceConfig({
     slug: input.slug,
-    serviceName: `Court Builder ${input.cityName}, ${stateName === "Arizona" ? "AZ" : "ID"}`,
+    serviceName: input.serviceName ?? defaultLabel,
     metaTitle: input.metaTitle,
     metaDescription: input.metaDescription,
-    heroTitle: `Court Builder ${input.cityName}, ${stateName === "Arizona" ? "AZ" : "ID"}`,
+    heroTitle: input.heroTitle ?? defaultLabel,
     heroSubtitle:
+      input.heroSubtitle ??
       "Licensed and insured court builders with custom athletic court experience across the Treasure Valley.",
     heroImageFragment: input.heroImageFragment,
     bottomContactHeading: `Start Your ${input.cityName} Court Project`,
     bottomContactSubtext:
       "Request your free quote and we will map out the right layout, surface system, and construction approach for your property.",
-    faqHeading: `Court Builder ${input.cityName} Questions`,
+    faqHeading: input.faqHeading ?? `Court Builder ${input.cityName} Questions`,
     faqIntro: "Straight answers from a local court construction team.",
     timelineHeading: `How Our ${input.cityName} Court Build Process Works`,
     timelineIntro: "Clear planning, durable materials, and a clean final walkthrough.",
@@ -1590,6 +1597,214 @@ export const PM_TENNIS_COURT_CONTRACTOR_SCOTTSDALE_AZ_CONFIG = courtBuilderCityC
   ],
 });
 
+export const PM_BASKETBALL_COURT_INSTALLATION_SCOTTSDALE_AZ_CONFIG = courtBuilderCityConfig({
+  slug: "basketball-court-installation-scottsdale-az",
+  cityName: "Scottsdale",
+  stateName: "Arizona",
+  serviceName: "Basketball Court Installation Scottsdale",
+  heroTitle: "Basketball Court Installation Scottsdale, AZ",
+  heroSubtitle:
+    "Basketball court installation for Scottsdale homes, schools, HOAs, and commercial sites, built for desert heat and daily play.",
+  metaTitle: "Basketball Court Installation Scottsdale | Free Quotes | Hatz",
+  metaDescription:
+    "Basketball court installation Scottsdale for backyard and facility courts. Acrylic, modular, and full builds. Call (208) 979-0002 for a free quote.",
+  faqHeading: "Scottsdale Basketball Court Installation Questions",
+  heroImageFragment: "backyard green tan basketball half court",
+  faqItems: [
+    {
+      question: "Do you offer basketball court installation in Scottsdale?",
+      answer:
+        "Yes. Hatz Court Builders installs basketball courts for residential and commercial properties in Scottsdale and nearby Maricopa County communities.",
+    },
+    {
+      question: "Can you build a half-court basketball pad in a smaller Scottsdale yard?",
+      answer:
+        "Yes. Many Scottsdale homes use a half-court or multi-use layout when space is limited. We measure the lot and plan a safe playing area with the right run-off.",
+    },
+    {
+      question: "What surfaces do you use for outdoor basketball courts in Scottsdale?",
+      answer:
+        "Common options include acrylic systems, cushioned acrylic, modular tiles, asphalt bases, and concrete pads. We match the surface to heat exposure, use level, and budget.",
+    },
+    {
+      question: "Do you resurface worn basketball courts in Scottsdale?",
+      answer:
+        "Yes. We handle court resurfacing, crack repair, recoating, and new striping when the existing pad is still sound enough for an update.",
+    },
+    {
+      question: "Do you work with homeowners, schools, and HOAs?",
+      answer:
+        "Yes. We build for homeowners, schools, parks and recreation sites, HOAs, and other commercial properties that need basketball or multi-use courts.",
+    },
+    {
+      question: "How do I get a free quote for basketball court installation in Scottsdale?",
+      answer:
+        "Call (208) 979-0002 or send a request online. Share your Scottsdale location, preferred court size, and surface goals so we can plan the next step.",
+    },
+    {
+      question: "What nearby cities do you serve from Scottsdale?",
+      answer:
+        "We serve Scottsdale plus Fountain Hills, Phoenix, Mesa, Gilbert, Chandler, Tempe, and other Maricopa County communities.",
+    },
+  ],
+});
+
+export const PM_PICKLEBALL_COURT_INSTALLATION_SCOTTSDALE_AZ_CONFIG = courtBuilderCityConfig({
+  slug: "pickleball-court-installation-scottsdale-az",
+  cityName: "Scottsdale",
+  stateName: "Arizona",
+  serviceName: "Pickleball Court Installation Scottsdale",
+  heroTitle: "Pickleball Court Installation Scottsdale, AZ",
+  heroSubtitle:
+    "Pickleball court installation for Scottsdale backyards, HOAs, schools, and facilities with heat-ready surfaces and clean game lines.",
+  metaTitle: "Pickleball Court Installation Scottsdale | Free Quotes | Hatz",
+  metaDescription:
+    "Pickleball court installation Scottsdale for backyard and community courts. Acrylic, cushioned, and modular options. Call (208) 979-0002 today.",
+  faqHeading: "Questions on Pickleball Court Installation in Scottsdale",
+  heroImageFragment: "outdoor pickleball court red and green surface",
+  faqItems: [
+    {
+      question: "Do you install pickleball courts in Scottsdale?",
+      answer:
+        "Yes. Hatz Court Builders provides pickleball court installation for residential and commercial properties across Scottsdale and nearby cities.",
+    },
+    {
+      question: "How much space do I need for a backyard pickleball court?",
+      answer:
+        "A standard pickleball playing area is 20 by 44 feet, with extra run-off space for safer play. We can also plan custom layouts for tighter Scottsdale lots.",
+    },
+    {
+      question: "What surface works well for outdoor pickleball in Scottsdale?",
+      answer:
+        "Acrylic and cushioned acrylic systems are common outdoor choices. Modular surfaces can also fit some pads. We recommend based on heat, use, and maintenance goals.",
+    },
+    {
+      question: "Can one court include pickleball and basketball lines?",
+      answer:
+        "Yes. Many Scottsdale owners want multi-use striping so one pad supports pickleball and basketball. Clear line planning keeps the court easy to read.",
+    },
+    {
+      question: "Do you resurface existing pickleball courts?",
+      answer:
+        "Yes. We resurface worn coatings, repair cracks when needed, and update kitchen lines and boundaries for cleaner play.",
+    },
+    {
+      question: "How do I request a free pickleball court quote in Scottsdale?",
+      answer:
+        "Call (208) 979-0002 or contact us online with your address and project goals. We will review options and provide a free quote.",
+    },
+    {
+      question: "Which nearby areas do you serve?",
+      answer:
+        "Besides Scottsdale, we serve Fountain Hills, Phoenix, Mesa, Gilbert, Chandler, Tempe, and other Maricopa County locations.",
+    },
+  ],
+});
+
+export const PM_BOCCE_COURT_BUILDER_SCOTTSDALE_AZ_CONFIG = courtBuilderCityConfig({
+  slug: "bocce-court-builder-scottsdale-az",
+  cityName: "Scottsdale",
+  stateName: "Arizona",
+  serviceName: "Bocce Court Builder Scottsdale",
+  heroTitle: "Bocce Court Builder Scottsdale, AZ",
+  heroSubtitle:
+    "Bocce court builder services for Scottsdale homes, resorts, and gathering spaces that need a level outdoor court.",
+  metaTitle: "Bocce Court Builder Scottsdale AZ | Free Quotes | Hatz",
+  metaDescription:
+    "Bocce court builder Scottsdale for residential and commercial outdoor courts. Level builds, resurfacing, and site prep. Call (208) 979-0002.",
+  faqHeading: "Bocce Court Builder Answers for Scottsdale Clients",
+  heroImageFragment: "tile shuffleboard court installation modular",
+  faqItems: [
+    {
+      question: "Do you build bocce courts in Scottsdale?",
+      answer:
+        "Yes. Hatz Court Builders is a bocce court builder for Scottsdale residential yards, HOAs, resorts, and commercial outdoor spaces.",
+    },
+    {
+      question: "What is included in bocce court installation?",
+      answer:
+        "Projects typically include site review, leveling, surface work, borders, and finish details. Lighting or fencing can be added when the property needs them.",
+    },
+    {
+      question: "Can a bocce court fit beside a pool or patio in Scottsdale?",
+      answer:
+        "Often yes. We plan dimensions and edges around existing hardscape and landscaping so the court fits the outdoor flow of the property.",
+    },
+    {
+      question: "Do you offer bocce court resurfacing?",
+      answer:
+        "Yes. If the court bed has worn or uneven spots, resurfacing and leveling work can restore a smoother roll.",
+    },
+    {
+      question: "Do you serve commercial and residential clients?",
+      answer:
+        "Yes. We work with homeowners, resorts, HOAs, schools, and other commercial properties that want outdoor bocce courts.",
+    },
+    {
+      question: "How do I get a free quote?",
+      answer:
+        "Call (208) 979-0002 or request a quote online. Share your Scottsdale location and preferred court size so we can outline next steps.",
+    },
+    {
+      question: "What areas near Scottsdale do you cover?",
+      answer:
+        "We serve Scottsdale and nearby cities such as Fountain Hills, Phoenix, Mesa, Gilbert, Chandler, Tempe, and Peoria in Maricopa County.",
+    },
+  ],
+});
+
+export const PM_PADEL_COURT_BUILDER_SCOTTSDALE_AZ_CONFIG = courtBuilderCityConfig({
+  slug: "padel-court-builder-scottsdale-az",
+  cityName: "Scottsdale",
+  stateName: "Arizona",
+  serviceName: "Padel Court Builder Scottsdale",
+  heroTitle: "Padel Court Builder Scottsdale, AZ",
+  heroSubtitle:
+    "Padel court builder services for Scottsdale estates, clubs, and facilities that want enclosed outdoor padel play.",
+  metaTitle: "Padel Court Builder Scottsdale AZ | Free Quotes | Hatz",
+  metaDescription:
+    "Padel court builder Scottsdale for enclosed outdoor courts. Design-build planning, surfacing, and lighting. Call (208) 979-0002 for a free quote.",
+  faqHeading: "Padel Court Builder FAQs for Scottsdale",
+  heroImageFragment: "outdoor multi court acrylic surfacing pickleball basketball tennis",
+  faqItems: [
+    {
+      question: "Do you build padel courts in Scottsdale?",
+      answer:
+        "Yes. Hatz Court Builders provides padel court builder services for residential and commercial properties in Scottsdale and nearby cities.",
+    },
+    {
+      question: "What does padel court installation include?",
+      answer:
+        "A typical project includes site planning, prep, surfacing, striping, and coordination for enclosure and lighting details based on the property goals.",
+    },
+    {
+      question: "Can padel share a campus with pickleball or tennis?",
+      answer:
+        "Yes. Larger Scottsdale properties often place padel beside pickleball, tennis, basketball, or bocce areas as part of a multi-court plan.",
+    },
+    {
+      question: "Do you help with design before construction?",
+      answer:
+        "Yes. We offer custom court design and full design-build support so footprint, access, and surface choices are clear before work starts.",
+    },
+    {
+      question: "Do you work with clubs and private homes?",
+      answer:
+        "Yes. We serve homeowners, clubs, schools, and commercial recreation properties that want padel courts.",
+    },
+    {
+      question: "How do I request a free padel court quote in Scottsdale?",
+      answer:
+        "Call (208) 979-0002 or contact us online. Tell us about your lot size and goals and we will provide a free quote path.",
+    },
+    {
+      question: "Which nearby cities do you serve?",
+      answer:
+        "We serve Scottsdale plus Fountain Hills, Phoenix, Mesa, Gilbert, Chandler, Tempe, Glendale, and other Maricopa County communities.",
+    },
+  ],
+});
+
 export const PM_COURT_BUILDER_PHOENIX_AZ_CONFIG = courtBuilderCityConfig({
   slug: "court-builder-phoenix-az",
   cityName: "Phoenix",
@@ -1925,6 +2140,63 @@ export const PM_COURT_BUILDER_MESA_AZ_CONFIG = courtBuilderCityConfig({
       question: "What makes Hatz Court Builders different from a general contractor?",
       answer:
         "Hatz Court Builders focuses on athletic courts, not general outdoor flatwork. That means the team looks at playability, court layout, sport rules, surface finishing, coating systems, court components, and long-term performance.",
+    },
+  ],
+});
+
+export const PM_PICKLEBALL_COURT_BUILDERS_MESA_AZ_CONFIG = courtBuilderCityConfig({
+  slug: "pickleball-court-builders-mesa-az",
+  cityName: "Mesa",
+  stateName: "Arizona",
+  serviceName: "Pickleball Court Builders Mesa AZ",
+  heroTitle: "Pickleball Court Builders Mesa AZ",
+  heroSubtitle:
+    "Pickleball court builders for Mesa backyards, HOAs, schools, and facilities with heat-ready surfaces and clean game lines.",
+  metaTitle: "Pickleball Court Builders Mesa AZ | Free Quotes | Hatz",
+  metaDescription:
+    "Pickleball court builders Mesa AZ for backyard and facility courts. Acrylic, cushioned, modular options. Call (208) 979-0002 today.",
+  faqHeading: "Mesa AZ Pickleball Court Builder Questions",
+  heroImageFragment: "outdoor pickleball court red and green surface",
+  faqItems: [
+    {
+      question: "Do you serve Mesa as pickleball court builders?",
+      answer:
+        "Yes. Hatz Court Builders builds pickleball courts for residential and commercial properties across Mesa and nearby East Valley cities.",
+    },
+    {
+      question: "What pickleball court services are available in Mesa?",
+      answer:
+        "We handle new builds, resurfacing, acrylic and cushioned coatings, modular surfaces, striping, nets, fencing, lighting, and full design-build support.",
+    },
+    {
+      question: "How much space do I need for a backyard pickleball court in Mesa?",
+      answer:
+        "A standard pickleball playing area is 20 by 44 feet, with extra run-off space for safer play. We can also plan custom layouts for tighter Mesa lots.",
+    },
+    {
+      question: "What surface works well for outdoor pickleball in Mesa?",
+      answer:
+        "Acrylic and cushioned acrylic systems are common outdoor choices. Modular surfaces can also fit some pads. We recommend based on heat, use, and maintenance goals.",
+    },
+    {
+      question: "Can one court include pickleball and basketball lines?",
+      answer:
+        "Yes. Many Mesa owners want multi-use striping so one pad supports pickleball and basketball. Clear line planning keeps the court easy to read.",
+    },
+    {
+      question: "Do you work with residential and commercial clients in Mesa?",
+      answer:
+        "Yes. We work with homeowners, HOAs, schools, parks, and commercial recreation sites that need pickleball courts.",
+    },
+    {
+      question: "How do I request a free pickleball court quote in Mesa?",
+      answer:
+        "Call (208) 979-0002 or contact us online with your address and project goals. We will review options and provide a free quote.",
+    },
+    {
+      question: "Which nearby areas do you serve from Mesa?",
+      answer:
+        "Besides Mesa, we serve Gilbert, Chandler, Tempe, Phoenix, Scottsdale, Fountain Hills, and other Maricopa County locations.",
     },
   ],
 });

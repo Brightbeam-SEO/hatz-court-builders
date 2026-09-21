@@ -4,7 +4,13 @@ import {
   isPropertyManagementServiceSlug,
 } from "@/lib/property-management-services-nav";
 
-const SCOTTSDALE_CHILD_SLUGS = new Set(["tennis-court-contractor-scottsdale-az"]);
+const SCOTTSDALE_CHILD_SLUGS = new Set([
+  "tennis-court-contractor-scottsdale-az",
+  "basketball-court-installation-scottsdale-az",
+  "pickleball-court-installation-scottsdale-az",
+  "bocce-court-builder-scottsdale-az",
+  "padel-court-builder-scottsdale-az",
+]);
 const PHOENIX_CHILD_SLUGS = new Set([
   "pickleball-court-builder-phoenix-az",
   "tennis-court-builders-phoenix-az",
@@ -12,6 +18,7 @@ const PHOENIX_CHILD_SLUGS = new Set([
   "bocce-court-installation-phoenix-az",
   "padel-court-builder-phoenix-az",
 ]);
+const MESA_CHILD_SLUGS = new Set(["pickleball-court-builders-mesa-az"]);
 
 /** Sidebar: homepage plus other PM service pages. */
 export function getPropertyManagementServiceSidebarLinks(currentSlug: string) {
@@ -28,8 +35,11 @@ export function getPropertyManagementServiceSidebarLinks(currentSlug: string) {
     (link) => link.slug !== currentSlug,
   )
     .filter((link) => {
-      if (currentSlug === "tennis-court-contractor-scottsdale-az") {
-        return link.slug === "court-builder-scottsdale-az";
+      if (SCOTTSDALE_CHILD_SLUGS.has(currentSlug)) {
+        return link.slug === "court-builder-scottsdale-az" || SCOTTSDALE_CHILD_SLUGS.has(link.slug);
+      }
+      if (MESA_CHILD_SLUGS.has(currentSlug)) {
+        return link.slug === "court-builder-mesa-az" || MESA_CHILD_SLUGS.has(link.slug);
       }
       if (isIdahoCityPage && !isArizonaPage) {
         return (
@@ -42,15 +52,19 @@ export function getPropertyManagementServiceSidebarLinks(currentSlug: string) {
       if (PHOENIX_CHILD_SLUGS.has(currentSlug)) {
         return link.slug === "court-builder-phoenix-az" || PHOENIX_CHILD_SLUGS.has(link.slug);
       }
-      if (
-        SCOTTSDALE_CHILD_SLUGS.has(link.slug) &&
-        currentSlug !== "court-builder-scottsdale-az"
-      ) {
+      const currentIsScottsdaleHubOrChild =
+        currentSlug === "court-builder-scottsdale-az" || SCOTTSDALE_CHILD_SLUGS.has(currentSlug);
+      if (SCOTTSDALE_CHILD_SLUGS.has(link.slug) && !currentIsScottsdaleHubOrChild) {
         return false;
       }
       const currentIsPhoenixHubOrChild =
         currentSlug === "court-builder-phoenix-az" || PHOENIX_CHILD_SLUGS.has(currentSlug);
       if (PHOENIX_CHILD_SLUGS.has(link.slug) && !currentIsPhoenixHubOrChild) {
+        return false;
+      }
+      const currentIsMesaHubOrChild =
+        currentSlug === "court-builder-mesa-az" || MESA_CHILD_SLUGS.has(currentSlug);
+      if (MESA_CHILD_SLUGS.has(link.slug) && !currentIsMesaHubOrChild) {
         return false;
       }
       return true;
