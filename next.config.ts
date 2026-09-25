@@ -87,7 +87,7 @@ const nextConfig: NextConfig = {
         destination: "https://hatzcourtbuilders.com/:path*",
         permanent: true,
       },
-      { source: "/services", destination: "/", permanent: true },
+      { source: "/services", destination: "/pickleball-court-construction/", permanent: true },
       { source: "/about-us", destination: "/about/", permanent: true },
       { source: "/about-us/:path*", destination: "/about/:path*", permanent: true },
       { source: "/contact-us", destination: "/contact/", permanent: true },
