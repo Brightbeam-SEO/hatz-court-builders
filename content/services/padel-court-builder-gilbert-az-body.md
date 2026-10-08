@@ -18,7 +18,12 @@ Many Gilbert lots also have HOA design rules. The court has to fit the yard and 
 - Acrylic padel court finishes in Gilbert offer a hard, steady bounce with clean color.
 - Padel court lighting in Gilbert makes cooler night games possible.
 - Fencing and enclosure planning in Gilbert keeps play inside the court.
-- Full design-build padel projects in Gilbert take you from layout to finished court.
+- Full design-build padel projects in Gilbert from [the Hatz Court Builders team](/) take you from layout to finished court.
+- [Pickleball court construction Gilbert AZ](/pickleball-court-builder-gilbert-az/) is a good match for clubs that also want padel.
+- [Tennis courts in Gilbert](/tennis-court-contractor-gilbert-az/) can share a site plan with new padel courts.
+- [Basketball courts in Gilbert AZ](/basketball-court-installation-gilbert-az/) round out family and club properties.
+- [Bocce court construction in Gilbert](/bocce-court-installation-gilbert-az/) adds a relaxed lawn game near the padel court.
+- [Custom courts in Gilbert](/court-builder-gilbert-az/) let you plan padel with other games on one property.
 
 ## Why a Dedicated Padel Court Builder Matters in Gilbert
 

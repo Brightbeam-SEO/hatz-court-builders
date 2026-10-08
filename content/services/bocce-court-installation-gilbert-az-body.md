@@ -15,10 +15,14 @@ Hatz Court Builders handles grading, base work, surface placement, borders, and 
 - [Bocce court installation in Gilbert](/bocce-court-installation-gilbert-az/) covers new backyard and community bocce lanes built from the base up.
 - Bocce court resurfacing in Gilbert refreshes worn play beds and fixes uneven rolling spots.
 - Custom bocce court design for Gilbert yards fits length and borders around pools, patios, and turf.
-- Full site preparation in Gilbert sets grade and drainage before the bocce surface goes down.
+- Full site preparation from [Hatz Court Builders](/) sets grade and drainage in Gilbert before the bocce surface goes down.
 - Lighting for Gilbert bocce courts makes cooler evening games easy to enjoy.
 - Fencing near Gilbert bocce lanes helps keep balls in play on busy shared lots.
-- Multi-court layouts in Gilbert can pair bocce with pickleball or basketball on larger properties.
+- [Pickleball courts in Gilbert AZ](/pickleball-court-builder-gilbert-az/) can sit beside a bocce lane on larger lots.
+- [Gilbert basketball half courts](/basketball-court-installation-gilbert-az/) pair well with bocce in family yards.
+- [Padel courts in Gilbert](/padel-court-builder-gilbert-az/) add a racket game next to your bocce area.
+- [Tennis court construction in Gilbert](/tennis-court-contractor-gilbert-az/) fits HOA and estate properties that also want bocce.
+- [Gilbert court builder services](/court-builder-gilbert-az/) plan every court on your property together.
 
 ## Choosing a Bocce Court Builder Gilbert Owners Can Reach
 
