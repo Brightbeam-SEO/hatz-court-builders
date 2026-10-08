@@ -2253,6 +2253,271 @@ export const PM_COURT_BUILDER_GILBERT_AZ_CONFIG = courtBuilderCityConfig({
   ],
 });
 
+export const PM_BOCCE_COURT_INSTALLATION_GILBERT_AZ_CONFIG = courtBuilderCityConfig({
+  slug: "bocce-court-installation-gilbert-az",
+  cityName: "Gilbert",
+  stateName: "Arizona",
+  serviceName: "Bocce Court Installation Gilbert",
+  heroTitle: "Bocce Court Installation Gilbert, AZ",
+  heroSubtitle:
+    "Bocce court installation for Gilbert backyards, HOAs, and gathering spaces with level beds, solid borders, and smart drainage.",
+  metaTitle: "Bocce Court Installation Gilbert AZ | Free Quotes | Hatz",
+  metaDescription:
+    "Bocce court installation Gilbert for homes, HOAs, and commercial spaces. Level builds, resurfacing, and site prep. Call (208) 979-0002 for a free quote.",
+  faqHeading: "Gilbert Bocce Court Installation Questions",
+  heroImageFragment: "tile shuffleboard court installation modular",
+  faqItems: [
+    {
+      question: "Do you offer bocce court installation in Gilbert?",
+      answer:
+        "Yes. Hatz Court Builders installs bocce courts for homes, HOAs, and commercial properties across Gilbert and nearby East Valley cities.",
+    },
+    {
+      question: "Are you a bocce court builder for both homes and businesses?",
+      answer:
+        "Yes. We build bocce courts for backyards, HOA common areas, schools, parks, and commercial gathering spaces.",
+    },
+    {
+      question: "Can irrigation near my yard affect a bocce court?",
+      answer:
+        "It can. Extra water near the court can soften the base and push edges out of line. We review irrigation and drainage before we build.",
+    },
+    {
+      question: "Can you resurface an old bocce court?",
+      answer:
+        "Yes. We can refresh worn play beds, fix low spots, and repair borders so the ball rolls true again.",
+    },
+    {
+      question: "Can you add lighting to a Gilbert bocce court?",
+      answer:
+        "Yes. Court lighting makes cooler evening games easy, which helps during Gilbert summers.",
+    },
+    {
+      question: "How do I get a free bocce court quote?",
+      answer:
+        "Call (208) 979-0002 or contact us online with your Gilbert address and goals. We will review your site and send a free quote.",
+    },
+    {
+      question: "What areas near Gilbert do you serve?",
+      answer:
+        "Besides Gilbert, we serve Mesa, Chandler, Tempe, Phoenix, Scottsdale, and other Maricopa County locations.",
+    },
+  ],
+});
+
+export const PM_BASKETBALL_COURT_INSTALLATION_GILBERT_AZ_CONFIG = courtBuilderCityConfig({
+  slug: "basketball-court-installation-gilbert-az",
+  cityName: "Gilbert",
+  stateName: "Arizona",
+  serviceName: "Basketball Court Installation Gilbert",
+  heroTitle: "Basketball Court Installation Gilbert, AZ",
+  heroSubtitle:
+    "Basketball court installation for Gilbert homes, schools, HOAs, and facilities, built for Arizona heat and everyday play.",
+  metaTitle: "Basketball Court Installation Gilbert AZ | Free Quotes | Hatz",
+  metaDescription:
+    "Basketball court installation Gilbert for half courts, full courts, and multi-use pads. Acrylic, modular, and cushioned options. Call (208) 979-0002.",
+  faqHeading: "Basketball Court Builder Gilbert FAQs",
+  heroImageFragment: "backyard green tan basketball half court",
+  faqItems: [
+    {
+      question: "Do you install basketball courts in Gilbert?",
+      answer:
+        "Yes. Hatz Court Builders is a basketball court builder for Gilbert homes, schools, HOAs, and commercial sites.",
+    },
+    {
+      question: "Can you build a half court in a Gilbert backyard?",
+      answer:
+        "Yes. We plan half courts and custom sizes to fit your lot, pool, and HOA rules.",
+    },
+    {
+      question: "What surfaces do you offer for basketball courts?",
+      answer:
+        "We install acrylic, cushioned acrylic, modular tiles, concrete, and asphalt systems. We help you pick based on use, heat, and upkeep.",
+    },
+    {
+      question: "Can my basketball court include pickleball lines?",
+      answer:
+        "Yes. Many Gilbert families add pickleball striping so one pad works for both games.",
+    },
+    {
+      question: "Do you add custom logos and team colors?",
+      answer:
+        "Yes. We can add custom logos and colors to match your home, school, or team.",
+    },
+    {
+      question: "Do you resurface old basketball courts?",
+      answer:
+        "Yes. We handle crack repair, resurfacing, and new striping for worn courts.",
+    },
+    {
+      question: "How do I request a free quote in Gilbert?",
+      answer:
+        "Call (208) 979-0002 or reach us online. Share your address and goals, and we will review options and send a free quote.",
+    },
+  ],
+});
+
+export const PM_PADEL_COURT_BUILDER_GILBERT_AZ_CONFIG = courtBuilderCityConfig({
+  slug: "padel-court-builder-gilbert-az",
+  cityName: "Gilbert",
+  stateName: "Arizona",
+  serviceName: "Padel Court Builder Gilbert",
+  heroTitle: "Padel Court Builder Gilbert, AZ",
+  heroSubtitle:
+    "Padel court builder services for Gilbert homes, clubs, and facilities, from site prep and surfacing to lighting and fencing.",
+  metaTitle: "Padel Court Builder Gilbert AZ | Free Quotes | Hatz",
+  metaDescription:
+    "Padel court builder Gilbert for residential and club courts. Turf and acrylic surfaces, lighting, and site prep. Call (208) 979-0002 for a free quote.",
+  faqHeading: "Padel Court Installation Gilbert Questions",
+  heroImageFragment: "outdoor multi court acrylic surfacing pickleball basketball tennis",
+  faqItems: [
+    {
+      question: "Do you build padel courts in Gilbert?",
+      answer:
+        "Yes. Hatz Court Builders handles padel court installation for homes, clubs, and commercial properties in Gilbert and nearby cities.",
+    },
+    {
+      question: "What surface is used on a padel court?",
+      answer:
+        "Synthetic turf with sand infill is the most common choice. Acrylic is another option for owners who want a hard surface.",
+    },
+    {
+      question: "How much space does a padel court need?",
+      answer:
+        "A standard padel court is smaller than a tennis court. We review your lot and plan the layout, walls, and access around your space.",
+    },
+    {
+      question: "Can you add lighting to a padel court?",
+      answer:
+        "Yes. Lighting lets Gilbert players enjoy cooler evening games.",
+    },
+    {
+      question: "Do you handle site prep and drainage?",
+      answer:
+        "Yes. We handle grading, base work, and drainage planning so the court stays flat and dries well after monsoon rain.",
+    },
+    {
+      question: "Do you work with residential and commercial clients?",
+      answer:
+        "Yes. We build padel courts for homeowners, HOAs, clubs, and commercial recreation sites.",
+    },
+    {
+      question: "How do I get a free padel court quote in Gilbert?",
+      answer:
+        "Call (208) 979-0002 or contact us online with your address and project goals. We will review the site and provide a free quote.",
+    },
+  ],
+});
+
+export const PM_PICKLEBALL_COURT_BUILDER_GILBERT_AZ_CONFIG = courtBuilderCityConfig({
+  slug: "pickleball-court-builder-gilbert-az",
+  cityName: "Gilbert",
+  stateName: "Arizona",
+  serviceName: "Pickleball Court Builder Gilbert",
+  heroTitle: "Pickleball Court Builder Gilbert, AZ",
+  heroSubtitle:
+    "Pickleball court builder services for Gilbert backyards, HOAs, schools, and facilities with hard and cushioned acrylic options.",
+  metaTitle: "Pickleball Court Builder Gilbert AZ | Free Quotes | Hatz",
+  metaDescription:
+    "Pickleball court builder Gilbert for backyard and community courts. Acrylic, cushioned acrylic, and modular options. Call (208) 979-0002 today.",
+  faqHeading: "Pickleball Court Installation Gilbert FAQs",
+  heroImageFragment: "outdoor pickleball court red and green surface",
+  faqItems: [
+    {
+      question: "Are you a pickleball court builder in Gilbert?",
+      answer:
+        "Yes. Hatz Court Builders handles pickleball court installation for homes, HOAs, schools, and facilities across Gilbert.",
+    },
+    {
+      question: "How much space do I need for a backyard pickleball court?",
+      answer:
+        "A standard pickleball playing area is 20 by 44 feet, with extra run-off space for safer play. We can plan custom layouts for smaller Gilbert lots.",
+    },
+    {
+      question: "What is the difference between hard and cushioned acrylic?",
+      answer:
+        "Hard acrylic gives a fast, steady bounce. Cushioned acrylic adds soft layers under the color coat for more comfort underfoot.",
+    },
+    {
+      question: "Can you add pickleball lines to my tennis court?",
+      answer:
+        "Yes. We can stripe pickleball lines in a different color so both games stay easy to read.",
+    },
+    {
+      question: "Do you resurface worn pickleball courts?",
+      answer:
+        "Yes. We fix cracks, recoat faded surfaces, and update kitchen lines and boundaries.",
+    },
+    {
+      question: "Do you install nets, lighting, and fencing?",
+      answer:
+        "Yes. We can add nets, court lighting, and fencing to complete your Gilbert pickleball court.",
+    },
+    {
+      question: "How do I get a free pickleball court quote in Gilbert?",
+      answer:
+        "Call (208) 979-0002 or contact us online. Share your address and goals, and we will send a free quote.",
+    },
+    {
+      question: "Which nearby areas do you serve?",
+      answer:
+        "Besides Gilbert, we serve Mesa, Chandler, Tempe, Phoenix, Scottsdale, and other Maricopa County locations.",
+    },
+  ],
+});
+
+export const PM_TENNIS_COURT_CONTRACTOR_GILBERT_AZ_CONFIG = courtBuilderCityConfig({
+  slug: "tennis-court-contractor-gilbert-az",
+  cityName: "Gilbert",
+  stateName: "Arizona",
+  serviceName: "Tennis Court Contractor Gilbert",
+  heroTitle: "Tennis Court Contractor Gilbert, AZ",
+  heroSubtitle:
+    "Tennis court contractor services for Gilbert homes, HOAs, schools, and clubs, from new builds to resurfacing and repairs.",
+  metaTitle: "Tennis Court Contractor Gilbert AZ | Free Quotes | Hatz",
+  metaDescription:
+    "Tennis court contractor Gilbert for new courts, resurfacing, and repairs. Acrylic and cushioned systems. Call (208) 979-0002 for a free quote.",
+  faqHeading: "Tennis Court Builder Gilbert Questions",
+  heroImageFragment: "tennis court resurface blue and green acrylic",
+  faqItems: [
+    {
+      question: "Are you a tennis court contractor serving Gilbert?",
+      answer:
+        "Yes. Hatz Court Builders builds, resurfaces, and repairs tennis courts for homes, HOAs, schools, and clubs in Gilbert.",
+    },
+    {
+      question: "Do you handle new tennis court installation in Gilbert?",
+      answer:
+        "Yes. We handle grading, base work, surfacing, striping, nets, lighting, and fencing for new courts.",
+    },
+    {
+      question: "What are signs my tennis court needs resurfacing?",
+      answer:
+        "Faded color, cracks, puddles after rain, slick spots, and worn lines are common signs. A site review shows whether you need repairs or full resurfacing.",
+    },
+    {
+      question: "Can you add pickleball lines to a tennis court?",
+      answer:
+        "Yes. Many Gilbert communities add pickleball lines so one court can serve both sports.",
+    },
+    {
+      question: "Do you offer cushioned tennis court surfaces?",
+      answer:
+        "Yes. We install cushioned acrylic systems as well as standard hardcourt acrylic.",
+    },
+    {
+      question: "Do you work on HOA and school tennis courts?",
+      answer:
+        "Yes. We work with residential and commercial clients, including HOAs, schools, parks, and clubs.",
+    },
+    {
+      question: "How do I request a free tennis court quote in Gilbert?",
+      answer:
+        "Call (208) 979-0002 or contact us online with your address and court details. We will review options and send a free quote.",
+    },
+  ],
+});
+
 export const PM_COURT_BUILDER_CHANDLER_AZ_CONFIG = courtBuilderCityConfig({
   slug: "court-builder-chandler-az",
   cityName: "Chandler",

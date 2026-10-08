@@ -6,6 +6,11 @@ Gilbert projects need heat-smart prep, clean layout planning, and sport-specific
 
 ## Court Builder Gilbert Services
 
+- [Tennis court contractor in Gilbert AZ](/tennis-court-contractor-gilbert-az/) for new tennis courts, resurfacing, and repairs
+- [Basketball court installation in Gilbert](/basketball-court-installation-gilbert-az/) for backyard half courts and full courts
+- [Pickleball court builder in Gilbert](/pickleball-court-builder-gilbert-az/) for hard and cushioned acrylic pickleball courts
+- [Bocce court installation Gilbert Arizona](/bocce-court-installation-gilbert-az/) for level outdoor bocce lanes
+- [Padel court builder Gilbert](/padel-court-builder-gilbert-az/) for turf and acrylic padel courts
 - Community court builds
 - Backyard court projects
 - Design-to-build planning
@@ -17,7 +22,7 @@ Gilbert projects need heat-smart prep, clean layout planning, and sport-specific
 
 Agritopia, Power Ranch, Seville, and Cooley Station each bring different lot shapes and HOA expectations, while the Heritage District near Downtown Gilbert favors smaller amenity courts with careful neighbor access. Val Vista Lakes and nearby East Valley subdivisions often pair backyard courts with existing recreation amenities.
 
-We stage projects along Gilbert Road, Lindsay Road, Higley Road, and Warner Road, and plan around local anchors like the Riparian Preserve at Water Ranch, Freestone Park, SanTan Village, Joe's Farm Grill, and Liberty Market—so the finished court fits how people already move through the area.
+We stage projects along Gilbert Road, Lindsay Road, Higley Road, and Warner Road, and plan around local anchors like the Riparian Preserve at Water Ranch, Freestone Park, SanTan Village, Joe's Farm Grill, and Liberty Market, so the finished court fits how people already move through the area.
 
 ## Other Services
 

@@ -19,6 +19,13 @@ const PHOENIX_CHILD_SLUGS = new Set([
   "padel-court-builder-phoenix-az",
 ]);
 const MESA_CHILD_SLUGS = new Set(["pickleball-court-builders-mesa-az"]);
+const GILBERT_CHILD_SLUGS = new Set([
+  "tennis-court-contractor-gilbert-az",
+  "basketball-court-installation-gilbert-az",
+  "pickleball-court-builder-gilbert-az",
+  "bocce-court-installation-gilbert-az",
+  "padel-court-builder-gilbert-az",
+]);
 
 /** Sidebar: homepage plus other PM service pages. */
 export function getPropertyManagementServiceSidebarLinks(currentSlug: string) {
@@ -40,6 +47,9 @@ export function getPropertyManagementServiceSidebarLinks(currentSlug: string) {
       }
       if (MESA_CHILD_SLUGS.has(currentSlug)) {
         return link.slug === "court-builder-mesa-az" || MESA_CHILD_SLUGS.has(link.slug);
+      }
+      if (GILBERT_CHILD_SLUGS.has(currentSlug)) {
+        return link.slug === "court-builder-gilbert-az" || GILBERT_CHILD_SLUGS.has(link.slug);
       }
       if (isIdahoCityPage && !isArizonaPage) {
         return (
@@ -65,6 +75,11 @@ export function getPropertyManagementServiceSidebarLinks(currentSlug: string) {
       const currentIsMesaHubOrChild =
         currentSlug === "court-builder-mesa-az" || MESA_CHILD_SLUGS.has(currentSlug);
       if (MESA_CHILD_SLUGS.has(link.slug) && !currentIsMesaHubOrChild) {
+        return false;
+      }
+      const currentIsGilbertHubOrChild =
+        currentSlug === "court-builder-gilbert-az" || GILBERT_CHILD_SLUGS.has(currentSlug);
+      if (GILBERT_CHILD_SLUGS.has(link.slug) && !currentIsGilbertHubOrChild) {
         return false;
       }
       return true;
