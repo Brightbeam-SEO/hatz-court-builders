@@ -44,6 +44,9 @@ export function buildGalleryCollageItems(): GalleryImageItem[] {
   ].filter(Boolean);
 
   const pinnedTop = [
+    paths.find((p) => p.includes("green-blue-acrylic-construction-mountain-view"))!,
+    paths.find((p) => p.includes("community-park-pickleball-tennis-basketball"))!,
+    paths.find((p) => p.includes("pool-patio-residential"))!,
     paths.find((p) => p.includes("vinyl-fence-residential"))!,
     paths.find((p) => p.includes("green-tan-basketball-half-court"))!,
     paths.find((p) => p.includes("mountain-view-outdoor-lighting"))!,

@@ -1661,7 +1661,7 @@ export const PM_PICKLEBALL_COURT_INSTALLATION_SCOTTSDALE_AZ_CONFIG = courtBuilde
   metaDescription:
     "Pickleball court installation Scottsdale for backyard and community courts. Acrylic, cushioned, and modular options. Call (208) 979-0002 today.",
   faqHeading: "Questions on Pickleball Court Installation in Scottsdale",
-  heroImageFragment: "outdoor pickleball court red and green surface",
+  heroImageFragment: "multi court pickleball basketball green blue mountain view",
   faqItems: [
     {
       question: "Do you install pickleball courts in Scottsdale?",
@@ -1859,7 +1859,7 @@ export const PM_PICKLEBALL_COURT_BUILDER_PHOENIX_AZ_CONFIG = courtBuilderCityCon
   metaTitle: "Pickleball Court Builder Phoenix, AZ | Hatz Court Builders",
   metaDescription:
     "Custom pickleball court builder in Phoenix, AZ for backyard, HOA, school, and facility projects.",
-  heroImageFragment: "outdoor pickleball court red and green surface",
+  heroImageFragment: "backyard pickleball court pool patio residential",
   faqItems: [
     {
       question: "How much space do I need for a backyard pickleball court?",
@@ -1958,7 +1958,7 @@ export const PM_BASKETBALL_COURT_CONSTRUCTION_PHOENIX_AZ_CONFIG = courtBuilderCi
   metaTitle: "Basketball Court Construction Phoenix AZ | Hatz Court Builders",
   metaDescription:
     "Basketball court construction in Phoenix for residential and commercial projects with full layout and surfacing support.",
-  heroImageFragment: "basketball tile court modular hoop goal",
+  heroImageFragment: "community park pickleball tennis basketball multi court",
   faqItems: [
     {
       question: "How long does a basketball court take to build in Phoenix?",
