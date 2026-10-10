@@ -121,6 +121,8 @@ export function PressureWashingBoiseLanding({
                 sectionId={cityPage.centeredContactSectionId ?? "property-management-booking-contact"}
                 formWrapperId={cityPage.centeredContactFormId ?? "property-management-booking-form"}
                 className="-mb-16"
+                heading={cityPage.homeContactHeading}
+                subtext={cityPage.homeContactSubtext}
               />
             ) : null}
           </>
@@ -174,6 +176,8 @@ export function PressureWashingBoiseLanding({
                 sectionId={cityPage.centeredContactSectionId ?? "property-management-booking-contact"}
                 formWrapperId={cityPage.centeredContactFormId ?? "property-management-booking-form"}
                 className="-mb-16"
+                heading={cityPage.homeContactHeading}
+                subtext={cityPage.homeContactSubtext}
               />
             ) : cityPage?.showCenteredContactSection ? (
               <CenteredContactSection

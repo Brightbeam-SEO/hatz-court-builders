@@ -41,14 +41,14 @@ Star projects range from compact Downtown Star yards to larger parcels off Float
 
 We plan courts near Hero's Park and the Star Riverwalk as carefully as we do for neighborhoods farther south toward Can-Ada—because clay-heavy soil and seasonal runoff do not care which side of town you live on.
 
-## Other Services
+## Court Construction Near Star, Idaho
 
-- [Court Builders Boise, ID](/court-builders-boise-id/)
-- [Court Builder Meridian, ID](/court-builder-meridian-id/)
-- [Court Builder Nampa, ID](/court-builder-nampa-id/)
-- [Court Builder Caldwell, ID](/court-builder-caldwell-id/)
-- [Court Builder Middleton, ID](/court-builder-middleton-id/)
-- [Court Builder Eagle, ID](/court-builder-eagle-id/)
+- Our [Boise court construction company](/court-builders-boise-id/) offers acrylic, modular, turf, and hardwood courts.
+- To the south, [Meridian court builders](/court-builder-meridian-id/) plan courts for backyards and schools.
+- Our [Nampa, ID court builder](/court-builder-nampa-id/) page covers new courts, repairs, and renovations.
+- Families farther west can visit [Caldwell court construction](/court-builder-caldwell-id/) for surface options.
+- Just down the road, our [Middleton court builders](/court-builder-middleton-id/) build pickleball and multi courts.
+- East of Star, [Eagle, Idaho court builders](/court-builder-eagle-id/) add lighting and fencing to new courts.
 
 ## Court Building FAQs for Star Property Owners
 

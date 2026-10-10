@@ -41,14 +41,14 @@ Eagle Island State Park and the Boise River set the tone for a lot of Eagle buil
 
 Downtown Eagle homeowners near Heritage Park or the Arboretum often need quieter staging and tighter lot fits, while foothill parcels ask for more drainage and orientation planning before surfacing starts.
 
-## Other Services
+## Other Treasure Valley Court Builders Near Eagle
 
-- [Court Builders Boise, ID](/court-builders-boise-id/)
-- [Court Builder Meridian, ID](/court-builder-meridian-id/)
-- [Court Builder Nampa, ID](/court-builder-nampa-id/)
-- [Court Builder Caldwell, ID](/court-builder-caldwell-id/)
-- [Court Builder Middleton, ID](/court-builder-middleton-id/)
-- [Court Builder Star, ID](/court-builder-star-id/)
+- Our [court builders in Boise, ID](/court-builders-boise-id/) handle full design-build projects from start to finish.
+- South of Eagle, [Meridian court construction](/court-builder-meridian-id/) covers home and school courts.
+- Our [Nampa court builders](/court-builder-nampa-id/) help with resurfacing, striping, and court repairs.
+- For Canyon County homes, see our [Caldwell, Idaho court builder](/court-builder-caldwell-id/) page.
+- Our [court construction in Middleton](/court-builder-middleton-id/) page covers backyard pickleball courts.
+- Just west, [Star court contractors](/court-builder-star-id/) plan courts that fit your space and budget.
 
 ## Court Builder Eagle Questions
 

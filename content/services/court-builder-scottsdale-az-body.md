@@ -20,12 +20,13 @@ Old Town Scottsdale and the Waterfront ask for compact layouts, while McCormick 
 
 We regularly plan courts along Scottsdale Road, Shea Boulevard, Frank Lloyd Wright Boulevard, and Pima Road, near landmarks like Scottsdale Fashion Square, the McDowell Sonoran Preserve, and Taliesin West, and close to everyday spots from Mayo Clinic Scottsdale to neighborhood cafes around Old Town.
 
-## Other Services
+## Court Builders Near Scottsdale in the Valley
 
-- [Court Builder Phoenix, AZ](/court-builder-phoenix-az/)
-- [Court Builder Mesa, AZ](/court-builder-mesa-az/)
-- [Court Builder Gilbert, AZ](/court-builder-gilbert-az/)
-- [Court Builder Chandler, AZ](/court-builder-chandler-az/)
-- [Court Builder Glendale, AZ](/court-builder-glendale-az/)
-- [Court Builder Peoria, AZ](/court-builder-peoria-az/)
-- [Court Builder Tempe, AZ](/court-builder-tempe-az/)
+- Our [Phoenix court builders](/court-builder-phoenix-az/) plan pickleball, tennis, and basketball courts across the city.
+- To the east, [Mesa court construction](/court-builder-mesa-az/) covers backyard courts and community courts.
+- Our [Gilbert, AZ court builder](/court-builder-gilbert-az/) page covers acrylic and cushioned acrylic surfaces.
+- Homeowners in Chandler can read about [court building in Chandler](/court-builder-chandler-az/) for layout ideas.
+- On the west side, [Glendale court contractors](/court-builder-glendale-az/) build courts for homes, schools, and parks.
+- Our [Peoria, Arizona court construction](/court-builder-peoria-az/) team handles lighting, fencing, and striping.
+- Close to Scottsdale, [Tempe court builders](/court-builder-tempe-az/) help with new courts and resurfacing.
+

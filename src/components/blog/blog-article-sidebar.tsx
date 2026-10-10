@@ -168,7 +168,7 @@ export function BlogArticleSidebar({
         <div className="relative aspect-[16/10] w-full overflow-hidden rounded-2xl bg-zen-crimson ring-1 ring-white/20">
           <Image
             src={BLOG_SIDEBAR_CTA_IMAGE_SRC}
-            alt="Property manager leasing sign — tenant placement services in Meridian, Idaho"
+            alt="Backyard pickleball court with modular tile surface built by Hatz Court Builders"
             fill
             className="object-cover object-center"
             sizes="(max-width: 1024px) 100vw, 17.5rem"

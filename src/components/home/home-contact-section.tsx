@@ -26,6 +26,8 @@ type HomeContactSectionProps = {
   formWrapperId?: string;
   /** `home` = dark form on homepage only; `landing` = green form on city/service pages. */
   variant?: "home" | "landing";
+  heading?: string;
+  subtext?: string;
 };
 
 export function HomeContactSection({
@@ -34,6 +36,8 @@ export function HomeContactSection({
   sectionId = "contact",
   formWrapperId = HOME_FOOTER_CONTACT_FORM_ID,
   variant = "home",
+  heading,
+  subtext,
 }: HomeContactSectionProps) {
   const isLandingForm = variant === "landing";
   const formWrapperClass = isLandingForm
@@ -82,10 +86,10 @@ export function HomeContactSection({
             <div className="contact-heading-reveal text-center">
               <p className="section-eyebrow">{copy.contactEyebrow}</p>
               <h2 className="mx-auto mt-3 max-w-xl font-heading text-4xl font-bold leading-[1.08] tracking-tight text-zen-espresso sm:text-5xl lg:text-[3.25rem]">
-                {highlightTextPhrase(copy.contactHeading, "Top Rated Court Builders")}
+                {highlightTextPhrase(heading ?? copy.contactHeading, "Top Rated Court Builders")}
               </h2>
               <p className="mx-auto mt-4 max-w-xl text-base leading-relaxed text-zen-taupe sm:text-lg">
-                {copy.contactSubtext}
+                {subtext ?? copy.contactSubtext}
               </p>
             </div>
 

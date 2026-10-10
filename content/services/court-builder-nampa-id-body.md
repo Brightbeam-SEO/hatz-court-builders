@@ -41,14 +41,14 @@ Nampa court projects show up near Downtown Nampa, Midway, and the South Nampa ne
 
 We also plan residential and facility courts near Lakeview Park, the Ford Idaho Center, Northwest Nazarene University, and everyday stops like WinCo or Costco on the east side—always matching base prep and drainage to the lot, not just the zip code.
 
-## Other Services
+## Nearby Court Construction for Nampa Neighbors
 
-- [Court Builders Boise, ID](/court-builders-boise-id/)
-- [Court Builder Meridian, ID](/court-builder-meridian-id/)
-- [Court Builder Caldwell, ID](/court-builder-caldwell-id/)
-- [Court Builder Middleton, ID](/court-builder-middleton-id/)
-- [Court Builder Star, ID](/court-builder-star-id/)
-- [Court Builder Eagle, ID](/court-builder-eagle-id/)
+- Our [court construction in Boise](/court-builders-boise-id/) includes acrylic, cushioned, modular, and hardwood systems.
+- Just east of Nampa, [Meridian court contractors](/court-builder-meridian-id/) build home courts and school courts alike.
+- Our [Caldwell, ID court builders](/court-builder-caldwell-id/) help with resurfacing, repairs, and brand new courts.
+- North of town, [Middleton pickleball and basketball court builders](/court-builder-middleton-id/) plan courts that fit your yard.
+- Thinking about a backyard court? Our [Star court construction](/court-builder-star-id/) page walks you through the steps.
+- See our [Eagle Idaho court builder](/court-builder-eagle-id/) page for lighting, fencing, and full site prep.
 
 ## Common Questions About Court Projects in Nampa
 

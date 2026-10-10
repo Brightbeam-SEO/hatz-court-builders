@@ -19,13 +19,14 @@ Downtown Tempe and the Mill Avenue District favor efficient footprints and caref
 
 Mill Avenue, University Drive, Rural Road, Baseline Road, and Apache Boulevard cover most of our Tempe routes. Projects also land near Tempe Town Lake, Tempe Beach Park, Kiwanis Park, Tempe Marketplace, and ASU Gammage—places where heat, dust, and heavy seasonal use make durable surfacing and drainage non-negotiable.
 
-## Other Services
+## Court Construction Close to Tempe, AZ
 
-- [Court Builder Scottsdale, AZ](/court-builder-scottsdale-az/)
-- [Tennis Court Contractor Scottsdale, AZ](/tennis-court-contractor-scottsdale-az/)
-- [Court Builder Phoenix, AZ](/court-builder-phoenix-az/)
-- [Court Builder Mesa, AZ](/court-builder-mesa-az/)
-- [Court Builder Gilbert, AZ](/court-builder-gilbert-az/)
-- [Court Builder Chandler, AZ](/court-builder-chandler-az/)
-- [Court Builder Glendale, AZ](/court-builder-glendale-az/)
-- [Court Builder Peoria, AZ](/court-builder-peoria-az/)
+- Just north, our [Scottsdale court contractors](/court-builder-scottsdale-az/) handle design-build projects.
+- Our [tennis court builders in Scottsdale](/tennis-court-contractor-scottsdale-az/) plan new tennis courts and resurfacing.
+- Right next door, [Phoenix court construction](/court-builder-phoenix-az/) covers pickleball and basketball courts.
+- To the east, [court builders in Mesa, AZ](/court-builder-mesa-az/) build courts for homes and parks.
+- Our [Gilbert, AZ court construction](/court-builder-gilbert-az/) page covers cushioned acrylic surfaces.
+- Just south, [Chandler court builders](/court-builder-chandler-az/) help with new courts and repairs.
+- On the west side, [Glendale court construction](/court-builder-glendale-az/) covers multi courts.
+- Our [Peoria court builders](/court-builder-peoria-az/) add lighting, fencing, and custom logos.
+

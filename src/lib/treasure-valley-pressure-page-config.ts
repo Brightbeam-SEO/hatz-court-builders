@@ -67,6 +67,9 @@ export type TreasureValleyPressurePageConfig = {
   gallerySection?: TreasureValleyGallerySection;
   /** Homepage-style contact block instead of {@link CenteredContactSection}. */
   showHomeContactSection?: boolean;
+  /** Location-specific heading/subtext for the homepage-style contact block (defaults to homepage copy). */
+  homeContactHeading?: string;
+  homeContactSubtext?: string;
   /** `rentals-listing` replaces markdown article with available-rentals cards. */
   articleLayout?: "default" | "rentals-listing";
   /** Hero CTAs: portal sign-in buttons instead of call + rental analysis. */

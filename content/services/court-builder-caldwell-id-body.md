@@ -41,14 +41,14 @@ Around Indian Creek Plaza and Downtown Caldwell, space and access drive court de
 
 Property owners near the College of Idaho, Caldwell Events Center, or Simplot Stadium often want community-ready surfaces that hold up to regular use—so we plan coatings, striping, and runoff control for real traffic, not just a one-time install.
 
-## Other Services
+## Court Builders Serving Caldwell and Nearby Towns
 
-- [Court Builders Boise, ID](/court-builders-boise-id/)
-- [Court Builder Meridian, ID](/court-builder-meridian-id/)
-- [Court Builder Nampa, ID](/court-builder-nampa-id/)
-- [Court Builder Middleton, ID](/court-builder-middleton-id/)
-- [Court Builder Star, ID](/court-builder-star-id/)
-- [Court Builder Eagle, ID](/court-builder-eagle-id/)
+- Our [Boise, Idaho court builders](/court-builders-boise-id/) offer every major surface type from one crew.
+- If you live in Meridian, our [court builder in Meridian](/court-builder-meridian-id/) page explains our design-build process.
+- Right next door, [Nampa court contractors](/court-builder-nampa-id/) handle new builds and court repairs.
+- For homes north of Caldwell, see [court building in Middleton](/court-builder-middleton-id/).
+- Our [Star, Idaho court construction](/court-builder-star-id/) team builds pickleball, tennis, and multi courts.
+- Want a tennis court with lights? Our [court builders in Eagle](/court-builder-eagle-id/) can plan it with you.
 
 ## Common Questions About Court Building in Caldwell
 

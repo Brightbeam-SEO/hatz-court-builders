@@ -34,8 +34,8 @@ function galleryImagesForService(slug: string): PropertyGalleryImage[] {
 export function serviceGallerySectionCopy(serviceName: string) {
   return {
     eyebrow: "Court Construction Projects",
-    heading: "Custom Courts Built Across Idaho",
-    subheading: `Pickleball, basketball, tennis, and multi-use courts for homeowners, schools, and parks — including ${serviceName.toLowerCase()} throughout the Treasure Valley.`,
+    heading: "Custom Courts Built Across Idaho & Arizona",
+    subheading: `Pickleball, basketball, tennis, and multi-use courts for homeowners, schools, and parks, including ${serviceName.toLowerCase()} across the Treasure Valley and the greater Phoenix area.`,
   } as const;
 }
 

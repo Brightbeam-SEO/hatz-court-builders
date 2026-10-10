@@ -41,14 +41,14 @@ Middleton builds often sit on open lots near Purple Sage, Canyon Creek, or the q
 
 Whether you are near Middleton Place Park or closer to the small downtown corridor with its local shops and cafes, we size the court plan to the yard—not a generic Treasure Valley template.
 
-## Other Services
+## More Idaho Court Builders Near Middleton
 
-- [Court Builders Boise, ID](/court-builders-boise-id/)
-- [Court Builder Meridian, ID](/court-builder-meridian-id/)
-- [Court Builder Nampa, ID](/court-builder-nampa-id/)
-- [Court Builder Caldwell, ID](/court-builder-caldwell-id/)
-- [Court Builder Star, ID](/court-builder-star-id/)
-- [Court Builder Eagle, ID](/court-builder-eagle-id/)
+- The [Hatz court builders Boise](/court-builders-boise-id/) team covers projects for homeowners, schools, and parks.
+- Our [Meridian, Idaho court construction](/court-builder-meridian-id/) page covers acrylic and cushioned acrylic courts.
+- South of Middleton, [court builders in Nampa](/court-builder-nampa-id/) help with resurfacing and new layouts.
+- Our [Caldwell court contractor](/court-builder-caldwell-id/) page covers striping, fencing, and custom logos.
+- Just east, [Star ID court builders](/court-builder-star-id/) build courts for families who want to play at home.
+- Our [Eagle court installation](/court-builder-eagle-id/) team handles tennis, pickleball, and basketball courts.
 
 ## Court Builder Middleton FAQs
 

@@ -43,14 +43,14 @@ From Paramount and Tuscany to Bridgetower and the neighborhoods around Lochsa Fa
 
 If your property sits closer to Downtown Meridian, SpurWing, or the Ustick Road corridor, we still start with slope, irrigation runoff, and surface selection before any striping goes down.
 
-## Other Services
+## More Court Builder Services Around Meridian, ID
 
-- [Court Builders Boise, ID](/court-builders-boise-id/)
-- [Court Builder Nampa, ID](/court-builder-nampa-id/)
-- [Court Builder Caldwell, ID](/court-builder-caldwell-id/)
-- [Court Builder Middleton, ID](/court-builder-middleton-id/)
-- [Court Builder Star, ID](/court-builder-star-id/)
-- [Court Builder Eagle, ID](/court-builder-eagle-id/)
+- Our [Boise court builders](/court-builders-boise-id/) handle full design-build projects, from site prep to final striping.
+- Next door, [Nampa court installation](/court-builder-nampa-id/) covers new builds, repairs, and custom logos.
+- Need a court in Canyon County? [Court builders serving Caldwell](/court-builder-caldwell-id/) can help with layout and surface choice.
+- Our [Middleton court construction](/court-builder-middleton-id/) page covers backyard pickleball and basketball builds.
+- Homeowners north of Meridian can learn more on our [Star Idaho court builder](/court-builder-star-id/) page.
+- For tennis or multi courts, visit [Eagle, ID court building](/court-builder-eagle-id/) to see what we offer there.
 
 ## Court Builder Meridian Questions
 

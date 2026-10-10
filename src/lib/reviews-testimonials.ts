@@ -78,6 +78,18 @@ export function blogSidebarFeaturedReviews(): GoogleReview[] {
   });
 }
 
+const ARIZONA_PLACE_PATTERN =
+  /\b(?:AZ|Arizona|Phoenix|Scottsdale|Mesa|Gilbert|Chandler|Tempe|Glendale|Peoria|Fountain Hills|Arcadia|Anthem|East Valley|Maricopa)\b/;
+const IDAHO_PLACE_PATTERN =
+  /\b(?:Idaho|Boise|Meridian|Nampa|Caldwell|Kuna|Middleton|Treasure Valley|Twin Falls|McCall|Ketchum|Sun Valley|Hailey|Mountain Home|Fruitland|Homedale)\b|\b(?:Eagle|Star), ID\b|, ID\b/;
+
+/** Drops reviews that name a place in the other state; place-neutral reviews always stay. */
+export function reviewsForRegion(reviews: GoogleReview[], region: "idaho" | "arizona" | null): GoogleReview[] {
+  if (!region) return reviews;
+  const otherState = region === "idaho" ? ARIZONA_PLACE_PATTERN : IDAHO_PLACE_PATTERN;
+  return reviews.filter((review) => !otherState.test(review.quote));
+}
+
 function dedupeReviews(reviews: GoogleReview[]): GoogleReview[] {
   const seen = new Set<string>();
   const unique: GoogleReview[] = [];

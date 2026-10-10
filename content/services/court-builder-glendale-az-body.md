@@ -19,13 +19,14 @@ Historic Catlin Court and Downtown Glendale ask for compact, neighbor-aware inst
 
 Glendale Avenue, Bell Road, 59th Avenue, and Northern Avenue keep crews moving across town. Nearby landmarks like Westgate Entertainment District, State Farm Stadium, Desert Diamond Arena, Sahuaro Ranch Park, and Arrowhead Towne Center help us orient site plans to real street patterns—not just map pins.
 
-## Other Services
+## Phoenix Area Court Builders Near Glendale
 
-- [Court Builder Scottsdale, AZ](/court-builder-scottsdale-az/)
-- [Tennis Court Contractor Scottsdale, AZ](/tennis-court-contractor-scottsdale-az/)
-- [Court Builder Phoenix, AZ](/court-builder-phoenix-az/)
-- [Court Builder Mesa, AZ](/court-builder-mesa-az/)
-- [Court Builder Gilbert, AZ](/court-builder-gilbert-az/)
-- [Court Builder Chandler, AZ](/court-builder-chandler-az/)
-- [Court Builder Peoria, AZ](/court-builder-peoria-az/)
-- [Court Builder Tempe, AZ](/court-builder-tempe-az/)
+- Our [Scottsdale court construction](/court-builder-scottsdale-az/) team handles full design-build projects.
+- Want a tennis court? See our [Scottsdale tennis court builders](/tennis-court-contractor-scottsdale-az/) page.
+- Right next door, [Phoenix court contractors](/court-builder-phoenix-az/) build courts for homes and schools.
+- Our [Mesa, AZ court builder](/court-builder-mesa-az/) page covers acrylic and cushioned acrylic courts.
+- In the East Valley, [Gilbert court construction](/court-builder-gilbert-az/) covers new builds and repairs.
+- Our [Chandler court builders](/court-builder-chandler-az/) plan pickleball and basketball courts.
+- Just north, [court builders in Peoria, AZ](/court-builder-peoria-az/) add lighting and fencing.
+- Our [Tempe, Arizona court construction](/court-builder-tempe-az/) team helps with resurfacing.
+

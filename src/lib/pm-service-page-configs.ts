@@ -144,17 +144,19 @@ function courtBuilderCityConfig(input: {
   faqItems: TreasureValleyFaqItem[];
 }): TreasureValleyPressurePageConfig {
   const stateName = input.stateName ?? "Idaho";
-  const stateAbbr = stateName === "Arizona" ? "AZ" : "ID";
+  const isArizona = stateName === "Arizona";
+  const stateAbbr = isArizona ? "AZ" : "ID";
   const defaultLabel = `Court Builder ${input.cityName}, ${stateAbbr}`;
+  const defaultHeroSubtitle = isArizona
+    ? `Custom athletic court builders serving ${input.cityName}, Maricopa County, and the greater Phoenix area.`
+    : "Licensed and insured court builders with custom athletic court experience across the Treasure Valley.";
   const baseConfig = pmServiceConfig({
     slug: input.slug,
     serviceName: input.serviceName ?? defaultLabel,
     metaTitle: input.metaTitle,
     metaDescription: input.metaDescription,
     heroTitle: input.heroTitle ?? defaultLabel,
-    heroSubtitle:
-      input.heroSubtitle ??
-      "Licensed and insured court builders with custom athletic court experience across the Treasure Valley.",
+    heroSubtitle: input.heroSubtitle ?? defaultHeroSubtitle,
     heroImageFragment: input.heroImageFragment,
     bottomContactHeading: `Start Your ${input.cityName} Court Project`,
     bottomContactSubtext:
@@ -171,8 +173,25 @@ function courtBuilderCityConfig(input: {
     ],
     faqItems: input.faqItems,
   });
+  const gallerySection = baseConfig.gallerySection
+    ? isArizona
+      ? {
+          ...baseConfig.gallerySection,
+          heading: "Custom Courts Built Across Arizona",
+          subheading: `Pickleball, basketball, tennis, and multi-use courts for homeowners, schools, HOAs, and parks across ${input.cityName} and the greater Phoenix area.`,
+        }
+      : {
+          ...baseConfig.gallerySection,
+          heading: "Custom Courts Built Across Idaho",
+          subheading: `Pickleball, basketball, tennis, and multi-use courts for homeowners, schools, and parks — including ${(input.serviceName ?? defaultLabel).toLowerCase()} throughout the Treasure Valley.`,
+        }
+    : undefined;
+  const nearbyRegion = isArizona ? "Phoenix-area" : "Treasure Valley";
   return {
     ...baseConfig,
+    gallerySection,
+    homeContactHeading: `Talk With Top Rated Court Builders in ${input.cityName}, ${stateAbbr}`,
+    homeContactSubtext: `Our court builders serving ${input.cityName} and nearby ${nearbyRegion} communities will help you review your space, surface options, and next steps.`,
     cityName: input.cityName,
     mapIframeTitle: `Map — ${input.cityName}, ${stateName}`,
     mapEmbedSrc: googleMapsAreaEmbedSrc(`${input.cityName}, ${stateName}`),

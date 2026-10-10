@@ -41,14 +41,14 @@ Court builds around the North End and Hyde Park often need tighter lot planning 
 
 Southwest Boise and Collister properties near Overland Road or Vista Avenue get the same site-first approach—grading, surface choice, and access planned around how the lot actually sits.
 
-## Other Services
+## Court Builders Near Boise Across the Treasure Valley
 
-- [Court Builder Meridian, ID](/court-builder-meridian-id/)
-- [Court Builder Nampa, ID](/court-builder-nampa-id/)
-- [Court Builder Caldwell, ID](/court-builder-caldwell-id/)
-- [Court Builder Middleton, ID](/court-builder-middleton-id/)
-- [Court Builder Star, ID](/court-builder-star-id/)
-- [Court Builder Eagle, ID](/court-builder-eagle-id/)
+- Just west of town, our [Meridian court builders](/court-builder-meridian-id/) plan pickleball and basketball courts for backyards, schools, and parks.
+- Families in Canyon County can work with our [court construction team in Nampa](/court-builder-nampa-id/) on new courts and resurfacing.
+- If your project sits farther west, see our [Caldwell court building services](/court-builder-caldwell-id/) for acrylic, modular, and concrete options.
+- Small lots need smart layouts, and our [Middleton, Idaho court builder](/court-builder-middleton-id/) page shows how we plan them.
+- Want a home court with room for more than one game? Read about [court construction in Star, ID](/court-builder-star-id/).
+- North of Boise, our [Eagle court contractors](/court-builder-eagle-id/) build tennis, pickleball, and multi courts with lighting and fencing.
 
 ## Common Questions
 
