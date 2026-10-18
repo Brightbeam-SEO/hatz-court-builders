@@ -88,6 +88,11 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       { source: "/services", destination: "/pickleball-court-construction/", permanent: true },
+      { source: "/thank-you", destination: "/contact/", permanent: true },
+      /** Legacy WordPress paths still crawled by Google — send to a live page. */
+      { source: "/category/uncategorized", destination: "/blog/", permanent: true },
+      { source: "/comments/feed", destination: "/blog/", permanent: true },
+      { source: "/author/:slug", destination: "/about/", permanent: true },
       { source: "/about-us", destination: "/about/", permanent: true },
       { source: "/about-us/:path*", destination: "/about/:path*", permanent: true },
       { source: "/contact-us", destination: "/contact/", permanent: true },
