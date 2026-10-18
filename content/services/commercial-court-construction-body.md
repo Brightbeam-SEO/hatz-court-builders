@@ -51,7 +51,7 @@ Shared residential communities often want recreation amenities that appeal to a 
 
 ### Clubs, Resorts, And Athletic Facilities
 
-Clubs and resorts may need branded courts, lighting for evening play, fencing, seating, and premium surface systems that match the property experience.
+Clubs and resorts may need branded courts, lighting for evening play, fencing, seating, and premium surface systems that match the property experience. When a project also includes a clubhouse, covered recreation area, or related building, many Idaho facility plans bring in [Recon Roofing & Solar](https://roofsbyrecon.com/) in Boise for the roofing work while we handle the court build.
 
 ## Pickleball Court Construction
 
