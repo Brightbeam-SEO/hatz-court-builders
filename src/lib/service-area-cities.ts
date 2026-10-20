@@ -5,6 +5,8 @@ export type ServiceAreaCity = {
   id: string;
   label: string;
   region: ServiceAreaRegion;
+  /** Set only when a dedicated city landing page exists. */
+  href?: string;
 };
 
 export const SERVICE_AREA_REGIONS: { id: ServiceAreaRegion; label: string }[] = [
@@ -13,27 +15,27 @@ export const SERVICE_AREA_REGIONS: { id: ServiceAreaRegion; label: string }[] = 
 ];
 
 export const SERVICE_AREA_CITIES: ServiceAreaCity[] = [
-  { id: "boise", label: "Boise", region: "idaho" },
-  { id: "meridian", label: "Meridian", region: "idaho" },
-  { id: "nampa", label: "Nampa", region: "idaho" },
-  { id: "caldwell", label: "Caldwell", region: "idaho" },
-  { id: "middleton", label: "Middleton", region: "idaho" },
-  { id: "star", label: "Star", region: "idaho" },
-  { id: "eagle", label: "Eagle", region: "idaho" },
+  { id: "boise", label: "Boise", region: "idaho", href: "/court-builders-boise-id/" },
+  { id: "meridian", label: "Meridian", region: "idaho", href: "/court-builder-meridian-id/" },
+  { id: "nampa", label: "Nampa", region: "idaho", href: "/court-builder-nampa-id/" },
+  { id: "caldwell", label: "Caldwell", region: "idaho", href: "/court-builder-caldwell-id/" },
+  { id: "middleton", label: "Middleton", region: "idaho", href: "/court-builder-middleton-id/" },
+  { id: "star", label: "Star", region: "idaho", href: "/court-builder-star-id/" },
+  { id: "eagle", label: "Eagle", region: "idaho", href: "/court-builder-eagle-id/" },
   { id: "kuna", label: "Kuna", region: "idaho" },
   { id: "ketchum", label: "Ketchum", region: "idaho" },
   { id: "mccall", label: "McCall", region: "idaho" },
   { id: "mountain-home", label: "Mountain Home", region: "idaho" },
   { id: "homedale", label: "Homedale", region: "idaho" },
-  { id: "phoenix", label: "Phoenix", region: "arizona" },
-  { id: "scottsdale", label: "Scottsdale", region: "arizona" },
+  { id: "phoenix", label: "Phoenix", region: "arizona", href: "/court-builder-phoenix-az/" },
+  { id: "scottsdale", label: "Scottsdale", region: "arizona", href: "/court-builder-scottsdale-az/" },
   { id: "fountain-hills", label: "Fountain Hills", region: "arizona" },
-  { id: "mesa", label: "Mesa", region: "arizona" },
-  { id: "gilbert", label: "Gilbert", region: "arizona" },
-  { id: "chandler", label: "Chandler", region: "arizona" },
-  { id: "glendale", label: "Glendale", region: "arizona" },
-  { id: "tempe", label: "Tempe", region: "arizona" },
-  { id: "peoria", label: "Peoria", region: "arizona" },
+  { id: "mesa", label: "Mesa", region: "arizona", href: "/court-builder-mesa-az/" },
+  { id: "gilbert", label: "Gilbert", region: "arizona", href: "/court-builder-gilbert-az/" },
+  { id: "chandler", label: "Chandler", region: "arizona", href: "/court-builder-chandler-az/" },
+  { id: "glendale", label: "Glendale", region: "arizona", href: "/court-builder-glendale-az/" },
+  { id: "tempe", label: "Tempe", region: "arizona", href: "/court-builder-tempe-az/" },
+  { id: "peoria", label: "Peoria", region: "arizona", href: "/court-builder-peoria-az/" },
   { id: "arcadia", label: "Arcadia", region: "arizona" },
   { id: "anthem", label: "Anthem", region: "arizona" },
 ];

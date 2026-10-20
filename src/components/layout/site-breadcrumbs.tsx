@@ -9,6 +9,9 @@ import { buildCanonicalUrl, normalizeSitePath } from "@/lib/site-url";
 const SEGMENT_LABELS: Record<string, string> = {
   about: "About Us",
   contact: "Contact Us",
+  "terms-of-use": "Terms of Use",
+  "privacy-policy": "Privacy Policy",
+  "licence-agreement": "Licence Agreement",
   faq: "FAQ",
   gallery: "Gallery",
   reviews: "Reviews",

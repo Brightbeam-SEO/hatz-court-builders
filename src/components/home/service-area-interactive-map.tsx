@@ -13,7 +13,12 @@ import {
 
 const MAP_PIN_LABEL = BUSINESS.nameShort;
 
-const TILE_URL = "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png";
+/** Light gray canvas. CARTO's free raster tiles now watermark every image with "API KEY REQUIRED". */
+const TILE_BASE_URL =
+  "https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}";
+const TILE_LABEL_URL =
+  "https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Reference/MapServer/tile/{z}/{y}/{x}";
+const TILE_OPTIONS: L.TileLayerOptions = { maxZoom: 16 };
 
 const CITY_OUTLINE_STYLE: L.PathOptions = {
   color: "#12549B",
@@ -124,12 +129,14 @@ export function ServiceAreaInteractiveMap({
       const map = L.map(container, {
         center: [regionDefaults.center.lat, regionDefaults.center.lng],
         zoom: regionDefaults.zoom,
+        maxZoom: 16,
         scrollWheelZoom: true,
         zoomControl: true,
         attributionControl: false,
       });
 
-      L.tileLayer(TILE_URL).addTo(map);
+      L.tileLayer(TILE_BASE_URL, TILE_OPTIONS).addTo(map);
+      L.tileLayer(TILE_LABEL_URL, TILE_OPTIONS).addTo(map);
       markerRef.current = L.marker([officePin.lat, officePin.lng], {
         icon: createOfficePinIcon(officePin.label),
         title: officePin.label,

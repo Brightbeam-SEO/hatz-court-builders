@@ -41,6 +41,21 @@ export const GPM_SITEMAP_SEO: Record<
     description:
       "Tips and guides about court construction, surfacing options, and multi-use court design from Hatz Court Builders.",
   },
+  "/terms-of-use/": {
+    title: "Terms of Use | Hatz Court Builders",
+    description:
+      "Review the Terms of Use for Hatz Court Builders, covering website usage, sports court construction inquiries, estimates, and legal conditions.",
+  },
+  "/privacy-policy/": {
+    title: "Privacy Policy | Hatz Court Builders",
+    description:
+      "Learn how Hatz Court Builders collects, uses, and protects personal information submitted through our sports court construction website.",
+  },
+  "/licence-agreement/": {
+    title: "Licence Agreement | Hatz Court Builders",
+    description:
+      "Review the Hatz Court Builders Licence Agreement covering website content usage, court design materials, intellectual property, and restrictions.",
+  },
   "/basketball-court-construction/": {
     title: "Basketball Court Construction | Custom Courts | Hatz",
     description:

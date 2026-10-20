@@ -1,6 +1,7 @@
 "use client";
 
 import dynamic from "next/dynamic";
+import Link from "next/link";
 import { useCallback, useMemo, useState } from "react";
 import { useHomeContent } from "@/components/home/home-content-context";
 import { useHomeScrollReveal } from "@/hooks/use-home-scroll-reveal";
@@ -86,15 +87,29 @@ function ServiceAreaCityButtons({
     >
       {cities.map((city) => {
         const isActive = city.id === activeCityId;
+        const className = `${cityButtonClass(isActive)} ${
+          layout === "mobile" ? "lg:basis-[calc(20%-0.6rem)] lg:max-w-[11.5rem]" : ""
+        }`;
+        if (city.href) {
+          return (
+            <Link
+              key={city.id}
+              href={city.href}
+              aria-current={isActive ? "true" : undefined}
+              onClick={() => onSelect(city.id)}
+              className={className}
+            >
+              {city.label}
+            </Link>
+          );
+        }
         return (
           <button
             key={city.id}
             type="button"
             aria-pressed={isActive}
             onClick={() => onSelect(city.id)}
-            className={`${cityButtonClass(isActive)} ${
-              layout === "mobile" ? "lg:basis-[calc(20%-0.6rem)] lg:max-w-[11.5rem]" : ""
-            }`}
+            className={className}
           >
             {city.label}
           </button>

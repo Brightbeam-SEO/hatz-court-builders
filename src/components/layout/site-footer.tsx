@@ -257,19 +257,19 @@ export function SiteFooter({
               </Link>
             </li>
             <li>
-              <a className="transition hover:text-white" href="#">
+              <Link className="transition hover:text-white" href="/terms-of-use">
                 Terms of Use
-              </a>
+              </Link>
             </li>
             <li>
-              <a className="transition hover:text-white" href="#">
+              <Link className="transition hover:text-white" href="/privacy-policy">
                 Privacy Policy
-              </a>
+              </Link>
             </li>
             <li>
-              <a className="transition hover:text-white" href="#">
+              <Link className="transition hover:text-white" href="/licence-agreement">
                 Licence Agreement
-              </a>
+              </Link>
             </li>
             <li>
               <a
