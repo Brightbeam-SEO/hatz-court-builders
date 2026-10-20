@@ -129,6 +129,29 @@ a:not(.btn-call):not(.btn-submit) {
   color: inherit;
 }
 
+/* Unlayered so it beats `a { color: inherit }` on the service-area city pills. */
+a.service-area-city-pill,
+a.service-area-city-pill:visited,
+button.service-area-city-pill {
+  color: var(--zen-espresso);
+  -webkit-text-fill-color: var(--zen-espresso);
+}
+
+a.service-area-city-pill:hover,
+a.service-area-city-pill:focus-visible,
+a.service-area-city-pill:active,
+a.service-area-city-pill[aria-current="true"],
+a.service-area-city-pill[aria-current="true"]:visited,
+a.service-area-city-pill[aria-current="true"]:hover,
+a.service-area-city-pill[aria-current="true"]:focus-visible,
+button.service-area-city-pill:hover,
+button.service-area-city-pill:focus-visible,
+button.service-area-city-pill:active,
+button.service-area-city-pill[aria-pressed="true"] {
+  color: #ffffff;
+  -webkit-text-fill-color: #ffffff;
+}
+
 /* Contact / social icon pills: dark glyphs on neon green hover */
 a.contact-social-link:hover svg,
 a.contact-social-link:hover span[aria-hidden] {

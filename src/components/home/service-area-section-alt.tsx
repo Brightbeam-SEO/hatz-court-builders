@@ -25,7 +25,7 @@ const ServiceAreaInteractiveMap = dynamic(
 );
 
 const cityButtonClass = (isActive: boolean) =>
-  `shrink-0 rounded-full border px-4 py-2 text-sm font-semibold transition focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-zen-crimson ${
+  `service-area-city-pill shrink-0 rounded-full border px-4 py-2 text-sm font-semibold transition focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-zen-crimson ${
     isActive
       ? "border-zen-crimson bg-zen-crimson text-white shadow-[0_4px_14px_rgba(18,84,155,0.28)]"
       : "border-zen-espresso bg-transparent text-zen-espresso hover:border-zen-crimson hover:bg-zen-crimson hover:text-white"
