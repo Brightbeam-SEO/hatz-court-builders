@@ -2537,6 +2537,323 @@ export const PM_TENNIS_COURT_CONTRACTOR_GILBERT_AZ_CONFIG = courtBuilderCityConf
   ],
 });
 
+export const PM_BASKETBALL_COURT_BUILDER_CHANDLER_AZ_CONFIG = courtBuilderCityConfig({
+  slug: "basketball-court-builder-chandler-az",
+  cityName: "Chandler",
+  stateName: "Arizona",
+  serviceName: "Basketball Court Builder Chandler",
+  heroTitle: "Basketball Court Builder Chandler, AZ",
+  heroSubtitle:
+    "Basketball court builder services for Chandler homes, schools, HOAs, and facilities, built for Arizona heat and everyday play.",
+  metaTitle: "Basketball Court Builder Chandler | Free Quotes | Hatz",
+  metaDescription:
+    "Basketball court builder Chandler for half courts, full courts, and multi-use pads. Acrylic, modular, and cushioned options. Call (208) 979-0002.",
+  faqHeading: "Basketball Court Installation Chandler FAQs",
+  heroImageFragment: "backyard green tan basketball half court",
+  faqItems: [
+    {
+      question: "Do you build basketball courts in Chandler?",
+      answer:
+        "Yes. Hatz Court Builders is a basketball court builder for Chandler homes, schools, HOAs, and commercial sites.",
+    },
+    {
+      question: "Can you handle basketball court installation in a Chandler backyard?",
+      answer:
+        "Yes. We plan half courts and custom sizes to fit your lot, pool, and HOA rules.",
+    },
+    {
+      question: "What surfaces do you offer for basketball courts?",
+      answer:
+        "We install acrylic, cushioned acrylic, modular tiles, concrete, and asphalt systems. We help you pick based on use, heat, and upkeep.",
+    },
+    {
+      question: "Can my basketball court include pickleball lines?",
+      answer:
+        "Yes. Many Chandler families add pickleball striping so one pad works for both games.",
+    },
+    {
+      question: "Do you add custom logos and team colors?",
+      answer:
+        "Yes. We can add custom logos and colors to match your home, school, or team.",
+    },
+    {
+      question: "Do you resurface old basketball courts?",
+      answer:
+        "Yes. We handle crack repair, resurfacing, and new striping for worn courts.",
+    },
+    {
+      question: "How do I request a free quote in Chandler?",
+      answer:
+        "Call (208) 979-0002 or reach us online. Share your address and goals, and we will review options and send a free quote.",
+    },
+  ],
+});
+
+export const PM_TENNIS_COURT_BUILDER_CHANDLER_AZ_CONFIG = courtBuilderCityConfig({
+  slug: "tennis-court-builder-chandler-az",
+  cityName: "Chandler",
+  stateName: "Arizona",
+  serviceName: "Tennis Court Builder Chandler",
+  heroTitle: "Tennis Court Builder Chandler, AZ",
+  heroSubtitle:
+    "Tennis court contractor services for Chandler homes, HOAs, schools, and clubs, from new builds to resurfacing and repairs.",
+  metaTitle: "Tennis Court Builder Chandler | Free Quotes | Hatz",
+  metaDescription:
+    "Tennis court builder Chandler for tennis court installation, construction, and resurfacing. Acrylic and cushioned systems. Call (208) 979-0002.",
+  faqHeading: "Tennis Court Contractor Chandler Questions",
+  heroImageFragment: "tennis court resurface blue and green acrylic",
+  faqItems: [
+    {
+      question: "Are you a tennis court contractor serving Chandler?",
+      answer:
+        "Yes. Hatz Court Builders builds, resurfaces, and repairs tennis courts for homes, HOAs, schools, and clubs in Chandler.",
+    },
+    {
+      question: "Do you handle tennis court installation in Chandler?",
+      answer:
+        "Yes. We handle grading, base work, surfacing, striping, nets, lighting, and fencing for new courts.",
+    },
+    {
+      question: "Do you offer tennis court construction for commercial sites?",
+      answer:
+        "Yes. We work with residential and commercial clients, including HOAs, schools, parks, and clubs.",
+    },
+    {
+      question: "What are signs my tennis court needs resurfacing?",
+      answer:
+        "Faded color, cracks, puddles after rain, slick spots, and worn lines are common signs. A site review shows whether you need repairs or full resurfacing.",
+    },
+    {
+      question: "Can you add pickleball lines to a tennis court?",
+      answer:
+        "Yes. Many Chandler communities add pickleball lines so one court can serve both sports.",
+    },
+    {
+      question: "Do you offer cushioned tennis court surfaces?",
+      answer:
+        "Yes. We install cushioned acrylic systems as well as standard hardcourt acrylic.",
+    },
+    {
+      question: "How do I request a free tennis court quote in Chandler?",
+      answer:
+        "Call (208) 979-0002 or contact us online with your address and court details. We will review options and send a free quote.",
+    },
+  ],
+});
+
+export const PM_PICKLEBALL_COURT_BUILDER_CHANDLER_AZ_CONFIG = courtBuilderCityConfig({
+  slug: "pickleball-court-builder-chandler-az",
+  cityName: "Chandler",
+  stateName: "Arizona",
+  serviceName: "Pickleball Court Builder Chandler",
+  heroTitle: "Pickleball Court Builder Chandler, AZ",
+  heroSubtitle:
+    "Pickleball court builder services for Chandler backyards, HOAs, schools, and facilities with hard and cushioned acrylic options.",
+  metaTitle: "Pickleball Court Builder Chandler | Free Quotes | Hatz",
+  metaDescription:
+    "Pickleball court builders Chandler AZ for backyard and community courts. Acrylic, cushioned acrylic, and modular options. Call (208) 979-0002.",
+  faqHeading: "Pickleball Court Installation Chandler FAQs",
+  heroImageFragment: "outdoor pickleball court red and green surface",
+  faqItems: [
+    {
+      question: "Are you pickleball court builders Chandler AZ homeowners can call?",
+      answer:
+        "Yes. Hatz Court Builders handles pickleball court installation for homes, HOAs, schools, and facilities across Chandler.",
+    },
+    {
+      question: "How much space do I need for a backyard pickleball court?",
+      answer:
+        "A standard pickleball playing area is 20 by 44 feet, with extra run-off space for safer play. We can plan custom layouts for smaller Chandler lots.",
+    },
+    {
+      question: "What is the difference between hard and cushioned acrylic?",
+      answer:
+        "Hard acrylic gives a fast, steady bounce. Cushioned acrylic adds soft layers under the color coat for more comfort underfoot.",
+    },
+    {
+      question: "Can you add pickleball lines to my tennis court?",
+      answer:
+        "Yes. We can stripe pickleball lines in a different color so both games stay easy to read.",
+    },
+    {
+      question: "Do you resurface worn pickleball courts?",
+      answer:
+        "Yes. We fix cracks, recoat faded surfaces, and update kitchen lines and boundaries.",
+    },
+    {
+      question: "Do you install nets, lighting, and fencing?",
+      answer:
+        "Yes. We can add nets, court lighting, and fencing to complete your Chandler pickleball court.",
+    },
+    {
+      question: "How do I get a free pickleball court quote in Chandler?",
+      answer:
+        "Call (208) 979-0002 or contact us online. Share your address and goals, and we will send a free quote.",
+    },
+    {
+      question: "Which nearby areas do you serve?",
+      answer:
+        "Besides Chandler, we serve Gilbert, Mesa, Tempe, Phoenix, Scottsdale, and other Maricopa County locations.",
+    },
+  ],
+});
+
+export const PM_PADEL_COURT_BUILDER_CHANDLER_AZ_CONFIG = courtBuilderCityConfig({
+  slug: "padel-court-builder-chandler-az",
+  cityName: "Chandler",
+  stateName: "Arizona",
+  serviceName: "Padel Court Builder Chandler",
+  heroTitle: "Padel Court Builder Chandler, AZ",
+  heroSubtitle:
+    "Padel court builder services for Chandler homes, clubs, and facilities, from site prep and surfacing to lighting and fencing.",
+  metaTitle: "Padel Court Builder Chandler | Free Quotes | Hatz",
+  metaDescription:
+    "Padel court builder Chandler for residential and club courts. Turf and acrylic surfaces, lighting, and site prep. Call (208) 979-0002 for a free quote.",
+  faqHeading: "Padel Court Installation Chandler Questions",
+  heroImageFragment: "outdoor multi court acrylic surfacing pickleball basketball tennis",
+  faqItems: [
+    {
+      question: "Do you build padel courts in Chandler?",
+      answer:
+        "Yes. Hatz Court Builders handles padel court installation for homes, clubs, and commercial properties in Chandler and nearby cities.",
+    },
+    {
+      question: "What surface is used on a padel court?",
+      answer:
+        "Synthetic turf with sand infill is the most common choice. Acrylic is another option for owners who want a hard surface.",
+    },
+    {
+      question: "How much space does a padel court need?",
+      answer:
+        "A standard padel court is smaller than a tennis court. We review your lot and plan the layout, walls, and access around your space.",
+    },
+    {
+      question: "Can you add lighting to a padel court?",
+      answer:
+        "Yes. Lighting lets Chandler players enjoy cooler evening games.",
+    },
+    {
+      question: "Do you handle site prep and drainage?",
+      answer:
+        "Yes. We handle grading, base work, and drainage planning so the court stays flat and dries well after monsoon rain.",
+    },
+    {
+      question: "Do you work with residential and commercial clients?",
+      answer:
+        "Yes. We build padel courts for homeowners, HOAs, clubs, and commercial recreation sites.",
+    },
+    {
+      question: "How do I get a free padel court quote in Chandler?",
+      answer:
+        "Call (208) 979-0002 or contact us online with your address and project goals. We will review the site and provide a free quote.",
+    },
+  ],
+});
+
+export const PM_BOCCE_COURT_BUILDER_CHANDLER_AZ_CONFIG = courtBuilderCityConfig({
+  slug: "bocce-court-builder-chandler-az",
+  cityName: "Chandler",
+  stateName: "Arizona",
+  serviceName: "Bocce Court Builder Chandler",
+  heroTitle: "Bocce Court Builder Chandler, AZ",
+  heroSubtitle:
+    "Bocce court installation for Chandler backyards, HOAs, and gathering spaces with level beds, solid borders, and smart drainage.",
+  metaTitle: "Bocce Court Builder Chandler | Free Quotes | Hatz",
+  metaDescription:
+    "Bocce court builder Chandler for homes, HOAs, and commercial spaces. Level builds, resurfacing, and site prep. Call (208) 979-0002 for a free quote.",
+  faqHeading: "Bocce Court Installation Chandler Questions",
+  heroImageFragment: "tile shuffleboard court installation modular",
+  faqItems: [
+    {
+      question: "Do you offer bocce court installation in Chandler?",
+      answer:
+        "Yes. Hatz Court Builders installs bocce courts for homes, HOAs, and commercial properties across Chandler and nearby East Valley cities.",
+    },
+    {
+      question: "Are you a bocce court builder for both homes and businesses?",
+      answer:
+        "Yes. We build bocce courts for backyards, HOA common areas, schools, parks, and commercial gathering spaces.",
+    },
+    {
+      question: "Can irrigation near my yard affect a bocce court?",
+      answer:
+        "It can. Extra water near the court can soften the base and push edges out of line. We review irrigation and drainage before we build.",
+    },
+    {
+      question: "Can you resurface an old bocce court?",
+      answer:
+        "Yes. We can refresh worn play beds, fix low spots, and repair borders so the ball rolls true again.",
+    },
+    {
+      question: "Can you add lighting to a Chandler bocce court?",
+      answer:
+        "Yes. Court lighting makes cooler evening games easy, which helps during Chandler summers.",
+    },
+    {
+      question: "How do I get a free bocce court quote?",
+      answer:
+        "Call (208) 979-0002 or contact us online with your Chandler address and goals. We will review your site and send a free quote.",
+    },
+    {
+      question: "What areas near Chandler do you serve?",
+      answer:
+        "Besides Chandler, we serve Gilbert, Mesa, Tempe, Phoenix, Scottsdale, and other Maricopa County locations.",
+    },
+  ],
+});
+
+export const PM_RACQUETBALL_COURTS_CHANDLER_AZ_CONFIG = courtBuilderCityConfig({
+  slug: "racquetball-courts-chandler-az",
+  cityName: "Chandler",
+  stateName: "Arizona",
+  serviceName: "Racquetball Courts Chandler AZ",
+  heroTitle: "Racquetball Courts Chandler, AZ",
+  heroSubtitle:
+    "Racquetball court planning for Chandler homes, clubs, and facilities, with indoor sports flooring, hardwood, acrylic options, and design-build support.",
+  metaTitle: "Racquetball Courts Chandler AZ | Free Quotes | Hatz",
+  metaDescription:
+    "Racquetball courts Chandler AZ for homes, clubs, and training spaces. Indoor flooring, striping, and design-build support. Call (208) 979-0002.",
+  faqHeading: "Racquetball Courts Chandler AZ Questions",
+  heroImageFragment: "indoor hardwood basketball court gym interior",
+  faqItems: [
+    {
+      question: "Do you build racquetball courts in Chandler, AZ?",
+      answer:
+        "Yes. Hatz Court Builders plans racquetball courts for homes, clubs, and commercial recreation spaces as part of our sports construction work.",
+    },
+    {
+      question: "What surfaces can work for an indoor racquetball court?",
+      answer:
+        "Hardwood and other indoor sports flooring systems are common choices. Acrylic hard surfaces can also fit some room plans.",
+    },
+    {
+      question: "Can you convert an existing room into a racquetball court?",
+      answer:
+        "Often yes. We review the room size, access, flooring needs, lighting, and layout before recommending a plan.",
+    },
+    {
+      question: "Do you work with residential and commercial clients?",
+      answer:
+        "Yes. We serve homeowners, clubs, schools, and commercial facilities across Chandler and nearby Maricopa County cities.",
+    },
+    {
+      question: "Can a racquetball project include lighting and striping?",
+      answer:
+        "Yes. Lighting and court striping are part of many indoor court projects so the room plays clearly and safely.",
+    },
+    {
+      question: "How do I get a free quote for racquetball courts in Chandler?",
+      answer:
+        "Call (208) 979-0002 or contact us online with your address and space details. We will review options and send a free quote.",
+    },
+    {
+      question: "What nearby areas do you serve?",
+      answer:
+        "Besides Chandler, we serve Gilbert, Mesa, Tempe, Phoenix, Scottsdale, and other Maricopa County locations.",
+    },
+  ],
+});
+
 export const PM_COURT_BUILDER_CHANDLER_AZ_CONFIG = courtBuilderCityConfig({
   slug: "court-builder-chandler-az",
   cityName: "Chandler",

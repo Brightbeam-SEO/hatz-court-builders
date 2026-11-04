@@ -26,6 +26,14 @@ const GILBERT_CHILD_SLUGS = new Set([
   "bocce-court-installation-gilbert-az",
   "padel-court-builder-gilbert-az",
 ]);
+const CHANDLER_CHILD_SLUGS = new Set([
+  "basketball-court-builder-chandler-az",
+  "tennis-court-builder-chandler-az",
+  "pickleball-court-builder-chandler-az",
+  "padel-court-builder-chandler-az",
+  "bocce-court-builder-chandler-az",
+  "racquetball-courts-chandler-az",
+]);
 
 /** Sidebar: homepage plus other PM service pages. */
 export function getPropertyManagementServiceSidebarLinks(currentSlug: string) {
@@ -50,6 +58,9 @@ export function getPropertyManagementServiceSidebarLinks(currentSlug: string) {
       }
       if (GILBERT_CHILD_SLUGS.has(currentSlug)) {
         return link.slug === "court-builder-gilbert-az" || GILBERT_CHILD_SLUGS.has(link.slug);
+      }
+      if (CHANDLER_CHILD_SLUGS.has(currentSlug)) {
+        return link.slug === "court-builder-chandler-az" || CHANDLER_CHILD_SLUGS.has(link.slug);
       }
       if (isIdahoCityPage && !isArizonaPage) {
         return (
@@ -80,6 +91,11 @@ export function getPropertyManagementServiceSidebarLinks(currentSlug: string) {
       const currentIsGilbertHubOrChild =
         currentSlug === "court-builder-gilbert-az" || GILBERT_CHILD_SLUGS.has(currentSlug);
       if (GILBERT_CHILD_SLUGS.has(link.slug) && !currentIsGilbertHubOrChild) {
+        return false;
+      }
+      const currentIsChandlerHubOrChild =
+        currentSlug === "court-builder-chandler-az" || CHANDLER_CHILD_SLUGS.has(currentSlug);
+      if (CHANDLER_CHILD_SLUGS.has(link.slug) && !currentIsChandlerHubOrChild) {
         return false;
       }
       return true;
