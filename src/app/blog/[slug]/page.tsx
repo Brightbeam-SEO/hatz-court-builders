@@ -3,6 +3,8 @@ import Link from "next/link";
 import { notFound, redirect } from "next/navigation";
 import { BlogArticlePage } from "@/components/blog/blog-article-page";
 import { BlogHeroBand } from "@/components/blog/blog-hero-band";
+import { StructuredData } from "@/components/seo/structured-data";
+import { buildArticleSchema } from "@/lib/article-schema";
 import { getBlogPostPath } from "@/lib/blog-categories";
 import { buildGpmBlogPageMetadata, buildCanonicalPageMetadata, GPM_BLOG_SEO } from "@/lib/gpm-sitemap-seo";
 import {
@@ -11,7 +13,6 @@ import {
   getBlogPostsForPage,
   selectMostRecentPostsExcluding,
 } from "@/lib/blog";
-import { BUSINESS } from "@/lib/business";
 import { PageHeroCtaButtons } from "@/components/layout/page-hero-cta-buttons";
 import { SiteFooterRegion } from "@/components/layout/site-footer-region";
 import { getHomeContentForPage } from "@/sanity/fetch-home";
@@ -40,6 +41,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     path: getBlogPostPath(slug),
     title,
     description,
+    openGraphType: "article",
+    image: post.image,
   });
 }
 
@@ -61,15 +64,32 @@ export default async function BlogArticleRoute({ params }: Props) {
   const isFullArticle =
     post.layoutTemplate === "fullArticle" && Boolean(post.bodyMarkdown?.trim());
 
+  const articleSchema = (
+    <StructuredData
+      data={buildArticleSchema({
+        type: "BlogPosting",
+        pagePath: getBlogPostPath(slug),
+        headline: post.title,
+        description: post.metaDescription ?? post.excerpt,
+        image: post.image,
+        datePublished: post.publishedAt,
+        dateModified: post.publishedAt,
+      })}
+    />
+  );
+
   if (isFullArticle) {
     const recommendedPosts = selectMostRecentPostsExcluding(allPosts, slug, 3);
     return (
-      <BlogArticlePage
-        post={post}
-        slug={slug}
-        socialLinks={home.socialLinks}
-        recommendedPosts={recommendedPosts}
-      />
+      <>
+        {articleSchema}
+        <BlogArticlePage
+          post={post}
+          slug={slug}
+          socialLinks={home.socialLinks}
+          recommendedPosts={recommendedPosts}
+        />
+      </>
     );
   }
 
@@ -80,12 +100,14 @@ export default async function BlogArticleRoute({ params }: Props) {
   });
 
   return (
-    <div className="min-h-screen bg-zen-espresso text-white light:bg-transparent light:text-zen-espresso">
+    <>
+      {articleSchema}
+      <div className="min-h-screen bg-zen-espresso text-white light:bg-transparent light:text-zen-espresso">
       <main className="bg-zen-espresso pb-16 light:bg-transparent">
         <BlogHeroBand imageSrc={post.image} imageAlt={post.imageAlt}>
           <div className="min-w-0 w-full max-w-3xl">
             <Link
-              href="/blog"
+              href="/blog/"
               className="text-sm font-semibold text-zen-sage transition hover:text-zen-gold light:text-white/90 light:hover:text-white"
             >
               ← Back to blog
@@ -112,6 +134,7 @@ export default async function BlogArticleRoute({ params }: Props) {
       </main>
 
       <SiteFooterRegion socialLinks={home.socialLinks} />
-    </div>
+      </div>
+    </>
   );
 }

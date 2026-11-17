@@ -13,7 +13,7 @@ import { useHomeContent } from "./home-content-context";
 
 const showcaseImage = gpmPick("backyard pickleball basketball dual sport court");
 
-const CARD_LINKS = ["/about", "/contact", "/contact", "/contact"] as const;
+const CARD_LINKS = ["/about/", "/contact/", "/contact/", "/contact/"] as const;
 
 const SHOWCASE_TRUST_SIGNALS = [
   { highlight: "24/7", title: "Available" },
@@ -85,7 +85,7 @@ export function ClosingShowcaseSection() {
           {cards.map((card, index) => (
             <Link
               key={card.title}
-              href={CARD_LINKS[index] ?? "/about"}
+              href={CARD_LINKS[index] ?? "/about/"}
               className={cn(
                 "home-reveal home-reveal-right group flex flex-col rounded-3xl p-6 no-underline transition sm:p-7",
                 index === 0 ? "home-reveal-d4" : index === 1 ? "home-reveal-d5" : index === 2 ? "home-reveal-d6" : "home-reveal-d7",

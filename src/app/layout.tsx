@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { GoogleTagManager } from "@/components/analytics/google-tag-manager";
 import { SiteChrome } from "@/components/layout/site-chrome";
 import { archivo, bigShoulders } from "@/lib/fonts";
+import { BUSINESS } from "@/lib/business";
 import { SITE_ORIGIN } from "@/lib/site-url";
 import "./globals.css";
 
@@ -16,6 +17,16 @@ export const metadata: Metadata = {
   title: "Court Builders Boise & Scottsdale | Hatz Court Builders",
   description:
     "Hatz Court Builders designs and builds custom pickleball, tennis, basketball, and multi-use courts in Boise and Scottsdale. Get started today.",
+  openGraph: {
+    type: "website",
+    siteName: BUSINESS.nameFull,
+    images: [
+      {
+        url: "/images/hcb/outdoor-multi-court-acrylic-surfacing-pickleball-basketball-tennis-hatz-court-builders.jpg",
+        alt: BUSINESS.nameFull,
+      },
+    ],
+  },
   icons: {
     icon: [
       { url: "/favicon.ico", sizes: "48x48" },

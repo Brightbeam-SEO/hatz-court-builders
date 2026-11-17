@@ -1877,7 +1877,7 @@ export const PM_PICKLEBALL_COURT_BUILDER_PHOENIX_AZ_CONFIG = courtBuilderCityCon
   stateName: "Arizona",
   metaTitle: "Pickleball Court Builder Phoenix, AZ | Hatz Court Builders",
   metaDescription:
-    "Custom pickleball court builder in Phoenix, AZ for backyard, HOA, school, and facility projects.",
+    "Custom pickleball court builder in Phoenix, AZ for backyard, HOA, school, and facility projects, including new builds and resurfacing.",
   heroImageFragment: "backyard pickleball court pool patio residential",
   faqItems: [
     {
@@ -1929,7 +1929,7 @@ export const PM_TENNIS_COURT_BUILDERS_PHOENIX_AZ_CONFIG = courtBuilderCityConfig
   stateName: "Arizona",
   metaTitle: "Phoenix AZ Tennis Court Builders | Hatz Court Builders",
   metaDescription:
-    "Licensed Phoenix tennis court builders for custom tennis courts, resurfacing, and repairs.",
+    "Licensed Phoenix tennis court builders for custom tennis courts, resurfacing, crack repair, and full rebuilds for homes and facilities.",
   heroImageFragment: "tennis court repair school facility",
   faqItems: [
     {
@@ -2028,7 +2028,7 @@ export const PM_BOCCE_COURT_INSTALLATION_PHOENIX_AZ_CONFIG = courtBuilderCityCon
   stateName: "Arizona",
   metaTitle: "Bocce Court Installation Phoenix AZ | Custom Courts | Phoenix AZ",
   metaDescription:
-    "Professional bocce court installation in Phoenix for residential and commercial properties.",
+    "Professional bocce court installation in Phoenix for residential and commercial properties, with custom sizing, surfacing, and drainage.",
   heroImageFragment: "modular court tile custom logo branding",
   faqItems: [
     {
@@ -2075,7 +2075,7 @@ export const PM_PADEL_COURT_BUILDER_PHOENIX_AZ_CONFIG = courtBuilderCityConfig({
   stateName: "Arizona",
   metaTitle: "Padel Court Builder Phoenix AZ | Custom Courts | Hatz",
   metaDescription:
-    "Padel court builder in Phoenix for custom court design, construction, and upgrades.",
+    "Padel court builder in Phoenix for custom court design, construction, fencing, and upgrades on homes, clubs, and commercial properties.",
   heroImageFragment: "outdoor multi court pickleball basketball tennis",
   faqItems: [
     {
@@ -2117,7 +2117,7 @@ export const PM_COURT_BUILDER_MESA_AZ_CONFIG = courtBuilderCityConfig({
   stateName: "Arizona",
   metaTitle: "Court Builder Mesa AZ | Custom Courts | Hatz Court Builders",
   metaDescription:
-    "Licensed and insured court builder in Mesa, AZ for custom residential and commercial courts.",
+    "Licensed and insured court builder in Mesa, AZ for custom residential and commercial tennis, pickleball, basketball, and multi-use courts.",
   heroImageFragment: "pickleball court green and red surface",
   faqItems: [
     {
@@ -2860,7 +2860,7 @@ export const PM_COURT_BUILDER_CHANDLER_AZ_CONFIG = courtBuilderCityConfig({
   stateName: "Arizona",
   metaTitle: "Court Builder Chandler AZ | Custom Courts | Hatz Court Builders",
   metaDescription:
-    "Court builder in Chandler, AZ for custom court construction, resurfacing, and court upgrades.",
+    "Court builder in Chandler, AZ for custom tennis, pickleball, and basketball court construction, resurfacing, repairs, and court upgrades.",
   heroImageFragment: "gray pickleball basketball court backyard",
   faqItems: [
     {
@@ -2912,7 +2912,7 @@ export const PM_COURT_BUILDER_GLENDALE_AZ_CONFIG = courtBuilderCityConfig({
   stateName: "Arizona",
   metaTitle: "Court Builder Glendale AZ | Custom Courts | Hatz Court Builders",
   metaDescription:
-    "Trusted court builder in Glendale, AZ for custom athletic courts, resurfacing, and repair services.",
+    "Trusted court builder in Glendale, AZ for custom tennis, pickleball, and basketball courts, plus resurfacing, repairs, and multi-use layouts.",
   heroImageFragment: "outdoor multi court acrylic surfacing",
   faqItems: [
     {
@@ -3001,7 +3001,7 @@ export const PM_COURT_BUILDER_TEMPE_AZ_CONFIG = courtBuilderCityConfig({
   stateName: "Arizona",
   metaTitle: "Court Builder Tempe AZ | Custom Courts | Hatz Court Builders",
   metaDescription:
-    "Custom athletic court builder in Tempe, AZ for new court construction, resurfacing, and upgrades.",
+    "Custom athletic court builder in Tempe, AZ for tennis, pickleball, and basketball courts, including new construction, resurfacing, and upgrades.",
   heroImageFragment: "pickleball court hoa line paint and coating",
   faqItems: [
     {

@@ -1,9 +1,5 @@
-"use client";
-
 import Image from "next/image";
 import Link from "next/link";
-import { useSearchParams } from "next/navigation";
-import { useMemo } from "react";
 import { getBlogIndexHref, getBlogPostPathFromPost } from "@/lib/blog-categories";
 import type { BlogPost } from "@/lib/blog-types";
 import type { SocialLink } from "@/lib/home-content";
@@ -259,28 +255,21 @@ function BlogPagination({
   );
 }
 
-function parseArchiveSearchParams(searchParams: URLSearchParams) {
-  const rawPage = parseInt(searchParams.get("page") ?? "1", 10);
-  const page = Number.isFinite(rawPage) && rawPage >= 1 ? rawPage : 1;
-  return { page };
-}
-
 export function BlogPage({
   socialLinks,
   featuredPosts,
   archivePosts,
   gridPageSize,
   totalPostCount,
+  page,
 }: {
   socialLinks: SocialLink[];
   featuredPosts: BlogPost[];
   archivePosts: BlogPost[];
   gridPageSize: number;
   totalPostCount: number;
+  page: number;
 }) {
-  const searchParams = useSearchParams();
-
-  const { page } = useMemo(() => parseArchiveSearchParams(searchParams), [searchParams]);
 
   const recentPost = page === 1 ? (archivePosts[0] ?? null) : null;
   const others = page === 1 ? archivePosts.slice(1) : archivePosts;
@@ -359,10 +348,16 @@ export function BlogPage({
                 No articles yet. Publish posts in your CMS to populate this section.
               </p>
             )}
+            <p className="mx-auto mt-10 max-w-3xl text-center text-base leading-7 text-white/80 light:text-zen-taupe">
+              Hatz Court Builders publishes practical guides for homeowners, schools, parks, and commercial
+              properties planning a new court or an upgrade. Each article covers layout, surface choices,
+              drainage, fencing, lighting, and maintenance so you can compare options before you build in
+              Boise, Scottsdale, or a nearby community.
+            </p>
           </div>
         </section>
 
-        <BlogBookingStrip />
+        <BlogBookingStrip closingNote="Tell us about your space and the sports you want to play. Hatz Court Builders will review the site, recommend a surface, and outline the next steps for a backyard, school, HOA, or commercial court in Idaho or Arizona." />
       </main>
 
       <SiteFooterRegion socialLinks={socialLinks} />

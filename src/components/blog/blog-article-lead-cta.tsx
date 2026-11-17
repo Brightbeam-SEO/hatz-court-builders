@@ -21,7 +21,13 @@ export function BlogArticleLeadCta() {
   );
 }
 
-export function BlogBookingStrip({ showLead = true }: { showLead?: boolean }) {
+export function BlogBookingStrip({
+  showLead = true,
+  closingNote,
+}: {
+  showLead?: boolean;
+  closingNote?: string;
+}) {
   return (
     <>
       {showLead ? (
@@ -35,6 +41,11 @@ export function BlogBookingStrip({ showLead = true }: { showLead?: boolean }) {
                 <BlogReviewsFeaturedCard />
               </div>
             </div>
+            {closingNote ? (
+              <p className="mx-auto mt-10 max-w-3xl text-center text-base leading-7 text-white/85 light:text-zen-taupe">
+                {closingNote}
+              </p>
+            ) : null}
           </div>
         </section>
       ) : null}

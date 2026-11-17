@@ -19,7 +19,7 @@ type PageHeroCtaButtonsProps = {
 export function PageHeroCtaButtons({
   className = "",
   align = "start",
-  secondaryHref = "/contact",
+  secondaryHref = "/contact/",
   onDark = true,
   primaryStyle = "crimson",
   secondaryClassName = "",

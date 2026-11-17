@@ -16,11 +16,11 @@ import {
 const phoneHref = BUSINESS.phoneTel;
 
 const aboutLinks = [
-  { label: "About Us", href: "/about" },
-  { label: "Gallery", href: "/gallery" },
-  { label: "FAQs", href: "/faq" },
-  { label: "Reviews", href: "/reviews" },
-  { label: "Blog", href: "/blog" },
+  { label: "About Us", href: "/about/" },
+  { label: "Gallery", href: "/gallery/" },
+  { label: "FAQs", href: "/faq/" },
+  { label: "Reviews", href: "/reviews/" },
+  { label: "Blog", href: "/blog/" },
 ] as const;
 
 type NavLink = { label: string; href: string };
@@ -165,7 +165,7 @@ export function MobileNavMenu({ open, onClose }: MobileNavMenuProps) {
           />
         </li>
         <li>
-          <a href="/contact" className={headerMobileTopLinkClass} onClick={onClose}>
+          <a href="/contact/" className={headerMobileTopLinkClass} onClick={onClose}>
             Contact
           </a>
         </li>

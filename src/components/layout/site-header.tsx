@@ -17,11 +17,11 @@ import {
 const phoneHref = BUSINESS.phoneTel;
 
 const aboutLinks = [
-  { label: "About Us", href: "/about" },
-  { label: "Gallery", href: "/gallery" },
-  { label: "FAQs", href: "/faq" },
-  { label: "Reviews", href: "/reviews" },
-  { label: "Blog", href: "/blog" },
+  { label: "About Us", href: "/about/" },
+  { label: "Gallery", href: "/gallery/" },
+  { label: "FAQs", href: "/faq/" },
+  { label: "Reviews", href: "/reviews/" },
+  { label: "Blog", href: "/blog/" },
 ] as const;
 
 type TopMenu = "services" | "areas" | "about";
@@ -315,7 +315,7 @@ export function SiteHeader({ blendWithBackground = true }: SiteHeaderProps) {
               </li>
 
               <li className="shrink-0 whitespace-nowrap">
-                <a className={headerTopLinkClass} href="/contact">
+                <a className={headerTopLinkClass} href="/contact/">
                   Contact
                 </a>
               </li>

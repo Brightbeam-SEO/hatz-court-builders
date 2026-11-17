@@ -1,6 +1,10 @@
 import type { Metadata } from "next";
 import { buildCanonicalUrl, normalizeSitePath } from "@/lib/site-url";
 
+/** Default share image when a page does not supply its own. */
+const DEFAULT_OG_IMAGE =
+  "/images/hcb/outdoor-multi-court-acrylic-surfacing-pickleball-basketball-tennis-hatz-court-builders.jpg";
+
 /** SEO metadata for active site routes. */
 export const GPM_SITEMAP_SEO: Record<
   string,
@@ -34,7 +38,8 @@ export const GPM_SITEMAP_SEO: Record<
   },
   "/reviews/": {
     title: "Reviews | Hatz Court Builders",
-    description: "See what clients say about Hatz Court Builders court construction and resurfacing projects.",
+    description:
+      "See what clients say about Hatz Court Builders court construction, resurfacing, and repair projects across Boise, Scottsdale, and nearby communities.",
   },
   "/blog/": {
     title: "Court Builder Blog | Hatz Court Builders",
@@ -159,6 +164,8 @@ type CanonicalPageMetadataInput = {
   title: string;
   description: string;
   openGraphTitle?: string;
+  openGraphType?: "website" | "article";
+  image?: string;
 };
 
 /** One self-referencing canonical, matching Open Graph URL, for an indexable page. */
@@ -167,9 +174,12 @@ export function buildCanonicalPageMetadata({
   title,
   description,
   openGraphTitle,
+  openGraphType = "website",
+  image,
 }: CanonicalPageMetadataInput): Metadata {
   const canonical = buildCanonicalUrl(path);
   const ogTitle = openGraphTitle ?? title;
+  const imageUrl = image?.trim() || DEFAULT_OG_IMAGE;
 
   return {
     title,
@@ -179,6 +189,8 @@ export function buildCanonicalPageMetadata({
       title: ogTitle,
       description,
       url: canonical,
+      type: openGraphType,
+      images: [{ url: imageUrl, alt: ogTitle }],
     },
   };
 }

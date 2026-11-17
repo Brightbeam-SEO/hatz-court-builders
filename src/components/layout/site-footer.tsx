@@ -22,14 +22,14 @@ const footerDescription =
 
 const footerQuickLinks = [
   { label: "Home", href: "/" },
-  { label: "About Us", href: "/about" },
+  { label: "About Us", href: "/about/" },
   { label: "Services", href: "/#services" },
   { label: "Service Areas", href: "/#service-areas" },
-  { label: "Gallery", href: "/gallery" },
-  { label: "FAQ", href: "/faq" },
-  { label: "Blog", href: "/blog" },
-  { label: "Reviews", href: "/reviews" },
-  { label: "Contact", href: "/contact" },
+  { label: "Gallery", href: "/gallery/" },
+  { label: "FAQ", href: "/faq/" },
+  { label: "Blog", href: "/blog/" },
+  { label: "Reviews", href: "/reviews/" },
+  { label: "Contact", href: "/contact/" },
 ] as const;
 
 const FOOTER_SOCIAL_LABELS = new Set(["Facebook", "Instagram"]);

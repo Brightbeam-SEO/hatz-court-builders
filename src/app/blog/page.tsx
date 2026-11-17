@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { Suspense } from "react";
 import { BlogPage } from "@/components/blog/blog-page";
 import { buildGpmPageMetadata } from "@/lib/gpm-sitemap-seo";
 import {
@@ -42,20 +41,30 @@ function featuredPostsForIndex(sorted: BlogPost[]): BlogPost[] {
   return featured.slice(0, BLOG_FEATURED_SECTION_MAX);
 }
 
-export default async function BlogPageRoute() {
+type BlogIndexProps = {
+  searchParams?: Promise<{ page?: string | string[] }> | { page?: string | string[] };
+};
+
+function pageFromSearch(value: string | string[] | undefined): number {
+  const raw = Array.isArray(value) ? value[0] : value;
+  const parsed = parseInt(raw ?? "1", 10);
+  return Number.isFinite(parsed) && parsed >= 1 ? parsed : 1;
+}
+
+export default async function BlogPageRoute({ searchParams }: BlogIndexProps) {
+  const resolved = searchParams instanceof Promise ? await searchParams : searchParams;
   const [home, posts] = await Promise.all([getHomeContentForPage(), getBlogPostsForPage()]);
   const sorted = [...posts].sort(sortByDateDesc);
   const featured = featuredPostsForIndex(sorted);
 
   return (
-    <Suspense fallback={null}>
-      <BlogPage
-        socialLinks={home.socialLinks}
-        featuredPosts={featured}
-        archivePosts={sorted}
-        gridPageSize={BLOG_GRID_PAGE_SIZE}
-        totalPostCount={posts.length}
-      />
-    </Suspense>
+    <BlogPage
+      socialLinks={home.socialLinks}
+      featuredPosts={featured}
+      archivePosts={sorted}
+      gridPageSize={BLOG_GRID_PAGE_SIZE}
+      totalPostCount={posts.length}
+      page={pageFromSearch(resolved?.page)}
+    />
   );
 }
