@@ -37,6 +37,13 @@ const CHANDLER_CHILD_SLUGS = new Set([
 
 /** Sidebar: homepage plus other PM service pages. */
 export function getPropertyManagementServiceSidebarLinks(currentSlug: string) {
+  if (currentSlug === "pickleball-court-builder-boise-id") {
+    return [
+      { href: "/", label: "Hatz Court Builders" },
+      { href: "/court-builders-boise-id/", label: "Court Builder Boise" },
+    ];
+  }
+
   const isArizonaPage = currentSlug.includes("-az");
   const isIdahoCityPage =
     currentSlug === "court-builders-boise-id" || currentSlug.startsWith("court-builder-");

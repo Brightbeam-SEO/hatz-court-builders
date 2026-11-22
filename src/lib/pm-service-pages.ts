@@ -45,6 +45,7 @@ import {
   PM_MULTI_COURT_CONSTRUCTION_CONFIG,
   PM_PADEL_COURT_BUILDER_PHOENIX_AZ_CONFIG,
   PM_PADEL_COURT_BUILDER_SCOTTSDALE_AZ_CONFIG,
+  PM_PICKLEBALL_COURT_BUILDER_BOISE_ID_CONFIG,
   PM_PICKLEBALL_COURT_BUILDER_PHOENIX_AZ_CONFIG,
   PM_PICKLEBALL_COURT_BUILDERS_MESA_AZ_CONFIG,
   PM_PICKLEBALL_COURT_INSTALLATION_SCOTTSDALE_AZ_CONFIG,
@@ -71,6 +72,12 @@ export const PM_SERVICE_PAGES: Record<string, PmServicePageEntry> = {
     config: PM_COURT_BUILDERS_BOISE_CONFIG,
     fallbackMarkdownPath: "content/services/court-builders-boise-id-body.md",
     sanitySlug: "court-builders-boise-id",
+  },
+  "pickleball-court-builder-boise-id": {
+    slug: "pickleball-court-builder-boise-id",
+    config: PM_PICKLEBALL_COURT_BUILDER_BOISE_ID_CONFIG,
+    fallbackMarkdownPath: "content/services/pickleball-court-builder-boise-id-body.md",
+    sanitySlug: "pickleball-court-builder-boise-id",
   },
   "court-builder-meridian-id": {
     slug: "court-builder-meridian-id",

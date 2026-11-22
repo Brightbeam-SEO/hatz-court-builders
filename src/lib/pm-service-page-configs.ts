@@ -1211,6 +1211,61 @@ export const PM_COURT_BUILDERS_BOISE_CONFIG = courtBuilderCityConfig({
   ],
 });
 
+export const PM_PICKLEBALL_COURT_BUILDER_BOISE_ID_CONFIG = courtBuilderCityConfig({
+  slug: "pickleball-court-builder-boise-id",
+  cityName: "Boise",
+  serviceName: "Pickleball Court Builder Boise, Idaho",
+  heroTitle: "Pickleball Court Builder Boise, Idaho",
+  heroSubtitle: "Bring Pickleball Into Your Boise Backyard or Recreation Facility",
+  metaTitle: "Pickleball Court Builder Boise Idaho | Custom Courts | Hatz",
+  metaDescription:
+    "Need a pickleball court builder in Boise, Idaho? Hatz Court Builders offers custom court installation, acrylic surfacing, and repairs. Contact us today!",
+  heroImageFragment: "backyard pickleball court pool patio residential",
+  faqHeading: "Your Boise Pickleball Court Questions, Answered Before Construction",
+  faqItems: [
+    {
+      question: "What are the standard dimensions for a pickleball court?",
+      answer:
+        "A regulation pickleball playing area measures 20 feet wide by 44 feet long. Additional space around the court is recommended so players can move beyond the boundary lines during games. The final layout should account for the available property space.",
+    },
+    {
+      question: "Can a pickleball court be installed in a Boise backyard?",
+      answer:
+        "Yes. Hatz Court Builders provides residential pickleball court construction in Boise. The size and layout of your backyard will help determine whether a dedicated court can fit and what site preparation may be required.",
+    },
+    {
+      question: "What is the difference between acrylic and cushioned pickleball courts?",
+      answer:
+        "Standard acrylic provides a firm playing surface, while cushioned acrylic includes added layers that create a different feel underfoot. Hatz Court Builders offers both options for custom court projects.",
+    },
+    {
+      question: "Can an existing tennis court be turned into a pickleball playing area?",
+      answer:
+        "Some tennis courts can accommodate pickleball markings or a modified playing layout. The available options depend on the existing court dimensions, surface condition, and intended use. Our team provides court renovations and striping services.",
+    },
+    {
+      question: "Does Hatz Court Builders repair damaged pickleball courts in Boise?",
+      answer:
+        "Yes. We offer court resurfacing, repairs, and renovations. The type of work needed depends on the existing surface, the extent of the damage, and the improvements planned.",
+    },
+    {
+      question: "Can you build multiple pickleball courts for a school or community facility?",
+      answer:
+        "Yes. We provide commercial court construction for schools, parks, and other recreational properties. Projects can include multiple playing areas and related features such as fencing, lighting, and court markings.",
+    },
+    {
+      question: "Are pickleball court installs available outside Boise, Idaho?",
+      answer:
+        "Yes. Our Idaho service areas include Meridian, Eagle, Nampa, Caldwell, Kuna, Star, Middleton, Twin Falls, and nearby communities.",
+    },
+    {
+      question: "How do I start planning a pickleball court installation in Boise?",
+      answer:
+        "Contact Hatz Court Builders at (208) 979-0002 or info@hatzcourtbuilders.com. Tell us about your property, the type of court you want, and any additional features you're interested in so we can discuss your project.",
+    },
+  ],
+});
+
 export const PM_COURT_BUILDER_MERIDIAN_CONFIG = courtBuilderCityConfig({
   slug: "court-builder-meridian-id",
   cityName: "Meridian",

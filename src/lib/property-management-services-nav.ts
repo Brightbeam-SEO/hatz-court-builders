@@ -3,6 +3,7 @@ import { pmServicePagePath } from "@/lib/pm-service-pages";
 /** Court builder location pages. */
 export const PROPERTY_MANAGEMENT_SERVICE_SLUGS = [
   "court-builders-boise-id",
+  "pickleball-court-builder-boise-id",
   "court-builder-meridian-id",
   "court-builder-nampa-id",
   "court-builder-caldwell-id",
@@ -45,6 +46,7 @@ export type PropertyManagementServiceSlug = (typeof PROPERTY_MANAGEMENT_SERVICE_
 
 const SERVICE_LABELS: Record<PropertyManagementServiceSlug, string> = {
   "court-builders-boise-id": "Court Builders Boise, ID",
+  "pickleball-court-builder-boise-id": "Pickleball Court Builder Boise, ID",
   "court-builder-meridian-id": "Court Builder Meridian, ID",
   "court-builder-nampa-id": "Court Builder Nampa, ID",
   "court-builder-caldwell-id": "Court Builder Caldwell, ID",

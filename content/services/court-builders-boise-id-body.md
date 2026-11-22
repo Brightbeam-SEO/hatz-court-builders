@@ -17,12 +17,12 @@ From backyard projects to facilities, schools, and HOAs, we build clean layouts 
 
 ## Services We Offer in Boise
 
-- Commercial projects
-- Residential backyard courts
-- Design and build
-- Re-surfacing
-- Components and accessories
-- Acrylic, hardwood, and modular systems
+- We build commercial courts for schools, parks, HOAs, and athletic facilities in Boise.
+- Homeowners can add a residential backyard court, including a [pickleball court in Boise](/pickleball-court-builder-boise-id/).
+- Design and build covers layout, surface choice, and installation with one team.
+- Re-surfacing restores worn courts with fresh color, coatings, and clearer game lines.
+- Components and accessories include nets, hoops, fencing, lighting, and custom logos.
+- Acrylic, hardwood, and modular systems are available for tennis, basketball, and pickleball.
 
 ## Our Seamless Process
 
