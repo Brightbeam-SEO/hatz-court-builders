@@ -273,64 +273,38 @@ function courtSurfacesServiceConfig(input: {
 export const PM_BASKETBALL_COURT_CONSTRUCTION_CONFIG = courtConstructionServiceConfig({
   slug: "basketball-court-construction",
   serviceName: "Basketball Court Construction",
-  metaTitle: "Basketball Court Construction | Custom Courts | Hatz",
+  metaTitle: "Basketball Court Construction | Indoor & Outdoor Courts",
   metaDescription:
-    "Expert basketball court construction for residential and commercial spaces. Built for performance and longevity. Contact us for a quote.",
+    "Build a basketball court tailored to your space and playing needs. We construct residential and commercial courts with custom layouts and durable surfaces.",
   heroTitle: "Basketball Court Construction",
-  heroSubtitle:
-    "Professional basketball court construction for residential and commercial projects — backyard courts, half courts, full courts, schools, parks, and multi-use facilities.",
+  heroSubtitle: "Basketball Courts Designed Around Your Property and Playing Goals",
   heroImageFragment: "basketball tile court modular hoop goal",
-  faqHeading: "Basketball Court Construction Questions",
+  faqHeading: "Five Questions to Help You Plan Your Basketball Court Installation",
   faqItems: [
     {
-      question: "What types of basketball courts do you build?",
+      question: "How much does it cost to build a basketball court?",
       answer:
-        "We build backyard basketball courts, half-court basketball courts, full basketball courts, indoor basketball courts, outdoor basketball courts, school basketball courts, HOA basketball courts, park courts, church courts, and commercial basketball courts.",
+        "For preliminary budgeting, a professionally constructed backyard basketball half-court measuring approximately 30 by 50 feet may cost $30,000 to $67,500, while a full-size outdoor basketball court may require $67,500 to $150,000 or more. The total depends on site preparation, foundation requirements, surface materials, basketball equipment, drainage, fencing, and lighting. These figures are conservative planning allowances rather than fixed installation rates. Contact Hatz Court Builders for project-specific pricing.",
     },
     {
-      question: "Can you build a basketball court in a backyard?",
+      question: "How thick should concrete be for a basketball court?",
       answer:
-        "Yes. Backyard Basketball Court Construction is a popular choice for homeowners who want a private space for family games, training, and daily practice.",
+        "A concrete slab approximately 4 inches thick is a common starting reference for certain residential basketball court installations. However, the necessary thickness depends on soil conditions, slab dimensions, anticipated loads, reinforcement requirements, drainage, and local environmental conditions. Permanent basketball hoop systems may also require separate structural footings. The final foundation specifications should be determined according to the property's actual construction requirements.",
     },
     {
-      question: "Is a half court better than a full court?",
+      question: "What is the best surface for an outdoor basketball court?",
       answer:
-        "It depends on the available space and how the court will be used. A half court is great for smaller properties, shooting practice, and casual games. A full court is better for organized play, team drills, and larger facilities.",
+        "Standard acrylic is a common choice for outdoor basketball courts because it can provide consistent ball rebound, suitable traction, and traditional hardcourt playing characteristics. Cushioned acrylic offers additional surface resilience, while modular athletic flooring provides another option for customized backyard and multi-sport courts. The most suitable surface depends on the intended playing experience, foundation conditions, local climate, maintenance requirements, and available budget.",
     },
     {
-      question: "Can a basketball court also be used for pickleball?",
+      question: "What is a good size for a backyard basketball court?",
       answer:
-        "Yes. Many basketball courts can be designed as multi-use courts with pickleball lines. This gives one court area more flexibility.",
+        "A backyard basketball court measuring approximately 30 by 50 feet can provide a practical recreational half-court layout for shooting practice and small-group games. Smaller areas, such as 20 by 20 feet or 25 by 30 feet, may be suitable for basic shooting practice. A regulation NBA half-court measures 47 by 50 feet. Additional space beyond the playing boundaries should be considered for player movement, equipment, fencing, and access.",
     },
     {
-      question: "What surface is best for a basketball court?",
+      question: "How long does it take to build a basketball court?",
       answer:
-        "The best surface depends on the project. Outdoor courts may use acrylic, cushioned acrylic, asphalt, concrete, modular surfaces, or specialty systems. Indoor courts may use hardwood, modular surfaces, or other indoor court systems.",
-    },
-    {
-      question: "Do you build basketball courts for schools and parks?",
-      answer:
-        "Yes. Hatz Court Builders provides Basketball Court Construction for schools, parks, recreation centers, universities, municipalities, and public-use facilities.",
-    },
-    {
-      question: "Can you add custom colors or logos?",
-      answer:
-        "Yes. Custom colors, striping, and logos can be added to many basketball court projects. This is popular for schools, gyms, clubs, and commercial facilities.",
-    },
-    {
-      question: "Do you offer court resurfacing and repairs?",
-      answer:
-        "Yes. We help with basketball court resurfacing, repairs, renovations, restriping, equipment upgrades, and surface improvements.",
-    },
-    {
-      question: "Can you add lighting and fencing?",
-      answer:
-        "Yes. Lighting and fencing can be included in many Basketball Court Construction projects depending on the property, layout, and goals.",
-    },
-    {
-      question: "What makes Hatz Court Builders different?",
-      answer:
-        "Hatz Court Builders specializes in many types of sports construction. We build basketball courts, pickleball courts, tennis courts, volleyball courts, futsal courts, bocce courts, custom courts, commercial courts, and multi-court systems using a wide range of surface options.",
+        "A new outdoor basketball court may take approximately three to eight weeks or longer, depending on its dimensions, site preparation, foundation construction, material curing, weather, and additional features. Installing athletic flooring over a suitable existing base may require less time. Larger commercial facilities and indoor basketball courts may need more extensive construction planning. Hatz Court Builders can discuss anticipated timelines according to your project's specific requirements.",
     },
   ],
 });
@@ -338,9 +312,9 @@ export const PM_BASKETBALL_COURT_CONSTRUCTION_CONFIG = courtConstructionServiceC
 export const PM_PICKLEBALL_COURT_CONSTRUCTION_CONFIG = courtConstructionServiceConfig({
   slug: "pickleball-court-construction",
   serviceName: "Pickleball Court Construction",
-  metaTitle: "Pickleball Court Construction | Custom Courts | Hatz",
+  metaTitle: "Pickleball Court Construction & Custom Court Installation",
   metaDescription:
-    "Professional pickleball court construction built for durability and performance. Custom layouts and surfaces available. Contact us to get started.",
+    "Build a custom pickleball court for your backyard, school or sports facility. We handle court design, construction and surface installation. Request a quote.",
   heroTitle: "Pickleball Court Construction",
   heroSubtitle:
     "Pickleball court construction for homes, schools, HOAs, parks, clubs, and businesses — dedicated courts, conversions, and multi-sport recreation areas.",
@@ -383,9 +357,9 @@ export const PM_PICKLEBALL_COURT_CONSTRUCTION_CONFIG = courtConstructionServiceC
 export const PM_VOLLEYBALL_COURT_CONSTRUCTION_CONFIG = courtConstructionServiceConfig({
   slug: "volleyball-court-construction",
   serviceName: "Volleyball Court Construction",
-  metaTitle: "Volleyball Court Construction | All Court Types | Hatz",
+  metaTitle: "Volleyball Court Construction | Indoor & Outdoor Courts",
   metaDescription:
-    "Durable volleyball court construction for indoor and outdoor use. Built to match your space and needs. Contact us for details.",
+    "Create a volleyball court suited to your property or sports facility. We offer indoor and outdoor court construction with customized layouts and surfaces.",
   heroTitle: "Volleyball Court Construction",
   heroSubtitle:
     "Professional volleyball court construction for residential and commercial projects — backyard courts, school courts, park courts, resort amenities, and multi-use facilities.",
@@ -448,9 +422,9 @@ export const PM_VOLLEYBALL_COURT_CONSTRUCTION_CONFIG = courtConstructionServiceC
 export const PM_FUTSAL_SOCCER_COURT_CONSTRUCTION_CONFIG = courtConstructionServiceConfig({
   slug: "futsal-soccer-court-construction",
   serviceName: "Futsal / Soccer Court Construction",
-  metaTitle: "Soccer Court Construction | All Court Types | Hatz",
+  metaTitle: "Futsal & Soccer Court Construction | Custom Court Builders",
   metaDescription:
-    "Custom soccer court construction for training or recreation. Designed for performance and safety. Contact us to learn more.",
+    "Build a dedicated space for training and recreational play with futsal and soccer court construction. Explore custom layouts and surfaces for your facility.",
   heroTitle: "Futsal / Soccer Court Construction",
   heroSubtitle:
     "Professional futsal and soccer court construction for residential and commercial projects — futsal courts, mini soccer courts, training courts, school courts, and multi-use facilities.",
@@ -513,64 +487,38 @@ export const PM_FUTSAL_SOCCER_COURT_CONSTRUCTION_CONFIG = courtConstructionServi
 export const PM_TENNIS_COURT_CONSTRUCTION_CONFIG = courtConstructionServiceConfig({
   slug: "tennis-court-construction",
   serviceName: "Tennis Court Construction",
-  metaTitle: "Tennis Court Construction | Custom Courts | Hatz",
+  metaTitle: "Tennis Court Construction | Custom Tennis Court Builders",
   metaDescription:
-    "High-quality tennis court construction with premium materials and precision builds. Designed for long-term play. Contact us today.",
+    "From private tennis courts to commercial facilities, we provide custom tennis court construction with carefully planned layouts and surfaces. Get a quote.",
   heroTitle: "Tennis Court Construction",
-  heroSubtitle:
-    "Professional tennis court construction for residential and commercial projects — private courts, school courts, club courts, park courts, and multi-use facilities.",
+  heroSubtitle: "Professional Tennis Court Building for Homes and Athletic Facilities",
   heroImageFragment: "tennis court resurface blue and green acrylic",
-  faqHeading: "Tennis Court Construction Questions",
+  faqHeading: "What Property Owners Want to Know Before Building a Tennis Court",
   faqItems: [
     {
-      question: "What types of tennis courts do you build?",
+      question: "How much does it cost to build a tennis court?",
       answer:
-        "We build backyard tennis courts, private tennis courts, school tennis courts, HOA tennis courts, park tennis courts, club tennis courts, resort tennis courts, commercial tennis courts, and multi-use tennis courts.",
+        "For preliminary budgeting, a professionally constructed full-size outdoor tennis court may require approximately $75,000 to $180,000, including a conservative planning allowance. The total depends on foundation materials, excavation, grading, drainage, acrylic or cushioned surfacing, fencing, and equipment. Lighting, specialized foundations, and challenging terrain may increase the overall cost. Contact Hatz Court Builders for pricing based on your property and preferred tennis court design.",
     },
     {
-      question: "Can you build a tennis court in a backyard?",
+      question: "What is the cheapest way to build a tennis court?",
       answer:
-        "Yes. Backyard Tennis Court Construction is a good option for homeowners with enough space for a full tennis court layout, safety zones, access, and any added features.",
+        "Reusing an existing structurally sound concrete or asphalt foundation can be one of the more economical ways to develop a tennis court. When new construction is necessary, a straightforward asphalt or concrete hardcourt with standard acrylic surfacing and essential equipment may help limit project costs. Certain clay or compacted aggregate systems can also have lower initial construction expenses, but their long-term maintenance requirements should be considered. Avoid compromising essential drainage and foundation preparation.",
     },
     {
-      question: "Can a tennis court include pickleball lines?",
+      question: "How much land is needed for a tennis court?",
       answer:
-        "Yes. Many tennis courts can include pickleball lines so the court can support more than one sport.",
+        "A regulation doubles tennis court measures 36 by 78 feet, while a singles court measures 27 by 78 feet. However, an overall playing surface of approximately 60 by 120 feet, or 7,200 square feet, is commonly used for full-size tennis court planning. Additional property space may be required for fencing, lighting, drainage, walkways, setbacks, and surrounding landscaping.",
     },
     {
-      question: "Can an old tennis court be converted to pickleball courts?",
+      question: "What is the best surface for a tennis court?",
       answer:
-        "Yes, in many cases. Some older tennis courts can be converted into dedicated pickleball courts depending on the size, surface condition, and layout.",
+        "Standard acrylic is a popular choice for residential and commercial tennis courts because it can provide consistent ball response, customizable court speed, and manageable maintenance requirements. Cushioned acrylic offers an alternative with additional surface resilience. Clay, grass, and modular systems provide different playing experiences and maintenance needs. The best tennis court surface depends on the intended level of play, local climate, foundation conditions, and property owner's preferences.",
     },
     {
-      question: "What surface is best for a tennis court?",
+      question: "Does a tennis court add value to your home?",
       answer:
-        "The best surface depends on the project. Common options may include acrylic, cushioned acrylic, asphalt, concrete, modular surfaces, synthetic surfaces, and other specialty court systems.",
-    },
-    {
-      question: "Do you build tennis courts for schools and clubs?",
-      answer:
-        "Yes. Hatz Court Builders provides Tennis Court Construction for schools, universities, private clubs, parks, recreation centers, resorts, and commercial properties.",
-    },
-    {
-      question: "Do you offer tennis court resurfacing?",
-      answer:
-        "Yes. We help with tennis court resurfacing, repairs, renovations, restriping, color coating, net systems, and surface updates.",
-    },
-    {
-      question: "Can you add fencing and lighting?",
-      answer:
-        "Yes. Fencing and lighting can be included in many Tennis Court Construction projects depending on the property, layout, and project goals.",
-    },
-    {
-      question: "Can you add custom colors or logos?",
-      answer:
-        "Yes. Custom colors, striping, and logos can be added to many tennis court projects. This is popular for schools, clubs, resorts, and commercial facilities.",
-    },
-    {
-      question: "What makes Hatz Court Builders different?",
-      answer:
-        "Hatz Court Builders specializes in many types of sports construction. We build tennis courts, pickleball courts, basketball courts, volleyball courts, futsal courts, bocce courts, custom courts, commercial courts, and multi-court systems using a wide range of surface options.",
+        "A well-designed and maintained private tennis court may increase a property's recreational appeal, particularly in luxury residential markets where buyers value outdoor athletic amenities. However, its effect on resale value depends on the local real estate market, property size, court condition, maintenance requirements, and buyer preferences. Homeowners should consider the long-term enjoyment and functionality of the court rather than assuming construction costs will be fully recovered when selling the property.",
     },
   ],
 });
@@ -578,44 +526,38 @@ export const PM_TENNIS_COURT_CONSTRUCTION_CONFIG = courtConstructionServiceConfi
 export const PM_BOCCE_COURT_CONSTRUCTION_CONFIG = courtConstructionServiceConfig({
   slug: "bocce-court-construction",
   serviceName: "Bocce Court Construction",
-  metaTitle: "Bocce Court Construction | Custom Courts | Hatz",
+  metaTitle: "Bocce Court Construction | Custom Bocce Ball Court Builders",
   metaDescription:
-    "Precision bocce court construction with proper base and surface systems. Built for smooth, consistent play. Contact us today.",
-  heroTitle: "Bocce Court Construction",
-  heroSubtitle:
-    "Bocce court construction for residential and commercial outdoor spaces — backyard courts, HOA amenities, resort recreation areas, and park facilities.",
+    "Enjoy consistent play with custom bocce court construction. We handle court layout, base preparation and surface installation for your property. Get a quote.",
+  heroTitle: "Bocce Court Builder",
+  heroSubtitle: "Custom Bocce Courts for Homes, Parks, and Recreational Properties",
   heroImageFragment: "modular court tile custom logo branding",
-  faqHeading: "Bocce Court Construction Questions",
+  faqHeading: "Questions to Help You Plan Your Bocce Ball Court",
   faqItems: [
     {
-      question: "What types of bocce courts do you build?",
+      question: "How do I build a bocce court?",
       answer:
-        "We build backyard bocce courts, HOA bocce courts, resort bocce courts, park bocce courts, retirement community courts, and commercial bocce recreation areas.",
+        "Building a bocce court involves selecting suitable dimensions, excavating and preparing the site, installing a stable aggregate base, planning drainage, and constructing secure perimeter boundaries. The finished surface may consist of crushed oyster shell, decomposed granite, specialized aggregate, or synthetic turf. The playing area should remain smooth and level to support predictable ball movement. Hatz Court Builders provides custom court design, site preparation, and construction services for residential and commercial projects.",
     },
     {
-      question: "How much space do I need for a bocce court?",
+      question: "What is the best surface for bocce ball courts?",
       answer:
-        "A regulation bocce court needs a long, narrow playing area plus side and end space. We can also design scaled residential courts when the property cannot fit a full-size layout.",
+        "Crushed oyster shell blends are often preferred for traditional bocce play because they can provide a smooth, controlled ball roll when properly installed and maintained. Synthetic bocce turf is a suitable alternative for property owners who prioritize consistent playing conditions and reduced routine grooming. Decomposed granite and other specially prepared aggregate materials may also work well. The best surface depends on playing preferences, local climate, drainage, and maintenance expectations.",
     },
     {
-      question: "What surface works best for bocce?",
+      question: "How wide should a bocce ball court be?",
       answer:
-        "The best surface depends on the project. Options may include crushed stone, specialty bocce surfaces, synthetic systems, or other finishes planned for drainage and consistent roll.",
+        "Many traditional competition-style bocce courts are approximately 13 feet wide, while residential recreational courts commonly measure 10 to 12 feet wide. Smaller courts may be suitable for properties with limited available space, although narrower layouts can restrict certain playing strategies. Additional room should be allowed around the playing area for perimeter boards, access, seating, and maintenance. Hatz Court Builders can customize court dimensions according to your property and recreational goals.",
     },
     {
-      question: "Can a bocce court be added near a patio or pool?",
+      question: "How much would it cost to build a bocce court?",
       answer:
-        "Yes. Many homeowners and resorts place bocce courts near outdoor living areas. Site grading, drainage, and access still need careful planning.",
+        "For preliminary budgeting, a bocce court project may range from approximately $3,000 to $37,500 or more, with mid-range installations potentially falling between $7,500 and $18,000. Larger professionally constructed courts with specialized surfaces, extensive groundwork, drainage, lighting, and premium perimeter materials may require a higher budget. These figures are conservative planning allowances rather than fixed installation rates. Contact Hatz Court Builders for pricing based on your property's conditions and preferred court design.",
     },
     {
-      question: "Do you build bocce courts for commercial properties?",
+      question: "What is a bocce court called?",
       answer:
-        "Yes. We provide Bocce Court Construction for HOAs, resorts, parks, clubs, apartment communities, and other commercial recreation spaces.",
-    },
-    {
-      question: "Can you include fencing, lighting, or seating?",
-      answer:
-        "Yes. Fencing, lighting, seating, walkways, and surrounding landscape coordination can be included depending on the property and project goals.",
+        "A dedicated playing area for bocce is commonly called a bocce court or bocce ball court. The term court bocce may also be used to distinguish games played within a defined rectangular court from casual bocce played on lawns or beaches. A traditional bocce court typically includes a level playing surface, sideboards, end boards, and markings appropriate to the rules being followed.",
     },
   ],
 });
@@ -623,9 +565,9 @@ export const PM_BOCCE_COURT_CONSTRUCTION_CONFIG = courtConstructionServiceConfig
 export const PM_MULTI_COURT_CONSTRUCTION_CONFIG = courtConstructionServiceConfig({
   slug: "multi-court-construction",
   serviceName: "Multi-Court Construction",
-  metaTitle: "Multi Court Construction | All Court Types | Hatz",
+  metaTitle: "Multi-Court Construction | Custom Multi-Use Court Builders",
   metaDescription:
-    "Multi court construction for parks, schools, and facilities. Build multiple courts in one space. Contact us to plan your project.",
+    "Make the most of your available space with multi-use court construction for homes, schools, parks and athletic facilities. Discuss your court project with us.",
   heroTitle: "Multi-Court Construction",
   heroSubtitle:
     "Multi-court construction that combines pickleball, basketball, tennis, volleyball, futsal, and more into one efficient recreation space.",
@@ -668,9 +610,9 @@ export const PM_MULTI_COURT_CONSTRUCTION_CONFIG = courtConstructionServiceConfig
 export const PM_CUSTOM_COURT_CONSTRUCTION_CONFIG = courtConstructionServiceConfig({
   slug: "custom-court-construction",
   serviceName: "Custom Court Construction",
-  metaTitle: "Custom Court Construction | Custom Courts | Hatz",
+  metaTitle: "Custom Athletic Court Construction | Design & Installation",
   metaDescription:
-    "Fully custom court construction tailored to your space, sport, and design preferences. Built your way. Contact us now.",
+    "Bring your athletic court vision to life with custom court construction. Choose your layout, playing surface and court features to suit your space and sport.",
   heroTitle: "Custom Court Construction",
   heroSubtitle:
     "Custom court construction built around your property, sport mix, colors, surface system, and long-term use goals.",
@@ -713,9 +655,9 @@ export const PM_CUSTOM_COURT_CONSTRUCTION_CONFIG = courtConstructionServiceConfi
 export const PM_COMMERCIAL_COURT_CONSTRUCTION_CONFIG = courtConstructionServiceConfig({
   slug: "commercial-court-construction",
   serviceName: "Commercial Court Construction",
-  metaTitle: "Commercial Court Construction | All Court Types | Hatz",
+  metaTitle: "Commercial Court Construction | Athletic Court Builders",
   metaDescription:
-    "Commercial court construction for schools, HOAs, and facilities. Built for durability and heavy use. Contact us for more info.",
+    "Develop durable athletic facilities with commercial court construction for schools, HOAs, parks and recreational properties. Discuss your project with us.",
   heroTitle: "Commercial Court Construction",
   heroSubtitle:
     "Commercial court construction for schools, parks, HOAs, clubs, resorts, apartment communities, and high-use recreation facilities.",
@@ -758,9 +700,9 @@ export const PM_COMMERCIAL_COURT_CONSTRUCTION_CONFIG = courtConstructionServiceC
 export const PM_COURT_EXPANSION_CONFIG = courtConstructionServiceConfig({
   slug: "court-expansion",
   serviceName: "Court Expansion",
-  metaTitle: "Court Expansion | All Court Types | Hatz",
+  metaTitle: "Athletic Court Expansion | Court Additions & Upgrades",
   metaDescription:
-    "Court expansion services to upgrade or extend your existing sports court space. Seamless additions. Contact us today.",
+    "Need more playing space? Our athletic court expansion services help extend existing courts and accommodate additional recreational activities. Plan your upgrade.",
   heroTitle: "Court Expansion",
   heroSubtitle:
     "Court expansion for facilities that need more playing space, additional courts, multi-sport upgrades, or larger recreation areas.",
@@ -803,9 +745,9 @@ export const PM_COURT_EXPANSION_CONFIG = courtConstructionServiceConfig({
 export const PM_CUSTOM_COURT_DESIGN_CONFIG = courtConstructionServiceConfig({
   slug: "custom-court-design",
   serviceName: "Court Design",
-  metaTitle: "Custom Court Design | Custom Courts | Hatz",
+  metaTitle: "Custom Court Design | Athletic Court Layout & Planning",
   metaDescription:
-    "Custom court design services to plan layout, materials, and functionality for your project. Start your build right. Contact us.",
+    "Plan your ideal athletic court with custom court design services. Explore layouts, surface materials and playing features suited to your space and intended use.",
   heroTitle: "Custom Court Design",
   heroSubtitle:
     "Custom court design that plans layout, drainage, surfacing, striping, fencing, lighting, and equipment before construction begins.",
@@ -848,9 +790,9 @@ export const PM_CUSTOM_COURT_DESIGN_CONFIG = courtConstructionServiceConfig({
 export const PM_ASPHALT_COURT_INSTALLATION_CONFIG = courtSurfacesServiceConfig({
   slug: "asphalt-court-installation",
   serviceName: "Asphalt Court Installation",
-  metaTitle: "Asphalt Court Installation | Durable Bases | Hatz",
+  metaTitle: "Asphalt Court Installation | Athletic Court Construction",
   metaDescription:
-    "Professional asphalt court installation for tennis, pickleball, basketball, and multi-use courts. Built for drainage and longevity. Get a free quote.",
+    "Create a durable foundation for tennis, basketball or pickleball with asphalt court installation. We build court bases with drainage and performance in mind.",
   heroTitle: "Asphalt Court Installation in Boise & Scottsdale",
   heroSubtitle:
     "Asphalt court installation for residential and commercial projects — a durable paved base for acrylic coatings, multi-sport layouts, and long-term outdoor play.",
@@ -893,9 +835,9 @@ export const PM_ASPHALT_COURT_INSTALLATION_CONFIG = courtSurfacesServiceConfig({
 export const PM_CONCRETE_COURT_INSTALLATION_CONFIG = courtSurfacesServiceConfig({
   slug: "concrete-court-installation",
   serviceName: "Concrete Court Installation",
-  metaTitle: "Concrete Court Installation | Stable Slabs | Hatz",
+  metaTitle: "Concrete Court Installation | Court Slabs & Foundations",
   metaDescription:
-    "Concrete court installation for backyard and commercial sports courts. Precision slabs built for coatings, modular systems, and heavy use. Contact us today.",
+    "Build a stable foundation for your backyard or commercial athletic court with concrete court installation. Explore slabs suited to acrylic and modular surfaces.",
   heroTitle: "Concrete Court Installation in Boise & Scottsdale",
   heroSubtitle:
     "Concrete court installation for homes, schools, HOAs, and commercial facilities — stable slabs designed for acrylic systems, modular surfaces, and multi-sport play.",
@@ -938,9 +880,9 @@ export const PM_CONCRETE_COURT_INSTALLATION_CONFIG = courtSurfacesServiceConfig(
 export const PM_ACRYLIC_COURT_SYSTEMS_CONFIG = courtSurfacesServiceConfig({
   slug: "acrylic-court-systems",
   serviceName: "Acrylic Court Systems",
-  metaTitle: "Acrylic Court Systems | Color & Performance | Hatz",
+  metaTitle: "Acrylic Court Surfacing | Pickleball & Tennis Court Systems",
   metaDescription:
-    "Acrylic court systems for tennis, pickleball, and multi-use courts. Professional coatings for color, grip, and weather resistance. Request a quote.",
+    "Enhance court performance with acrylic court systems for tennis, pickleball and multi-use play. Explore surface coatings, color options and traction.",
   heroTitle: "Acrylic Court Systems in Boise & Scottsdale",
   heroSubtitle:
     "Acrylic court systems that deliver color, traction, and weather-ready performance over asphalt or concrete bases for residential and commercial courts.",
@@ -983,9 +925,9 @@ export const PM_ACRYLIC_COURT_SYSTEMS_CONFIG = courtSurfacesServiceConfig({
 export const PM_SYNTHETIC_COURTS_CONFIG = courtSurfacesServiceConfig({
   slug: "synthetic-courts",
   serviceName: "Synthetic Courts",
-  metaTitle: "Synthetic Courts | Turf & Specialty Surfaces | Hatz",
+  metaTitle: "Synthetic Athletic Courts | Turf & Specialty Surfaces",
   metaDescription:
-    "Synthetic court installation for training, multi-sport, and specialty play areas. Durable turf and synthetic systems for homes and facilities. Contact us.",
+    "Explore synthetic court installation for residential properties, training spaces and athletic facilities. Discover turf and specialty playing surface options.",
   heroTitle: "Synthetic Courts in Boise & Scottsdale",
   heroSubtitle:
     "Synthetic court surfaces for training, multi-sport recreation, and specialty play — engineered for consistent footing, lower maintenance, and year-round use.",
@@ -1028,44 +970,38 @@ export const PM_SYNTHETIC_COURTS_CONFIG = courtSurfacesServiceConfig({
 export const PM_MODULAR_COURT_SURFACES_CONFIG = courtSurfacesServiceConfig({
   slug: "modular-court-surfaces",
   serviceName: "Modular Court Surfaces",
-  metaTitle: "Modular Court Surfaces | Tile Systems | Hatz",
+  metaTitle: "Modular Court Surfaces | Interlocking Athletic Court Tiles",
   metaDescription:
-    "Modular court surfaces and interlocking tile systems for backyard and commercial courts. Fast install, great drainage, multi-sport ready. Get a quote.",
-  heroTitle: "Modular Court Surfaces in Boise & Scottsdale",
-  heroSubtitle:
-    "Modular court surfaces with interlocking tiles for backyard basketball, pickleball, multi-sport pads, and commercial recreation — fast to install and easy to refresh.",
+    "Upgrade your playing area with modular court surfaces and interlocking athletic tiles. Explore versatile flooring options for backyard and commercial courts.",
+  heroTitle: "Modular Court Surfaces",
+  heroSubtitle: "Upgrade Your Athletic Court With Custom Interlocking Flooring Systems",
   heroImageFragment: "basketball tile court modular hoop goal",
-  faqHeading: "Modular Court Tile FAQs",
+  faqHeading: "Frequently Asked Questions About Interlocking Athletic Court Tiles",
   faqItems: [
     {
-      question: "What is a modular court surface?",
+      question: "How much do sport court tiles cost per square foot?",
       answer:
-        "Modular court surfaces use interlocking sport tiles installed over a prepared base. They create a playable court with built-in drainage and a sport-ready texture.",
+        "For preliminary budgeting, professionally installed modular athletic court tiles may cost approximately $10.50 to $18 per square foot over an existing suitable foundation. A 1,500-square-foot backyard basketball court may require approximately $15,750 to $27,000 for modular flooring installation. New foundation construction, drainage, premium flooring systems, fencing, lighting, and athletic equipment may increase the total cost. Contact Hatz Court Builders for project-specific pricing.",
     },
     {
-      question: "Can modular tiles go over existing concrete or asphalt?",
+      question: "How long do sport court tiles last?",
       answer:
-        "Often yes. If the base is reasonably level and structurally sound, modular tiles can be a smart upgrade without a full rebuild.",
+        "Many quality outdoor modular athletic tiles can remain functional for 15 years or longer when properly installed and maintained. Actual service life depends on material quality, UV exposure, seasonal temperatures, foundation stability, usage frequency, and maintenance. Individual damaged tiles may also be replaceable, depending on the system and availability of compatible components.",
     },
     {
-      question: "Are modular courts good for basketball and pickleball?",
+      question: "Can sport court tiles be installed over existing concrete?",
       answer:
-        "Yes. Modular systems are popular for backyard basketball, pickleball, and multi-use recreation courts where flexibility and drainage matter.",
+        "Yes. Many modular athletic flooring systems are designed for installation over suitable existing concrete surfaces. The slab should be structurally sound, sufficiently even, and properly drained. Significant cracks, settlement, heaving, or persistent standing water may require repairs before installation. The existing concrete must also meet the selected flooring manufacturer's requirements.",
     },
     {
-      question: "How long does modular court installation take?",
+      question: "Can you put sport court tiles directly on grass?",
       answer:
-        "Once the base is ready, tile installation is often faster than poured or coated systems. Exact timing depends on court size and site access.",
+        "Most modular athletic court tiles should not be installed directly over grass for a permanent recreational court. Grass and underlying soil can shift, settle, retain moisture, and create uneven playing conditions. Concrete, asphalt, or a specifically approved alternative base is generally more suitable. Hatz Court Builders provides site preparation and foundation construction services for new modular athletic courts.",
     },
     {
-      question: "Can damaged tiles be replaced later?",
+      question: "Are modular tiles as good as acrylic for pickleball?",
       answer:
-        "Yes. One advantage of modular systems is that individual tiles can often be swapped without resurfacing the entire court.",
-    },
-    {
-      question: "What does a modular court typically cost?",
-      answer:
-        "Pricing depends on tile system, court size, base condition, borders, and striping. We quote after reviewing your site and sport goals.",
+        "Modular tiles can be appropriate for recreational pickleball and certain multi-use courts, provided the product offers suitable ball response and traction. However, acrylic is generally preferred for traditional pickleball hardcourt performance. The best choice depends on the intended level of play, flooring specifications, available foundation, maintenance preferences, and budget. Hatz Court Builders offers both modular and acrylic systems.",
     },
   ],
 });
@@ -1073,9 +1009,9 @@ export const PM_MODULAR_COURT_SURFACES_CONFIG = courtSurfacesServiceConfig({
 export const PM_CUSHIONED_COURT_SYSTEMS_CONFIG = courtSurfacesServiceConfig({
   slug: "cushioned-court-systems",
   serviceName: "Cushioned Court Systems",
-  metaTitle: "Cushioned Court Systems | Player Comfort | Hatz",
+  metaTitle: "Cushioned Court Surfacing | Acrylic Athletic Court Systems",
   metaDescription:
-    "Cushioned court systems that reduce joint impact for tennis, pickleball, and multi-use play. Comfort-focused acrylic layers. Contact Hatz today.",
+    "Improve playing comfort with cushioned court systems for tennis, pickleball and multi-use courts. Explore acrylic surface options designed to absorb impact.",
   heroTitle: "Cushioned Court Systems in Boise & Scottsdale",
   heroSubtitle:
     "Cushioned court systems that add shock absorption under acrylic color coats — built for player comfort on tennis, pickleball, and multi-use outdoor courts.",
@@ -1118,9 +1054,9 @@ export const PM_CUSHIONED_COURT_SYSTEMS_CONFIG = courtSurfacesServiceConfig({
 export const PM_INDOOR_SPORTS_FLOORING_CONFIG = courtSurfacesServiceConfig({
   slug: "indoor-sports-flooring",
   serviceName: "Indoor Sports Flooring",
-  metaTitle: "Indoor Sports Flooring | Gym & Court Floors | Hatz",
+  metaTitle: "Indoor Sports Flooring | Gymnasium & Athletic Court Flooring",
   metaDescription:
-    "Indoor sports flooring for gyms, schools, and indoor courts. Durable flooring systems for basketball, multi-sport, and training spaces. Get a quote.",
+    "Create a functional indoor athletic space with sports flooring for gyms, schools and training facilities. Explore basketball and multi-use flooring options.",
   heroTitle: "Indoor Sports Flooring in Boise & Scottsdale",
   heroSubtitle:
     "Indoor sports flooring for gyms, schools, clubs, and training facilities — performance floors built for basketball, multi-sport play, and heavy daily use.",
@@ -1163,50 +1099,38 @@ export const PM_INDOOR_SPORTS_FLOORING_CONFIG = courtSurfacesServiceConfig({
 export const PM_COURT_BUILDERS_BOISE_CONFIG = courtBuilderCityConfig({
   slug: "court-builders-boise-id",
   cityName: "Boise",
-  metaTitle: "Court Builders Boise, ID | Custom Court Builders | Hatz Court",
+  heroTitle: "Court Builder Boise, ID",
+  heroSubtitle: "Custom Athletic Courts Built for Boise Homes and Facilities",
+  metaTitle: "Court Builders Boise, ID | Custom Athletic Court Construction",
   metaDescription:
-    "Best Boise court builders for custom basketball, pickleball, tennis, and multi-sport courts. Licensed and insured with 15+ years of experience.",
+    "Build your ideal athletic court with Hatz Court Builders in Boise, ID. We specialize in pickleball, basketball, tennis and multi-use courts. Request a quote.",
   heroImageFragment: "backyard gray basketball court installation",
+  faqHeading: "What to Know Before Hiring a Court Builder in Boise",
   faqItems: [
     {
-      question: "What types of courts do you build?",
+      question: "How much does it cost to build a backyard sports court?",
       answer:
-        "We build a wide range of courts including basketball, pickleball, tennis, and multi-sport, tennis, and other courts for both residential and commercial properties.",
+        "For preliminary budgeting, a custom backyard athletic court in Boise may require approximately $30,000 to $90,000, depending on its dimensions, playing surface, foundation, and additional features. Smaller recreational courts may require a lower budget, while larger multi-sport facilities with extensive groundwork, lighting, and fencing may cost more. These figures include a conservative planning allowance rather than representing fixed installation rates. Contact Hatz Court Builders for project-specific pricing.",
     },
     {
-      question: "How long does it take to build a court?",
+      question: "What is the best surface for an outdoor sports court?",
       answer:
-        "Project timelines vary based on size and complexity, but most courts are completed within a few weeks from start to finish.",
+        "Standard acrylic is commonly used for outdoor tennis, pickleball, and basketball hardcourts because it can provide consistent ball response and suitable playing characteristics. Cushioned acrylic offers an alternative for customers seeking additional surface resilience, while modular flooring can be appropriate for certain recreational and multi-use courts. In Boise, the surface should also be selected with consideration for freezing temperatures, drainage, expected usage, and foundation conditions.",
     },
     {
-      question: "Do you offer custom court designs?",
+      question: "How much space do you need for a backyard sports court?",
       answer:
-        "Yes, every court is fully customizable—from layout and colors to surfacing and accessories—to match your vision and needs.",
+        "The space required depends on the sports you want to play. A compact basketball practice court can be customized around a smaller yard, while a standard pickleball court measures 20 by 44 feet and typically needs additional surrounding space. A total playing surface of approximately 30 by 60 feet is a common minimum planning reference for pickleball. Multi-use and tennis courts may require larger construction footprints.",
     },
     {
-      question: "What materials do you use?",
+      question: "How long does it take to build a sports court?",
       answer:
-        "We use high-quality materials such as acrylic coatings, modular tiles, and hardwood surfaces to ensure durability and performance.",
+        "Athletic court construction can take several weeks or longer, depending on the court dimensions, site preparation, foundation requirements, surfacing system, and weather. Projects involving concrete bases must also allow appropriate curing before subsequent surface installation. Larger commercial facilities, extensive grading, drainage improvements, lighting, and fencing may increase the construction timeline.",
     },
     {
-      question: "Can you resurface or upgrade an existing court?",
+      question: "Can you build a sports court for multiple sports?",
       answer:
-        "Absolutely. We offer resurfacing, repairs, and upgrades to restore and enhance your current court.",
-    },
-    {
-      question: "Do you handle both residential and commercial projects?",
-      answer:
-        "Yes, we work on everything from backyard courts to large-scale commercial and recreational facilities.",
-    },
-    {
-      question: "How much does a court project cost?",
-      answer:
-        "Costs vary depending on size, materials, and customization. We provide detailed, customized quotes to fit your budget.",
-    },
-    {
-      question: "Do you offer warranties or guarantees?",
-      answer:
-        "Yes, we stand behind our work with quality guarantees to ensure long-lasting results and customer satisfaction.",
+        "Yes. A custom multi-use court can accommodate basketball, pickleball, volleyball, and other compatible recreational activities when the dimensions, equipment, surface, and markings are planned accordingly. Different line colors and removable net systems can help distinguish between sports. Hatz Court Builders designs and constructs multi-use athletic courts for Boise homeowners, schools, parks, and commercial properties.",
     },
   ],
 });
@@ -1217,9 +1141,9 @@ export const PM_PICKLEBALL_COURT_BUILDER_BOISE_ID_CONFIG = courtBuilderCityConfi
   serviceName: "Pickleball Court Builder Boise, Idaho",
   heroTitle: "Pickleball Court Builder Boise, Idaho",
   heroSubtitle: "Bring Pickleball Into Your Boise Backyard or Recreation Facility",
-  metaTitle: "Pickleball Court Builder Boise Idaho | Custom Courts | Hatz",
+  metaTitle: "Pickleball Court Builder Boise, Idaho | Custom Court Installation",
   metaDescription:
-    "Need a pickleball court builder in Boise, Idaho? Hatz Court Builders offers custom court installation, acrylic surfacing, and repairs. Contact us today!",
+    "Looking for a pickleball court builder in Boise, Idaho? We provide custom court installation, acrylic surfacing and repairs. Start planning your court.",
   heroImageFragment: "backyard pickleball court pool patio residential",
   faqHeading: "Your Boise Pickleball Court Questions, Answered Before Construction",
   faqItems: [
@@ -1269,50 +1193,38 @@ export const PM_PICKLEBALL_COURT_BUILDER_BOISE_ID_CONFIG = courtBuilderCityConfi
 export const PM_COURT_BUILDER_MERIDIAN_CONFIG = courtBuilderCityConfig({
   slug: "court-builder-meridian-id",
   cityName: "Meridian",
-  metaTitle: "Court Builder Meridian ID | Custom Courts | Hatz Court",
+  heroTitle: "Court Builder Meridian, ID",
+  heroSubtitle: "Custom Playing Spaces Built Around Your Meridian Property",
+  metaTitle: "Court Builder Meridian, ID | Court Design & Installation",
   metaDescription:
-    "Licensed and insured court builder in Meridian, Idaho for custom court design, construction, resurfacing, and upgrades.",
+    "Create a custom athletic court with our court builders in Meridian, ID. We handle court design, construction, resurfacing and upgrades. Discuss your project.",
   heroImageFragment: "backyard pickleball basketball dual sport court",
+  faqHeading: "Common Questions About Custom Court Construction in Meridian",
   faqItems: [
     {
-      question: "How do I know what type of court surface is best for my Meridian property?",
+      question: "How much does it cost to build a backyard court?",
       answer:
-        "The best surface depends on the sport, how often the court will be used, whether it is indoor or outdoor, and how much maintenance you want. Acrylic courts are popular for outdoor play, modular systems can work well for multi-sport spaces, and hardwood is often used for indoor athletic courts. Hatz Court Builders can review your property, goals, and budget before recommending a court system.",
+        "A professionally constructed backyard athletic court may require a preliminary budget of approximately $30,000 to $75,000, depending on the court size, foundation requirements, surface material, and additional features. Larger courts, extensive grading, lighting, and fencing may increase the total cost. An individual construction proposal is needed to determine the cost of your Meridian project.",
     },
     {
-      question: "Can Hatz Court Builders build Meridian pickleball courts for backyards?",
+      question: "How much space do you need for a backyard court?",
       answer:
-        "Yes, Hatz Court Builders designs and builds custom pickleball courts for Meridian homeowners. The team can help with court size, layout, surfacing, line striping, net system installation, and color options. The court can be built as a dedicated pickleball court or as part of a larger multi-use court.",
+        "The required space depends on the sport and intended playing layout. A regulation pickleball court measures 20 by 44 feet, with a minimum total playing surface of 30 by 60 feet. Basketball shooting courts and recreational half-courts can be customized for smaller properties, while tennis requires a larger footprint and additional playing clearance.",
     },
     {
-      question: "What problems can poor drainage cause on an outdoor court in Meridian?",
+      question: "Is concrete or asphalt better for an outdoor athletic court?",
       answer:
-        "Poor drainage can leave standing water on the court, which can speed up surface wear and create unsafe playing conditions. Over time, water can also make cracks, settling, and base movement worse, especially during Idaho’s freeze-thaw season. Proper planning helps the court shed water better and last longer.",
+        "Both concrete and asphalt can provide suitable foundations when properly designed and constructed. Concrete provides a rigid base, while asphalt is a more flexible pavement material. The best option depends on soil conditions, drainage, the selected athletic surface, construction requirements, and long-term maintenance considerations.",
     },
     {
-      question: "Do you build indoor pickleball courts Meridian facilities can use year-round?",
+      question: "How long does it take to build a backyard court?",
       answer:
-        "Hatz Court Builders can help with indoor pickleball court planning and construction for facilities, gyms, schools, and private spaces. Indoor courts may use hardwood, acrylic, modular, or other surface options based on the building, use level, and desired feel of play. The team can also help with lines, nets, posts, and court accessory installation.",
+        "Custom backyard court construction can take several weeks, with the overall schedule depending on site preparation, foundation installation, curing requirements, surface application, equipment installation, and weather. HOA approvals and applicable permits may also affect the start date. Renovations over suitable existing foundations may require less time than entirely new construction.",
     },
     {
-      question: "Can an old tennis court be converted into pickleball or basketball use?",
+      question: "Do you need a permit to build a backyard court in Meridian, Idaho?",
       answer:
-        "Yes, many existing courts can be updated or converted if the base and surface are in workable condition. Hatz Court Builders can inspect the court, check for cracks or drainage problems, and recommend resurfacing, layout updates, new striping, or court conversions. This can be a practical way to make an older court more useful.",
-    },
-    {
-      question: "How long does a custom court project usually take?",
-      answer:
-        "The timeline depends on the court size, surface type, site prep needs, weather, and whether the project is new construction or resurfacing. A simple resurfacing job is often faster than a full custom court construction project. Hatz Court Builders gives a clearer timeline after the site visit and design review.",
-    },
-    {
-      question: "Can you build a Meridian basketball court for both kids and adults?",
-      answer:
-        "Yes, Hatz Court Builders can design a basketball court around the players, space, and goals for the property. Some homeowners want a half court for driveway-style play, while others want a larger backyard court with custom surfacing, line striping, and hoop installation. The layout can be planned for safety, daily use, and long-term value.",
-    },
-    {
-      question: "Do commercial courts need different materials than residential courts?",
-      answer:
-        "Commercial courts often need materials and finishes that can handle heavier use from schools, parks, HOAs, and athletic facilities. Residential courts can still use strong materials, but the design may focus more on backyard fit, style, and family use. Hatz Court Builders helps choose the right system based on traffic, sport type, maintenance needs, and budget.",
+        "Permit requirements depend on the construction scope and property location. Certain electrical installations, fencing, grading, or structural components may require municipal review. Homeowners living in planned communities may also need HOA approval. Confirm applicable requirements with the City of Meridian and your homeowners association before construction begins.",
     },
   ],
 });
@@ -1320,9 +1232,9 @@ export const PM_COURT_BUILDER_MERIDIAN_CONFIG = courtBuilderCityConfig({
 export const PM_COURT_BUILDER_NAMPA_CONFIG = courtBuilderCityConfig({
   slug: "court-builder-nampa-id",
   cityName: "Nampa",
-  metaTitle: "Court Builder Nampa, ID | Custom Courts | Hatz Court Builders",
+  metaTitle: "Nampa Court Builders | Custom Athletic Court Construction",
   metaDescription:
-    "Top-rated court builder in Nampa, Idaho with 15+ years of experience in custom athletic court construction and resurfacing.",
+    "Upgrade your property with custom athletic court construction in Nampa, ID. From new installations to court resurfacing, we bring your vision to life.",
   heroImageFragment: "multi sport outdoor backyard court",
   faqItems: [
     {
@@ -1371,9 +1283,9 @@ export const PM_COURT_BUILDER_NAMPA_CONFIG = courtBuilderCityConfig({
 export const PM_COURT_BUILDER_CALDWELL_CONFIG = courtBuilderCityConfig({
   slug: "court-builder-caldwell-id",
   cityName: "Caldwell",
-  metaTitle: "Court Builder Caldwell, ID | Custom Courts | Hatz Court Builders",
+  metaTitle: "Court Builder Caldwell, ID | Residential & Commercial Courts",
   metaDescription:
-    "Caldwell court builder services for residential and commercial courts, including design-build, resurfacing, and complete installations.",
+    "Plan your next athletic court with our court builders in Caldwell, ID. We provide residential and commercial court design, installation and resurfacing.",
   heroImageFragment: "outdoor pickleball court red and green surface",
   faqItems: [
     {
@@ -1422,9 +1334,9 @@ export const PM_COURT_BUILDER_CALDWELL_CONFIG = courtBuilderCityConfig({
 export const PM_COURT_BUILDER_MIDDLETON_CONFIG = courtBuilderCityConfig({
   slug: "court-builder-middleton-id",
   cityName: "Middleton",
-  metaTitle: "Court Builder Middleton ID | Custom Courts | Hatz Court Builders",
+  metaTitle: "Court Builder Middleton, ID | Construction & Resurfacing",
   metaDescription:
-    "Trusted court builder in Middleton, Idaho for custom athletic courts, resurfacing, repair, and complete design-build projects.",
+    "Transform your outdoor space with custom athletic courts in Middleton, ID. We provide complete court construction, resurfacing and repairs. Get a quote.",
   heroImageFragment: "pickleball court green blue backyard",
   faqItems: [
     {
@@ -1473,9 +1385,9 @@ export const PM_COURT_BUILDER_MIDDLETON_CONFIG = courtBuilderCityConfig({
 export const PM_COURT_BUILDER_STAR_CONFIG = courtBuilderCityConfig({
   slug: "court-builder-star-id",
   cityName: "Star",
-  metaTitle: "Court Builder Star ID | Custom Courts | Hatz Court Builders",
+  metaTitle: "Court Builder Star, ID | Pickleball, Tennis & Basketball",
   metaDescription:
-    "Best court builder in Star, Idaho for custom tennis, basketball, pickleball, and multi-sport court construction.",
+    "Create a dedicated space for your favorite sports with our court builders in Star, ID. Explore custom pickleball, tennis, basketball and multi-use courts.",
   heroImageFragment: "pickleball court backyard modular tile",
   faqItems: [
     {
@@ -1524,9 +1436,9 @@ export const PM_COURT_BUILDER_STAR_CONFIG = courtBuilderCityConfig({
 export const PM_COURT_BUILDER_EAGLE_CONFIG = courtBuilderCityConfig({
   slug: "court-builder-eagle-id",
   cityName: "Eagle",
-  metaTitle: "Court Builder Eagle, ID | Custom Courts | Hatz Court Builders",
+  metaTitle: "Eagle Court Builders | Custom Athletic Court Design & Build",
   metaDescription:
-    "Court builder in Eagle, Idaho with 15+ years of experience in custom court design, build, resurfacing, and repair.",
+    "Bring your athletic court project to life with court builders in Eagle, ID. We handle custom design, construction, resurfacing and repairs. Plan your build.",
   heroImageFragment: "pickleball court hoa community blue gray",
   faqItems: [
     {
@@ -1576,45 +1488,38 @@ export const PM_COURT_BUILDER_SCOTTSDALE_AZ_CONFIG = courtBuilderCityConfig({
   slug: "court-builder-scottsdale-az",
   cityName: "Scottsdale",
   stateName: "Arizona",
-  metaTitle: "Court Builder Scottsdale AZ | Custom Courts | Hatz Court Builders",
+  heroTitle: "Court Builder Scottsdale, AZ",
+  heroSubtitle: "Create a Custom Playing Space for Your Scottsdale Property",
+  metaTitle: "Court Builder Scottsdale, AZ | Custom Athletic Court Construction",
   metaDescription:
-    "Custom athletic court construction in Scottsdale, AZ with durable materials and layout planning for Arizona heat, drainage, and long-term play.",
+    "Build an athletic court suited to Arizona's climate with our court builders in Scottsdale, AZ. Explore custom layouts, durable surfaces and installation.",
   heroImageFragment: "outdoor multi court acrylic surfacing",
+  faqHeading: "What Scottsdale Property Owners Ask Before Investing in an Athletic Court",
   faqItems: [
     {
-      question: "What type of court can I build in my backyard?",
+      question: "How much does it cost to build a backyard sports court?",
       answer:
-        "Hatz Court Builders can design backyard courts for pickleball, basketball, tennis, volleyball, and multi-sport use. The best layout depends on your available space, grading, access, and how you plan to use the court.",
+        "For preliminary budgeting, a professionally constructed backyard athletic court in the Scottsdale area may require approximately $30,000 to $112,500 or more, including a conservative planning allowance. The total depends on court dimensions, foundation requirements, surface materials, drainage, equipment, fencing, and lighting. Luxury residential developments or properties requiring extensive groundwork may need a larger budget. Contact Hatz Court Builders for project-specific pricing.",
     },
     {
-      question: "Are outdoor courts hard to maintain in Arizona heat?",
+      question: "How much space do you need for a backyard sports court?",
       answer:
-        "Outdoor courts need the right surface, base prep, and finish to handle heat, sun, dust, and seasonal rain. Good prep helps reduce early cracking, fading, and low spots.",
+        "The required space depends on the sports you want to accommodate. A compact basketball practice court can be customized around a smaller backyard, while a standard pickleball court measures 20 by 44 feet and typically needs a total playing surface of at least 30 by 60 feet. Tennis courts require a larger footprint. Scottsdale homeowners should also account for setbacks, fencing, player clearance, and existing outdoor features.",
     },
     {
-      question: "Can you build a court for a school, HOA, or public park?",
+      question: "What is the best surface for an outdoor sports court?",
       answer:
-        "Yes. Hatz Court Builders builds and updates courts for schools, HOAs, parks, athletic facilities, and shared community spaces.",
+        "Standard acrylic is commonly used for outdoor tennis, pickleball, and basketball because it can provide consistent ball response and suitable playing characteristics. Cushioned acrylic offers an alternative with additional resilient layers, while modular flooring may be suitable for certain multi-use recreational courts. In Scottsdale, material selection should also consider UV exposure, surface temperatures, drainage, and long-term maintenance requirements.",
     },
     {
-      question: "Can you build or resurface tennis courts?",
+      question: "How long does it take to install a backyard sports court?",
       answer:
-        "Yes. Hatz Court Builders works on new and existing tennis court projects for homes, schools, clubs, and shared facilities. Scottsdale tennis courts may need acrylic surfacing, crack repair, recoating, color updates, net post replacement, or new striping depending on the court’s condition.",
+        "A complete backyard athletic court can take several weeks or longer, depending on the court size, ground preparation, foundation construction, surface system, and additional features. Concrete curing, permits, material availability, and weather conditions may affect the installation schedule. Scottsdale's summer heat and monsoon season should also be considered when planning construction activities.",
     },
     {
-      question: "What is different about indoor and outdoor tennis courts?",
+      question: "How do you maintain an outdoor sports court?",
       answer:
-        "Indoor courts are usually planned around flooring, lighting, spacing, and player comfort. Indoor tennis courts Scottsdale facilities build do not face the same sun and monsoon exposure as outdoor courts, but they still need the right surface and layout for safe play.",
-    },
-    {
-      question: "Can older public tennis courts be repaired instead of replaced?",
-      answer:
-        "Many older courts can be repaired or resurfaced if the base is still in usable condition. Public tennis courts Scottsdale communities already have may need crack repair, surface recoating, line updates, or court conversion work before a full replacement is needed.",
-    },
-    {
-      question: "What surface is best for a custom athletic court?",
-      answer:
-        "The best surface depends on the sport, location, budget, and amount of play. Acrylic court systems, cushioned acrylic systems, modular tile court systems, synthetic court surfaces, vinyl court surfaces, and hardwood court surfaces each fit different needs. Hatz Court Builders helps match the surface to the property, sport, and long-term use.",
+        "Regular outdoor court maintenance includes removing dust and debris, checking for cracks or worn coatings, monitoring drainage, and inspecting sports equipment and fencing. Cleaning methods should be appropriate for the installed surface system. In Scottsdale, periodic inspections following monsoon storms and prolonged summer heat can help identify concerns before more extensive repairs are needed.",
     },
   ],
 });
@@ -1623,9 +1528,9 @@ export const PM_TENNIS_COURT_CONTRACTOR_SCOTTSDALE_AZ_CONFIG = courtBuilderCityC
   slug: "tennis-court-contractor-scottsdale-az",
   cityName: "Scottsdale",
   stateName: "Arizona",
-  metaTitle: "Tennis Court Contractor Scottsdale AZ | Hatz Court Builders",
+  metaTitle: "Tennis Court Contractor Scottsdale, AZ | Construction & Resurfacing",
   metaDescription:
-    "Trusted tennis court contractor in Scottsdale, AZ for custom courts, resurfacing, repairs, and full design-build service.",
+    "Work with a tennis court contractor in Scottsdale, AZ, for new court construction, resurfacing and repairs. Customize your court layout and playing surface.",
   heroImageFragment: "tennis court resurface blue and green acrylic",
   faqItems: [
     {
@@ -1679,9 +1584,9 @@ export const PM_BASKETBALL_COURT_INSTALLATION_SCOTTSDALE_AZ_CONFIG = courtBuilde
   heroTitle: "Basketball Court Installation Scottsdale, AZ",
   heroSubtitle:
     "Basketball court installation for Scottsdale homes, schools, HOAs, and commercial sites, built for desert heat and daily play.",
-  metaTitle: "Basketball Court Installation Scottsdale | Free Quotes | Hatz",
+  metaTitle: "Basketball Court Installation Scottsdale, AZ | Custom Courts",
   metaDescription:
-    "Basketball court installation Scottsdale for backyard and facility courts. Acrylic, modular, and full builds. Call (208) 979-0002 for a free quote.",
+    "Create a backyard or facility basketball court in Scottsdale, AZ. We install custom basketball courts with acrylic and modular surfaces. Request a quote.",
   faqHeading: "Scottsdale Basketball Court Installation Questions",
   heroImageFragment: "backyard green tan basketball half court",
   faqItems: [
@@ -1731,9 +1636,9 @@ export const PM_PICKLEBALL_COURT_INSTALLATION_SCOTTSDALE_AZ_CONFIG = courtBuilde
   heroTitle: "Pickleball Court Installation Scottsdale, AZ",
   heroSubtitle:
     "Pickleball court installation for Scottsdale backyards, HOAs, schools, and facilities with heat-ready surfaces and clean game lines.",
-  metaTitle: "Pickleball Court Installation Scottsdale | Free Quotes | Hatz",
+  metaTitle: "Pickleball Court Installation Scottsdale, AZ | Custom Court Builders",
   metaDescription:
-    "Pickleball court installation Scottsdale for backyard and community courts. Acrylic, cushioned, and modular options. Call (208) 979-0002 today.",
+    "Build your ideal pickleball court in Scottsdale, AZ. We install backyard and community courts with acrylic, cushioned and modular surfaces. Request a quote.",
   faqHeading: "Questions on Pickleball Court Installation in Scottsdale",
   heroImageFragment: "multi court pickleball basketball green blue mountain view",
   faqItems: [
@@ -1783,9 +1688,9 @@ export const PM_BOCCE_COURT_BUILDER_SCOTTSDALE_AZ_CONFIG = courtBuilderCityConfi
   heroTitle: "Bocce Court Builder Scottsdale, AZ",
   heroSubtitle:
     "Bocce court builder services for Scottsdale homes, resorts, and gathering spaces that need a level outdoor court.",
-  metaTitle: "Bocce Court Builder Scottsdale AZ | Free Quotes | Hatz",
+  metaTitle: "Bocce Court Builder Scottsdale, AZ | Custom Bocce Courts",
   metaDescription:
-    "Bocce court builder Scottsdale for residential and commercial outdoor courts. Level builds, resurfacing, and site prep. Call (208) 979-0002.",
+    "Enjoy a dedicated outdoor playing space with our bocce court builders in Scottsdale, AZ. We handle site preparation, court construction and resurfacing.",
   faqHeading: "Bocce Court Builder Answers for Scottsdale Clients",
   heroImageFragment: "tile shuffleboard court installation modular",
   faqItems: [
@@ -1835,9 +1740,9 @@ export const PM_PADEL_COURT_BUILDER_SCOTTSDALE_AZ_CONFIG = courtBuilderCityConfi
   heroTitle: "Padel Court Builder Scottsdale, AZ",
   heroSubtitle:
     "Padel court builder services for Scottsdale estates, clubs, and facilities that want enclosed outdoor padel play.",
-  metaTitle: "Padel Court Builder Scottsdale AZ | Free Quotes | Hatz",
+  metaTitle: "Padel Court Builder Scottsdale, AZ | Design & Installation",
   metaDescription:
-    "Padel court builder Scottsdale for enclosed outdoor courts. Design-build planning, surfacing, and lighting. Call (208) 979-0002 for a free quote.",
+    "Plan a custom padel court in Scottsdale, AZ, with complete design and construction support. Explore court enclosures, playing surfaces and lighting options.",
   faqHeading: "Padel Court Builder FAQs for Scottsdale",
   heroImageFragment: "outdoor multi court acrylic surfacing pickleball basketball tennis",
   faqItems: [
@@ -1883,45 +1788,38 @@ export const PM_COURT_BUILDER_PHOENIX_AZ_CONFIG = courtBuilderCityConfig({
   slug: "court-builder-phoenix-az",
   cityName: "Phoenix",
   stateName: "Arizona",
-  metaTitle: "Court Builder Phoenix AZ | Custom Courts | Hatz Court Builders",
+  heroTitle: "Court Builder Phoenix, AZ",
+  heroSubtitle: "Turn Your Available Space Into a Place to Practice, Play, and Compete",
+  metaTitle: "Phoenix Court Builders | Athletic Court Construction & Resurfacing",
   metaDescription:
-    "Licensed and insured Phoenix court builder for custom athletic courts, resurfacing, upgrades, and design-build projects.",
+    "Work with licensed and insured court builders in Phoenix, AZ, for custom athletic court construction, resurfacing and upgrades. Discuss your project with us.",
   heroImageFragment: "pickleball basketball line striping on concrete",
+  faqHeading: "Frequently Raised Questions About Building a Court in Phoenix",
   faqItems: [
     {
-      question: "What type of court surface works best in Phoenix heat?",
+      question: "How much does it cost to build a multi-use backyard court?",
       answer:
-        "Acrylic and modular systems are common for outdoor play. The right system depends on sport, budget, sun exposure, and maintenance goals.",
+        "A comprehensive residential multi-use court may require a preliminary budgeting allowance of approximately $82,500 to $180,000, depending on its dimensions, foundation construction, surfacing, and additional features. Smaller installations or projects using existing foundations may cost considerably less. A site-specific construction proposal is necessary to determine the actual cost of your Phoenix court.",
     },
     {
-      question: "Can you build a court in a small Phoenix backyard?",
+      question: "How long does it take to build a court?",
       answer:
-        "Yes. We design compact custom layouts for half courts, multi-use courts, and focused game areas.",
+        "Residential athletic court construction commonly takes several weeks. The schedule depends on groundwork, foundation construction, curing periods, surface installation, equipment, and weather conditions. Larger commercial facilities or projects requiring extensive grading and property approvals may take longer. Phoenix's summer heat and monsoon weather can also influence construction scheduling.",
     },
     {
-      question: "How does drainage affect outdoor court construction?",
+      question: "Can you build a court on sloped or uneven ground?",
       answer:
-        "Proper slope and drainage planning help move water away from the surface and reduce premature wear and damage.",
+        "Yes, depending on the property's conditions. Sloped or uneven land may require excavation, grading, additional foundation preparation, drainage improvements, or other site-specific construction work. The amount of preparation depends on the existing elevation changes, soil conditions, and proposed court dimensions.",
     },
     {
-      question: "Can an old court be resurfaced instead of replaced?",
+      question: "Can one court be used for basketball and pickleball?",
       answer:
-        "Many older courts can be resurfaced if the base is still in workable condition. Resurfacing may include crack repair, surface recoating, color updates, line striping, layout changes, and court restoration. If the court has major base failure or drainage problems, deeper repair may be needed first. A site review is the best way to know which option makes sense.",
+        "Yes. Basketball and pickleball can share a multi-use playing area when the court dimensions, surface material, equipment, and markings are compatible. Contrasting line colors and appropriately positioned equipment can help distinguish the two playing layouts. The design should still provide sufficient clearance and appropriate playing conditions for both activities.",
     },
     {
-      question: "Can you add more than one sport to the same court?",
+      question: "What is the best surface for an outdoor court in Arizona?",
       answer:
-        "Yes, many Phoenix customers choose multi-use court construction so one space can support tennis, basketball, volleyball, or other games. The layout must be planned carefully so the lines, nets, hoops, and play zones do not feel crowded. Color choices can also help separate each sport. This is a strong option for families, schools, and community spaces that need more use from one court.",
-    },
-    {
-      question: "Are outdoor courts a good fit for Phoenix properties?",
-      answer:
-        "Yes, outdoor pickleball courts in Phoenix and other outdoor athletic courts can work well when they are planned around heat, drainage, sun exposure, and surface wear. The right layout and materials help the court perform better through daily use and Arizona weather. Hatz Court Builders reviews the site before recommending the best court system.",
-    },
-    {
-      question: "Why hire a Phoenix-based installer for a pickleball court?",
-      answer:
-        "A Phoenix pickleball court installer should understand local heat, dust, grading, monsoon drainage, and property layouts. These details affect the base, surface, lines, equipment, and long-term play quality. Hatz Court Builders plans each project around the site so the finished court fits the space and performs well.",
+        "Standard acrylic is a widely used option for outdoor tennis, pickleball, and basketball courts. Cushioned acrylic and certain modular athletic flooring systems may also be appropriate, depending on the intended sports. The best choice depends on playing characteristics, foundation conditions, sunlight exposure, maintenance requirements, and the specifications of the selected flooring system.",
     },
   ],
 });
@@ -1930,9 +1828,9 @@ export const PM_PICKLEBALL_COURT_BUILDER_PHOENIX_AZ_CONFIG = courtBuilderCityCon
   slug: "pickleball-court-builder-phoenix-az",
   cityName: "Phoenix",
   stateName: "Arizona",
-  metaTitle: "Pickleball Court Builder Phoenix, AZ | Hatz Court Builders",
+  metaTitle: "Pickleball Court Builder Phoenix, AZ | Backyard & Commercial Courts",
   metaDescription:
-    "Custom pickleball court builder in Phoenix, AZ for backyard, HOA, school, and facility projects, including new builds and resurfacing.",
+    "Create a custom pickleball court in Phoenix, AZ, for your home, HOA, school or sports facility. We provide court construction and resurfacing. Get a quote.",
   heroImageFragment: "backyard pickleball court pool patio residential",
   faqItems: [
     {
@@ -1982,9 +1880,9 @@ export const PM_TENNIS_COURT_BUILDERS_PHOENIX_AZ_CONFIG = courtBuilderCityConfig
   slug: "tennis-court-builders-phoenix-az",
   cityName: "Phoenix",
   stateName: "Arizona",
-  metaTitle: "Phoenix AZ Tennis Court Builders | Hatz Court Builders",
+  metaTitle: "Phoenix Tennis Court Builders | Construction & Resurfacing",
   metaDescription:
-    "Licensed Phoenix tennis court builders for custom tennis courts, resurfacing, crack repair, and full rebuilds for homes and facilities.",
+    "Build or restore your tennis court with our Phoenix, AZ, tennis court builders. We offer custom construction, resurfacing, crack repair and full court rebuilds.",
   heroImageFragment: "tennis court repair school facility",
   faqItems: [
     {
@@ -2029,9 +1927,9 @@ export const PM_BASKETBALL_COURT_CONSTRUCTION_PHOENIX_AZ_CONFIG = courtBuilderCi
   slug: "basketball-court-construction-phoenix-az",
   cityName: "Phoenix",
   stateName: "Arizona",
-  metaTitle: "Basketball Court Construction Phoenix AZ | Hatz Court Builders",
+  metaTitle: "Basketball Court Construction Phoenix, AZ | Custom Court Builders",
   metaDescription:
-    "Basketball court construction in Phoenix for residential and commercial projects with full layout and surfacing support.",
+    "Design a basketball court around your space and playing needs in Phoenix, AZ. We handle residential and commercial court construction, layouts and surfacing.",
   heroImageFragment: "community park pickleball tennis basketball multi court",
   faqItems: [
     {
@@ -2081,9 +1979,9 @@ export const PM_BOCCE_COURT_INSTALLATION_PHOENIX_AZ_CONFIG = courtBuilderCityCon
   slug: "bocce-court-installation-phoenix-az",
   cityName: "Phoenix",
   stateName: "Arizona",
-  metaTitle: "Bocce Court Installation Phoenix AZ | Custom Courts | Phoenix AZ",
+  metaTitle: "Bocce Court Installation Phoenix, AZ | Custom Bocce Ball Courts",
   metaDescription:
-    "Professional bocce court installation in Phoenix for residential and commercial properties, with custom sizing, surfacing, and drainage.",
+    "Upgrade your outdoor recreation area with bocce court installation in Phoenix, AZ. Explore custom court dimensions, playing surfaces and drainage solutions.",
   heroImageFragment: "modular court tile custom logo branding",
   faqItems: [
     {
@@ -2128,9 +2026,9 @@ export const PM_PADEL_COURT_BUILDER_PHOENIX_AZ_CONFIG = courtBuilderCityConfig({
   slug: "padel-court-builder-phoenix-az",
   cityName: "Phoenix",
   stateName: "Arizona",
-  metaTitle: "Padel Court Builder Phoenix AZ | Custom Courts | Hatz",
+  metaTitle: "Padel Court Builder Phoenix, AZ | Custom Court Construction",
   metaDescription:
-    "Padel court builder in Phoenix for custom court design, construction, fencing, and upgrades on homes, clubs, and commercial properties.",
+    "Build a custom padel court in Phoenix, AZ, for your home, club or commercial property. We offer court design, construction, fencing and upgrades. Get a quote.",
   heroImageFragment: "outdoor multi court pickleball basketball tennis",
   faqItems: [
     {
@@ -2170,50 +2068,38 @@ export const PM_COURT_BUILDER_MESA_AZ_CONFIG = courtBuilderCityConfig({
   slug: "court-builder-mesa-az",
   cityName: "Mesa",
   stateName: "Arizona",
-  metaTitle: "Court Builder Mesa AZ | Custom Courts | Hatz Court Builders",
+  heroTitle: "Court Builder Mesa, AZ",
+  heroSubtitle: "Custom Court Construction for Mesa Homes and Recreational Facilities",
+  metaTitle: "Court Builder Mesa, AZ | Residential & Commercial Courts",
   metaDescription:
-    "Licensed and insured court builder in Mesa, AZ for custom residential and commercial tennis, pickleball, basketball, and multi-use courts.",
+    "Create a custom athletic court with licensed and insured court builders in Mesa, AZ. We build tennis, pickleball, basketball and multi-use courts. Get a quote.",
   heroImageFragment: "pickleball court green and red surface",
+  faqHeading: "Five Questions to Consider Before Building Your Mesa Athletic Court",
   faqItems: [
     {
-      question: "What type of court surface works best in Mesa heat?",
+      question: "How much does it cost to build a backyard sports court?",
       answer:
-        "Acrylic and modular surfaces are common depending on sport use, maintenance priorities, and drainage conditions.",
+        "For preliminary budgeting, a professionally constructed basic backyard sports court may cost approximately $27,000 to $48,000, while larger multi-sport courts may require $82,500 to $180,000 or more. The total depends on dimensions, foundation requirements, surface materials, grading, drainage, equipment, fencing, and lighting. These figures include a conservative planning allowance rather than representing official installation rates. Contact Hatz Court Builders for pricing based on your Mesa property and project scope.",
     },
     {
-      question: "Can you build a court in a backyard with limited space?",
+      question: "How much space do you need for a backyard sports court?",
       answer:
-        "Yes. We can plan custom court dimensions and multi-use layouts to fit tighter residential properties.",
+        "The amount of space depends on the sport and intended level of play. A compact basketball practice area may fit within approximately 25 by 30 feet, while a pickleball court requires a marked playing area of 20 by 44 feet and a minimum total playing surface of 30 by 60 feet. New pickleball installations are preferably planned with additional clearance. Tennis courts generally require more land. Property setbacks, fencing, equipment, drainage, and surrounding access should also be considered.",
     },
     {
-      question: "Do Mesa courts need special drainage planning?",
+      question: "What is the best surface for a backyard sports court?",
       answer:
-        "Yes. Drainage planning helps avoid standing water, cracking, and early wear after heavy rain events.",
+        "Standard acrylic is commonly used for outdoor basketball, tennis, and pickleball because it can provide consistent ball response and appropriate playing characteristics. Cushioned acrylic offers additional surface resilience, while modular flooring may be suitable for certain basketball and multi-sport courts. In Mesa, the best surface should also account for heat exposure, UV resistance, drainage, maintenance requirements, and compatibility with the supporting foundation.",
     },
     {
-      question: "Can Hatz Court Builders resurface an older court?",
+      question: "Can you build a sports court on uneven ground?",
       answer:
-        "Yes, Hatz Court Builders provides court resurfacing, surface recoating, crack repair, and court restoration. Resurfacing can help improve color, play feel, surface protection, and line visibility. If the court has deeper base issues, the team can review whether repairs or a larger restoration plan is the better choice.",
+        "Yes, many uneven properties can accommodate an athletic court after suitable excavation, grading, and foundation preparation. The amount of work depends on the existing slope, soil stability, drainage conditions, and proposed court dimensions. Steeper sites may require additional structural improvements or engineering. Hatz Court Builders provides site preparation services and can discuss the groundwork required for your Mesa court project.",
     },
     {
-      question: "Do you build courts for schools, HOAs, parks, and businesses?",
+      question: "Can one backyard court be used for multiple sports?",
       answer:
-        "Yes, Hatz Court Builders handles commercial court construction for schools, athletic facilities, parks, HOA community courts, and other shared-use spaces. These projects often need clear layouts, durable surfaces, safe equipment placement, and court systems made for steady traffic. The team can also help with layout updates and court conversions.",
-    },
-    {
-      question: "Can one court be used for several sports?",
-      answer:
-        "Yes, multi-use court construction is a smart option for many homes, schools, and community spaces. One court can support basketball, pickleball, tennis practice, volleyball, or other games with the right layout and line plan. Hatz Court Builders can help choose colors, lines, net systems, hoops, and court accessories so the space stays easy to use.",
-    },
-    {
-      question: "How long does a custom court project take?",
-      answer:
-        "The timeline depends on the court size, site prep, surface system, weather, and project details. A new build with grading, base work, surfacing, coating, line striping, and equipment installation will take longer than a resurfacing project. Hatz Court Builders provides a clearer schedule after the site review and design plan.",
-    },
-    {
-      question: "What makes Hatz Court Builders different from a general contractor?",
-      answer:
-        "Hatz Court Builders focuses on athletic courts, not general outdoor flatwork. That means the team looks at playability, court layout, sport rules, surface finishing, coating systems, court components, and long-term performance.",
+        "Yes. A custom multi-use court can support basketball, pickleball, recreational volleyball, badminton, and other compatible activities when its dimensions, surface, markings, and equipment are planned accordingly. Contrasting playing lines and removable net systems can make switching between activities more convenient. The primary sport should guide the overall court design to ensure the shared playing area remains functional.",
     },
   ],
 });
@@ -2226,9 +2112,9 @@ export const PM_PICKLEBALL_COURT_BUILDERS_MESA_AZ_CONFIG = courtBuilderCityConfi
   heroTitle: "Pickleball Court Builders Mesa AZ",
   heroSubtitle:
     "Pickleball court builders for Mesa backyards, HOAs, schools, and facilities with heat-ready surfaces and clean game lines.",
-  metaTitle: "Pickleball Court Builders Mesa AZ | Free Quotes | Hatz",
+  metaTitle: "Pickleball Court Builders Mesa, AZ | Custom Court Installation",
   metaDescription:
-    "Pickleball court builders Mesa AZ for backyard and facility courts. Acrylic, cushioned, modular options. Call (208) 979-0002 today.",
+    "Bring pickleball to your backyard or athletic facility in Mesa, AZ. We construct custom pickleball courts with acrylic, cushioned and modular surface options.",
   faqHeading: "Mesa AZ Pickleball Court Builder Questions",
   heroImageFragment: "outdoor pickleball court red and green surface",
   faqItems: [
@@ -2279,9 +2165,9 @@ export const PM_COURT_BUILDER_GILBERT_AZ_CONFIG = courtBuilderCityConfig({
   slug: "court-builder-gilbert-az",
   cityName: "Gilbert",
   stateName: "Arizona",
-  metaTitle: "Court Builder Gilbert AZ | Custom Courts | Hatz Court Builders",
+  metaTitle: "Gilbert Court Builders | Custom Court Design & Construction",
   metaDescription:
-    "Custom athletic court builder in Gilbert, AZ with licensed and insured design-build and resurfacing support.",
+    "Transform your property with custom athletic court construction in Gilbert, AZ. Our team handles court design, installation and resurfacing. Request a quote.",
   heroImageFragment: "pickleball court modular tile surfacing",
   faqItems: [
     {
@@ -2335,9 +2221,9 @@ export const PM_BOCCE_COURT_INSTALLATION_GILBERT_AZ_CONFIG = courtBuilderCityCon
   heroTitle: "Bocce Court Installation Gilbert, AZ",
   heroSubtitle:
     "Bocce court installation for Gilbert backyards, HOAs, and gathering spaces with level beds, solid borders, and smart drainage.",
-  metaTitle: "Bocce Court Installation Gilbert AZ | Free Quotes | Hatz",
+  metaTitle: "Bocce Court Installation Gilbert, AZ | Residential & Commercial",
   metaDescription:
-    "Bocce court installation Gilbert for homes, HOAs, and commercial spaces. Level builds, resurfacing, and site prep. Call (208) 979-0002 for a free quote.",
+    "Create an inviting recreation space with bocce court installation in Gilbert, AZ. We build courts for homes, HOAs and commercial properties. Get a free quote.",
   faqHeading: "Gilbert Bocce Court Installation Questions",
   heroImageFragment: "tile shuffleboard court installation modular",
   faqItems: [
@@ -2387,9 +2273,9 @@ export const PM_BASKETBALL_COURT_INSTALLATION_GILBERT_AZ_CONFIG = courtBuilderCi
   heroTitle: "Basketball Court Installation Gilbert, AZ",
   heroSubtitle:
     "Basketball court installation for Gilbert homes, schools, HOAs, and facilities, built for Arizona heat and everyday play.",
-  metaTitle: "Basketball Court Installation Gilbert AZ | Free Quotes | Hatz",
+  metaTitle: "Basketball Court Installation Gilbert, AZ | Half & Full Courts",
   metaDescription:
-    "Basketball court installation Gilbert for half courts, full courts, and multi-use pads. Acrylic, modular, and cushioned options. Call (208) 979-0002.",
+    "Build a custom basketball court in Gilbert, AZ, with half-court, full-court and multi-use layouts. Explore acrylic, modular and cushioned playing surfaces.",
   faqHeading: "Basketball Court Builder Gilbert FAQs",
   heroImageFragment: "backyard green tan basketball half court",
   faqItems: [
@@ -2439,9 +2325,9 @@ export const PM_PADEL_COURT_BUILDER_GILBERT_AZ_CONFIG = courtBuilderCityConfig({
   heroTitle: "Padel Court Builder Gilbert, AZ",
   heroSubtitle:
     "Padel court builder services for Gilbert homes, clubs, and facilities, from site prep and surfacing to lighting and fencing.",
-  metaTitle: "Padel Court Builder Gilbert AZ | Free Quotes | Hatz",
+  metaTitle: "Padel Court Builder Gilbert, AZ | Custom Courts & Lighting",
   metaDescription:
-    "Padel court builder Gilbert for residential and club courts. Turf and acrylic surfaces, lighting, and site prep. Call (208) 979-0002 for a free quote.",
+    "Create a dedicated padel court in Gilbert, AZ, for your home or sports club. We coordinate site preparation, court construction, surfacing and lighting.",
   faqHeading: "Padel Court Installation Gilbert Questions",
   heroImageFragment: "outdoor multi court acrylic surfacing pickleball basketball tennis",
   faqItems: [
@@ -2491,9 +2377,9 @@ export const PM_PICKLEBALL_COURT_BUILDER_GILBERT_AZ_CONFIG = courtBuilderCityCon
   heroTitle: "Pickleball Court Builder Gilbert, AZ",
   heroSubtitle:
     "Pickleball court builder services for Gilbert backyards, HOAs, schools, and facilities with hard and cushioned acrylic options.",
-  metaTitle: "Pickleball Court Builder Gilbert AZ | Free Quotes | Hatz",
+  metaTitle: "Pickleball Court Builder Gilbert, AZ | Backyard Court Installation",
   metaDescription:
-    "Pickleball court builder Gilbert for backyard and community courts. Acrylic, cushioned acrylic, and modular options. Call (208) 979-0002 today.",
+    "Enjoy pickleball at home or in your community with custom court construction in Gilbert, AZ. Choose from acrylic, cushioned acrylic and modular surfaces.",
   faqHeading: "Pickleball Court Installation Gilbert FAQs",
   heroImageFragment: "outdoor pickleball court red and green surface",
   faqItems: [
@@ -2548,9 +2434,9 @@ export const PM_TENNIS_COURT_CONTRACTOR_GILBERT_AZ_CONFIG = courtBuilderCityConf
   heroTitle: "Tennis Court Contractor Gilbert, AZ",
   heroSubtitle:
     "Tennis court contractor services for Gilbert homes, HOAs, schools, and clubs, from new builds to resurfacing and repairs.",
-  metaTitle: "Tennis Court Contractor Gilbert AZ | Free Quotes | Hatz",
+  metaTitle: "Tennis Court Contractor Gilbert, AZ | Installation & Resurfacing",
   metaDescription:
-    "Tennis court contractor Gilbert for new courts, resurfacing, and repairs. Acrylic and cushioned systems. Call (208) 979-0002 for a free quote.",
+    "Restore an aging tennis court or build a new one in Gilbert, AZ. We provide tennis court construction, repairs and acrylic or cushioned resurfacing systems.",
   faqHeading: "Tennis Court Builder Gilbert Questions",
   heroImageFragment: "tennis court resurface blue and green acrylic",
   faqItems: [
@@ -2600,9 +2486,9 @@ export const PM_BASKETBALL_COURT_BUILDER_CHANDLER_AZ_CONFIG = courtBuilderCityCo
   heroTitle: "Basketball Court Builder Chandler, AZ",
   heroSubtitle:
     "Basketball court builder services for Chandler homes, schools, HOAs, and facilities, built for Arizona heat and everyday play.",
-  metaTitle: "Basketball Court Builder Chandler | Free Quotes | Hatz",
+  metaTitle: "Basketball Court Builder Chandler, AZ | Custom Half & Full Courts",
   metaDescription:
-    "Basketball court builder Chandler for half courts, full courts, and multi-use pads. Acrylic, modular, and cushioned options. Call (208) 979-0002.",
+    "Bring basketball to your backyard or facility in Chandler, AZ. We build half courts, full courts and multi-use courts with customizable surface options.",
   faqHeading: "Basketball Court Installation Chandler FAQs",
   heroImageFragment: "backyard green tan basketball half court",
   faqItems: [
@@ -2652,9 +2538,9 @@ export const PM_TENNIS_COURT_BUILDER_CHANDLER_AZ_CONFIG = courtBuilderCityConfig
   heroTitle: "Tennis Court Builder Chandler, AZ",
   heroSubtitle:
     "Tennis court contractor services for Chandler homes, HOAs, schools, and clubs, from new builds to resurfacing and repairs.",
-  metaTitle: "Tennis Court Builder Chandler | Free Quotes | Hatz",
+  metaTitle: "Tennis Court Builder Chandler, AZ | Construction & Resurfacing",
   metaDescription:
-    "Tennis court builder Chandler for tennis court installation, construction, and resurfacing. Acrylic and cushioned systems. Call (208) 979-0002.",
+    "Plan a new tennis court or upgrade an existing one in Chandler, AZ. We provide custom construction, acrylic surfacing and cushioned systems. Get a quote.",
   faqHeading: "Tennis Court Contractor Chandler Questions",
   heroImageFragment: "tennis court resurface blue and green acrylic",
   faqItems: [
@@ -2704,9 +2590,9 @@ export const PM_PICKLEBALL_COURT_BUILDER_CHANDLER_AZ_CONFIG = courtBuilderCityCo
   heroTitle: "Pickleball Court Builder Chandler, AZ",
   heroSubtitle:
     "Pickleball court builder services for Chandler backyards, HOAs, schools, and facilities with hard and cushioned acrylic options.",
-  metaTitle: "Pickleball Court Builder Chandler | Free Quotes | Hatz",
+  metaTitle: "Chandler Pickleball Court Builders | Custom Court Construction",
   metaDescription:
-    "Pickleball court builders Chandler AZ for backyard and community courts. Acrylic, cushioned acrylic, and modular options. Call (208) 979-0002.",
+    "Build a pickleball court suited to your backyard or community in Chandler, AZ. We offer custom layouts, acrylic, cushioned and modular surfaces. Get a quote.",
   faqHeading: "Pickleball Court Installation Chandler FAQs",
   heroImageFragment: "outdoor pickleball court red and green surface",
   faqItems: [
@@ -2761,9 +2647,9 @@ export const PM_PADEL_COURT_BUILDER_CHANDLER_AZ_CONFIG = courtBuilderCityConfig(
   heroTitle: "Padel Court Builder Chandler, AZ",
   heroSubtitle:
     "Padel court builder services for Chandler homes, clubs, and facilities, from site prep and surfacing to lighting and fencing.",
-  metaTitle: "Padel Court Builder Chandler | Free Quotes | Hatz",
+  metaTitle: "Padel Court Builder Chandler, AZ | Court Design & Construction",
   metaDescription:
-    "Padel court builder Chandler for residential and club courts. Turf and acrylic surfaces, lighting, and site prep. Call (208) 979-0002 for a free quote.",
+    "Develop a custom padel court in Chandler, AZ, for residential or club use. We handle court planning, site preparation, surface installation and lighting.",
   faqHeading: "Padel Court Installation Chandler Questions",
   heroImageFragment: "outdoor multi court acrylic surfacing pickleball basketball tennis",
   faqItems: [
@@ -2813,9 +2699,9 @@ export const PM_BOCCE_COURT_BUILDER_CHANDLER_AZ_CONFIG = courtBuilderCityConfig(
   heroTitle: "Bocce Court Builder Chandler, AZ",
   heroSubtitle:
     "Bocce court installation for Chandler backyards, HOAs, and gathering spaces with level beds, solid borders, and smart drainage.",
-  metaTitle: "Bocce Court Builder Chandler | Free Quotes | Hatz",
+  metaTitle: "Bocce Court Builder Chandler, AZ | Custom Bocce Ball Installation",
   metaDescription:
-    "Bocce court builder Chandler for homes, HOAs, and commercial spaces. Level builds, resurfacing, and site prep. Call (208) 979-0002 for a free quote.",
+    "Add a custom bocce court to your Chandler, AZ, property. We provide site preparation, level court construction and resurfacing for homes and communities.",
   faqHeading: "Bocce Court Installation Chandler Questions",
   heroImageFragment: "tile shuffleboard court installation modular",
   faqItems: [
@@ -2865,9 +2751,9 @@ export const PM_RACQUETBALL_COURTS_CHANDLER_AZ_CONFIG = courtBuilderCityConfig({
   heroTitle: "Racquetball Courts Chandler, AZ",
   heroSubtitle:
     "Racquetball court planning for Chandler homes, clubs, and facilities, with indoor sports flooring, hardwood, acrylic options, and design-build support.",
-  metaTitle: "Racquetball Courts Chandler AZ | Free Quotes | Hatz",
+  metaTitle: "Racquetball Court Construction Chandler, AZ | Indoor Courts",
   metaDescription:
-    "Racquetball courts Chandler AZ for homes, clubs, and training spaces. Indoor flooring, striping, and design-build support. Call (208) 979-0002.",
+    "Build a dedicated racquetball court in Chandler, AZ, for your home, club or training facility. Explore indoor flooring, court striping and custom design.",
   faqHeading: "Racquetball Courts Chandler AZ Questions",
   heroImageFragment: "indoor hardwood basketball court gym interior",
   faqItems: [
@@ -2913,50 +2799,38 @@ export const PM_COURT_BUILDER_CHANDLER_AZ_CONFIG = courtBuilderCityConfig({
   slug: "court-builder-chandler-az",
   cityName: "Chandler",
   stateName: "Arizona",
-  metaTitle: "Court Builder Chandler AZ | Custom Courts | Hatz Court Builders",
+  heroTitle: "Court Builder Chandler, AZ",
+  heroSubtitle: "Make More of Your Chandler Property With a Custom Athletic Court",
+  metaTitle: "Court Builder Chandler, AZ | Custom Athletic Court Installation",
   metaDescription:
-    "Court builder in Chandler, AZ for custom tennis, pickleball, and basketball court construction, resurfacing, repairs, and court upgrades.",
+    "Build a custom athletic court in Chandler, AZ. We specialize in tennis, basketball and pickleball court construction, resurfacing, repairs and court upgrades.",
   heroImageFragment: "gray pickleball basketball court backyard",
+  faqHeading: "Answers to Your Chandler Sports Court Construction Questions",
   faqItems: [
     {
-      question: "What type of court surface works best for Chandler’s heat?",
+      question: "How much does it cost to build a backyard sports court?",
       answer:
-        "Acrylic and modular options are common outdoor choices. We recommend based on usage, budget, and site conditions.",
+        "For preliminary budgeting, a backyard sports court may cost approximately $6 to $25.50 per square foot, with certain residential multi-sport installations ranging from $5,400 to $53,550 or more. Larger courts, premium athletic surfaces, specialized foundations, extensive grading, lighting, and fencing may require substantially higher budgets. These figures are general planning allowances rather than official installation rates. Contact Hatz Court Builders for pricing based on your Chandler property and project requirements.",
     },
     {
-      question: "Can you build a court in a Chandler backyard with limited space?",
+      question: "What is the cheapest way to make a sports court?",
       answer:
-        "Yes. We design compact and custom layouts around yard constraints, safety spacing, and desired sports.",
+        "Using an existing structurally sound concrete surface may be one of the more economical ways to create a recreational court. Compatible athletic coatings, playing lines, portable equipment, and compact court dimensions can help limit construction requirements. However, the existing surface must have suitable drainage, dimensions, and structural conditions. If a new court is required, reducing optional accessories may be preferable to compromising essential groundwork or foundation preparation.",
     },
     {
-      question: "Do Chandler courts need special drainage planning?",
+      question: "How long does it take to build a sports court?",
       answer:
-        "Yes. Monsoon runoff and low spots can damage courts without proper grading and drainage.",
+        "A new sports court may take approximately four to six weeks or longer, depending on the size, materials, site preparation, permitting, and additional equipment involved. Concrete foundations also require appropriate curing before athletic surfacing can begin. Chandler's extreme summer temperatures and monsoon rainfall may influence certain construction stages. Larger commercial developments generally require project-specific scheduling.",
     },
     {
-      question: "Can an old court be resurfaced instead of replaced?",
+      question: "How long does a sports court last?",
       answer:
-        "Many worn courts can be resurfaced if the base is still stable. Resurfacing may include crack repair, surface recoating, color updates, line striping, and layout changes. If the court has major base movement or drainage failure, deeper repair work may be needed first.",
+        "A well-constructed and maintained athletic court may remain functional for 15 to 25 years or longer, although the foundation and finished playing surface have different service lives. Outdoor acrylic coatings may require resurfacing considerably sooner, depending on usage, material quality, UV exposure, and surface condition. In Chandler, regular cleaning, drainage inspections, and timely repairs can help preserve court performance.",
     },
     {
-      question: "What sports can be included on one court?",
+      question: "What sports can you play on a multi-use court?",
       answer:
-        "A multi-use court can include basketball, pickleball, tennis hit areas, volleyball, or other game layouts depending on the space. The key is planning the lines, equipment, and playing zones so the court does not feel crowded. Hatz Court Builders can help choose a layout that matches how the court will be used most.",
-    },
-    {
-      question: "Do you build courts for schools, HOAs, and parks?",
-      answer:
-        "Yes, Hatz Court Builders works on commercial courts, community courts, school courts, park courts, HOA community courts, and athletic facility courts. These projects often need stronger planning for traffic, safety, line clarity, and long-term maintenance. The court system should match the level of daily use.",
-    },
-    {
-      question: "How long does a custom court project take?",
-      answer:
-        "Project timing depends on the court size, surface type, site prep, weather, materials, and any repairs needed before installation. A simple resurfacing project is usually different from a full custom court construction project. After the site review, Hatz Court Builders can give a clearer timeline.",
-    },
-    {
-      question: "Can the court colors and game lines be customized?",
-      answer:
-        "Yes, color customization and line striping are part of many court projects. You can choose colors that fit the property, school, HOA, or facility style. Game lines can also be planned for one sport or for several sports on the same court.",
+        "A custom multi-use court can accommodate basketball, pickleball, volleyball, badminton, and other compatible recreational activities. The available dimensions, surface materials, court markings, and equipment determine which sports can share the playing area. Hatz Court Builders designs multi-use courts around the property's available space and the activities homeowners, schools, or commercial facilities want to support.",
     },
   ],
 });
@@ -2965,9 +2839,9 @@ export const PM_COURT_BUILDER_GLENDALE_AZ_CONFIG = courtBuilderCityConfig({
   slug: "court-builder-glendale-az",
   cityName: "Glendale",
   stateName: "Arizona",
-  metaTitle: "Court Builder Glendale AZ | Custom Courts | Hatz Court Builders",
+  metaTitle: "Court Builder Glendale, AZ | Custom Multi-Use Court Construction",
   metaDescription:
-    "Trusted court builder in Glendale, AZ for custom tennis, pickleball, and basketball courts, plus resurfacing, repairs, and multi-use layouts.",
+    "Create a versatile athletic space with our court builders in Glendale, AZ. We construct tennis, pickleball and basketball courts and provide resurfacing.",
   heroImageFragment: "outdoor multi court acrylic surfacing",
   faqItems: [
     {
@@ -3012,9 +2886,9 @@ export const PM_COURT_BUILDER_PEORIA_AZ_CONFIG = courtBuilderCityConfig({
   slug: "court-builder-peoria-az",
   cityName: "Peoria",
   stateName: "Arizona",
-  metaTitle: "Court Builder Peoria AZ | Custom Courts | Hatz Court Builders",
+  metaTitle: "Athletic Court Builders Peoria, AZ | Construction & Resurfacing",
   metaDescription:
-    "Licensed court builder in Peoria, AZ for residential and commercial court construction and resurfacing.",
+    "Work with licensed court builders in Peoria, AZ, for residential and commercial athletic court construction and resurfacing. Start planning your project.",
   heroImageFragment: "pickleball line striping on concrete",
   faqItems: [
     {
@@ -3054,9 +2928,9 @@ export const PM_COURT_BUILDER_TEMPE_AZ_CONFIG = courtBuilderCityConfig({
   slug: "court-builder-tempe-az",
   cityName: "Tempe",
   stateName: "Arizona",
-  metaTitle: "Court Builder Tempe AZ | Custom Courts | Hatz Court Builders",
+  metaTitle: "Tempe Court Builders | Custom Athletic Courts & Installation",
   metaDescription:
-    "Custom athletic court builder in Tempe, AZ for tennis, pickleball, and basketball courts, including new construction, resurfacing, and upgrades.",
+    "Build or upgrade your athletic court in Tempe, AZ. We offer custom tennis, pickleball and basketball court construction, resurfacing and court improvements.",
   heroImageFragment: "pickleball court hoa line paint and coating",
   faqItems: [
     {

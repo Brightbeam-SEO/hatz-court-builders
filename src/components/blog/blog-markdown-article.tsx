@@ -197,6 +197,22 @@ function markdownComponentsFor(listBulletStyle: BlogMarkdownListBulletStyle): Co
       ),
     li: MarkdownLi,
     hr: () => <hr className="my-10 border-0 border-t border-white/15 light:border-slate-200" />,
+    table: ({ children }) => (
+      <div className="my-2 overflow-x-auto">
+        <table className="w-full min-w-[36rem] border-collapse text-left text-sm leading-6 text-white/90 light:text-zen-taupe">
+          {children}
+        </table>
+      </div>
+    ),
+    thead: ({ children }) => (
+      <thead className="border-b border-white/25 light:border-slate-300">{children}</thead>
+    ),
+    th: ({ children }) => (
+      <th className="px-3 py-2 font-semibold text-white light:text-zen-espresso">{children}</th>
+    ),
+    td: ({ children }) => (
+      <td className="border-t border-white/10 px-3 py-2 align-top light:border-slate-200">{children}</td>
+    ),
     strong: ({ children }) => {
       const text = plainText(children);
       if (isBusinessNameHomeLink(text)) {

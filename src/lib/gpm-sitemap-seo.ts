@@ -62,94 +62,94 @@ export const GPM_SITEMAP_SEO: Record<
       "Review the Hatz Court Builders Licence Agreement covering website content usage, court design materials, intellectual property, and restrictions.",
   },
   "/basketball-court-construction/": {
-    title: "Basketball Court Construction | Custom Courts | Hatz",
+    title: "Basketball Court Construction | Indoor & Outdoor Courts",
     description:
-      "Expert basketball court construction for residential and commercial spaces. Built for performance and longevity. Contact us for a quote.",
+      "Build a basketball court tailored to your space and playing needs. We construct residential and commercial courts with custom layouts and durable surfaces.",
   },
   "/pickleball-court-construction/": {
-    title: "Pickleball Court Construction | Custom Courts | Hatz",
+    title: "Pickleball Court Construction & Custom Court Installation",
     description:
-      "Professional pickleball court construction built for durability and performance. Custom layouts and surfaces available. Contact us to get started.",
+      "Build a custom pickleball court for your backyard, school or sports facility. We handle court design, construction and surface installation. Request a quote.",
   },
   "/volleyball-court-construction/": {
-    title: "Volleyball Court Construction | All Court Types | Hatz",
+    title: "Volleyball Court Construction | Indoor & Outdoor Courts",
     description:
-      "Durable volleyball court construction for indoor and outdoor use. Built to match your space and needs. Contact us for details.",
+      "Create a volleyball court suited to your property or sports facility. We offer indoor and outdoor court construction with customized layouts and surfaces.",
   },
   "/futsal-soccer-court-construction/": {
-    title: "Soccer Court Construction | All Court Types | Hatz",
+    title: "Futsal & Soccer Court Construction | Custom Court Builders",
     description:
-      "Custom soccer court construction for training or recreation. Designed for performance and safety. Contact us to learn more.",
+      "Build a dedicated space for training and recreational play with futsal and soccer court construction. Explore custom layouts and surfaces for your facility.",
   },
   "/tennis-court-construction/": {
-    title: "Tennis Court Construction | Custom Courts | Hatz",
+    title: "Tennis Court Construction | Custom Tennis Court Builders",
     description:
-      "High-quality tennis court construction with premium materials and precision builds. Designed for long-term play. Contact us today.",
+      "From private tennis courts to commercial facilities, we provide custom tennis court construction with carefully planned layouts and surfaces. Get a quote.",
   },
   "/bocce-court-construction/": {
-    title: "Bocce Court Construction | Custom Courts | Hatz",
+    title: "Bocce Court Construction | Custom Bocce Ball Court Builders",
     description:
-      "Precision bocce court construction with proper base and surface systems. Built for smooth, consistent play. Contact us today.",
+      "Enjoy consistent play with custom bocce court construction. We handle court layout, base preparation and surface installation for your property. Get a quote.",
   },
   "/multi-court-construction/": {
-    title: "Multi Court Construction | All Court Types | Hatz",
+    title: "Multi-Court Construction | Custom Multi-Use Court Builders",
     description:
-      "Multi court construction for parks, schools, and facilities. Build multiple courts in one space. Contact us to plan your project.",
+      "Make the most of your available space with multi-use court construction for homes, schools, parks and athletic facilities. Discuss your court project with us.",
   },
   "/custom-court-construction/": {
-    title: "Custom Court Construction | Custom Courts | Hatz",
+    title: "Custom Athletic Court Construction | Design & Installation",
     description:
-      "Fully custom court construction tailored to your space, sport, and design preferences. Built your way. Contact us now.",
+      "Bring your athletic court vision to life with custom court construction. Choose your layout, playing surface and court features to suit your space and sport.",
   },
   "/commercial-court-construction/": {
-    title: "Commercial Court Construction | All Court Types | Hatz",
+    title: "Commercial Court Construction | Athletic Court Builders",
     description:
-      "Commercial court construction for schools, HOAs, and facilities. Built for durability and heavy use. Contact us for more info.",
+      "Develop durable athletic facilities with commercial court construction for schools, HOAs, parks and recreational properties. Discuss your project with us.",
   },
   "/court-expansion/": {
-    title: "Court Expansion | All Court Types | Hatz",
+    title: "Athletic Court Expansion | Court Additions & Upgrades",
     description:
-      "Court expansion services to upgrade or extend your existing sports court space. Seamless additions. Contact us today.",
+      "Need more playing space? Our athletic court expansion services help extend existing courts and accommodate additional recreational activities. Plan your upgrade.",
   },
   "/custom-court-design/": {
-    title: "Custom Court Design | Custom Courts | Hatz",
+    title: "Custom Court Design | Athletic Court Layout & Planning",
     description:
-      "Custom court design services to plan layout, materials, and functionality for your project. Start your build right. Contact us.",
+      "Plan your ideal athletic court with custom court design services. Explore layouts, surface materials and playing features suited to your space and intended use.",
   },
   "/asphalt-court-installation/": {
-    title: "Asphalt Court Installation | Durable Bases | Hatz",
+    title: "Asphalt Court Installation | Athletic Court Construction",
     description:
-      "Professional asphalt court installation for tennis, pickleball, basketball, and multi-use courts. Built for drainage and longevity. Get a free quote.",
+      "Create a durable foundation for tennis, basketball or pickleball with asphalt court installation. We build court bases with drainage and performance in mind.",
   },
   "/concrete-court-installation/": {
-    title: "Concrete Court Installation | Stable Slabs | Hatz",
+    title: "Concrete Court Installation | Court Slabs & Foundations",
     description:
-      "Concrete court installation for backyard and commercial sports courts. Precision slabs built for coatings, modular systems, and heavy use. Contact us today.",
+      "Build a stable foundation for your backyard or commercial athletic court with concrete court installation. Explore slabs suited to acrylic and modular surfaces.",
   },
   "/acrylic-court-systems/": {
-    title: "Acrylic Court Systems | Color & Performance | Hatz",
+    title: "Acrylic Court Surfacing | Pickleball & Tennis Court Systems",
     description:
-      "Acrylic court systems for tennis, pickleball, and multi-use courts. Professional coatings for color, grip, and weather resistance. Request a quote.",
+      "Enhance court performance with acrylic court systems for tennis, pickleball and multi-use play. Explore surface coatings, color options and traction.",
   },
   "/synthetic-courts/": {
-    title: "Synthetic Courts | Turf & Specialty Surfaces | Hatz",
+    title: "Synthetic Athletic Courts | Turf & Specialty Surfaces",
     description:
-      "Synthetic court installation for training, multi-sport, and specialty play areas. Durable turf and synthetic systems for homes and facilities. Contact us.",
+      "Explore synthetic court installation for residential properties, training spaces and athletic facilities. Discover turf and specialty playing surface options.",
   },
   "/modular-court-surfaces/": {
-    title: "Modular Court Surfaces | Tile Systems | Hatz",
+    title: "Modular Court Surfaces | Interlocking Athletic Court Tiles",
     description:
-      "Modular court surfaces and interlocking tile systems for backyard and commercial courts. Fast install, great drainage, multi-sport ready. Get a quote.",
+      "Upgrade your playing area with modular court surfaces and interlocking athletic tiles. Explore versatile flooring options for backyard and commercial courts.",
   },
   "/cushioned-court-systems/": {
-    title: "Cushioned Court Systems | Player Comfort | Hatz",
+    title: "Cushioned Court Surfacing | Acrylic Athletic Court Systems",
     description:
-      "Cushioned court systems that reduce joint impact for tennis, pickleball, and multi-use play. Comfort-focused acrylic layers. Contact Hatz today.",
+      "Improve playing comfort with cushioned court systems for tennis, pickleball and multi-use courts. Explore acrylic surface options designed to absorb impact.",
   },
   "/indoor-sports-flooring/": {
-    title: "Indoor Sports Flooring | Gym & Court Floors | Hatz",
+    title: "Indoor Sports Flooring | Gymnasium & Athletic Court Flooring",
     description:
-      "Indoor sports flooring for gyms, schools, and indoor courts. Durable flooring systems for basketball, multi-sport, and training spaces. Get a quote.",
+      "Create a functional indoor athletic space with sports flooring for gyms, schools and training facilities. Explore basketball and multi-use flooring options.",
   },
 };
 
